@@ -1,0 +1,99 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import profilePic from "../assets/profile.jpg";
+import reviewSummarizer from "../assets/icon-straight.png";
+import Project from "../components/Project.astro";
+---
+
+<Layout title="Sim Ho">
+  <main
+    class="overflow-x-auto flex p-5 flex-col w-full h-full justify-between gap-10"
+  >
+    <div class="flex w-full justify-evenly gap-10">
+      <section class="flex flex-col gap-y-4 items-center">
+        <div class="text-center flex-col flex gap-y-2">
+          <h1 class="text-5xl font-extrabold">Projects</h1>
+          <p class="text-slate-400">Click to expand!</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6 text-center">
+          <Project>
+            <Image
+              src={reviewSummarizer}
+              alt="review summarizer 9000"
+              width={300}
+            />
+            <p class="text-balance">
+              So many products, too many reviews! Can we just get a summary,
+              please?
+            </p>
+          </Project>
+          <Project>
+            <h2 class="text-3xl font-bold">Nedon</h2>
+            <p class="text-balance">
+              Mint, Honeydue, Splitwise... They all suck. Can we ACTUALLY manage
+              our finances properly?
+            </p>
+          </Project>
+          <Project>
+            <h2 class="text-3xl font-bold">HandyDollar</h2>
+            <p class="text-balance">
+              Receipts tell me the details of my spending. What if my spending
+              tracker knew that too?
+            </p>
+          </Project>
+        </div>
+      </section>
+
+      <div
+        class="gap-y-1 items-center flex flex-col h-fit border-slate-700 p-4 rounded-xl bg-slate-800 w-72"
+      >
+        <Image
+          src={profilePic}
+          alt="Profile pic"
+          height={200}
+          class="rounded-lg"
+        />
+        <div class="flex flex-col gap-y-1">
+          <p class="text-3xl font-bold">Ho Sim</p>
+          <div class="text-sm font-light">
+            <li>Full-Stack Software Developer</li>
+            <li>
+              Computer Science @ <br /> University of Central Florida
+            </li>
+            <li>Loves cats and prairie dogs</li>
+          </div>
+          <a href="" class="font-semibold text-indigo-300">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="w-full flex items-center flex-col gap-y-5">
+      <h1 class="text-5xl font-extrabold">Blog</h1>
+      <div class="flex flex-col max-w-lg gap-y-2">
+        <h2 class="text-3xl font-bold">
+          The process is important, until it isn't.
+        </h2>
+        <p class="w-full text-start text-balance">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+          harum dolorum aperiam odit optio officia mollitia ducimus fugit,
+          deleniti quasi adipisci libero tenetur quibusdam rem, commodi earum
+          reprehenderit in beatae?
+        </p>
+      </div>
+
+      <div class="flex flex-col max-w-lg gap-y-2">
+        <h2 class="text-3xl font-bold">
+          The process is important, until it isn't.
+        </h2>
+        <p class="w-full text-start text-balance">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+          harum dolorum aperiam odit optio officia mollitia ducimus fugit,
+          deleniti quasi adipisci libero tenetur quibusdam rem, commodi earum
+          reprehenderit in beatae?
+        </p>
+      </div>
+    </section>
+  </main>
+</Layout>
