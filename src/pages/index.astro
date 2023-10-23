@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import profilePic from "../assets/profile.jpg";
-import reviewSummarizer from "../assets/icon-straight.png";
+import reviewSummarizer from "../content/projects/icon-straight.png";
 import Project from "../components/Project.astro";
 ---
 
@@ -11,7 +11,7 @@ import Project from "../components/Project.astro";
     class="overflow-x-auto flex p-5 flex-col w-full h-full justify-between gap-10 items-center"
   >
     <div
-      class="flex w-full flex-col-reverse items-center sm:flex-row justify-evenly max-w-6xl"
+      class="flex w-full flex-col-reverse items-center md:flex-row justify-evenly max-w-6xl"
     >
       <section class="flex flex-col gap-y-3 items-center">
         <div class="text-center flex-col flex">
@@ -48,7 +48,7 @@ import Project from "../components/Project.astro";
       </section>
 
       <div
-        class="gap-y-1 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl sm:bg-slate-900 md:border w-full md:w-56 lg:w-64"
+        class="gap-y-1 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl md:bg-slate-900 md:border w-full md:w-56 lg:w-64"
       >
         <Image
           src={profilePic}
