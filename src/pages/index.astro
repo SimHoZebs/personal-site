@@ -22,7 +22,7 @@ const allProject = await getCollection("projects");
       <section class="flex flex-col gap-y-3 items-center">
         <div class="text-center flex-col flex">
           <h2 class="text-4xl font-extrabold">Projects</h2>
-          <p class="text-slate-400">Click to expand</p>
+          <p class="text-slate-400 text-sm">Click to expand</p>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-4 text-center">
@@ -41,20 +41,20 @@ const allProject = await getCollection("projects");
       </section>
 
       <div
-        class="gap-y-1 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl md:bg-slate-900 md:border w-full md:w-56 lg:w-64"
+        class="gap-y-2 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl md:bg-slate-900 md:border w-full md:w-56 lg:w-64"
       >
         <Image
           src={profilePic}
           alt="Profile pic"
           height={180}
-          class="rounded-lg"
+          class="rounded-lg border-slate-700 border-1"
         />
-        <div class="flex items-center sm:items-start flex-col gap-y-2">
+        <div class="flex items-center sm:items-start flex-col gap-y-1">
           <p class="text-xl font-semibold">Hi! I'm Ho Sim.</p>
 
           <p class="flex flex-col text-center sm:text-start text-balance">
             I'm a full-stack software developer, and a freelance Korean-English
-            translator, studying Computer Science at University of Central
+            translator and a Computer Science student at University of Central
             Florida.
           </p>
           <p class="flex flex-col text-center sm:text-start text-balance">

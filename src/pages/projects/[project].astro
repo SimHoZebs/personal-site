@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import { Image } from "astro:assets";
+import { fade } from "astro:transitions";
 
 export async function getStaticPaths() {
   const projectEntries = await getCollection("projects");
@@ -16,13 +17,19 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title}>
-  <main class="w-full h-full flex flex-col items-center justify-center">
-    <div class="max-w-lg flex flex-col justify-center">
-      <div class="flex flex-col gap-y-2 items-center">
+<ProjectLayout title={entry.data.title}>
+  <main
+    class="w-full h-full flex flex-col items-center justify-center bg-slate-950 border border-slate-800"
+    transition:name={entry.data.title + " background"}
+  >
+    <div
+      class="max-w-xl flex flex-col py-10 gap-y-3 overflow-y-scroll no-scrollbar"
+    >
+      <section class="flex flex-col gap-y-2 items-center">
         {
           entry.data.headerImage ? (
             <Image
+              height={54}
               src={entry.data.headerImage}
               alt="review summarizer 9000"
               transition:name={entry.data.title}
@@ -39,9 +46,14 @@ const { Content } = await entry.render();
         >
           {entry.data.summary}
         </p>
-      </div>
+      </section>
 
-      <Content />
+      <section
+        transition:animate={fade({ duration: "1s" })}
+        class="flex flex-col gap-2"
+      >
+        <Content />
+      </section>
     </div>
   </main>
-</Layout>
+</ProjectLayout>
