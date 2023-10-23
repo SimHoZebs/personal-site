@@ -1,8 +1,10 @@
 ---
+import { Image } from "astro:assets";
 interface Props {
   textIcon?: string;
   title?: string;
   ref: string;
+  img?: ImageMetadata;
 }
 
 const { props } = Astro;
@@ -20,16 +22,25 @@ const { props } = Astro;
         </div>
       ) : null
     }
+
     {
-      props.title ? (
-        <h3 class="text-xl font-bold">{props.title}</h3>
+      props.img ? (
+        <Image
+          slot="heading"
+          src={props.img}
+          alt="review summarizer 9000"
+          height={36}
+          transition:name={props.title}
+        />
       ) : (
-        <div transition:name="heading">
-          <slot name="heading" />
-        </div>
+        <h3 class="text-xl font-bold" transition:name={props.title}>
+          {props.title}
+        </h3>
       )
     }
   </div>
 
-  <slot />
+  <p class="text-balance" transition:name={props.title + " summary"}>
+    <slot />
+  </p>
 </a>

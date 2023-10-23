@@ -2,8 +2,14 @@
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import profilePic from "../assets/profile.jpg";
-import reviewSummarizer from "../content/projects/icon-straight.png";
 import Project from "../components/Project.astro";
+
+import { getCollection } from "astro:content";
+
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+// Example: retrieve `src/content/blog/**`
+const allProject = await getCollection("projects");
 ---
 
 <Layout title="Sim Ho">
@@ -20,30 +26,17 @@ import Project from "../components/Project.astro";
         </div>
 
         <div class="grid lg:grid-cols-2 gap-4 text-center">
-          <Project ref="review-generator">
-            <Image
-              slot="heading"
-              src={reviewSummarizer}
-              alt="review summarizer 9000"
-              height={36}
-            />
-            <p class="text-balance" transition:name="description">
-              So many products, too many reviews! Can we just get a summary,
-              please?
-            </p>
-          </Project>
-          <Project textIcon="Ne" title="Nedon" ref="nedon">
-            <p class="text-balance">
-              Mint, Honeydue, Splitwise... They all suck. Can we ACTUALLY manage
-              our finances properly?
-            </p>
-          </Project>
-          <Project textIcon="Ha" title="HandyDollars" ref="handy-dollars">
-            <p class="text-balance">
-              Receipts tell me the details of my spending. What if my spending
-              tracker knew that too?
-            </p>
-          </Project>
+          {
+            allProject.map((project) => (
+              <Project
+                title={project.data.title}
+                ref={project.slug}
+                img={project.data.headerImage}
+              >
+                <p class="text-balance">{project.data.summary}</p>
+              </Project>
+            ))
+          }
         </div>
       </section>
 
