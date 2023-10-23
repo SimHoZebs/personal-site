@@ -11,7 +11,7 @@ import Project from "../components/Project.astro";
     class="overflow-x-auto flex p-5 flex-col w-full h-full justify-between gap-10 items-center"
   >
     <div
-      class="flex w-full flex-col-reverse items-center sm:flex-row justify-evenly gap-10 max-w-6xl"
+      class="flex w-full flex-col-reverse items-center sm:flex-row justify-evenly max-w-6xl"
     >
       <section class="flex flex-col gap-y-3 items-center">
         <div class="text-center flex-col flex">
@@ -20,25 +20,25 @@ import Project from "../components/Project.astro";
         </div>
 
         <div class="grid lg:grid-cols-2 gap-4 text-center">
-          <Project>
+          <Project ref="review-generator">
             <Image
               slot="heading"
               src={reviewSummarizer}
               alt="review summarizer 9000"
               height={36}
             />
-            <p class="text-balance">
+            <p class="text-balance" transition:name="description">
               So many products, too many reviews! Can we just get a summary,
               please?
             </p>
           </Project>
-          <Project textIcon="Ne" title="Nedon">
+          <Project textIcon="Ne" title="Nedon" ref="nedon">
             <p class="text-balance">
               Mint, Honeydue, Splitwise... They all suck. Can we ACTUALLY manage
               our finances properly?
             </p>
           </Project>
-          <Project textIcon="Ha" title="HandyDollars">
+          <Project textIcon="Ha" title="HandyDollars" ref="handy-dollars">
             <p class="text-balance">
               Receipts tell me the details of my spending. What if my spending
               tracker knew that too?

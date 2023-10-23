@@ -1,7 +1,53 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import reviewSummarizer from "../../assets/icon-straight.png";
+import exampleImage from "../../assets/review-generator-example.png";
+import type { TransitionAnimationPair } from "astro";
+import { fade } from "astro:transitions";
+
+const animation: TransitionAnimationPair = {
+  old: {
+    name: "invisible",
+  },
+  new: {
+    name: "visible",
+  },
+};
 ---
 
 <Layout title="Review Generator 9000">
-  <div></div>
+  <main class="w-full h-full flex flex-col items-center justify-center">
+    <div class="max-w-lg flex flex-col">
+      <div class="flex flex-col gap-y-2 items-center">
+        <Image
+          transition:name="heading"
+          src={reviewSummarizer}
+          alt="review summarizer 9000"
+          height={54}
+        />
+
+        <h3
+          class="text-xl text-balance max-w-md text-center"
+          transition:name="description"
+        >
+          So many products, too many reviews! Can we just get a summary, please?
+        </h3>
+      </div>
+
+      <div class="flex flex-col">
+        <Image
+          src={exampleImage}
+          alt="Review summarizer 9000 in action"
+          transition:animate={fade({ duration: "0.7s" })}
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In adipisci
+          veritatis omnis expedita ad esse, porro quam reiciendis voluptates
+          ratione iste impedit autem quos, totam quae magnam deserunt nesciunt
+          sequi!
+        </p>
+      </div>
+    </div>
+  </main>
 </Layout>
