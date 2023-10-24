@@ -19,11 +19,11 @@ const { Content } = await entry.render();
 
 <ProjectLayout title={entry.data.title}>
   <main
-    class="w-full h-full flex flex-col items-center justify-center bg-slate-950 border border-slate-800"
+    class="w-full h-full flex flex-col items-center justify-center bg-slate-950 border border-slate-800 px-3"
     transition:name={entry.data.title + " background"}
   >
     <div
-      class="max-w-xl flex flex-col py-10 gap-y-3 overflow-y-scroll no-scrollbar"
+      class="max-w-xl w-full flex flex-col py-10 gap-y-3 overflow-y-scroll overflow-x-clip no-scrollbar"
     >
       <section class="flex flex-col gap-y-2 items-center">
         {
@@ -50,7 +50,7 @@ const { Content } = await entry.render();
 
       <section
         transition:animate={fade({ duration: "1s" })}
-        class="flex flex-col gap-2"
+        class="flex flex-col gap-2 w-full items-start"
       >
         <Content />
       </section>

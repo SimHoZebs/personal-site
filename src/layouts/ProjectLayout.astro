@@ -25,6 +25,7 @@ const { title } = Astro.props;
       .text-balance {
         text-wrap: balance;
       }
+
       .no-scrollbar::-webkit-scrollbar {
         display: none;
       }
@@ -42,6 +43,23 @@ const { title } = Astro.props;
 
       li {
         list-style-type: disc;
+        list-style-position: inside;
+      }
+
+      table {
+        width: max-content;
+        text-align: center;
+      }
+
+      td,
+      th {
+        padding: 4px 12px 4px 12px;
+      }
+      table,
+      th,
+      td {
+        border-width: 1px;
+        border-color: rgb(30 41 59 / var(--tw-border-opacity));
       }
     </style>
   </body>
