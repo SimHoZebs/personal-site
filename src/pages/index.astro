@@ -17,8 +17,48 @@ const allProject = await getCollection("projects");
     class="overflow-x-auto flex p-5 flex-col w-full h-full justify-between gap-10 items-center"
   >
     <div
-      class="flex w-full flex-col-reverse items-center md:flex-row justify-evenly max-w-6xl"
+      class="flex w-full flex-col items-center md:flex-row-reverse justify-evenly max-w-6xl gap-y-12"
     >
+      <section
+        class="gap-y-2 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl md:bg-slate-900 md:border w-full md:w-56 lg:w-64"
+      >
+        <Image
+          src={profilePic}
+          alt="Profile pic"
+          height={180}
+          class="rounded-lg border-slate-700 border-1"
+        />
+        <div class="flex items-center md:items-start flex-col gap-y-1">
+          <p class="text-2xl font-semibold">Hi! I'm Ho Sim.</p>
+
+          <p
+            class="flex gap-y-1 flex-col text-center md:text-start text-balance"
+          >
+            I'm a full-stack software developer, and a freelance Korean-English
+            translator and a Computer Science student at University of Central
+            Florida.
+            <span></span>
+             I build projects on the side to solve minor, sometimes major
+            problems I recognize.
+          </p>
+          <div class="flex self-center justify-between">
+            <!-- <a href="" class="font-semibold text-indigo-400">Learn more</a> -->
+            <div class="flex gap-2">
+              <a
+                aria-label="Github"
+                href="https://www.github.com/simhozebs"
+                class="icon-[mdi--github] w-6 h-6"
+                target="_blank"></a>
+              <a
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/ho-sim"
+                target="_blank"
+                class="icon-[mdi--linkedin] w-6 h-6"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="flex flex-col gap-y-3 items-center">
         <div class="text-center flex-col flex">
           <h2 class="text-4xl font-extrabold">Projects</h2>
@@ -39,43 +79,6 @@ const allProject = await getCollection("projects");
           }
         </div>
       </section>
-
-      <div
-        class="gap-y-2 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl md:bg-slate-900 md:border w-full md:w-56 lg:w-64"
-      >
-        <Image
-          src={profilePic}
-          alt="Profile pic"
-          height={180}
-          class="rounded-lg border-slate-700 border-1"
-        />
-        <div class="flex items-center sm:items-start flex-col gap-y-1">
-          <p class="text-xl font-semibold">Hi! I'm Ho Sim.</p>
-
-          <p class="flex flex-col text-center sm:text-start text-balance">
-            I'm a full-stack software developer, and a freelance Korean-English
-            translator and a Computer Science student at University of Central
-            Florida.
-          </p>
-          <p class="flex flex-col text-center sm:text-start text-balance">
-            I build projects on the side to solve minor, sometimes major
-            problems I recognize.
-          </p>
-          <div class="flex self-center justify-between">
-            <!-- <a href="" class="font-semibold text-indigo-400">Learn more</a> -->
-            <div class="flex gap-2">
-              <a
-                href="https://www.github.com/simhozebs"
-                class="icon-[mdi--github] w-6 h-6"
-                target="_blank"></a>
-              <a
-                href="https://www.linkedin.com/in/ho-sim"
-                target="_blank"
-                class="icon-[mdi--linkedin] w-6 h-6"></a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <section class="w-full flex items-center flex-col gap-y-5 max-w-4xl">
