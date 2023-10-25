@@ -18,10 +18,10 @@ allProject.sort((b, a) => b.data.order - a.data.order);
     class="overflow-x-auto flex p-5 flex-col w-full h-full justify-between gap-10 items-center"
   >
     <div
-      class="flex w-full flex-col items-center md:flex-row-reverse justify-evenly max-w-6xl gap-y-12"
+      class="flex w-full flex-col items-center md:flex-row-reverse justify-evenly max-w-6xl gap-y-12 gap-x-4"
     >
       <section
-        class="gap-y-2 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl md:bg-slate-900 md:border w-full md:w-56 lg:w-64"
+        class="gap-y-2 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl md:bg-slate-900 md:border w-full md:w-64 min-w-[16rem]"
       >
         <Image
           src={profilePic}
@@ -58,13 +58,13 @@ allProject.sort((b, a) => b.data.order - a.data.order);
         </div>
       </section>
 
-      <section class="flex flex-col gap-y-3 items-center">
+      <section class="flex flex-col gap-y-3 items-center justify-center">
         <div class="text-center flex-col flex gap-1">
           <h2 class="text-5xl font-extrabold">Projects</h2>
           <p class="text-slate-400 text-sm">Click to expand</p>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-4 text-center">
+        <div class="flex flex-wrap gap-4 text-center justify-center">
           {
             allProject.map((project) => (
               <Project
