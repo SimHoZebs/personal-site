@@ -37,18 +37,29 @@ const { title } = Astro.props;
       }
 
       h2 {
-        font-size: xx-large;
-        font-weight: 700;
-      }
-
-      h3 {
         font-size: x-large;
         font-weight: 700;
       }
+      h3 {
+        font-size: larger;
+        font-weight: 700;
+      }
 
+      @media (min-width: 768px) {
+        h2 {
+          font-size: xx-large;
+        }
+        h3 {
+          font-size: x-large;
+        }
+      }
+
+      ul {
+        padding-left: 20px;
+      }
       li {
         list-style-type: disc;
-        list-style-position: inside;
+        list-style-position: outside;
       }
 
       table {
