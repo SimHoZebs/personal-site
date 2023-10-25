@@ -18,14 +18,18 @@ const { Content } = await entry.render();
 ---
 
 <ProjectLayout title={entry.data.title}>
-  <main class="w-full h-full flex flex-col items-center bg-slate-950 px-2">
+  <main class="w-full h-full flex flex-col items-center bg-slate-950 pt-5 px-2">
+    <div class="max-w-xl w-full items-start">
+      <a
+        href="../"
+        class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
+      ></a>
+    </div>
+
     <div
-      class="max-w-xl w-full flex flex-col py-10 gap-y-3 overflow-y-scroll overflow-x-clip no-scrollbar"
+      class="max-w-xl w-full flex flex-col gap-y-10 overflow-y-scroll overflow-x-clip no-scrollbar pb-10"
     >
-      <div>
-        <a href="../" class="icon-[tabler--chevron-left] w-6 h-6"></a>
-      </div>
-      <section class="flex flex-col gap-y-2 items-center">
+      <section class="flex flex-col gap-y-2 items-center mt-10">
         {
           entry.data.headerImage ? (
             <Image
@@ -53,7 +57,7 @@ const { Content } = await entry.render();
 
       <section
         transition:animate={fade({ duration: "1s" })}
-        class="flex flex-col gap-2 w-full items-start"
+        class="flex flex-col gap-4 w-full lg:text-lg items-start leading-snug"
       >
         <Content />
       </section>
