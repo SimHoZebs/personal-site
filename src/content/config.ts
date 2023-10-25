@@ -9,6 +9,7 @@ const projectCollection = defineCollection({
       title: z.string(),
       summary: z.string(),
       headerImage: image().optional(),
+      order: z.number(),
     }),
 });
 
