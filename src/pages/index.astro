@@ -10,12 +10,13 @@ import { getCollection } from "astro:content";
 // Requires the name of the collection as an argument.
 // Example: retrieve `src/content/blog/**`
 const allProject = await getCollection("projects");
+const allBlog = await getCollection("blogs");
 allProject.sort((b, a) => b.data.order - a.data.order);
 ---
 
 <Layout title="Sim Ho">
   <main
-    class="overflow-x-auto flex p-5 flex-col w-full h-full justify-between gap-10 items-center"
+    class="overflow-x-auto flex p-5 pb-20 flex-col w-full h-full justify-between gap-10 items-center"
   >
     <div
       class="flex w-full flex-col items-center md:flex-row-reverse justify-evenly max-w-6xl gap-y-12 gap-x-4"
@@ -87,46 +88,29 @@ allProject.sort((b, a) => b.data.order - a.data.order);
 
     <section class="w-full flex items-center flex-col gap-y-5 max-w-4xl">
       <h1 class="text-5xl font-extrabold">Blog</h1>
-
-      <p>Coming soon...</p>
-      <!-- <div class="flex flex-col max-w-xl gap-y-2">
-        <h2 class="text-3xl font-bold">
-          The process is important, but not to everyone.
-        </h2>
-        <p class="w-full text-start text-balance">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-          harum dolorum aperiam odit optio officia mollitia ducimus fugit,
-          deleniti quasi adipisci libero tenetur quibusdam rem, commodi earum
-          reprehenderit in beatae?
-        </p>
-        <a href="" class="font-semibold text-indigo-300">Read more</a>
-      </div>
-
-      <div class="flex flex-col max-w-xl gap-y-2">
-        <h2 class="text-3xl font-bold">
-          The process is important, but not to everyone.
-        </h2>
-        <p class="w-full text-start text-balance">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-          harum dolorum aperiam odit optio officia mollitia ducimus fugit,
-          deleniti quasi adipisci libero tenetur quibusdam rem, commodi earum
-          reprehenderit in beatae?
-        </p>
-        <a href="" class="font-semibold text-indigo-300">Read more</a>
-      </div>
-
-      <div class="flex flex-col max-w-xl gap-y-2">
-        <h2 class="text-3xl font-bold">
-          The process is important, until it isn't.
-        </h2>
-        <p class="w-full text-start text-balance">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-          harum dolorum aperiam odit optio officia mollitia ducimus fugit,
-          deleniti quasi adipisci libero tenetur quibusdam rem, commodi earum
-          reprehenderit in beatae?
-        </p>
-        <a href="" class="font-semibold text-indigo-300">Read more</a>
-      </div>-->
+      {
+        allBlog ? (
+          allBlog.map((blog) => (
+            <a
+              class="flex flex-col max-w-xl gap-y-2"
+              href={"/blogs/" + blog.slug}
+            >
+              <h2 class="text-3xl font-bold" transition:name={blog.data.title}>
+                {blog.data.title}
+              </h2>
+              <p class="w-full text-start text-balance">{blog.data.summary}</p>
+              <a
+                class="font-semibold text-indigo-300"
+                href={"/blogs/" + blog.slug}
+              >
+                Read more
+              </a>
+            </a>
+          ))
+        ) : (
+          <p>Coming soon...</p>
+        )
+      }
     </section>
   </main>
 </Layout>
