@@ -53,6 +53,26 @@ const { Content } = await entry.render();
         >
           {entry.data.summary}
         </p>
+        <div class="flex gap-x-5">
+          <a
+            href={"https://github.com/" + entry.data.github}
+            class="flex items-center gap-1 hover:text-indigo-300"
+            target="_blank"
+          >
+            <span class="icon-[mdi--github] w-6 h-6"></span>GitHub</a
+          >
+          {
+            entry.data.live && (
+              <a
+                href={entry.data.live}
+                class="hover:text-indigo-300"
+                target="_blank"
+              >
+                Live
+              </a>
+            )
+          }
+        </div>
       </section>
 
       <section

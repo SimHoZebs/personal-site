@@ -10,6 +10,8 @@ const projectCollection = defineCollection({
       summary: z.string(),
       headerImage: image().optional(),
       order: z.number(),
+      github: z.string(),
+      live: z.string().optional(),
     }),
 });
 
