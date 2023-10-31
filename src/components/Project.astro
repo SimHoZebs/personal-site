@@ -13,6 +13,7 @@ const { props } = Astro;
 <a
   class="bg-slate-950 sm:min-w-[20rem] justify-center items-center rounded-xl border-slate-800 px-3 py-3 border max-w-xs gap-2 flex flex-col transition-all hover:scale-105 hover:border-slate-700"
   href={"/projects/" + props.ref}
+  transition:name={props.title + " bg"}
 >
   <div class="flex gap-x-2 items-center">
     {
