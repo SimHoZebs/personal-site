@@ -24,13 +24,13 @@ const { Content } = await entry.render();
   >
     <div class="max-w-2xl w-full items-start">
       <a
-        href="../"
+        href={"../#" + entry.data.title}
         class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
       ></a>
     </div>
 
     <div
-      class="max-w-2xl w-full flex flex-col gap-y-10 overflow-y-scroll overflow-x-clip no-scrollbar pb-10"
+      class="max-w-2xl w-full flex flex-col gap-y-6 overflow-y-scroll overflow-x-clip no-scrollbar pb-10"
     >
       <section class="flex flex-col gap-y-2 items-center mt-10">
         {
@@ -74,6 +74,19 @@ const { Content } = await entry.render();
                 Live
               </a>
             )
+          }{
+            entry.data.link &&
+              entry.data.link.map((l) => (
+                <a
+                  href={l.url}
+                  class="flex items-center gap-1 hover:text-indigo-300"
+                >
+                  {l.icon && (
+                    <span class={l.icon + " w-6 h-6 hover:text-indigo-300"} />
+                  )}
+                  {l.name}
+                </a>
+              ))
           }
         </div>
         <div class="flex text-sm">
@@ -83,7 +96,7 @@ const { Content } = await entry.render();
 
       <section
         transition:animate={fade({ duration: "1s" })}
-        class="flex flex-col gap-4 w-full lg:text-lg items-start leading-snug tracking-wide"
+        class="flex flex-col gap-4 w-full lg:text-lg items-start leading-snug"
       >
         <Content />
       </section>

@@ -12,6 +12,14 @@ const projectCollection = defineCollection({
       headerAlt: z.string().optional(),
       order: z.number(),
       github: z.string(),
+      link: z
+        .object({
+          name: z.string(),
+          url: z.string(),
+          icon: z.string().optional(),
+        })
+        .array()
+        .optional(),
       live: z.string().optional(),
     }),
 });

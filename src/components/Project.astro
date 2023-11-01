@@ -28,13 +28,18 @@ const { props } = Astro;
     {
       props.img && props.alt ? (
         <Image
+          id={props.title}
           slot="heading"
           src={props.img}
           alt={props.alt}
           transition:name={props.title}
         />
       ) : (
-        <h3 class="text-xl font-bold" transition:name={props.title}>
+        <h3
+          id={props.title}
+          class="text-xl font-bold"
+          transition:name={props.title}
+        >
           {props.title}
         </h3>
       )

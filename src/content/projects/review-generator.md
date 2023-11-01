@@ -5,11 +5,17 @@ headerImage: ./icon-straight.png
 headerAlt: Review Generator 9000
 order: 1
 github: the-bigbrains/review-summarizer
+link:
+  [
+    {
+      name: Devpost,
+      url: https://devpost.com/software/review-generator-9000,
+      icon: "icon-[simple-icons--devpost]",
+    },
+  ]
 ---
 
 ![review generator 9000 in action](../../assets/review-generator-example.png)
-
-The original post can be found on [Devpost](https://devpost.com/software/review-generator-9000)
 
 ## Inspiration
 
