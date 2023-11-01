@@ -2,9 +2,13 @@
 title: Handy Dollars
 summary: Receipts tell me the details of my spending. What if my spending tracker knew that too?
 order: 2
-github: the-bigbrains/HandyDollar
 link:
   [
+    {
+      name: Github,
+      url: https://github.com/the-bigbrains/HandyDollar,
+      icon: "icon-[mdi--github]",
+    },
     {
       name: "Devpost",
       url: "https://devpost.com/software/handydollar",

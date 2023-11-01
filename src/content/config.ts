@@ -11,7 +11,6 @@ const projectCollection = defineCollection({
       headerImage: image().optional(),
       headerAlt: z.string().optional(),
       order: z.number(),
-      github: z.string(),
       link: z
         .object({
           name: z.string(),
@@ -20,7 +19,6 @@ const projectCollection = defineCollection({
         })
         .array()
         .optional(),
-      live: z.string().optional(),
     }),
 });
 

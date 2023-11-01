@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import { Image } from "astro:assets";
 import { fade } from "astro:transitions";
+import ContentWrapper from "../../components/ContentWrapper.astro";
 
 export async function getStaticPaths() {
   const projectEntries = await getCollection("projects");
@@ -17,89 +18,49 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<ProjectLayout title={entry.data.title}>
-  <main
-    class="w-full h-full flex flex-col items-center bg-slate-950 pt-5 px-5"
-    transition:name={entry.data.title + " bg"}
-  >
-    <div class="max-w-2xl w-full items-start">
-      <a
-        href={"../#" + entry.data.title}
-        class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
-      ></a>
-    </div>
-
-    <div
-      class="max-w-2xl w-full flex flex-col gap-y-6 overflow-y-scroll overflow-x-clip no-scrollbar pb-10"
-    >
-      <section class="flex flex-col gap-y-2 items-center mt-10">
-        {
-          entry.data.headerImage && entry.data.headerAlt ? (
-            <Image
-              height={54}
-              src={entry.data.headerImage}
-              alt={entry.data.headerAlt}
-              transition:name={entry.data.title}
-            />
-          ) : (
-            <h3
-              class="text-6xl font-bold text-center"
-              transition:name={entry.data.title}
-            >
-              {entry.data.title}
-            </h3>
-          )
-        }
-        <p
-          class="text-balance text-center"
-          transition:name={entry.data.title + " summary"}
+<ContentWrapper entry={entry}>
+  <div class="flex flex-col gap-y-2 items-center" slot="header">
+    {
+      entry.data.headerImage && entry.data.headerAlt ? (
+        <Image
+          height={54}
+          src={entry.data.headerImage}
+          alt={entry.data.headerAlt}
+          transition:name={entry.data.title}
+        />
+      ) : (
+        <h3
+          class="text-6xl font-bold text-center"
+          transition:name={entry.data.title}
         >
-          {entry.data.summary}
-        </p>
-        <div class="flex gap-x-5">
-          <a
-            href={"https://github.com/" + entry.data.github}
-            class="flex items-center gap-1 hover:text-indigo-300"
-            target="_blank"
-          >
-            <span class="icon-[mdi--github] w-6 h-6"></span>GitHub</a
-          >
-          {
-            entry.data.live && (
-              <a
-                href={entry.data.live}
-                class="hover:text-indigo-300"
-                target="_blank"
-              >
-                Live
-              </a>
-            )
-          }{
-            entry.data.link &&
-              entry.data.link.map((l) => (
-                <a
-                  href={l.url}
-                  class="flex items-center gap-1 hover:text-indigo-300"
-                >
-                  {l.icon && (
-                    <span class={l.icon + " w-6 h-6 hover:text-indigo-300"} />
-                  )}
-                  {l.name}
-                </a>
-              ))
-          }
-        </div>
-        <div class="flex text-sm">
-          ~{Math.floor(entry.body.split(" ").length / 238)} minute read
-        </div>
-      </section>
+          {entry.data.title}
+        </h3>
+      )
+    }
+    <p
+      class="text-balance text-center"
+      transition:name={entry.data.title + " summary"}
+    >
+      {entry.data.summary}
+    </p>
 
-      <section
-        transition:animate={fade({ duration: "1s" })}
-        class="flex flex-col gap-4 w-full lg:text-lg items-start leading-snug"
-      >
-        <Content />
-      </section>
+    <div class="flex gap-x-5">
+      {
+        entry.data.link &&
+          entry.data.link.map((l) => (
+            <a
+              href={l.url}
+              class="flex items-center gap-1 hover:text-indigo-300"
+            >
+              {l.icon && (
+                <span class={l.icon + " w-6 h-6 hover:text-indigo-300"} />
+              )}
+              {l.name}
+            </a>
+          ))
+      }
     </div>
-  </main>
-</ProjectLayout>
+  </div>
+
+  <Content />
+</ContentWrapper>

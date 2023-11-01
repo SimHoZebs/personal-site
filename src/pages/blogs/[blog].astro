@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import { fade } from "astro:transitions";
+import ContentWrapper from "../../components/ContentWrapper.astro";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blogs");
@@ -18,37 +19,16 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<ProjectLayout title={entry.data.title}>
-  <main class="w-full h-full flex flex-col items-center bg-slate-950 pt-5 px-5">
-    <div class="max-w-2xl w-full items-start">
-      <a
-        href={"../#" + entry.data.title}
-        class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
-      ></a>
-    </div>
-
-    <div
-      class="max-w-2xl w-full flex flex-col gap-y-10 overflow-y-scroll overflow-x-clip no-scrollbar pb-10"
+<ContentWrapper entry={entry}>
+  <div slot="header" class="flex flex-col gap-y-2 items-center">
+    <h3
+      id={entry.data.title}
+      class="text-6xl font-bold text-center"
+      transition:name={entry.data.title}
     >
-      <section class="flex flex-col gap-y-2 items-center mt-10">
-        <h3
-          id={entry.data.title}
-          class="text-6xl font-bold text-center"
-          transition:name={entry.data.title}
-        >
-          {entry.data.title}
-        </h3>
-        <div class="flex gap-x-5 text-sm">
-          ~{Math.floor(entry.body.split(" ").length / 238)} minute read
-        </div>
-      </section>
+      {entry.data.title}
+    </h3>
+  </div>
 
-      <section
-        transition:animate={fade({ duration: "1s" })}
-        class="flex flex-col gap-4 w-full lg:text-lg items-start leading-snug"
-      >
-        <Content />
-      </section>
-    </div>
-  </main>
-</ProjectLayout>
+  <Content />
+</ContentWrapper>

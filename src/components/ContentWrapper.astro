@@ -1,0 +1,35 @@
+---
+import { fade } from "astro:transitions";
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+const { entry } = Astro.props;
+---
+
+<ProjectLayout title={entry.data.title}>
+  <main class="w-full h-full flex flex-col items-center bg-slate-950 pt-5 px-5">
+    <div class="max-w-2xl w-full items-start">
+      <a
+        href={"../#" + entry.data.title}
+        class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
+      ></a>
+    </div>
+
+    <div
+      class="max-w-2xl w-full flex flex-col gap-y-10 overflow-y-scroll overflow-x-clip no-scrollbar pb-10"
+    >
+      <section class="flex flex-col gap-y-2 items-center mt-10">
+        <slot name="header" />
+        <p class="flex gap-x-5 text-sm">
+          ~{Math.floor(entry.body.split(" ").length / 238)} minute read
+        </p>
+      </section>
+
+      <section
+        transition:animate={fade({ duration: "1s" })}
+        class="flex flex-col gap-4 w-full lg:text-lg items-start leading-snug"
+      >
+        <slot />
+      </section>
+    </div>
+  </main>
+</ProjectLayout>

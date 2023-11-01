@@ -4,9 +4,13 @@ summary: So many products, too many reviews! Can we just get a summary, please?
 headerImage: ./icon-straight.png
 headerAlt: Review Generator 9000
 order: 1
-github: the-bigbrains/review-summarizer
 link:
   [
+    {
+      name: Github,
+      url: https://github.com/the-bigbrains/review-summarizer,
+      icon: "icon-[mdi--github]",
+    },
     {
       name: Devpost,
       url: https://devpost.com/software/review-generator-9000,
