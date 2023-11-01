@@ -31,6 +31,7 @@ const blogCollection = defineCollection({
       title: z.string(),
       summary: z.string(),
       isDraft: z.boolean(),
+      index: z.number(),
     }),
 });
 

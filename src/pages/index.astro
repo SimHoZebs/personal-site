@@ -11,17 +11,17 @@ import { getCollection } from "astro:content";
 // Example: retrieve `src/content/blog/**`
 const allProject = await getCollection("projects");
 allProject.sort((b, a) => b.data.order - a.data.order);
-const allBlog = (await getCollection("blogs")).filter(
-  (blog) => !blog.data.isDraft,
-);
+const allBlog = (await getCollection("blogs"))
+  .filter((blog) => !blog.data.isDraft)
+  .sort((a, b) => b.data.index - a.data.index);
 ---
 
 <Layout title="Sim Ho">
   <main
-    class="overflow-x-auto flex p-5 pb-20 flex-col w-full h-full justify-between gap-10 items-center"
+    class="overflow-x-auto flex px-5 py-20 flex-col w-full h-full justify-between gap-10 items-center"
   >
     <div
-      class="flex w-full flex-col items-center md:flex-row-reverse justify-evenly max-w-6xl gap-y-12 gap-x-4"
+      class="flex w-full flex-col items-start md:flex-row-reverse justify-evenly max-w-6xl gap-y-12 gap-x-4"
     >
       <section
         class="gap-y-2 items-center flex flex-col h-fit border-slate-800 p-3 rounded-xl md:bg-slate-900 md:border w-full md:w-64 min-w-[16rem]"
@@ -38,8 +38,8 @@ const allBlog = (await getCollection("blogs")).filter(
           <p
             class="flex gap-y-1 flex-col text-center md:text-start text-balance"
           >
-            I'm a full-stack software developer, and a freelance Korean-English
-            translator and a Computer Science student at University of Central
+            I'm a full-stack software developer, a freelance Korean-English
+            translator, and a Computer Science student at University of Central
             Florida. <span></span> I build projects on the side to solve minor,
             sometimes major problems I recognize.
           </p>
@@ -99,7 +99,8 @@ const allBlog = (await getCollection("blogs")).filter(
               href={"/blogs/" + blog.slug}
             >
               <h2
-                class="text-3xl font-bold text-balance text-center"
+                id={blog.data.title}
+                class="text-3xl font-bold text-balance"
                 transition:name={blog.data.title}
               >
                 {blog.data.title}
