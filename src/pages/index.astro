@@ -10,8 +10,10 @@ import { getCollection } from "astro:content";
 // Requires the name of the collection as an argument.
 // Example: retrieve `src/content/blog/**`
 const allProject = await getCollection("projects");
-const allBlog = await getCollection("blogs");
 allProject.sort((b, a) => b.data.order - a.data.order);
+const allBlog = (await getCollection("blogs")).filter(
+  (blog) => !blog.data.isDraft,
+);
 ---
 
 <Layout title="Sim Ho">
@@ -72,6 +74,7 @@ allProject.sort((b, a) => b.data.order - a.data.order);
                 title={project.data.title}
                 ref={project.slug}
                 img={project.data.headerImage}
+                alt={project.data.headerAlt}
               >
                 <p
                   class="text-balance text-center"
@@ -89,7 +92,7 @@ allProject.sort((b, a) => b.data.order - a.data.order);
     <section class="w-full flex items-center flex-col gap-y-5 max-w-4xl">
       <h1 class="text-5xl font-extrabold">Blog</h1>
       {
-        allBlog ? (
+        allBlog.length ? (
           allBlog.map((blog) => (
             <a
               class="flex flex-col max-w-xl gap-y-2"

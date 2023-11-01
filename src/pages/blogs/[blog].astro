@@ -1,16 +1,17 @@
 ---
 import { getCollection } from "astro:content";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { Image } from "astro:assets";
 import { fade } from "astro:transitions";
 
 export async function getStaticPaths() {
-  const projectEntries = await getCollection("blogs");
+  const blogEntries = await getCollection("blogs");
 
-  return projectEntries.map((entry) => ({
-    params: { blog: entry.slug },
-    props: { entry },
-  }));
+  return blogEntries
+    .filter((entry) => !entry.data.isDraft)
+    .map((entry) => ({
+      params: { blog: entry.slug },
+      props: { entry },
+    }));
 }
 
 const { entry } = Astro.props;
@@ -30,23 +31,12 @@ const { Content } = await entry.render();
       class="max-w-xl w-full flex flex-col gap-y-10 overflow-y-scroll overflow-x-clip no-scrollbar pb-10"
     >
       <section class="flex flex-col gap-y-2 items-center mt-10">
-        {
-          entry.data.headerImage ? (
-            <Image
-              height={54}
-              src={entry.data.headerImage}
-              alt="review summarizer 9000"
-              transition:name={entry.data.title}
-            />
-          ) : (
-            <h3
-              class="text-6xl font-bold text-center"
-              transition:name={entry.data.title}
-            >
-              {entry.data.title}
-            </h3>
-          )
-        }
+        <h3
+          class="text-6xl font-bold text-center"
+          transition:name={entry.data.title}
+        >
+          {entry.data.title}
+        </h3>
         <div class="flex gap-x-5"></div>
       </section>
 

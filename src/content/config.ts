@@ -9,6 +9,7 @@ const projectCollection = defineCollection({
       title: z.string(),
       summary: z.string(),
       headerImage: image().optional(),
+      headerAlt: z.string().optional(),
       order: z.number(),
       github: z.string(),
       live: z.string().optional(),
@@ -21,6 +22,7 @@ const blogCollection = defineCollection({
     z.object({
       title: z.string(),
       summary: z.string(),
+      isDraft: z.boolean(),
     }),
 });
 
