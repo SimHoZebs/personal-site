@@ -76,11 +76,14 @@ const { Content } = await entry.render();
             )
           }
         </div>
+        <div class="flex text-sm">
+          ~{Math.floor(entry.body.split(" ").length / 238)} minute read
+        </div>
       </section>
 
       <section
         transition:animate={fade({ duration: "1s" })}
-        class="flex flex-col gap-4 w-full lg:text-lg items-start leading-snug"
+        class="flex flex-col gap-4 w-full lg:text-lg items-start leading-snug tracking-wide"
       >
         <Content />
       </section>
