@@ -9,10 +9,7 @@ link:
       url: https://github.com/SimHoZebs/nedon,
       icon: "icon-[mdi--github]",
     },
-    { 
-      name: demo, 
-      url: https://nedon.vercel.app 
-    },
+    { name: demo, url: https://nedon.vercel.app },
   ]
 ---
 
@@ -31,6 +28,7 @@ Soon after, your app warns that you are getting close to your monthly budget. In
 ## Alternatives comparison
 
 <div class=" w-full overflow-x-scroll border-slate-800">
+
 | Features/Apps                      | Nedon   | Mint | RocketMoney  | GPay | SplitWise    | Honeydue        |
 | ---------------------------------- | ------- | ---- | ------------ | ---- | ------------ | --------------- |
 | Split with other users/groups      | O       | X    | Paid feature | O    | O            | Just one member |
@@ -44,7 +42,9 @@ Soon after, your app warns that you are getting close to your monthly budget. In
 | Web view                           | O       | O    | X            | X    | X            | X               |
 | Mobile app                         | Planned | O    | O            | O    | O            | O               |
 | Open source                        | O       | X    | X            | X    | X            | X               |
+
 </div>
+
 ### Nedon plans to offer/offers the following key features:
 
 - Transactions with multiple categories
