@@ -1,7 +1,7 @@
 ---
 title: review generator 9000
 summary: So many products, too many reviews! Can we just get a summary, please?
-headerImage: ./icon-straight.png
+headerImage: ../../assets/icon-straight.png
 headerAlt: Review Generator 9000
 order: 1
 link:
