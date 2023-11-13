@@ -1,14 +1,12 @@
 ---
 import { getCollection } from "astro:content";
-import ProjectLayout from "../../layouts/ProjectLayout.astro";
-import { fade } from "astro:transitions";
 import ContentWrapper from "../../components/ContentWrapper.astro";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blogs");
 
   return blogEntries
-    .filter((entry) => !entry.data.isDraft)
+    .filter((entry) => !entry.data.isDraft )
     .map((entry) => ({
       params: { blog: entry.slug },
       props: { entry },
@@ -24,9 +22,9 @@ const { Content } = await entry.render();
     <h3
       id={entry.data.title}
       class="text-5xl md:text-6xl font-bold text-center"
-      transition:name={entry.data.title}
+      transition:name={entry.data.title || entry.id.slice(0,-3)}
     >
-      {entry.data.title}
+      {entry.data.title || entry.id.slice(0,-3)}
     </h3>
   </div>
 

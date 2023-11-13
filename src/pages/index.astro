@@ -11,9 +11,9 @@ import { getCollection } from "astro:content";
 // Example: retrieve `src/content/blog/**`
 const allProject = await getCollection("projects");
 allProject.sort((b, a) => b.data.order - a.data.order);
+
 const allBlog = (await getCollection("blogs"))
   .filter((blog) => !blog.data.isDraft)
-  .sort((a, b) => b.data.index - a.data.index);
 ---
 
 <Layout title="Sim Ho">
@@ -101,12 +101,12 @@ const allBlog = (await getCollection("blogs"))
               <h2
                 id={blog.data.title}
                 class="text-3xl font-bold text-balance"
-                transition:name={blog.data.title}
+                transition:name={blog.data.title || blog.id.slice(0,-3)}
               >
-                {blog.data.title}
+                {blog.data.title || blog.id.slice(0,-3)}
               </h2>
               <div>
-                <p class="w-full text-start">{blog.data.summary}</p>
+                <p class="w-full text-start">{blog.data.summary || blog.body.split("\n")[0]}</p>
                 <a
                   class="font-semibold text-indigo-300"
                   href={"/blogs/" + blog.slug}

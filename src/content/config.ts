@@ -26,10 +26,9 @@ const blogCollection = defineCollection({
   type: "content",
   schema: ({ image }) =>
     z.object({
-      title: z.string(),
-      summary: z.string(),
-      isDraft: z.boolean(),
-      index: z.number(),
+      title: z.string().optional(),
+      summary: z.string().optional(),
+      isDraft: z.boolean().optional(),
     }),
 });
 
