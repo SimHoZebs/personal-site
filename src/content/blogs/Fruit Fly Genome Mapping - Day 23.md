@@ -1,0 +1,17 @@
+---
+published: 2016-11-24
+---
+
+As you can see with the spacing between each entry, I am a terrible student researcher. Perhaps the fact that only 4 was successful got me demotivated. Maybe I was just waiting for my teacher to buy some kind of food for the fruit flies, instead of buying them myself. Perhaps it’s all of what I said. Nevertheless, I neglected my fruit flies for a total of 9 days. As I walked towards the lab, I almost gave up on everything, thinking about other topics I could easily experiment in a short time to replace this failure of an experiment. There are some excuses, such as the National Exam, and the other things I just mentioned, but I still am in the wrong for not taking my experiment seriously.
+
+While I was away from the lab, I decided that there is no point in bringing sugar and yeast. I didn’t think it was too complicated to cook proper food for the fruit flies until I took a better look at the recipe. I decided to stick with bananas, the most popular simple food known to be given to fruit flies. I brought one today, hoping that the remaining four was still alive and that they haven’t choked on parasitic fungus. That would’ve been cool, though, since I could also switch my experiment topic to something that’s already complete.
+
+I looked through all my tubes, finding a shocking result: **Seven** tubes are successful. Eggs are invisible, to my naked eyes at least. I have explained why I thought six were unsuccessful, but I haven’t considered the fact that other tubes could mate way later than others. It was because it sounded unlikely, but that seems to be the case here.
+
+Three tubes are unsuccessful for obvious reasons; the food is completely covered in fungus, leaving no spot for fruit flies to live on. Another tube wasn’t covered in it, but it seems that the fruit dried out. Fortunately for the other seven, food hasn’t dried out. Well, that’s excluding one of the successful ones. Although it technically has no food, it has maggots, dead or alive. I’ll have to see them hatch, and if they don’t, then too bad.
+
+I gave each successful tubes a tiny slice of banana, and shockingly, in mere minutes I could see some maggots already crawling their way towards it, with even some already on it.
+
+In addition to my genome mapping, I decided to study the birth of fruit flies as well.
+
+It initially starts as eggs that are invisible to the naked eye, at least when in a fluid of food. Within a week it turns in to a white translucent worm, appearing to live without a problem inside the fluid of food. I have no idea how they supply themselves with oxygen, or if they even respire aerobically. Within another week the worm slowly turns more opaque, longer and thicker. Once they have matured, they climb up to a high point, or at least away from the vicinity of the fluid of food, and turns in to a pupae. As a pupae, they appear to be smaller than usual, but it is assumed that it only looked long before it turned in to a pupae because it extends its body in order to move at the stage. It stays still for (currently) unknown amount of time before turning in to a fruit fly. The very first features you can notice are the antennas that grow at the end of the maggot. Matching with countless number of thesis on embryo development, the head develops next, and continues down until ready to mature out of the pupae. I have been unable to see any grow out yet.
