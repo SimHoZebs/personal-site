@@ -6,7 +6,7 @@ const projectCollection = defineCollection({
   type: "content", // v2.5.0 and later
   schema: ({ image }) =>
     z.object({
-      title: z.string(),
+      title: z.string().optional(),
       summary: z.string(),
       headerImage: image().optional(),
       headerAlt: z.string().optional(),
@@ -28,7 +28,10 @@ const blogCollection = defineCollection({
     z.object({
       title: z.string().optional(),
       summary: z.string().optional(),
-      isDraft: z.boolean().optional(),
+      published: z.date().optional(),
+      edited: z.date().optional(),
+      isArchive: z.boolean().optional(),
+      tags: z.array(z.string()).optional()
     }),
 });
 
