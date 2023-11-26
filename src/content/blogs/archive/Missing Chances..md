@@ -3,7 +3,7 @@ published: 2017-03-22
 isArchive: true
 ---
 
-I had an idea about a glasses with an infra-red laser attached on its frame that scans the surrounding and displays whatever digital object/s of user’s desire on the lenses(screen) while considering the environment it is displayed on. In other words, Microsoft HoloLens. Yeah, just after few months, Microsoft announced their product. At first, I thought,&nbsp;“Damn, I was late by just few months!”, until I found out they patented the technology like, 5 years before.
+I had an idea about a glasses with an infra-red laser attached on its frame that scans the surrounding and displays whatever digital object/s of user’s desire on the lenses(screen) while considering the environment it is displayed on. In other words, Microsoft HoloLens. Yeah, just after few months, Microsoft announced their product. At first, I thought, “Damn, I was late by just few months!”, until I found out they patented the technology like, 5 years before.
 
 I don’t remember the next one I was late on, but it was another tech idea I had that was again announced few months later.
 
