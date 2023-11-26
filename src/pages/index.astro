@@ -23,16 +23,18 @@ const allBlogMetadata = allBlog.map((blog) => {
   let summary = body[1];
 
   let i = 2;
-  while (!summary.at(-1)?.match(/[.!?]$/) && i < body.length) {
+  //literally the first time I ever had to use this
+  do {
     if (summary.startsWith("#")) summary = "";
     if (summary) summary += "\n";
     summary += body[i];
     i++;
-  }
-  const readLength = Math.floor(blog.body.split(" ").length / 238);
+  } while (!summary.at(-1)?.match(/[.!?]$/) && i < body.length);
+
+  const readMin = Math.floor(blog.body.split(" ").length / 238);
 
   return {
-    readLength,
+    readMin,
     summary,
   };
 });
@@ -94,7 +96,7 @@ const allBlogMetadata = allBlog.map((blog) => {
             allProject.map((project) => (
               <Project
                 title={project.data.title}
-                ref={project.slug}
+                ref={project.slug.split("/").at(-1) || ""}
                 img={project.data.headerImage}
                 alt={project.data.headerAlt}
               >
@@ -118,7 +120,7 @@ const allBlogMetadata = allBlog.map((blog) => {
           allBlog.map((blog, i) => (
             <a
               class="flex flex-col w-full max-w-xl gap-y-2"
-              href={"/blogs/" + blog.slug}
+              href={"/blogs/" + blog.slug.split("/").at(-1)}
             >
               <h2
                 id={blog.data.title || blog.id.slice(0, -3)}
@@ -132,7 +134,7 @@ const allBlogMetadata = allBlog.map((blog) => {
                   {blog.data.published?.toLocaleDateString()}
                 </p>
                 <p class="text-sm text-zinc-400">
-                  ~{allBlogMetadata[i].readLength} min read
+                  ~{allBlogMetadata[i].readMin} min read
                 </p>
               </div>
 
