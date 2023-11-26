@@ -15,11 +15,32 @@ allProject.sort((b, a) => b.data.order - a.data.order);
 const allBlog = (await getCollection("blogs"))
   .filter((blog) => blog.data.published && !blog.data.isArchive)
   .sort((b, a) => a.data.published!.getTime() - b.data.published!.getTime());
+
+const allBlogMetadata = allBlog.map((blog) => {
+  const body = blog.body.split("\n");
+
+  //index 0 is frontmatter
+  let summary = body[1];
+
+  let i = 2;
+  while (!summary.at(-1)?.match(/[.!?]$/) && i < body.length) {
+    if (summary.startsWith("#")) summary = "";
+    if (summary) summary += "\n";
+    summary += body[i];
+    i++;
+  }
+  const readLength = Math.floor(blog.body.split(" ").length / 238);
+
+  return {
+    readLength,
+    summary,
+  };
+});
 ---
 
 <Layout title="Sim Ho">
   <main
-    class="overflow-x-auto flex px-5 py-20 flex-col w-full h-full justify-between gap-10 items-center"
+    class="overflow-x-hidden flex px-5 py-20 flex-col w-full h-full justify-between gap-10 items-center"
   >
     <div
       class="flex w-full flex-col items-start md:flex-row-reverse justify-evenly max-w-6xl gap-y-12 gap-x-4"
@@ -90,26 +111,36 @@ const allBlog = (await getCollection("blogs"))
       </section>
     </div>
 
-    <section class="w-full flex items-center flex-col gap-y-5 max-w-4xl">
-      <h1 class="text-5xl font-extrabold">Blog</h1>
+    <section class="w-full flex items-center flex-col gap-y-5 max-w-xl">
+      <h1 class="text-5xl font-extrabold">Writing</h1>
       {
         allBlog.length ? (
-          allBlog.map((blog) => (
+          allBlog.map((blog, i) => (
             <a
-              class="flex flex-col max-w-xl gap-y-2"
+              class="flex flex-col w-full max-w-xl gap-y-2"
               href={"/blogs/" + blog.slug}
             >
               <h2
-                id={blog.data.title}
-                class="text-3xl font-bold text-balance"
+                id={blog.data.title || blog.id.slice(0, -3)}
+                class="text-3xl font-bold"
                 transition:name={blog.data.title || blog.id.slice(0, -3)}
               >
                 {blog.data.title || blog.id.slice(0, -3)}
               </h2>
-              <div>
-                <p class="w-full text-start">
-                  {blog.data.summary || blog.body.split("\n")[0]}
+              <div class="flex gap-x-5">
+                <p class="text-sm text-zinc-400">
+                  {blog.data.published?.toLocaleDateString()}
                 </p>
+                <p class="text-sm text-zinc-400">
+                  ~{allBlogMetadata[i].readLength} min read
+                </p>
+              </div>
+
+              <div class="flex flex-col w-full">
+                {blog.data.summary ||
+                  allBlogMetadata[i].summary
+                    .split("\n")
+                    .map((line) => <p class="w-full text-start">{line}</p>)}
                 <a
                   class="font-semibold text-indigo-300"
                   href={"/blogs/" + blog.slug}

@@ -5,12 +5,10 @@ import ContentWrapper from "../../components/ContentWrapper.astro";
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blogs");
 
-  return blogEntries
-    .filter((entry) => !entry.data.isDraft )
-    .map((entry) => ({
-      params: { blog: entry.slug },
-      props: { entry },
-    }));
+  return blogEntries.map((entry) => ({
+    params: { blog: entry.slug },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
@@ -22,9 +20,9 @@ const { Content } = await entry.render();
     <h3
       id={entry.data.title}
       class="text-5xl md:text-6xl font-bold text-center"
-      transition:name={entry.data.title || entry.id.slice(0,-3)}
+      transition:name={entry.data.title || entry.id.slice(0, -3)}
     >
-      {entry.data.title || entry.id.slice(0,-3)}
+      {entry.data.title || entry.id.slice(0, -3)}
     </h3>
   </div>
 
