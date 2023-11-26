@@ -20,16 +20,16 @@ const allBlogMetadata = allBlog.map((blog) => {
   const body = blog.body.split("\n");
 
   //index 0 is frontmatter
-  let summary = body[1];
+  let summary = body[1].trim();
 
   let i = 2;
   //literally the first time I ever had to use this
-  do {
-    if (summary.startsWith("#")) summary = "";
-    if (summary) summary += "\n";
-    summary += body[i];
+  while (!summary.match(/[\.!?;~:]$/) && i < body.length - 1) {
+    if (summary.match(/^[\#\*\-\>]/)) summary = body[i].trim();
+    else summary += "\n" + body[i].trim();
+
     i++;
-  } while (!summary.at(-1)?.match(/[.!?]$/) && i < body.length);
+  }
 
   const readMin = Math.floor(blog.body.split(" ").length / 238);
 
