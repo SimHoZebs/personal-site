@@ -23,9 +23,11 @@ const allBlogMetadata = allBlog.map((blog) => {
   let summary = body[1].trim();
 
   let i = 2;
-  //literally the first time I ever had to use this
-  while (!summary.match(/[\.!?;~:]$/) && i < body.length - 1) {
-    if (summary.match(/^[\#\*\-\>]/)) summary = body[i].trim();
+  while (
+    (summary.match(/^[#*>]/) || !summary.match(/[\.!?;~:]$/)) &&
+    i < body.length - 1
+  ) {
+    if (summary.match(/^[#*>]/)) summary = body[i].trim();
     else summary += "\n" + body[i].trim();
 
     i++;
@@ -118,39 +120,42 @@ const allBlogMetadata = allBlog.map((blog) => {
       {
         allBlog.length ? (
           allBlog.map((blog, i) => (
-            <a
-              class="flex flex-col w-full max-w-xl gap-y-2"
-              href={"/blogs/" + blog.slug.split("/").at(-1)}
-            >
-              <h2
-                id={blog.data.title || blog.id.slice(0, -3)}
-                class="text-3xl font-bold"
-                transition:name={blog.data.title || blog.id.slice(0, -3)}
+            <div class="flex w-full flex-col gap-y-1">
+              <a
+                class="flex flex-col w-full max-w-xl gap-y-2"
+                href={"/blogs/" + blog.slug.split("/").at(-1)}
               >
-                {blog.data.title || blog.id.slice(0, -3)}
-              </h2>
-              <div class="flex gap-x-5">
-                <p class="text-sm text-zinc-400">
-                  {blog.data.published?.toLocaleDateString()}
-                </p>
-                <p class="text-sm text-zinc-400">
-                  ~{allBlogMetadata[i].readMin} min read
-                </p>
-              </div>
-
-              <div class="flex flex-col w-full">
-                {blog.data.summary ||
-                  allBlogMetadata[i].summary
-                    .split("\n")
-                    .map((line) => <p class="w-full text-start">{line}</p>)}
-                <a
-                  class="font-semibold text-indigo-300"
-                  href={"/blogs/" + blog.slug}
+                <h2
+                  id={blog.data.title || blog.id.slice(0, -3)}
+                  class="text-3xl font-bold"
+                  transition:name={blog.data.title || blog.id.slice(0, -3)}
                 >
-                  Read more
-                </a>
-              </div>
-            </a>
+                  {blog.data.title || blog.id.slice(0, -3)}
+                </h2>
+
+                <div class="flex gap-x-5">
+                  <p class="text-sm text-zinc-400">
+                    {blog.data.published?.toLocaleDateString()}
+                  </p>
+                  <p class="text-sm text-zinc-400">
+                    ~{allBlogMetadata[i].readMin} min read
+                  </p>
+                </div>
+
+                <div class="flex flex-col w-full">
+                  {blog.data.summary ||
+                    allBlogMetadata[i].summary
+                      .split("\n")
+                      .map((line) => <p class="w-full text-start">{line}</p>)}
+                </div>
+              </a>
+              <a
+                class="self-start font-semibold text-indigo-300"
+                href={"/blogs/" + blog.slug}
+              >
+                Read more
+              </a>
+            </div>
           ))
         ) : (
           <p>Coming soon...</p>
