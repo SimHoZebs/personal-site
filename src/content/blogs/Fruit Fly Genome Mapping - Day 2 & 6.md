@@ -5,7 +5,7 @@ tags: ["FFGM"]
 
 ## Day 2
 
-I (Sim Ho) came to school as early as possible to check on the problems we had on the first day. As I’ve said before, many who we thought died of overdose of anesthetic woke up, except a Wild type, and two female YellowBody type. I had no fruit available at home to provide the clean tubes food, which was going to be a problem. Fortunately, one of the tubes I named&nbsp;‘???’ is empty of fruit flies, just left of food. I named it ‘???’ because I had no idea what combination of fruit flies were in there. It took me a while to realize there are none. I scraped a good portion out of the tube and shared it among the tubes with no food, where fruit flies immediately stuck their mouths to.
+I (Sim Ho) came to school as early as possible to check on the problems we had on the first day. As I’ve said before, many who we thought died of overdose of anesthetic woke up, except a Wild type, and two female YellowBody type. I had no fruit available at home to provide the clean tubes food, which was going to be a problem. Fortunately, one of the tubes I named ‘???’ is empty of fruit flies, just left of food. I named it ‘???’ because I had no idea what combination of fruit flies were in there. It took me a while to realize there are none. I scraped a good portion out of the tube and shared it among the tubes with no food, where fruit flies immediately stuck their mouths to.
 
 ![image](https://64.media.tumblr.com/83b6bef8561177d302e127f9e9c664e1/tumblr_inline_ogowh1rPob1ryo8a8_540.jpg)
 

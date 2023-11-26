@@ -5,7 +5,8 @@ tags: ["FFGM"]
 
 ## Day 7
 
-I reported the results I got on Day 6 to my teammates, and asked for their help on this day. We spent the day cleaning all tubes clean of food and maggots, and placing fruits in them. A BentWing Type and a Wild Type was found dead, or at least not awake till this morning, so we replace them too.&nbsp;
+I reported the results I got on Day 6 to my teammates, and asked for their help on this day. We spent the day cleaning all tubes clean of food and maggots, and placing fruits in them. A BentWing Type and a Wild Type was found dead, or at least not awake till this morning, so we replace them too.
+
 ![image](https://64.media.tumblr.com/6c4afd8d660d44d5ed6f646328459b5b/tumblr_inline_oh7hihbY7X1ryo8a8_540.jpg)
 
 We have abundance of leftover fruit flies so it’s not a problem if some die. The problem, in fact, is that there are too many left over. If we don’t complete our experiment soon, we won’t be able to release these fruit flies. The leftover flies will reproduce exponentially, eventually run out of food in the tube and experience holocaust. It’s not a problem in terms of science, but it just sounds cruel.

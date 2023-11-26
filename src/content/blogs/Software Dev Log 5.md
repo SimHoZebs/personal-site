@@ -3,7 +3,7 @@ published: 2020-09-01
 tags: ["software dev log"]
 ---
 
-2020/AUG/18th - 2020/SEP/1st
+## 2020/AUG/18th - 2020/SEP/1st
 
 Here I am on a streak of being on time. Studies are going smoother everyday, and I'm loving it.
 

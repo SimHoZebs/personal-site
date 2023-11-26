@@ -3,7 +3,7 @@ published: 2020-08-18
 tags: ["software dev log"]
 ---
 
-2020/AUG/4th - 2020/AUG/18th
+## 2020/AUG/4th - 2020/AUG/18th
 
 I'm on time again! Well, a day late, but better than taking a month.
 
