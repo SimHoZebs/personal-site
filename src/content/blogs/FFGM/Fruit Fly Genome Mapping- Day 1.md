@@ -12,13 +12,15 @@ I left the package next to the trash can of our class just in case I might have 
 ![image](https://64.media.tumblr.com/3080d82bd8ebc9c8492996598c40d985/tumblr_inline_oh7frlCrFP1ryo8a8_540.jpg)
 
 The styrofoam box contained 4 mutated fruit flies and 1 wild type, 6 bottles each. The mutated are as the following: Brown Eyed, White Eyed, Yellow Body, and Bent Wing. My class teacher forgot to order Antennapedia mutation, one with extra legs on where there should be antennas.
+
 ![image](https://64.media.tumblr.com/90b3c13e80c1344534c37b8d98ff8148/tumblr_inline_oh7fsfjnaM1ryo8a8_540.jpg)
 
 Along with the box came 5 bottles of Dimethyl ether: our anesthetic. I didn’t my club teacher would order this many.
 
 My objective today was to make all possible mixes of fruit flies. In each test tubes that I didn’t prepare, I needed to put just a male and a female in it. All I knew about the difference between a male and a female is that male fruit flies have considerably smaller abdomen than female ones. And that was it.
 
-To be completely honest, I wasn’t fully prepared. I didn’t think it would be hard, or rather impossible, to find the appropriate amount of ether for fruit flies on the internet. Because obviously, I knew too much would kill them. After minutes of searching, I decided to judge the appropriate amount on my own. I also didn’t plan **how **to anesthetize them. But thanks to my quick thinking, I poured a drop of ether on to the foam cap, and let it diffuse into the tube.
+To be completely honest, I wasn’t fully prepared. I didn’t think it would be hard, or rather impossible, to find the appropriate amount of ether for fruit flies on the internet. Because obviously, I knew too much would kill them. After minutes of searching, I decided to judge the appropriate amount on my own. I also didn’t plan **how** to anesthetize them. But thanks to my quick thinking, I poured a drop of ether on to the foam cap, and let it diffuse into the tube.
+
 ![image](https://64.media.tumblr.com/0a85478b62e266ca2abaf8e90392439b/tumblr_inline_oh7g67SDp31ryo8a8_540.jpg)
 
 As I laid down the anesthetized fruit flies, I found that I couldn’t tell by just looking. I had to compare other characteristics of each sex: the lines on their abdomen, or their sex organs. Thankfully, my club teacher noticed this and immediately lent me a microscope. At this point, I realized how long it will take me to see the difference between fruit flies, and how long this entire thing would take.
