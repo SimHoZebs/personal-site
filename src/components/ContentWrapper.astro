@@ -6,17 +6,17 @@ const { entry } = Astro.props;
 ---
 
 <ProjectLayout title={entry.data.title}>
-  <main class="w-full h-full flex flex-col items-center bg-slate-950 pt-5 px-5 overflow-scroll no-scrollbar">
+  <main
+    class="w-full h-full flex flex-col items-center bg-slate-950 pt-5 px-5 overflow-scroll no-scrollbar"
+  >
     <div class="max-w-2xl w-full items-start">
       <a
-        href={"../#" + entry.data.title}
+        href={"../#" + (entry.data.title || entry.id.slice(0, -3))}
         class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
       ></a>
     </div>
 
-    <div
-      class="max-w-2xl w-full flex flex-col gap-y-10 pb-10"
-    >
+    <div class="max-w-2xl w-full flex flex-col gap-y-10 pb-10">
       <section class="flex flex-col gap-y-2 items-center mt-10">
         <slot name="header" />
         <p class="flex gap-x-5 text-sm">
