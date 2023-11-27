@@ -11,5 +11,4 @@ Today is where I'm motivated enough for the third time. I've done a bit more res
 I'm using [LearnPyQt](https://www.learnpyqt.com/) website to learn, and it's pretty convenient. It's free (the text version anyway), and the tutorial is pretty good at explaining things. I've gone through 2 parts of the first chapter and so far it's been going pretty well. I'm gonna finish this day off writing the key things that I want to remember in the future.
 
 - `self.setGeometry()` can take `self.left`, `self.top` arguments and set a size and position on launch.
-
 - Qpixmap functions save state changes to the object calling it. It does not need to be reassigned.
