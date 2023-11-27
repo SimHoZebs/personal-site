@@ -1,5 +1,5 @@
 ---
-date: 2016-11-24
+published: 2016-11-24
 tags: ["FFGM"]
 ---
 
@@ -7,9 +7,9 @@ tags: ["FFGM"]
 
 **Hello, we are the Student Genetics Research Group!** I assume you are either a teacher, evaluating the work our team did for the mini-thesis competition, since I’ll have linked this English version on the Korean one. Or you are me. There is a chance mathematically that you are a random person on the internet who randomly stumbled upon my blog, but I don’t think it’s significant enough to count.
 
-I am Sim Ho(심호), the head of our&nbsp;“Research” team. We have two other members; Song Tae Hee (송태희), and Park Sae Young(박세영), who appears when I need help.
+I am Sim Ho(심호), the head of our “Research” team. We have two other members; Song Tae Hee (송태희), and Park Sae Young(박세영), who appears when I need help.
 
-In this post, I’ll be introducing the reason behind our motivation to&nbsp;‘research’ this topic, and what we are actually doing in as much detail as possible.
+In this post, I’ll be introducing the reason behind our motivation to ‘research’ this topic, and what we are actually doing in as much detail as possible.
 
 As a member of a program that I won’t talk about in detail for the sake of staying in topic, I had the chance to visit a professor’s lab for around half a year. One of many questions I asked him was about his on going research, and he replied me that he doesn’t have anything going on at the time, but that he previously did a lot of research on fruit flies.
 
