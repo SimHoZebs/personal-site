@@ -23,11 +23,13 @@ const allBlogMetadata = allBlog.map((blog) => {
   let summary = body[1].trim();
 
   let i = 2;
+  const markdown = /^[!#*>]/;
+  const ending = /[\.!?;~:]$/;
   while (
-    (summary.match(/^[#*>]/) || !summary.match(/[\.!?;~:]$/)) &&
+    (summary.match(markdown) || !summary.match(ending)) &&
     i < body.length - 1
   ) {
-    if (summary.match(/^[#*>]/)) summary = body[i].trim();
+    if (summary.match(markdown)) summary = body[i].trim();
     else summary += "\n" + body[i].trim();
 
     i++;

@@ -1,17 +1,25 @@
 ---
 import { fade } from "astro:transitions";
 import ProjectLayout from "../layouts/ProjectLayout.astro";
+import { getStaticPaths as getBlog } from "../pages/blogs/[blog].astro";
+import { getStaticPaths as getProject } from "../pages/projects/[project].astro";
 
-const { entry } = Astro.props;
+type Blog = Awaited<ReturnType<typeof getBlog>>[0]["props"]["entry"];
+type Project = Awaited<ReturnType<typeof getProject>>[0]["props"]["entry"];
+
+const { entry }: { entry: Blog | Project } = Astro.props as { entry: Blog };
+
+if (!entry.data.title)
+  entry.data.title = entry.id.split("/").at(-1)!.slice(0, -3);
 ---
 
 <ProjectLayout title={entry.data.title}>
   <main
-    class="w-full h-full flex flex-col items-center bg-slate-950 pt-5 px-5 overflow-scroll no-scrollbar"
+    class="w-full h-full flex flex-col items-center bg-slate-950 py-5 px-5 overflow-scroll no-scrollbar"
   >
     <div class="max-w-2xl w-full items-start">
       <a
-        href={"../#" + (entry.data.title || entry.id.slice(0, -3))}
+        href={"../#" + entry.data.title}
         class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
       ></a>
     </div>
@@ -19,18 +27,27 @@ const { entry } = Astro.props;
     <div class="max-w-2xl w-full flex flex-col gap-y-10 pb-10">
       <section class="flex flex-col gap-y-2 items-center mt-10">
         <slot name="header" />
-        <p class="flex gap-x-5 text-sm">
-          ~{Math.floor(entry.body.split(" ").length / 238)} minute read
-        </p>
-      </section>
-
-      <section
-        transition:animate={fade({ duration: "1s" })}
-        class="flex flex-col gap-4 w-full md:text-lg items-start leading-snug"
-      >
-        <slot />
+        <div class="items-center flex gap-x-5 text-sm text-zinc-400">
+          {
+            entry.data.published && (
+              <p class="text-balance">
+                Published: {entry.data.published.toUTCString().slice(0, -13)}
+              </p>
+            )
+          }
+          <p class="whitespace-nowrap">
+            ~{Math.floor(entry.body.split(" ").length / 238)} min read
+          </p>
+        </div>
       </section>
     </div>
+
+    <section
+      transition:animate={fade({ duration: "1s" })}
+      class="flex flex-col gap-4 max-w-2xl w-full md:text-lg items-start leading-snug"
+    >
+      <slot />
+    </section>
   </main>
 </ProjectLayout>
 
@@ -41,7 +58,8 @@ const { entry } = Astro.props;
       p.style.display = "flex";
       p.style.alignItems = "center";
       p.style.flexDirection = "column";
-      p.style.gap = "1rem";
+      p.style.gap = "0.5rem";
+      p.style.textAlign = "center";
     }
   });
 </script>

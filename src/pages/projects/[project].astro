@@ -13,6 +13,8 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+if (!entry.data.title)
+  entry.data.title = entry.id.split("/").at(-1)!.slice(0, -3);
 const { Content } = await entry.render();
 ---
 
@@ -31,7 +33,7 @@ const { Content } = await entry.render();
           class="text-5xl md:text-6xl font-bold text-center"
           transition:name={entry.data.title}
         >
-          {entry.data.title || entry.id.split("/").at(-1)?.slice(0, -3)}
+          {entry.data.title}
         </h1>
       )
     }
