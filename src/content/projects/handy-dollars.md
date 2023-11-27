@@ -19,7 +19,7 @@ link:
 
 ## Inspiration
 
-Our main motivation for undertaking this project is from a common issue we’ve experienced in the business world: users usually cannot access in-depth information about a transaction on their banking apps. By enabling customers to upload and link physics receipts, we aim to promote financial responsibility and intelligent budgeting.
+Our main motivation for undertaking this project is from a common issue we've experienced in the business world: users usually cannot access in-depth information about a transaction on their banking apps. By enabling customers to upload and link physics receipts, we aim to promote financial responsibility and intelligent budgeting.
 
 ## What it does
 

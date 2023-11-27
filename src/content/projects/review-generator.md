@@ -64,7 +64,7 @@ We are also proud to successfully implement a Windows 95 design to the landing p
 
 ## What we learned
 
-We have learned how to web scrape using Puppeteer and effectively gathered and parsed relevant data for the project’s purpose.
+We have learned how to web scrape using Puppeteer and effectively gathered and parsed relevant data for the project's purpose.
 
 We have also learned how to inject the finalized HTML element onto the Amazon web page itself.
 
@@ -72,8 +72,8 @@ We have also learned how to inject the finalized HTML element onto the Amazon we
 
 - Support for other e-commerce platforms, such as Walmart, Target and Best Buy
 - Faster and More Efficient responses
-- Using AI to scrape reviews from any website instead of “manual” scraping.
-- Determine if reviews were AI-generated and give an “overall legitimacy score”
+- Using AI to scrape reviews from any website instead of "manual" scraping.
+- Determine if reviews were AI-generated and give an "overall legitimacy score"
 - Provide references to the summary to validate the summary
 - Allow user feedback on our product
 

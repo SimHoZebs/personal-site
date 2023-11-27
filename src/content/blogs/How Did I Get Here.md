@@ -5,7 +5,7 @@ edited: 2023-11-26
 index: 0
 ---
 
-> Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I’m still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
+> Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I'm still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
 > \ - Me, in my 2018 post [Goals](./Goals#2-my-goals-and-plans)
 
 I guess thunders do strike.
@@ -35,13 +35,13 @@ There was a rising entertainment platform called YouTube, where I watched my fir
 ![](../../assets/blogs/chrome_B9PnEC41qq.gif)
 <small> My first and only animation stored in my computer.</small>
 
-It didn’t take long for me to discover my first Minecraft video, which I weirdly remember to this day: it was the COD zombie mod showcase by CaptainSparklez. That led to discovering AntVenom, YogsCast, Sky, EditZP, and many others that I don’t even remember anymore. I watched their playthroughs religiously, and was instantly hooked on the game.
+It didn't take long for me to discover my first Minecraft video, which I weirdly remember to this day: it was the COD zombie mod showcase by CaptainSparklez. That led to discovering AntVenom, YogsCast, Sky, EditZP, and many others that I don't even remember anymore. I watched their playthroughs religiously, and was instantly hooked on the game.
 
 After some time, I started to find slight frustrations with the Minecraft content on YouTube. These YouTubers were either missing the obvious or lacked game knowledge. They weren't being as efficient as they could be. I believed I could play better than them, and to prove it, I started my own YouTube channel and show people how you truly play Minecraft. The best player[^the-best].
 
 ## My First 'Career' - YouTube
 
-The word “career” wasn’t on my mind when I started uploading videos, but it was the first time I actively tried to make something for the world to see. I spent all day recording mod reviews and adventure map playthroughs, then went to sleep with my laptop rendering videos overnight. I started with no money, a pirated copy of Minecraft and FRAPS (a recording software popular before OBS existed), random free video editor, and my terrible laptop with half a gig of RAM (That's right; 512MB RAM in 2012). By the peak of my YouTube career, I gathered around 5000 subscribers and became a partner at TGN because they let me receive revenue through PayPal (YouTube limited to checks with minimum $100 withdrawal). It wasn't a lot, of course, but it was enough to buy games for friends who had cash in their hands but couldn’t ask their parents. I eventually bought myself Minecraft, too. It was also the first time I went to a bank, pulled out a check from Google, and gave my mom.
+The word "career" wasn't on my mind when I started uploading videos, but it was the first time I actively tried to make something for the world to see. I spent all day recording mod reviews and adventure map playthroughs, then went to sleep with my laptop rendering videos overnight. I started with no money, a pirated copy of Minecraft and FRAPS (a recording software popular before OBS existed), random free video editor, and my terrible laptop with half a gig of RAM (That's right; 512MB RAM in 2012). By the peak of my YouTube career, I gathered around 5000 subscribers and became a partner at TGN because they let me receive revenue through PayPal (YouTube limited to checks with minimum $100 withdrawal). It wasn't a lot, of course, but it was enough to buy games for friends who had cash in their hands but couldn't ask their parents. I eventually bought myself Minecraft, too. It was also the first time I went to a bank, pulled out a check from Google, and gave my mom.
 
 YouTube was an incredible experience, but my channel was fragile. Despite all the effort I put in my videos, most of them performed poorly. Vast majority of my views and subscribers came from a handful of videos, with just a single video being responsible for more than half of them. When I left TGN to pursue better partners, most of my best performing videos were coincidentally taken down. This was when I realized that being fun wasn't easy. I wasn't a great entertainer.
 
