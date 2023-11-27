@@ -14,10 +14,10 @@ Ever since I started 'Bank Account Interest Calculator Development' I didn't tou
 
 This project continued for more than a day because I thought my code's result was wrong. It took me 15 days to figure out that it was right all along, but by then the project became more than just to find the result, but to see how far I can optimize my code while following & learning common programming conventions.
 
-In my last post's last image, I put `.sort()` at the end of the list assigned to variable `interval_interest`. This was to sort the items in ascending order based on `item[0]`, which is important for a later process.
+In my [last post](./Software%20Dev%20Log%201)'s last image, I put `.sort()` at the end of the list assigned to variable `interval_interest`. This was to sort the items in ascending order based on `item[0]`, which is important for a later process.
 
 ![image](https://i.gyazo.com/c55c31f99200530ead35e12a66d34f32.png)
-last post's last image.
+<small>last post's last image.</small>
 
 But then I'd get this error on line 9:
 
@@ -30,7 +30,7 @@ Later I found out that removing `.sort()`, and writing `interval_interest.sort()
 I also briefly talked about utilizing dictionaries for storing values, and - while it's great - that it's hard to tell what value each index of the dictionary means. Take a look at the image below as an example.
 
 ![image](https://i.gyazo.com/c94496cbb91737f878f435dc46904ee3.png)
-Writing this part of the post on JUL 19; I have no idea why the code is that way, but the general explanation of this code is on later paragraphs.
+<small>Writing this part of the post on JUL 19; I have no idea why the code is that way, but the general explanation of this code is on later paragraphs.</small>
 
 Even for myself, this was hard to look at as I need a moment to remember what `interval_interest[1][0]` means, and not to confuse it with `interval_interest[0][1]`. Later I decided this isn't how I should represent these data. I should define each as a function.
 
@@ -39,7 +39,7 @@ Even for myself, this was hard to look at as I need a moment to remember what `i
 This made the code look much, much better.
 
 ![image](https://i.gyazo.com/0d34993b445162da67c3d690bb14adff.png)
-I don't know why the second for loop is nested in the first one.
+<small>I don't know why the second for loop is nested in the first one.</small>
 
 I have a bit of an issue with functions, however. I don't know if I should have constants/out-of-local variables called as arguments, or called as global. The constant in this case being `interval_interest`. I called it as an argument for now, but now that I think about it as I'm writing this, it makes more sense to call it as global, since no argument other than subject should be available to change.
 
@@ -50,7 +50,7 @@ Now finally to talk about how this code differs from the first one; It's the sam
 There is still a lot wrong with this code. Below is the result from running the code, which is very different from what I should be getting.
 
 ![image](https://i.gyazo.com/3a6a16f15f19218885fc080be8fd27a9.png)
-LEGEND IS NOT THE SAME AS PREVIOUS GRAPH. Green - KDB, Yellow - 0.6% yearly interest paid yearly, Blue - Kakao
+<small>LEGEND IS NOT THE SAME AS PREVIOUS GRAPH. Green - KDB, Yellow - 0.6% yearly interest paid yearly, Blue - Kakao</small>
 
 It's almost 2 months since I started this project, which should've taken weeks at best. Same goes for this log, taking about 20 days to finish up. I could've been making more progress with studies if this was already over with. But on the bright side, I'm learning a lot more than I expected myself to through this weird little project. I hope to be done with it by this month at maximum so I can go back to learning Kivy.
 

@@ -1,8 +1,8 @@
 ---
-title: review generator 9000
+title: Review Summarizer 9000
 summary: So many products, too many reviews! Can we just get a summary, please?
 headerImage: ../../assets/icon-straight.png
-headerAlt: Review Generator 9000
+headerAlt: Review Summarizer 9000
 order: 1
 link:
   [
