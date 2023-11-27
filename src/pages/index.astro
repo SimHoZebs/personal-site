@@ -130,7 +130,7 @@ const allBlogMetadata = allBlog.map((blog) => {
                   class="text-3xl font-bold"
                   transition:name={blog.data.title || blog.id.slice(0, -3)}
                 >
-                  {blog.data.title || blog.id.slice(0, -3)}
+                  {blog.data.title || blog.id.split("/").at(-1)?.slice(0, -3)}
                 </h2>
 
                 <div class="flex gap-x-5">

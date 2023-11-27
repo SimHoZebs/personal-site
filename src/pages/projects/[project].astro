@@ -27,12 +27,12 @@ const { Content } = await entry.render();
           transition:name={entry.data.title}
         />
       ) : (
-        <h3
+        <h1
           class="text-5xl md:text-6xl font-bold text-center"
           transition:name={entry.data.title}
         >
-          {entry.data.title}
-        </h3>
+          {entry.data.title || entry.id.split("/").at(-1)?.slice(0, -3)}
+        </h1>
       )
     }
     <p

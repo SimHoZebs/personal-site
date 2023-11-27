@@ -22,13 +22,13 @@ const { Content } = await entry.render();
 
 <ContentWrapper entry={entry}>
   <div slot="header" class="flex flex-col gap-y-2 items-center">
-    <h3
+    <h1
       id={entry.data.title}
       class="text-5xl md:text-6xl font-bold text-center"
       transition:name={entry.data.title || entry.id.slice(0, -3)}
     >
-      {entry.data.title || entry.id.slice(0, -3)}
-    </h3>
+      {entry.data.title || entry.id.split("/").at(-1)?.slice(0, -3)}
+    </h1>
   </div>
 
   <Content />
