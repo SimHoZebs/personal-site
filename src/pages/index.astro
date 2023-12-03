@@ -155,7 +155,7 @@ const allBlogMetadata = allBlog.map((blog) => {
               </a>
               <a
                 class="self-start font-semibold text-indigo-300"
-                href={"/blogs/" + blog.slug}
+                href={"/blogs/" + blog.slug.split("/").at(-1)}
               >
                 Read more
               </a>
