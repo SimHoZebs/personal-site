@@ -7,7 +7,6 @@ export async function getStaticPaths() {
 
   return blogEntries.map((entry) => {
     const slug = entry.slug.split("/");
-    console.log(slug.at(-1));
 
     return {
       params: { blog: slug.at(-1) },
