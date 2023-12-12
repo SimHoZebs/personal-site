@@ -15,10 +15,11 @@ if (!entry.data.title)
 
 <ProjectLayout title={entry.data.title}>
   <main
-    class="w-full h-full flex flex-col items-center bg-slate-950 py-5 px-5 overflow-scroll no-scrollbar"
+    class="w-full h-full flex flex-col items-center bg-slate-950 pt-5 pb-20 px-5 overflow-scroll no-scrollbar"
   >
     <div class="max-w-2xl w-full items-start">
       <a
+        aria-label="Back to home"
         href={"../#" + entry.data.title}
         class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
       ></a>

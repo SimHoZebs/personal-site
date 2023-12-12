@@ -42,6 +42,29 @@ const allBlogMetadata = allBlog.map((blog) => {
     summary,
   };
 });
+
+const links = [
+  {
+    name: "Github",
+    link: "https://www.github.com/simhozebs",
+    icon: "icon-[mdi--github]",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/ho-sim",
+    icon: "icon-[mdi--linkedin]",
+  },
+  {
+    name: "Resume",
+    link: "https://docs.google.com/document/d/1yXDo4FQeariyfwQLz2nxvy9rSGXuu54MK_4Co6hzNu4/edit?usp=sharing",
+    icon: "icon-[mdi--resume]",
+  },
+  {
+    name: "email",
+    link: "mailto:%73%69%6d%68%6f%7a%65%62%73%40%67%6d%61%69%6c%2e%63%6f%6d",
+    icon: "icon-[mdi--email]",
+  },
+];
 ---
 
 <Layout title="Sim Ho">
@@ -74,16 +97,16 @@ const allBlogMetadata = allBlog.map((blog) => {
           <div class="flex self-center justify-between">
             <!-- <a href="" class="font-semibold text-indigo-400">Learn more</a> -->
             <div class="flex gap-2">
-              <a
-                aria-label="Github"
-                href="https://www.github.com/simhozebs"
-                class="icon-[mdi--github] w-6 h-6"
-                target="_blank"></a>
-              <a
-                aria-label="LinkedIn"
-                href="https://www.linkedin.com/in/ho-sim"
-                target="_blank"
-                class="icon-[mdi--linkedin] w-6 h-6"></a>
+              {
+                links.map((link) => (
+                  <a
+                    href={link.link}
+                    class={"flex w-6 h-6 hover:text-indigo-400 " + link.icon}
+                  >
+                    <p>{link.name}</p>
+                  </a>
+                ))
+              }
             </div>
           </div>
         </div>
