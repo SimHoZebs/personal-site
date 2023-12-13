@@ -13,7 +13,4 @@ export default defineConfig({
       remarkObsidianCallout
     ]
   },
-  experimental: {
-    contentCollectionCache: true,
-  }
 });
