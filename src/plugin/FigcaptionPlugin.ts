@@ -6,31 +6,26 @@ function rehypePlugin() {
   return (tree: Node) => {
     visit(tree, 'element', (node: Element) => {
 
-      if (node.tagName === 'p') {
-        const imgIndex = node.children.findIndex((child) => child.type === 'element' && child.tagName === 'img');
+      if (node.tagName !== 'p') return;
 
-        const pIndex = node.children.findIndex((child) => child.type === 'text');
+      if (node.children.length < 2 || !node.children.find((child) => (child.type === 'element' && child.tagName === 'img'))) return;
 
-        if (imgIndex !== -1 && pIndex !== -1) {
+      const figcaptionNode: ElementContent = {
+        type: 'element',
+        tagName: 'figcaption',
+        children: node.children.slice(1),
+        properties: {}
+      };
 
-          const figcaptionNode: ElementContent = {
-            type: 'element',
-            tagName: 'figcaption',
-            children: [node.children[pIndex]],
-            properties: {}
-          };
+      const figureNode: ElementContent = {
+        type: 'element',
+        tagName: 'figure',
+        children: [node.children[0], figcaptionNode],
+        properties: {}
+      };
 
-          const figureNode: ElementContent = {
-            type: 'element',
-            tagName: 'figure',
-            children: [node.children[imgIndex], figcaptionNode],
-            properties: {}
-          };
+      node.children = [figureNode];
 
-
-          node.children = [figureNode];
-        }
-      }
     });
   };
 }
