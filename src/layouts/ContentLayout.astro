@@ -1,6 +1,5 @@
 ---
 import "@fontsource-variable/space-grotesk";
-import "@fontsource/iosevka";
 import "@fontsource/iosevka-aile";
 import { ViewTransitions } from "astro:transitions";
 interface Props {
@@ -32,10 +31,20 @@ const { title } = Astro.props;
         display: none;
       }
 
-      p:has(img) {
+      figure {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        max-height: 90vh;
+      }
+
+      figcaption {
         width: 100%;
         font-size: 14px;
-        display: flex;
         align-items: center;
         flex-direction: column;
         gap: 0.5rem;
@@ -95,6 +104,10 @@ const { title } = Astro.props;
         border-radius: 4px;
       }
 
+      code:has(span) {
+        padding: 0.5rem;
+      }
+
       blockquote {
         padding: 1rem;
         border-radius: 0.5rem;
@@ -108,7 +121,6 @@ const { title } = Astro.props;
         font-size: 16px;
         align-self: center;
         text-wrap: wrap;
-        padding: 2px 4px;
         border-radius: 0.5rem;
       }
 
@@ -122,6 +134,7 @@ const { title } = Astro.props;
       .footnotes {
         font-size: 14px;
       }
+
       .footnotes > h2 {
         font-size: x-large;
       }
