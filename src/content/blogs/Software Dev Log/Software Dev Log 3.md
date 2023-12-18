@@ -40,7 +40,7 @@ After giving up on the project and resting from the whole thing for a bit, I got
 The biggest issue I had with the study was understanding what goes in .kv, and what goes in .py. Now I know that .kv is kind of like a .html, and .py is like the .js for it. I don't know why it was hard to see that in the previous tutorial; perhaps both of them helped in reaching this understanding. By this day, AUG 3rd, I finished the Ping Pong tutorial and learned how to turn it into an executable file through PyInstaller.
 
 ![image](../../../assets/blogs/b1f4948bcb25f6f6c2a4b29521182515.png)
-<small>woops, I shipped it with the small dot I placed as a debugger to find the collision point of the ball.</small>
+woops, I shipped it with the small dot I placed as a debugger to find the collision point of the ball.
 
 Despite this progress, I decided to drop Kivy Study as well indefinitely. The reason comes from my story on how I decided to learn Kivy (That'd also start from how I started learning Python, but we'll skip that bit). It's been over a year since my first "Hello, World!" in Python (I attempted to learn other languages before), and I've insisted on utilizing it for something. The problem was that I didn't have anything I wanted to do with it yet. I didn't have a particularly strong interest in data analysis and AI development that it's so well known for, nor was I sure that my hardware and I could handle it. I knew it's also popular for web framework (Flask), web scraping (Requests), and just as a scripting tool, but nothing really caught my attention. This was an issue, because I knew the language, but didn't have anything I want to do with it.
 
