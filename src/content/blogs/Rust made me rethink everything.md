@@ -1,5 +1,6 @@
 ---
 published: 2023-12-17
+edited: 2023-12-17
 ---
 
 Rust is the 5th language I'm learning seriously. First was Python, then C#, JavaScript/TypeScript, and C. I've dabbled with Java, and wrote a bit of Lua, but not enough to say I know them. But throughout all these years, no language has blown my mind as much as Rust has, and I'm just getting started. 
@@ -26,23 +27,21 @@ With the intro out of the way, here's a growing list of things that I learned in
 > [!Note]
 > All the features I'm talking about may exist in other languages or in the languages I think I know very well, but unaware of. I'd love to know them, so feel free to contact me @SimHoZebs on Twitter about it.
 
-## Error handling
-
-You can't change how languages work, but you sure as hell can make error messages as readable as Rust does. Rust compiler doesn't just tell you what and where the error is - it tells you what you might want to do to fix it too.
-
-## rust-analyzer
+## Error handling and rust-analyzer
 
 ![](../../assets/blogs/rust-examples-chatgpt.png)
 
-This isn't exactly the language itself, but language support on editors are inseparable in modern-day programming. DX goes down the trash without basic autocomplete and linting support. 
+This isn't exactly about the language itself, but language support on editors is inseparable from programming languages in modern-day programming. DX goes down the trash without basic autocomplete and linting support. 
 
-As someone learning the language, I feel gifted whenever I hover over a new method and see incredible examples. Paired with ChatGPT and coding problems, I don't need to watch hour-long tutorials to learn the language. JS/TS, and AFAIR, Python doesn't give examples, only descriptions.
+As a learner, I feel gifted whenever I hover over a new method and see incredible examples. Paired with ChatGPT and coding problems, I don't need to watch hour-long tutorials to learn the language. JS/TS, and AFAIR, Python doesn't give examples, only descriptions.
+
+Oh, and the error messages. You can't change how languages work, but you sure as hell can make error messages as readable as Rust does. Rust compiler doesn't just tell you what and where the error is - it tells you what you might want to do to fix it too. Why can't we have this for every language?
 
 ## `Result<T>` and `Option<T>`
 
 File system can crash. Type conversion may fail, and not all `char` can convert to an integer. JS/TS doesn't care whether that happens; it's up to you to wrap it with a `try/catch` clause.
 
-With `Result<T>` and `Option<T>`, you are forced to handle the error and narrow the type down. Reading a file?  Well, it may be `String` or `Error`. Using `.to_digit()`? It might be `u32` or `None`!
+With `Result<T>` and `Option<T>`, you are forced to handle the error and narrow the type down. Reading a file?  Well, it may be `String` or `Error`. Using `.to_digit()`? It might be `u32` or `None`! I love that Rust makes me handle errors when they may happen, instead of being weirdly optimistic like JS/TS.
 
 ### `if let`
 
@@ -56,7 +55,7 @@ let foo = if let Some(digit) = char.to_digit(10) {
 };
 ```
 
-Bro, what?
+... what?
 
 For those who don't know (and my future self in case I get dementia), `if let` is a statement that assigns a variable a value if the condition is true; and when the condition is true, run the lines in its curly brace.
 
@@ -72,7 +71,7 @@ let char = '9';
 let foo = char.parse::<u32>().unwrap_or(0);
 ```
 
-But then I wouldn't have brought this up.
+Regardless, it's quite an interesting syntax. It's somewhat confusing to read at first, but I can see the option to conditionally initialize a variable being useful.
 
 ## `string.split()`
 
