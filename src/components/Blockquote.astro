@@ -1,0 +1,8 @@
+---
+const props = Astro.props;
+console.log("props: ", props);
+---
+
+<blockquote {...props} class="p-4 rounded-md bg-indigo-400 bg-opacity-20">
+  <slot />
+</blockquote>
