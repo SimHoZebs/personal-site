@@ -2,6 +2,7 @@
 published: 2023-12-17
 edited: 2023-12-17
 ---
+Alternate title: JS dev shocked to learn Rust is indeed a low-level language
 
 Rust is the 5th language I'm learning seriously. First was Python, then C#, JavaScript/TypeScript, and C. I've dabbled with Java, and wrote a bit of Lua, but not enough to say I know them. But throughout all these years, no language has blown my mind as much as Rust has, and I'm just getting started. 
 
@@ -107,6 +108,12 @@ for word in string.split(' '){
 }
 ```
 
+You can explicitly split everything with `split().collect()`, but unlike JS/TS, the returned array does not contain new copies of these strings. The array simply stores references (pointers) to the start of each substring. This means the following is impossible:
+
+```rust
+let array = string.replace("guys", "people").split(' ');
+//the above doesn't work because the string the split occurred on no longer exists after the operation.
+```
+
 ChatGPT is telling me this *is* possible with JS by making a generator function (it's pretty cool). Still, it's quite amazing to see this as the default.
 
-(If you want to store an array in a variable, `split().collect()`)

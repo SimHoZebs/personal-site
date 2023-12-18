@@ -21,7 +21,7 @@ const { title } = Astro.props;
     <title>{title}</title>
     <ViewTransitions fallback="swap" />
   </head>
-  <body class="font-sans text-zinc-300 w-screen h-screen">
+  <body class="font-sans text-zinc-300 w-screen h-screen bg-slate-950">
     <slot />
     <style is:global>
       .text-balance {
@@ -90,6 +90,26 @@ const { title } = Astro.props;
 
       code {
         font-family: "Iosevka Aile", "Courier New", Courier, monospace;
+        background-color: #24292e;
+        padding: 0px 2px;
+        border-radius: 4px;
+      }
+
+      blockquote {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: rgba(129, 140, 248, 0.2);
+      }
+
+      pre {
+        display: flex;
+        width: 70ch;
+        max-width: 100%;
+        font-size: 16px;
+        align-self: center;
+        text-wrap: wrap;
+        padding: 2px 4px;
+        border-radius: 0.5rem;
       }
 
       a {

@@ -1,9 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import ContentWrapper from "../../components/ContentWrapper.astro";
-import Blockquote from "../../components/Blockquote.astro";
-import Code from "../../components/Code.astro";
-import Pre from "../../components/Pre.astro";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blogs");
@@ -35,5 +32,5 @@ const { Content } = await entry.render();
     </h1>
   </div>
 
-  <Content components={{ blockquote: Blockquote, pre: Pre, code: Code }} />
+  <Content />
 </ContentWrapper>
