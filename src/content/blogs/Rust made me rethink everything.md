@@ -26,7 +26,7 @@ I also have some projects in mind that would make use of it as well. I'm expecti
 With the intro out of the way, here's a growing list of things that I learned in Rust and have comments on.
 
 > [!Note]
-> All the features I'm talking about may exist in other languages or in the languages I think I know very well, but unaware of. I'd love to know them, so feel free to contact me @SimHoZebs on Twitter about it.
+> All the features I'm talking about may exist in other languages or in the languages I think I know very well, but unaware of. I'd love to know them, so feel free to contact me [@SimHoZebs](https://twitter.com/SimHoZebs) about it.
 
 ## Error handling and rust-analyzer
 

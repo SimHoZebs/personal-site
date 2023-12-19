@@ -1,6 +1,6 @@
 ---
 import { fade } from "astro:transitions";
-import ProjectLayout from "../layouts/ContentLayout.astro";
+import ContentLayout from "../layouts/ContentLayout.astro";
 import { getStaticPaths as getBlog } from "../pages/blogs/[blog].astro";
 import { getStaticPaths as getProject } from "../pages/projects/[project].astro";
 
@@ -13,12 +13,12 @@ if (!entry.data.title)
   entry.data.title = entry.id.split("/").at(-1)!.slice(0, -3);
 ---
 
-<ProjectLayout title={entry.data.title}>
+<ContentLayout title={entry.data.title}>
   <main
     class="w-full h-full flex flex-col items-center bg-slate-950 pb-20 px-5 overflow-scroll no-scrollbar"
   >
     <nav class="self-start sticky top-0 z-10 pt-5">
-      <div class="bg-slate-950 w-fit rounded-full p-2 justify-center">
+      <div class="bg-slate-950 flex rounded-full p-2">
         <a
           title="Back to home"
           href={"../#" + entry.data.title}
@@ -31,7 +31,9 @@ if (!entry.data.title)
     <div class="max-w-2xl w-full flex flex-col gap-y-10 pb-10">
       <section class="flex flex-col gap-y-2 items-center mt-10">
         <slot name="header" />
-        <div class="items-center flex gap-x-5 text-sm text-zinc-400">
+        <div
+          class="items-center w-full justify-evenly flex gap-x-5 text-sm text-zinc-400"
+        >
           {
             entry.data.published && (
               <p class="text-balance">
@@ -55,9 +57,9 @@ if (!entry.data.title)
 
     <article
       transition:animate={fade({ duration: "1s" })}
-      class="flex flex-col gap-4 max-w-2xl w-full md:text-lg items-start leading-snug"
+      class="flex flex-col gap-4 max-w-2xl w-full sm:text-lg items-start leading-snug"
     >
       <slot />
     </article>
   </main>
-</ProjectLayout>
+</ContentLayout>
