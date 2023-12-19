@@ -1,6 +1,6 @@
 import { visit } from 'unist-util-visit';
 import type { Node } from 'unist';
-import type { Element, ElementContent } from 'hast';
+import type { Element, ElementContent, Text } from 'hast';
 
 function isElement(node: Node): node is Element {
   return node.type === 'element';
@@ -17,9 +17,50 @@ function rehypePlugin() {
       //callout and quote distinction
       if (node.tagName === "blockquote") {
 
-        const pEl = node.children.find((child) => child.type === "element" && child.children && child.children.find(grandChild => grandChild.type === "text" && grandChild.value.startsWith("[!")));
+        const calloutElIndex = node.children.findIndex((child) => child.type === "element" && child.children && child.children.find(grandChild => grandChild.type === "text" && grandChild.value.startsWith("[!")));
 
-        node.properties = { className: pEl ? "callout" : "quote" };
+        node.properties = { className: calloutElIndex != -1 ? "callout" : "quote" };
+
+
+        if (calloutElIndex < 0) return;
+
+        const calloutEl = node.children[calloutElIndex] as Element;
+        const firstTextIndex = (calloutEl).children.findIndex(child => child.type === "text");
+
+        if (firstTextIndex < 0) return;
+
+        const firstTextSplit = (calloutEl.children[firstTextIndex] as Text).value.split("\n");
+        const calloutType = firstTextSplit[0].replace("[!", "").replace("]", "").toLowerCase();
+
+        switch (calloutType) {
+          case "warning":
+          case "danger":
+          case "caution":
+            node.properties.className = "callout bg-red-400/20";
+            break;
+          case "question":
+            node.properties.className = "callout bg-orange-400/20";
+            break;
+          default:
+            node.properties.className = "callout bg-indigo-400/20";
+            break;
+        }
+
+        const callOutTextEl: Element = {
+          type: "element",
+          tagName: "p",
+          children: [
+            {
+              type: "text",
+              value: firstTextSplit[0]
+            }
+          ],
+          properties: {}
+        };
+
+        (calloutEl.children[firstTextIndex] as Text).value = firstTextSplit[1];
+        node.children.splice(calloutElIndex - 1, 0, callOutTextEl);
+
 
       }
 
