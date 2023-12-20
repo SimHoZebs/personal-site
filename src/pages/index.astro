@@ -162,20 +162,22 @@ const links = [
                 </h2>
 
                 <div class="flex gap-x-5">
-                  <p class="text-sm text-zinc-400">
+                  <p class="text-sm text-zinc-500">
                     {blog.data.published?.toLocaleDateString()}
                   </p>
-                  <p class="text-sm text-zinc-400">
+                  <p class="text-sm text-zinc-500">
                     ~{allBlogMetadata[i].readMin} min read
                   </p>
                 </div>
 
-                <div class="flex flex-col w-full">
+                <p class="flex flex-col w-full text-zinc-400">
                   {blog.data.summary ||
                     allBlogMetadata[i].summary
                       .split("\n")
-                      .map((line) => <p class="w-full text-start">{line}</p>)}
-                </div>
+                      .map((line) => (
+                        <p class="w-full text-start text-zinc-400">{line}</p>
+                      ))}
+                </p>
               </a>
               <a
                 class="self-start font-semibold text-indigo-300"

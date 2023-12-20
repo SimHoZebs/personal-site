@@ -25,6 +25,13 @@ const { title } = Astro.props;
     <style is:global>
       :root {
         --small-size: 640px;
+        --text-zinc-300: rgb(212, 212, 216);
+        --text-zinc-400: rgb(161, 161, 170);
+      }
+
+      p {
+        /*text-zinc-400 */
+        color: var(--text-zinc-400);
       }
 
       .text-balance {
@@ -67,7 +74,7 @@ const { title } = Astro.props;
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
-        color: rgb(161 161 170);
+        color: var(--text-zinc-400);
       }
 
       /* Hide scrollbar for IE, Edge and Firefox */
@@ -120,6 +127,7 @@ const { title } = Astro.props;
         background-color: #24292e;
         padding: 0px 2px;
         border-radius: 4px;
+        color: var(--text-zinc-300);
       }
 
       code:has(span) {
