@@ -147,4 +147,22 @@ This got me wondering: how does Rust know where a character starts in memory, th
 
 In a sense, Rust _could_ technically iterate over a string by decoding on the go, but that would certainly be less performant than jumping a fixed number of bytes.
 
-And that is all I have to say so far! This post will continue to update as I continue learning Rust (by solving [Advent of Code 2023](https://adventofcode.com)). Please feel free to share your thoughts by reaching out to me on [Twitter](https://twitter.com/simhozebs)(https://twitter.com/simhozebs)
+And that is all I have to say so far! This post will continue to update as I continue learning Rust (by solving [Advent of Code 2023](https://adventofcode.com)). Please feel free to share your thoughts by reaching out to me on [Twitter](https://twitter.com/simhozebs)
+
+## Small things I learned from ChatGPT
+
+#### `usize`
+
+>`u32` and `usize` are both unsigned integer types in Rust, but they have different uses and sizes.
+>
+>`u32` is a 32-bit unsigned integer type. It can represent values from 0 to 4,294,967,295.
+>
+>`usize`, on the other hand, is an unsigned integer type whose size is determined by the architecture of the machine the program is running on. On a 32-bit architecture, `usize` is 32 bits, and on a 64-bit architecture, `usize` is 64 bits.
+
+So on a 64bit architecture, it would be more efficient to use `u32` if we know that the variable's value is going to fit under 32 bits, correct?
+
+>In terms of memory usage, a `u32` will indeed use less memory than a `usize` on a 64-bit architecture, because a `u32` is always 32 bits, while a `usize` is 64 bits on a 64-bit architecture.
+>
+>However, in terms of performance, the difference is usually negligible. Modern CPUs are optimized for their native word sizes (32 bits on a 32-bit CPU, 64 bits on a 64-bit CPU), so operations on `usize` can be faster than operations on `u32` on a 64-bit CPU, even though `usize` uses more memory.
+>
+>In general, you should use `usize` for sizes, lengths, and indices, because these need to be able to address the entire memory space. For other numbers that have a known range, you can use `u32`, `u16`, `u8`, etc. to save memory.
