@@ -8,6 +8,9 @@ import figcaptionPlugin from "./src/plugin/FigcaptionPlugin";
 export default defineConfig({
   integrations: [react(), tailwind(), mdx()],
   markdown: {
-    rehypePlugins: [figcaptionPlugin]
+    rehypePlugins: [figcaptionPlugin],
+    shikiConfig: {
+      theme: "github-dark-dimmed",
+    }
   }
 });

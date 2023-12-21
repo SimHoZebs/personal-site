@@ -20,22 +20,18 @@ const { title } = Astro.props;
     <title>{title}</title>
     <ViewTransitions fallback="swap" />
   </head>
-  <body class="font-sans text-zinc-300 w-screen h-screen bg-slate-950">
+  <body class="font-sans text-custom w-screen h-screen bg-slate-950">
     <slot />
     <style is:global>
       :root {
         --small-size: 640px;
-        --text-zinc-300: rgb(212, 212, 216);
-        --text-zinc-400: rgb(161, 161, 170);
+        --code-bg: #22272e;
+        --zinc-300: rgb(212, 212, 216);
+        --zinc-400: rgb(161, 161, 170);
+        --slate-900: rgb(15, 23, 42);
       }
-
-      p {
-        /*text-zinc-400 */
-        color: var(--text-zinc-400);
-      }
-
-      .text-balance {
-        text-wrap: balance;
+      .text-custom {
+        color: #adbac7;
       }
 
       .no-scrollbar::-webkit-scrollbar {
@@ -53,7 +49,8 @@ const { title } = Astro.props;
 
       .quote {
         border-width: 0 0 0 4px;
-        padding-left: 2rem;
+        border-color: rgb(129, 140, 248, 0.7);
+        padding-left: 1rem;
       }
 
       figure {
@@ -74,7 +71,7 @@ const { title } = Astro.props;
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
-        color: var(--text-zinc-400);
+        color: var(--zinc-400);
       }
 
       /* Hide scrollbar for IE, Edge and Firefox */
@@ -87,6 +84,7 @@ const { title } = Astro.props;
         margin: 4px 0px;
         font-size: x-large;
         font-weight: 700;
+        color: var(--zinc-300);
       }
 
       h3 {
@@ -124,10 +122,10 @@ const { title } = Astro.props;
 
       code {
         font-family: "Iosevka Aile", "Courier New", Courier, monospace;
-        background-color: #24292e;
+        color: var(--zinc-300);
+        background-color: var(--code-bg);
         padding: 0px 2px;
         border-radius: 4px;
-        color: var(--text-zinc-300);
       }
 
       code:has(span) {
@@ -147,7 +145,7 @@ const { title } = Astro.props;
       a {
         font-weight: 600;
         --tw-text-opacity: 1;
-        color: rgb(129 140 248 / var(--tw-text-opacity));
+        color: rgb(129 140 248);
         text-decoration-line: underline;
       }
 
@@ -169,7 +167,7 @@ const { title } = Astro.props;
       td {
         font-size: 16px;
         border-width: 1px;
-        border-color: rgb(30 41 59 / var(--tw-border-opacity));
+        border-color: rgb(30, 41, 59);
       }
     </style>
   </body>

@@ -88,7 +88,7 @@ const links = [
             Hi! I'm Ho Sim <br /> (심호).
           </p>
 
-          <p class="flex gap-y-1 flex-col text-center md:text-start">
+          <p class="flex gap-y-1 flex-col text-center md:text-start text-custom">
             I'm a full-stack software developer, a freelance Korean-English
             translator, and a Computer Science student at University of Central
             Florida. <span></span> I'm building tools to help people organize
@@ -162,20 +162,20 @@ const links = [
                 </h2>
 
                 <div class="flex gap-x-5">
-                  <p class="text-sm text-zinc-500">
+                  <p class="text-sm text-zinc-400">
                     {blog.data.published?.toLocaleDateString()}
                   </p>
-                  <p class="text-sm text-zinc-500">
+                  <p class="text-sm text-zinc-400">
                     ~{allBlogMetadata[i].readMin} min read
                   </p>
                 </div>
 
-                <p class="flex flex-col w-full text-zinc-400">
+                <p class="flex flex-col w-full text-custom">
                   {blog.data.summary ||
                     allBlogMetadata[i].summary
                       .split("\n")
                       .map((line) => (
-                        <p class="w-full text-start text-zinc-400">{line}</p>
+                        <p class="w-full text-start text-custom">{line}</p>
                       ))}
                 </p>
               </a>

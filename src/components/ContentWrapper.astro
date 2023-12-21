@@ -29,10 +29,10 @@ if (!entry.data.title)
     </nav>
 
     <div class="max-w-2xl w-full flex flex-col gap-y-10 pb-10">
-      <section class="flex flex-col gap-y-2 items-center mt-10">
+      <section class="flex flex-col gap-y-2 items-center mt-10 text-zinc-300">
         <slot name="header" />
         <div
-          class="items-center w-full justify-evenly flex gap-x-5 text-sm text-zinc-400"
+          class="items-center w-full justify-evenly flex gap-x-5 text-sm text-custom"
         >
           {
             entry.data.published && (
@@ -57,7 +57,7 @@ if (!entry.data.title)
 
     <article
       transition:animate={fade({ duration: "1s" })}
-      class="flex flex-col gap-4 max-w-2xl w-full sm:text-lg items-start leading-snug"
+      class="flex flex-col gap-4 max-w-2xl w-full text-lg items-start leading-snug"
     >
       <slot />
     </article>

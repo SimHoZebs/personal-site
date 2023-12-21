@@ -11,22 +11,22 @@
     "prettier": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.0.1",
-    "@astrojs/react": "^3.0.7",
-    "@astrojs/tailwind": "^5.0.3",
+    "@astrojs/mdx": "^2.0.2",
+    "@astrojs/react": "^3.0.8",
+    "@astrojs/tailwind": "^5.0.4",
     "@fontsource-variable/space-grotesk": "^5.0.16",
     "@fontsource/iosevka": "^5.0.7",
     "@fontsource/iosevka-aile": "^5.0.7",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
-    "astro": "^4.0.6",
+    "astro": "^4.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.6",
+    "tailwindcss": "^3.4.0",
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.158",
+    "@iconify/json": "^2.2.160",
     "@iconify/tailwind": "^0.1.4",
     "@types/hast": "^3.0.3",
     "@types/node": "^20.10.5",
