@@ -11,6 +11,6 @@ export default defineConfig({
     rehypePlugins: [figcaptionPlugin],
     shikiConfig: {
       theme: "github-dark-dimmed",
-    }
-  }
+    },
+  },
 });

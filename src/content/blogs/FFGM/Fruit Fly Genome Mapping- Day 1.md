@@ -33,6 +33,6 @@ This is Tae Hee washing a tube that he selected out of the 30 tubes we have. Res
 
 ![image](https://64.media.tumblr.com/4522702947d153886f6340d4dcd19d05/tumblr_inline_oh7gh0ZN6V1ryo8a8_540.jpg)
 
-After around 4 to 5 hours of work, we finally finished them. Because of our unbalanced doses of ether, some woke up as early as we wanted, and some stayed asleep too long for us to think they were alive at first. Some never woke up. Some of the tubes had food (we left some of the tubes uncleaned, because they were visibly empty of other fruit flies and maggots. We cleaned up the ones we weren't sure), but the worry was on the ones that don't. I knew that fruit flies could live at least for 12 hours without food, so we plan to give them rotting fruit by tomorrow morning. 
+After around 4 to 5 hours of work, we finally finished them. Because of our unbalanced doses of ether, some woke up as early as we wanted, and some stayed asleep too long for us to think they were alive at first. Some never woke up. Some of the tubes had food (we left some of the tubes uncleaned, because they were visibly empty of other fruit flies and maggots. We cleaned up the ones we weren't sure), but the worry was on the ones that don't. I knew that fruit flies could live at least for 12 hours without food, so we plan to give them rotting fruit by tomorrow morning.
 
 Whatever other problems we have, we will deal with them on the next day. We are done for today.

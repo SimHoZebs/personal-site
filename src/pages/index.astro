@@ -3,8 +3,9 @@ import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import profilePic from "../assets/profile.jpg";
 import Project from "../components/Project.astro";
-
+import links from "../util/links";
 import { getCollection } from "astro:content";
+import Footer from "../components/Footer.astro";
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
@@ -42,34 +43,11 @@ const allBlogMetadata = allBlog.map((blog) => {
     summary,
   };
 });
-
-const links = [
-  {
-    name: "Github",
-    link: "https://www.github.com/simhozebs",
-    icon: "icon-[mdi--github]",
-  },
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/ho-sim",
-    icon: "icon-[mdi--linkedin]",
-  },
-  {
-    name: "Resume",
-    link: "https://docs.google.com/document/d/1yXDo4FQeariyfwQLz2nxvy9rSGXuu54MK_4Co6hzNu4/edit?usp=sharing",
-    icon: "icon-[mdi--resume]",
-  },
-  {
-    name: "email",
-    link: "mailto:%73%69%6d%68%6f%7a%65%62%73%40%67%6d%61%69%6c%2e%63%6f%6d",
-    icon: "icon-[mdi--email]",
-  },
-];
 ---
 
 <Layout title="Sim Ho">
   <main
-    class="overflow-x-hidden flex px-5 py-20 flex-col w-full h-full justify-between gap-10 items-center"
+    class="overflow-x-hidden flex px-5 pt-20 flex-col w-full h-full justify-between gap-10 items-center"
   >
     <div
       class="flex w-full flex-col items-start md:flex-row-reverse justify-evenly max-w-6xl gap-y-12 gap-x-4"
@@ -88,7 +66,9 @@ const links = [
             Hi! I'm Ho Sim <br /> (심호).
           </p>
 
-          <p class="flex gap-y-1 flex-col text-center md:text-start text-custom">
+          <p
+            class="flex gap-y-1 flex-col text-center md:text-start text-custom"
+          >
             I'm a full-stack software developer, a freelance Korean-English
             translator, and a Computer Science student at University of Central
             Florida. <span></span> I'm building tools to help people organize
@@ -192,5 +172,7 @@ const links = [
         )
       }
     </section>
+
+    <Footer />
   </main>
 </Layout>

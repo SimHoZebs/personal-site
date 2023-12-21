@@ -7,7 +7,7 @@ Before I say anything, this is about my thoughts and feelings I get about the ca
 
 So now that I have my point straight, let me explain what 'POSTECH' even is. Well, actually, I would if I actually had readers, but since I don't, I'll just link their [website](http://wwwhome.postech.ac.kr/web/eng/ersh_02_02) and I guess you can see it for yourself.
 
-The reason for this post is to clear up my conflict and be clear about how I feel about the camp's program. 
+The reason for this post is to clear up my conflict and be clear about how I feel about the camp's program.
 
 POSTECH, [one of the best technology universities](http://www.home.postech.ac.kr/web/eng/eint_05_05) in Korea, is inviting 50 students all over the country to learn and experience things from their facilities for 3 days and 2 nights. There are around 2000 high schools in Korea, and a school can only recommend a single student from their school. I'm the top second (or third, I'm not sure) of my shitty school(what do I mean by this? [See last paragraph](http://wildkidappeared.tumblr.com/post/150071956035/goals)), and the first isn't interested for reasons, so I'm next up for recommendation. I'm for certain I'm not going to be selected, because on their recommendation instructions, they have mentioned that the student being recommended must have ranked rank two or above(top 11% or above) for most of the subjects in school. Unfortunately, I ranked rank 3 for Earth Science this term. It's really unfortunate because I ranked rank 1 for everything else. Well, excluding Chemistry(rank 2). But despite the rank for Earth Science, my teacher wants send the recommendation form anyway. So I'm sitting here in front of a computer in our school's i-lecture viewing room writing this.
 

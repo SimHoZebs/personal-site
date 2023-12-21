@@ -1,0 +1,23 @@
+---
+import links from "../util/links";
+---
+
+<footer
+  class="my-20 gap-y-5 flex flex-col items-center w-full max-w-2xl text-zinc-500"
+>
+  <div class="gap-10 flex">
+    {
+      links.map((link) => (
+        <a
+          title={link.name}
+          href={link.link}
+          class={
+            "flex w-6 h-6 hover:text-indigo-400 text-zinc-500 " + link.icon
+          }
+        />
+      ))
+    }
+  </div>
+
+  <p>©️ 2023 Ho Sim</p>
+</footer>

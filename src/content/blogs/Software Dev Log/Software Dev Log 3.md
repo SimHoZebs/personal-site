@@ -3,7 +3,6 @@ published: 2020-08-03
 tags: ["software dev log"]
 ---
 
-
 It's been a bit more than two weeks, but still this is a good time to write this. I don't have much to say for most of the weeks, but I made some big progress in the last few days and I'm excited to share it.
 
 Here are the topics of discussion for today's post:

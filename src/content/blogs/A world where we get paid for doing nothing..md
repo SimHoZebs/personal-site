@@ -10,4 +10,4 @@ I'm not sure if the economic system is wrong, or the political system is, or the
 
 But of course, not all poor families are like me, and not all countries are like Korea. Not all of what my teacher tells me are right, and even more to what I think I know about the world outside of my high school. There is a problem with the economic system that I am not aware of, and it needs to be fixed. Just by hearing that the financial disparity between two classes are getting bigger, and that all elections have the candidates saying they will increase taxes for the high class, money distribution seems to one of the cause of the disparity(although, this is probably not true, since they are likely saying that to get the popular vote from voters who are uneducated in economics and politics like me to vote for them, while not solving the core problem). Out of many, robots taking over jobs is one, and I believe this factor will increasingly become more problematic over time.
 
-So how about 
+So how about

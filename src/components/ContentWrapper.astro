@@ -3,6 +3,7 @@ import { fade } from "astro:transitions";
 import ContentLayout from "../layouts/ContentLayout.astro";
 import { getStaticPaths as getBlog } from "../pages/blogs/[blog].astro";
 import { getStaticPaths as getProject } from "../pages/projects/[project].astro";
+import Footer from "./Footer.astro";
 
 type Blog = Awaited<ReturnType<typeof getBlog>>[0]["props"]["entry"];
 type Project = Awaited<ReturnType<typeof getProject>>[0]["props"]["entry"];
@@ -15,7 +16,7 @@ if (!entry.data.title)
 
 <ContentLayout title={entry.data.title}>
   <main
-    class="w-full h-full flex flex-col items-center bg-slate-950 pb-20 px-5 overflow-scroll no-scrollbar"
+    class="w-full h-full flex flex-col items-center bg-slate-950 px-5 overflow-scroll no-scrollbar"
   >
     <nav class="self-start sticky top-0 z-10 pt-5">
       <div class="bg-slate-950 flex rounded-full p-2">
@@ -28,8 +29,8 @@ if (!entry.data.title)
       </div>
     </nav>
 
-    <div class="max-w-2xl w-full flex flex-col gap-y-10 pb-10">
-      <section class="flex flex-col gap-y-2 items-center mt-10 text-zinc-300">
+    <header class="max-w-2xl w-full flex flex-col gap-y-10 pb-10">
+      <section class="flex flex-col gap-y-3 items-center mt-10 text-zinc-300">
         <slot name="header" />
         <div
           class="items-center w-full justify-evenly flex gap-x-5 text-sm text-custom"
@@ -53,7 +54,7 @@ if (!entry.data.title)
           </p>
         </div>
       </section>
-    </div>
+    </header>
 
     <article
       transition:animate={fade({ duration: "1s" })}
@@ -61,5 +62,7 @@ if (!entry.data.title)
     >
       <slot />
     </article>
+
+    <Footer />
   </main>
 </ContentLayout>
