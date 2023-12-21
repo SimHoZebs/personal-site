@@ -146,3 +146,5 @@ This got me wondering: how does Rust know where a character starts in memory, th
 \- ChatGPT
 
 In a sense, Rust _could_ technically iterate over a string by decoding on the go, but that would certainly be less performant than jumping a fixed number of bytes.
+
+And that is all I have to say so far! This post will continue to update as I continue learning Rust (by solving [Advent of Code 2023](https://adventofcode.com)). Please feel free to share your thoughts by reaching out to me on [Twitter](https://twitter.com/simhozebs)(https://twitter.com/simhozebs)
