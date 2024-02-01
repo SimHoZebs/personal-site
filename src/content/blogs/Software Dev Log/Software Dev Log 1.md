@@ -1,6 +1,7 @@
 ---
 published: 2020-06-07
-tags: ["software dev log"]
+tags:
+  - software-dev-log
 ---
 
 It's a little weird to call this series a dev log, because I'm far from developing anything at the moment. I'm currently working on two things;

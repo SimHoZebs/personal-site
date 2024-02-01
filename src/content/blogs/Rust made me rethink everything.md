@@ -59,6 +59,8 @@ let foo = if let Some(digit) = char.to_digit(10) {
 
 ... what?
 
+When I first saw this syntax, I was like, "How the hell does this even make sense?"
+
 For those who don't know (and my future self in case I get dementia), `if let` is a statement that assigns a variable a value if the condition is true; and when the condition is true, run the lines in its curly brace.
 
 In the snippet, I'm converting `char` to decimal using `.to_digit()`. That function returns a value of type `Option< Some<u32> , None>`, meaning it could either be some unsigned 32bit integer or nothing. Whichever it is, it is assigned to `digit`. If `digit` is of type `Some<T>` (which `Some<u32>` is), then the if statement is true.
