@@ -1,7 +1,7 @@
 ---
 title: How Did I Get Here?
 summary: "I lived most of my life without a thought of pursuing computer science. In fact, I lived most of my childhood without thinking much at all. I just entertained myself with whatever I enjoyed whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to build cool robots; become a mechatronics engineer. That abruptly changed at the age of 17 as I learned there were more meaningful work to be done for the world with cellular agriculture. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science."
-# published: 2023-11-26
+published: 2024-02-01
 ---
 > Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I'm still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
 
