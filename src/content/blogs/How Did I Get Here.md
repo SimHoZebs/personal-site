@@ -1,8 +1,8 @@
 ---
 title: How Did I Get Here?
-summary: "I lived most of my life without a thought of pursuing computer science. In fact, I lived most of my childhood without thinking much at all. I just entertained myself with whatever I enjoyed whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science."
+summary: "I lived most of my life without a thought of pursuing computer science. In fact, most of my childhood went by without thinking much at all. I just entertained myself with whatever I enjoyed whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science."
 published: 2024-02-01
-edited: 2024-02-06
+edited: 2024-02-07
 ---
 > Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I'm still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
 
@@ -10,12 +10,11 @@ edited: 2024-02-06
 
 I guess thunders do strike.
 
-I lived most of my life without a thought of pursuing computer science. In fact, I lived most of my childhood without thinking much at all. I just entertained myself with whatever I enjoyed whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science.
+I lived most of my life without a thought of pursuing computer science. In fact, most of my childhood went by without thinking much at all. I just entertained myself with whatever I enjoyed whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science.
 
 How did I get here?
 ## Before the Internet
-
-Like most kids, we found ways to do anything but pay attention to the class. When we weren't sending secret notes or throwing balls of eraser dusts, we passed around a sheet of paper or an empty exercise book after drawing a panel or two. Some concluded by the end of the class, but some went on for days with an unpredictable, chaotic, and random story - exactly what we enjoyed.
+Like most 8-year-olds, I found ways to do anything but pay attention to the class. When I wasn't sending secret notes or throwing balls of eraser dusts with friends, we passed around a sheet of paper or an empty exercise book after drawing a panel or two. Most of them concluded by the end of the class, but some went on for days with an unpredictable, chaotic, and random story - exactly what we enjoyed.
 
 I eventually took this more seriously and started a long-term comic called Cure For a Devil. Like in previous comics, my classmates represented all the characters, with each having a special power/unique concept. There was not much of a story, but it still featured good-ol' randomness and cool fights, which was good enough for my friends to beg for more.
 
