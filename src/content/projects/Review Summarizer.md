@@ -21,9 +21,9 @@ link:
 
 ![review generator 9000 in action](../../assets/review-generator-example.png)
 
-## Inspiration
+## Problem
 
-With recent advancements in generative AI, computers have a better understanding of natural language and generate meaningful data from it than ever before. We were inspired by the potential to improve our shopping experience - specifically in the process of reading reviews. We all read a handful of them to make educated shopping decisions, but it is a process that takes long enough to be annoying. With Review Generator 9000, you can now effectively read tens of reviews without wasting your time.
+We all read a handful of them to make educated shopping decisions, but it is a process that takes long enough to be annoying. What if we could get a summary of them right on the page?
 
 ## What it does
 
@@ -62,6 +62,10 @@ We managed to successfully web scrape Amazon reviews and got to inject the summa
 
 We are also proud to successfully implement a Windows 95 design to the landing page UI.
 
+- Parallel processing
+- Support for Amazon, Target, and Walmart
+- Provide references to the summary to validate the summary
+
 ## What we learned
 
 We have learned how to web scrape using Puppeteer and effectively gathered and parsed relevant data for the project's purpose.
@@ -70,22 +74,10 @@ We have also learned how to inject the finalized HTML element onto the Amazon we
 
 ## What's next for Review Generator 9000
 
-- Support for other e-commerce platforms, such as Walmart, Target and Best Buy
-- Faster and More Efficient responses
 - Using AI to scrape reviews from any website instead of "manual" scraping.
 - Determine if reviews were AI-generated and give an "overall legitimacy score"
-- Provide references to the summary to validate the summary
 - Allow user feedback on our product
 
 ### Built With
 
-express.js |
-gpt3.5 |
-manifest |
-next.js |
-node.js |
-puppeteer |
-react |
-tailwindcss |
-typescript |
-webpack |
+ express.js | gpt3.5 | manifest | next.js | node.js | puppeteer | react | tailwindcss | typescript | webpack |
