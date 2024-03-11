@@ -1,11 +1,7 @@
 ## Requirements
-Personal data should be
 ### 1. manageable by the owner (ownership)
- This is the most important clause. If I have an image, video, text message, or any data, I should have access to all of it at all times and the freedom to do whatever I want with them. They should only disappear when I - and only I - want it deleted.
  
-I can deal with Google exploiting my personal information. I'll probably never go out of my way to mask my network traffic with Tor. But I must always have authority over the history of my digital activity.
 ### 2. accessed only by authorized individuals (authority)
-If I'm chatting with my mom, it should just stay with my mom.
 ### 3. analyzed and optimized to extract useful information (usefulness)
 This isn't necessary, but a desire.
 
