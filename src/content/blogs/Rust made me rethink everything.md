@@ -1,6 +1,6 @@
 ---
 published: 2023-12-17
-edited: 2023-12-20
+edited: 2024-03-11
 ---
 
 Alternate title: JS dev shocked to learn Rust is indeed a low-level language
@@ -57,11 +57,9 @@ let foo = if let Some(digit) = char.to_digit(10) {
 };
 ```
 
-... what?
-
 When I first saw this syntax, I was like, "How the hell does this even make sense?"
 
-For those who don't know (and my future self in case I get dementia), `if let` is a statement that assigns a variable a value if the condition is true; and when the condition is true, run the lines in its curly brace.
+`if let` is a statement that assigns a variable a value if the condition is true; and when the condition is true, run the lines in its curly brace.
 
 In the snippet, I'm converting `char` to decimal using `.to_digit()`. That function returns a value of type `Option< Some<u32> , None>`, meaning it could either be some unsigned 32bit integer or nothing. Whichever it is, it is assigned to `digit`. If `digit` is of type `Some<T>` (which `Some<u32>` is), then the if statement is true.
 
@@ -81,15 +79,15 @@ Regardless, it's quite an interesting syntax. It's somewhat confusing to read at
 
 `.split()` doesn't create an array.
 
-Yeah, `let foo = string.split(' ')`, doesn't make `foo` an array of substrings. `.split()` makes `string` _prepared_ for split and to function as an iterator when iterated over. This allows the program to iterate over the string only **as much as you need to**.
+Yeah, `let foo = string.split(' ')`, doesn't make `foo` an array of char or substrings. `.split()` makes `string` an iterator which allows the program to walk through the string only **as much as you need to**.
 
-That probably doesn't make much sense. Consider finding the word "minecraft" in the following string:
+That might not make much sense, so let's consider the following string:
 
 ```rust
-"Hey guys what's going on and welcome to my minecraft video and today we are going to build a cobblestone generator"
+string = "Hey guys what's going on and welcome to my minecraft video and today we are going to build a cobblestone generator"
 ```
 
-In JS, you would split the sentence by the space character (`' '`), creating an array of strings as so:
+In JS, `string.split(' ')` would create an array of strings as so:
 
 ```js
 const array = string.split(' ');
@@ -98,7 +96,10 @@ const array = string.split(' ');
 ["Hey", "guys", "what's", "going", "on", "and", "welcome", "to", "my", "minecraft", "video", ..., "generator"]
 ```
 
-But think about it - if our goal is to _solely_ find the word "minecraft", we don't necessarily want this array taking up space in our memory. What we want is to simply iterate over the words on the same string until we hit the word "minecraft". We don't need the rest of the string to split. Strictly speaking, this process includes unnecessary computation.
+If our goal is to _solely_ find the word "minecraft", we don't necessarily want this array taking up space in our memory. What we want is to simply iterate over the words on the original string until we hit the word "minecraft". We don't need the rest of the string to split. In this scenario, Javascript does unnecessary computation.
+
+> [!note]
+> This is intentionally a bad example to explain how `split()` works in Rust - I am aware that you can do the same with Javascript.
 
 With Rust, you can iterate over string without creating a new array, only until you need to:
 
@@ -117,8 +118,6 @@ You can explicitly split everything with `split().collect()`, but unlike JS/TS, 
 let array = string.replace("guys", "people").split(' ');
 //the above doesn't work because the string the split occurred on no longer exists after the operation.
 ```
-
-ChatGPT is telling me this _is_ possible with JS by making a generator function (it's pretty cool). Still, it's quite amazing to see this as the default.
 
 ## `String`
 
