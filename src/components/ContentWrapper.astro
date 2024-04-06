@@ -16,10 +16,10 @@ if (!entry.data.title)
 
 <ContentLayout title={entry.data.title}>
   <main
-    class="w-full h-full flex flex-col items-center bg-slate-950 px-5 overflow-scroll overflow-x-hidden"
+    class="w-full h-full flex flex-col items-center bg-slate-900 px-5 overflow-scroll overflow-x-hidden"
   >
     <nav class="self-start sticky top-0 z-10 pt-5">
-      <div class="bg-slate-950 flex rounded-full p-2">
+      <div class="bg-slate-900 flex rounded-full p-2">
         <a
           title="Back to home"
           href={"../#" + entry.data.title}
@@ -58,7 +58,7 @@ if (!entry.data.title)
 
     <article
       transition:animate={fade({ duration: "1s" })}
-      class="flex flex-col gap-4 max-w-2xl w-full text-lg items-start leading-snug tracking-[.02em]"
+      class="flex flex-col gap-4 max-w-2xl w-full text-base md:text-lg items-start leading-snug text-custom"
     >
       <slot />
     </article>
