@@ -1,8 +1,9 @@
 ---
 published: 2024-03-11
+edited: 2024-04-06
 ---
 
-I think all software developers can agree on spending hours on eliminating the smallest inconveniences for the sake of efficiency (although whether you became more efficient is an afterthought). This is my collection of tools that I use for just that - with some of them being ones I can't live without.
+I think all software developers can agree on spending hours on eliminating the smallest inconveniences for the sake of efficiency (whether it actually improves efficiency is another matter). This is my collection of tools that I use for just that - with some of them being ones I can't live without.
 
 Before that, I have to explain why I work with Windows instead of a Linux-based OS. The short answer is **simplicity** - Windows is what my laptop is built around, have the tools I need, etc. Did I spend many hours trying to migrate my workflow to Linux? Yes. Do I want to spend additional hours figuring out why my screen freezes *sometimes* specifically from mouse input? No.
 
@@ -48,7 +49,7 @@ I don't always remember which directory to go to, or even know where the file is
 
 These infinity stones singlehandedly solve file searching on Windows. It blows my mind how Microsoft still fails to properly index my files.
 
-## Lazygit
+## [Lazygit](https://github.com/jesseduffield/lazygit)
 *simple terminal UI for git commands*
 
 ![Pasted-image-20240311081329](../../assets/blogs/Pasted-image-20240311081329.png)
