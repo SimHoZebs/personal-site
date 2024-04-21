@@ -11,7 +11,7 @@ const links = [
   },
   {
     name: "Resume",
-    link: "https://docs.google.com/document/d/1yXDo4FQeariyfwQLz2nxvy9rSGXuu54MK_4Co6hzNu4/edit?usp=sharing",
+    link: "/cv",
     icon: "icon-[mdi--resume]",
   },
   {

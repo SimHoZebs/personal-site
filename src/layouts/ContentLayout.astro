@@ -20,7 +20,10 @@ const { title } = Astro.props;
     <title>{title}</title>
     <ViewTransitions fallback="swap" />
   </head>
-  <body class="font-sans text-zinc-300 w-screen h-screen bg-slate-900">
+  <body
+    class="font-sans flex flex-col text-zinc-300 w-screen h-screen bg-slate-900
+    overflow-x-hidden"
+  >
     <slot />
 
     <style is:global>

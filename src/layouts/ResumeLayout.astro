@@ -1,0 +1,51 @@
+---
+import ContentLayout from "./ContentLayout.astro";
+interface Props {
+  title: string;
+}
+
+const { frontmatter, title } = Astro.props;
+---
+
+<ContentLayout title={frontmatter.title}>
+  <main class="max-w-screen-md flex flex-col self-center gap-1 pb-20">
+    <nav class="self-start sticky top-0 z-10 pt-5">
+      <div class="bg-slate-900 flex rounded-full p-2">
+        <a
+          title="Back to home"
+          href={"../"}
+          class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
+        >
+        </a>
+      </div>
+    </nav>
+
+    <slot />
+  </main>
+
+  <style is:global>
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: larger;
+      font-weight: 700;
+    }
+
+    p:has(a) {
+      text-align: center;
+    }
+
+    p:has(strong):not(:has(em)) {
+      display: flex;
+      justify-content: space-between;
+    }
+    p:has(strong):has(em) > em {
+      font-size: small;
+      font-weight: 400;
+    }
+  </style>
+</ContentLayout>
