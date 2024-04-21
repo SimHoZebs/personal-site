@@ -17,9 +17,9 @@ link:
 
 ## The problem
 
-You swipe your card for a checkout at a store. Immediately, a $230 transaction appears on your banking app, labled 'Groceries'. "That's not right", you say, "The other $50 were supplies for the bathrooms."
+You swipe your card for a checkout at a store. Immediately, a $230 transaction appears on your banking app, labeled 'Groceries'. "That's not right," you say, "The other $50 were supplies for the bathrooms."
 
-You get home and divvy it up with your roommates. You rely on a calulator and a notes app to keep track of how much everyone owes you. It's a labour.
+You get home and divvy it up with your roommates. You rely on a calculator and a note-taking app to keep track of how much everyone owes you. *It's a labor.*
 
 Soon after, your app warns that you are getting close to your monthly budget. In fact, you exceeded your grocery budget. You know that's not true. You know you are only responsible for $80 from that purchase. You know only $35.89 of it is groceries.
 
