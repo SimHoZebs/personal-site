@@ -80,4 +80,4 @@ We have also learned how to inject the finalized HTML element onto the Amazon we
 
 ### Built With
 
- express.js | gpt3.5 | manifest | next.js | node.js | puppeteer | react | tailwindcss | typescript | webpack |
+express.js | gpt3.5 | manifest | next.js | node.js | puppeteer | react | tailwindcss | typescript | webpack |
