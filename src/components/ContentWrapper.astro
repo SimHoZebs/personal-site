@@ -1,8 +1,8 @@
 ---
 import { fade } from "astro:transitions";
 import ContentLayout from "../layouts/ContentLayout.astro";
-import { getStaticPaths as getBlog } from "../pages/blogs/[blog].astro";
-import { getStaticPaths as getProject } from "../pages/projects/[project].astro";
+import type { getStaticPaths as getBlog } from "../pages/blogs/[blog].astro";
+import type { getStaticPaths as getProject } from "../pages/projects/[project].astro";
 import Footer from "./Footer.astro";
 
 type Blog = Awaited<ReturnType<typeof getBlog>>[0]["props"]["entry"];
@@ -14,18 +14,23 @@ if (!entry.data.title)
   entry.data.title = entry.id.split("/").at(-1)!.slice(0, -3);
 ---
 
+<script>
+  const backButton = document.querySelector(".back-button");
+  backButton.addEventListener("click", (e) => history.back(););
+</script>
+
 <ContentLayout title={entry.data.title}>
   <main
     class="w-full h-full flex flex-col items-center bg-slate-900 px-5 overflow-scroll overflow-x-hidden"
   >
     <nav class="self-start sticky top-0 z-10 pt-5">
       <div class="bg-slate-900 flex rounded-full p-2">
-        <a
+        <button
           title="Back to home"
-          href={"../#" + entry.data.title}
-          class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6"
+          class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
+          back-button"
         >
-        </a>
+        </button>
       </div>
     </nav>
 
