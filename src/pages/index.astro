@@ -77,7 +77,7 @@ const allBlogMetadata = allBlog.map((blog) => {
 
           <div class="flex self-center justify-between">
             <!-- <a href="" class="font-semibold text-indigo-400">Learn more</a> -->
-            <div class="flex gap-4">
+            <nav class="flex gap-4">
               {
                 links.map((link) => (
                   <a
@@ -89,7 +89,7 @@ const allBlogMetadata = allBlog.map((blog) => {
                   </a>
                 ))
               }
-            </div>
+            </nav>
           </div>
         </div>
       </section>
@@ -128,9 +128,10 @@ const allBlogMetadata = allBlog.map((blog) => {
         allBlog.length ? (
           allBlog.map((blog, i) => (
             <div class="flex w-full flex-col gap-y-1">
-              <a
-                class="flex flex-col w-full max-w-xl gap-y-1"
-                href={"/blogs/" + blog.slug.split("/").at(-1)}
+              <article
+                id="blog"
+                data-link={blog.slug.split("/").at(-1)}
+                class="flex flex-col w-full max-w-xl gap-y-1 hover:cursor-pointer"
               >
                 <h2
                   id={blog.data.title || blog.id.slice(0, -3)}
@@ -159,8 +160,9 @@ const allBlogMetadata = allBlog.map((blog) => {
                         <p class="w-full text-start text-custom">{line}</p>
                       ))}
                 </p>
-              </a>
+              </article>
               <a
+                aria-label={`Read ${blog.data.title}`}
                 class="self-start font-semibold text-indigo-300"
                 href={"/blogs/" + blog.slug.split("/").at(-1)}
               >
@@ -177,3 +179,15 @@ const allBlogMetadata = allBlog.map((blog) => {
     <Footer />
   </main>
 </Layout>
+
+<script>
+  import { navigate } from "astro:transitions/client";
+
+  const blog = document.querySelectorAll("#blog");
+  blog.forEach((b) => {
+    b.addEventListener("click", (e) => {
+      const link = e.currentTarget.getAttribute("data-link");
+      navigate(`/blogs/${link}`);
+    });
+  });
+</script>

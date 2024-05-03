@@ -1,10 +1,13 @@
 ---
 import ContentLayout from "./ContentLayout.astro";
+
 interface Props {
-  title: string;
+  frontmatter: {
+    title: string;
+  };
 }
 
-const { frontmatter, title } = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
 <ContentLayout title={frontmatter.title}>
@@ -43,6 +46,7 @@ const { frontmatter, title } = Astro.props;
       display: flex;
       justify-content: space-between;
     }
+
     p:has(strong):has(em) > em {
       font-size: small;
       font-weight: 400;
