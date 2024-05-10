@@ -162,7 +162,7 @@ const allBlogMetadata = allBlog.map((blog) => {
                 </p>
               </article>
               <a
-                aria-label={`Read ${blog.data.title}`}
+                aria-label={`Read ${blog.data.title || blog.id.split("/").at(-1)?.slice(0, -3)}`}
                 class="self-start font-semibold text-indigo-300"
                 href={"/blogs/" + blog.slug.split("/").at(-1)}
               >
@@ -180,14 +180,18 @@ const allBlogMetadata = allBlog.map((blog) => {
   </main>
 </Layout>
 
-<script>
-  import { navigate } from "astro:transitions/client";
+<script is:inline>
 
   const blog = document.querySelectorAll("#blog");
   blog.forEach((b) => {
     b.addEventListener("click", (e) => {
       const link = e.currentTarget.getAttribute("data-link");
-      navigate(`/blogs/${link}`);
+
+      if (!link) {
+        console.error("No link found");
+        return;
+      }
+      navigation.navigate(`/blogs/${link}`);
     });
   });
 </script>

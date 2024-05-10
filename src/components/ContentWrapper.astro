@@ -14,11 +14,6 @@ if (!entry.data.title)
   entry.data.title = entry.id.split("/").at(-1)!.slice(0, -3);
 ---
 
-<script>
-  const backButton = document.querySelector(".back-button");
-  backButton.addEventListener("click", () => history.back());
-</script>
-
 <ContentLayout title={entry.data.title}>
   <main
     class="w-full h-full flex flex-col items-center bg-slate-900 px-5 overflow-scroll overflow-x-hidden"
@@ -71,3 +66,8 @@ if (!entry.data.title)
     <Footer />
   </main>
 </ContentLayout>
+
+<script is:inline>
+  const backButton = document.querySelector(".back-button");
+  backButton.addEventListener("click", () => history.back());
+</script>
