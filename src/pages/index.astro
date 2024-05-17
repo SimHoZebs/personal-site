@@ -127,7 +127,11 @@ const allBlogMetadata = allBlog.map((blog) => {
       {
         allBlog.length ? (
           allBlog.map((blog, i) => (
-            <div class="flex w-full flex-col gap-y-1">
+            <a
+              class="flex w-full flex-col gap-y-1"
+              aria-label={`Read ${blog.data.title || blog.id.split("/").at(-1)?.slice(0, -3)}`}
+              href={"/blogs/" + blog.slug.split("/").at(-1)}
+            >
               <article
                 id="blog"
                 data-link={blog.slug.split("/").at(-1)}
@@ -161,14 +165,10 @@ const allBlogMetadata = allBlog.map((blog) => {
                       ))}
                 </p>
               </article>
-              <a
-                aria-label={`Read ${blog.data.title || blog.id.split("/").at(-1)?.slice(0, -3)}`}
-                class="self-start font-semibold text-indigo-300"
-                href={"/blogs/" + blog.slug.split("/").at(-1)}
-              >
+              <div class="self-start font-semibold text-indigo-300">
                 Read more
-              </a>
-            </div>
+              </div>
+            </a>
           ))
         ) : (
           <p>Coming soon...</p>
@@ -179,19 +179,3 @@ const allBlogMetadata = allBlog.map((blog) => {
     <Footer />
   </main>
 </Layout>
-
-<script is:inline>
-
-  const blog = document.querySelectorAll("#blog");
-  blog.forEach((b) => {
-    b.addEventListener("click", (e) => {
-      const link = e.currentTarget.getAttribute("data-link");
-
-      if (!link) {
-        console.error("No link found");
-        return;
-      }
-      navigation.navigate(`/blogs/${link}`);
-    });
-  });
-</script>
