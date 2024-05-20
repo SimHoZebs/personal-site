@@ -20,12 +20,13 @@ if (!entry.data.title)
   >
     <nav class="self-start sticky top-0 z-10 pt-5">
       <div class="bg-slate-900 flex rounded-full p-2">
-        <button
+        <a
           title="Back to home"
           class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
           back-button"
+          href=`/#${entry.data.title}`
         >
-        </button>
+        </a>
       </div>
     </nav>
 
@@ -66,8 +67,3 @@ if (!entry.data.title)
     <Footer />
   </main>
 </ContentLayout>
-
-<script is:inline>
-  const backButton = document.querySelector(".back-button");
-  backButton.addEventListener("click", () => history.back());
-</script>
