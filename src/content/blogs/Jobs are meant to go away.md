@@ -13,9 +13,7 @@ However, these jobs only exist because we haven't found an economical way to aut
 
 Eventually, Waymo and Tesla will perfect self driving cars and eliminate Uber drivers, drone networks will be established and drop our packages via air and robotics will take over health care. This isn't to spite maintenance jobs. That's what progress does. It inevitably automates repetition.
 
-And we all know that we can't stop progress. No software engineer is going to stop and think, "You know, I think having about 5 bugs unresolved is a good number. Let's stop here." No motivated cook will go, "You know, my recipe could be better, but I'm just going to stop here." Even if someone does give up, someone else will pick it up and perfect it at some point.
-
-Humans are perfectionists - we have always made progress, are making progress, and will keep making even more progress until we disappear from the universe. That is how we are wired.
+And we all know that we can't stop progress. Even if someone does give up, someone else will pick it up and perfect it at some point. Humans are perfectionists - we have always made progress, are making progress, and will keep making even more progress until we disappear from the universe. That is how we are wired.
 
 ## Okay, so what?
 
@@ -25,3 +23,14 @@ The solution isn't to resist artificial intelligence and prevent automation from
 
 We live in a time where technology advances faster than ever before. We need governments to make use of it and actively take part in providing needs like food and shelter for close to no cost. That's why they exist - gather individual efforts to make everyone self sufficient. Automation should be used to get us there. Stop using it to make more money. Use it to spend less.
 
+---
+
+As a side note, there are great questions relevant to this post that I may or may not answer further in a different post:
+Q. How do we live without work? Wouldn't life be so boring?
+- We would do whatever we find entertaining for the sake of entertainment instead of **needing** a financial incentive.
+Q. Making everything cost near nothing will destroy economy!
+- Good. The economy merely exists as one of many points of incentive for progress. Let's remove the need for financial incentive and return our focus to the actual incentive: the improvement of our lives.
+Q. We can't have the government invest in automated systems like this! They'll grow too powerful and allow even more control over the people!
+- Valid concern, but I don't know any alternative non-profit organization designed solely to gather funds for movements such as this.
+Q. You don't know shit!
+- Who said I did?
