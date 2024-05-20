@@ -15,7 +15,7 @@ if (!entry.data.title)
 ---
 
 <ContentLayout title={entry.data.title}>
-  <main
+  <div
     class="w-full h-full flex flex-col items-center bg-slate-900 px-5 overflow-scroll overflow-x-hidden"
   >
     <nav class="self-start sticky top-0 z-10 pt-5">
@@ -57,13 +57,13 @@ if (!entry.data.title)
       </section>
     </header>
 
-    <article
+    <main
       transition:animate={fade({ duration: "1s" })}
       class="flex flex-col gap-4 max-w-2xl w-full text-base md:text-base items-start leading-snug text-custom"
     >
       <slot />
-    </article>
+    </main>
 
     <Footer />
-  </main>
+  </div>
 </ContentLayout>
