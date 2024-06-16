@@ -2,6 +2,7 @@
 import "@fontsource-variable/space-grotesk";
 import "@fontsource/iosevka-aile";
 import { ViewTransitions } from "astro:transitions";
+import Layout from "./Layout.astro";
 interface Props {
   title: string;
 }
@@ -9,180 +10,165 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Sim Ho's personal website" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <ViewTransitions fallback="swap" />
-  </head>
-  <body
-    class="font-sans flex flex-col text-zinc-300 w-screen h-screen bg-slate-900
-    overflow-x-hidden"
-  >
-    <slot />
+<Layout title={title}>
+  <slot />
 
-    <style is:global>
-      :root {
-        --small-size: 640px;
-        --code-bg: #22272e;
-        --zinc-300: rgb(212, 212, 216);
-        --zinc-400: rgb(161, 161, 170);
-        --zinc-400-fade: rgb(161, 161, 170, 0.3);
-        --slate-900: rgb(15, 23, 42);
-      }
-      .text-custom {
-        color: #d4d4d4;
-      }
+  <style is:global>
+    :root {
+      --small-size: 640px;
+      --code-bg: #22272e;
+      --zinc-300: rgb(212, 212, 216);
+      --zinc-400: rgb(161, 161, 170);
+      --zinc-400-fade: rgb(161, 161, 170, 0.3);
+      --slate-900: rgb(15, 23, 42);
+    }
+    .text-custom {
+      color: #d4d4d4;
+    }
 
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
 
-      blockquote {
-        width: 100%;
-      }
+    blockquote {
+      width: 100%;
+    }
 
-      .callout {
-        padding: 1rem;
-        border-radius: 0.5rem;
-      }
+    .callout {
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
 
-      .quote {
-        border-width: 0 0 0 4px;
-        border-color: rgb(129, 140, 248, 0.7);
-        padding-left: 1rem;
-      }
+    .quote {
+      border-width: 0 0 0 4px;
+      border-color: rgb(129, 140, 248, 0.7);
+      padding-left: 1rem;
+    }
 
-      figure {
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+    figure {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-      hr {
-        width: 80%;
-        align-self: center;
-        border: 0;
-        border-top: 1px solid var(--zinc-400-fade);
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
+    hr {
+      width: 80%;
+      align-self: center;
+      border: 0;
+      border-top: 1px solid var(--zinc-400-fade);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
 
-      img {
-        max-height: 70vh;
-        width: fit-content;
-      }
+    img {
+      max-height: 70vh;
+      width: fit-content;
+    }
 
-      figcaption {
-        width: 100%;
-        font-size: 14px;
-        align-items: center;
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-        color: var(--zinc-400);
-      }
+    figcaption {
+      width: 100%;
+      font-size: 14px;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+      color: var(--zinc-400);
+    }
 
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-      }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
 
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--zinc-300);
+    }
+
+    h3 {
+      font-size: larger;
+      font-weight: 700;
+    }
+
+    @media (min-width: var(--small-size)) {
       h2 {
-        font-size: 28px;
-        font-weight: 700;
-        color: var(--zinc-300);
+        font-size: xx-large;
       }
-
       h3 {
-        font-size: larger;
-        font-weight: 700;
-      }
-
-      @media (min-width: var(--small-size)) {
-        h2 {
-          font-size: xx-large;
-        }
-        h3 {
-          font-size: x-large;
-        }
-      }
-
-      ul,
-      ol {
-        padding-left: 20px;
-      }
-
-      ol > li {
-        list-style-type: decimal;
-      }
-
-      li {
-        list-style-type: disc;
-        list-style-position: outside;
-      }
-
-      table {
-        width: max-content;
-        text-align: center;
-      }
-
-      code {
-        font-family: "Iosevka Aile", "Courier New", Courier, monospace;
-        color: var(--zinc-300);
-        background-color: var(--code-bg);
-        padding: 0px 2px;
-        border-radius: 4px;
-      }
-
-      code:has(span) {
-        padding: 0.5rem;
-      }
-
-      pre {
-        display: flex;
-        width: 70ch;
-        max-width: 100%;
-        font-size: 16px;
-        align-self: center;
-        text-wrap: wrap;
-        border-radius: 0.5rem;
-      }
-
-      a {
-        font-weight: 600;
-        --tw-text-opacity: 1;
-        color: rgb(129 140 248);
-        text-decoration-line: underline;
-      }
-
-      .footnotes {
-        font-size: 14px;
-      }
-
-      .footnotes > h2 {
         font-size: x-large;
       }
+    }
 
-      td,
-      th {
-        padding: 4px 12px 4px 12px;
-      }
+    ul,
+    ol {
+      padding-left: 20px;
+    }
 
-      table,
-      th,
-      td {
-        font-size: 16px;
-        border-width: 1px;
-        border-color: rgb(30, 41, 59);
-      }
-    </style>
-  </body>
-</html>
+    ol > li {
+      list-style-type: decimal;
+    }
+
+    li {
+      list-style-type: disc;
+      list-style-position: outside;
+    }
+
+    table {
+      width: max-content;
+      text-align: center;
+    }
+
+    code {
+      font-family: "Iosevka Aile", "Courier New", Courier, monospace;
+      color: var(--zinc-300);
+      background-color: var(--code-bg);
+      padding: 0px 2px;
+      border-radius: 4px;
+    }
+
+    code:has(span) {
+      padding: 0.5rem;
+    }
+
+    pre {
+      display: flex;
+      width: 70ch;
+      max-width: 100%;
+      font-size: 16px;
+      align-self: center;
+      text-wrap: wrap;
+      border-radius: 0.5rem;
+    }
+
+    a {
+      font-weight: 600;
+      --tw-text-opacity: 1;
+      color: rgb(129 140 248);
+      text-decoration-line: underline;
+    }
+
+    .footnotes {
+      font-size: 14px;
+    }
+
+    .footnotes > h2 {
+      font-size: x-large;
+    }
+
+    td,
+    th {
+      padding: 4px 12px 4px 12px;
+    }
+
+    table,
+    th,
+    td {
+      font-size: 16px;
+      border-width: 1px;
+      border-color: rgb(30, 41, 59);
+    }
+  </style>
+</Layout>

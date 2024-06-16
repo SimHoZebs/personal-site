@@ -1,5 +1,5 @@
 ---
-import ContentLayout from "./ContentLayout.astro";
+import Layout from "./Layout.astro";
 
 interface Props {
   frontmatter: {
@@ -10,7 +10,7 @@ interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<ContentLayout title={frontmatter.title}>
+<Layout title={frontmatter.title}>
   <main class="max-w-screen-md flex flex-col self-center gap-1 pb-20">
     <nav class="self-start sticky top-0 z-10 pt-5">
       <div class="bg-slate-900 flex rounded-full p-2">
@@ -57,4 +57,4 @@ const { frontmatter } = Astro.props;
       margin: 0;
     }
   </style>
-</ContentLayout>
+</Layout>
