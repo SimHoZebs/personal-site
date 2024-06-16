@@ -27,6 +27,13 @@ const { frontmatter } = Astro.props;
   </main>
 
   <style is:global>
+    a {
+      font-weight: 600;
+      --tw-text-opacity: 1;
+      color: rgb(129 140 248);
+      text-decoration-line: underline;
+    }
+
     h1 {
       text-align: center;
       font-size: 32px;
@@ -52,9 +59,12 @@ const { frontmatter } = Astro.props;
       font-weight: 400;
     }
 
-    hr {
-      width: 100%;
-      margin: 0;
+    ul {
+      padding-left: 1rem;
+    }
+    li {
+      list-style-type: disc;
+      list-style-position: outside;
     }
   </style>
 </Layout>
