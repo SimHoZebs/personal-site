@@ -15,22 +15,27 @@ link:
 
 ![nedon in action](../../assets/nedon-preview.png)
 
+<h1 align="center"> Nedon</h1>
+<h3 align="center">Finance tracker that actually tracks properly.</h3>
+
+<p align="center"> Preview build with sandbox data: <a href="https://nedon.vercel.app">https://nedon.vercel.app</a></p>
+
 ## The problem
 
-You swipe your card for a checkout at a store. Immediately, a $230 transaction appears on your banking app, labeled 'Groceries'. "That's not right," you say, "The other $50 were supplies for the bathrooms."
+You swipe your card for a checkout at a store. Immediately, a $230 transaction appears on your banking app, labeled 'Groceries'. "That's not right", you say, "The other $50 were supplies for the bathrooms."
 
-You get home and divvy it up with your roommates. You rely on a calculator and a note-taking app to keep track of how much everyone owes you. _It's a labor._
+You get home and divvy it up with your roommates. You rely on a calculator and a note-taking app to keep track of how much everyone owes you. It's a labour.
 
-Soon after, your app warns that you are getting close to your monthly budget. In fact, you exceeded your grocery budget. You know that's not true. You know you are only responsible for $80 from that purchase. You know only $35.89 of it is groceries.
+Soon after, your app warns that you are getting close to your monthly budget. In fact, you exceeded your grocery budget. You know that's not true. You know you are only responsible for $80 from that purchase. You know only $35.89 of it is groceries. 
 
 **Your banking app is useless. The solution? Nedon.**
 
-## Alternatives comparison
-
-<div class=" w-full overflow-x-scroll border-slate-800">
+##  Alternatives comparison
 
 | Features/Apps                      | Nedon   | Mint | RocketMoney  | GPay | SplitWise    | Honeydue        |
 | ---------------------------------- | ------- | ---- | ------------ | ---- | ------------ | --------------- |
+| AI receipt scan                    | O       | X    | X            | X    | X            | X               |
+| Manual transaction entry           | Planned | X    | X            | X    | O            | X               |
 | Split with other users/groups      | O       | X    | Paid feature | O    | O            | Just one member |
 | Custom categories                  | Planned | O    | O            | X    | X            | X               |
 | Assign multiple categories         | O       | O    | X            | X    | X            | O               |
@@ -42,8 +47,6 @@ Soon after, your app warns that you are getting close to your monthly budget. In
 | Web view                           | O       | O    | X            | X    | X            | X               |
 | Mobile app                         | Planned | O    | O            | O    | O            | O               |
 | Open source                        | O       | X    | X            | X    | X            | X               |
-
-</div>
 
 ### Nedon plans to offer/offers the following key features:
 
