@@ -2,6 +2,7 @@
 title: Handy Dollars
 summary: Everyone can see their transaction history. What if you could also see transaction details?
 order: 2
+isArchive: true
 link:
   [
     {
