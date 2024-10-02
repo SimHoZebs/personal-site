@@ -28,7 +28,7 @@ function rehypePlugin() {
         );
 
         node.properties = {
-          className: calloutElIndex != -1 ? "callout" : "quote",
+          className: calloutElIndex !== -1 ? "callout" : "quote",
         };
 
         if (calloutElIndex < 0) return;
@@ -77,6 +77,19 @@ function rehypePlugin() {
         (calloutEl.children[firstTextIndex] as Text).value = firstTextSplit[1];
         node.children.splice(calloutElIndex - 1, 0, callOutTextEl);
       }
+
+      if (node.tagName === "table" && !node.properties.className) {
+        console.log("table");
+        console.log(node.properties.className);
+
+        const clone = structuredClone(node);
+        clone.properties.className = "inside";
+        node.tagName = "div";
+        node.properties = { className: "overflow-x-scroll w-full" };
+        node.children = [clone];
+      }
+
+      console.log("Skipped");
 
       if (node.tagName !== "p") return;
 

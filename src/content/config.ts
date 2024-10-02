@@ -10,6 +10,7 @@ const projectCollection = defineCollection({
       summary: z.string(),
       headerImage: image().optional(),
       headerAlt: z.string().optional(),
+      isArchive: z.boolean().optional(),
       order: z.number(),
       link: z
         .object({

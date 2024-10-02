@@ -10,7 +10,9 @@ import links from "../util/links";
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
 // Example: retrieve `src/content/blog/**`
-const allProject = await getCollection("projects");
+const allProject = (await getCollection("projects")).filter(
+  (project) => !project.data.isArchive,
+);
 allProject.sort((b, a) => b.data.order - a.data.order);
 
 const allBlog = (await getCollection("blogs"))
