@@ -31,7 +31,7 @@ Budgeting apps lets you know you hit your budget. It gives you little to nothing
 And if you have some transactions that's mixed with another person - good luck excluding their portion from it.
 
 **Your banking app is useless. The solution? Nedon.**
-
+Or Excel. That's pretty good too.
 ##  Alternatives comparison
 
 | Features/Apps                  | Nedon   | Cashew | RocketMoney | GPay | SplitWise | Honeydue       |
