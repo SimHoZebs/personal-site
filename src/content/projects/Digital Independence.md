@@ -14,6 +14,7 @@ This page is still work in progress, but here's the gist of how I'm working towa
 - Syncthing: P2P immediate file synchronization
 
 ## Quantified Self
+[What is Quantified Self?](https://quantifiedself.com/about/what-is-quantified-self/)
 - Obsidian: General Knowledge management
 -  ActivityWatch: Desktop activity tracking
 - OwnTracks: Location tracking
