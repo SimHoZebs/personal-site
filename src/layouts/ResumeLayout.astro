@@ -49,6 +49,10 @@ const { frontmatter } = Astro.props;
       text-align: center;
     }
 
+    p:has(a):has(em) {
+      text-align: left;
+    }
+
     p:has(strong):not(:has(em)) {
       display: flex;
       justify-content: space-between;
