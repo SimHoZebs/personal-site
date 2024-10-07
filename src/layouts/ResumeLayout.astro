@@ -11,7 +11,9 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <main class="max-w-screen-md flex flex-col self-center gap-1 pb-20">
+  <main
+    class="max-w-screen-md flex flex-col self-center gap-1 pb-20 px-5 lg:px-0"
+  >
     <nav class="self-start sticky top-0 z-10 pt-5">
       <div class="bg-slate-900 flex rounded-full p-2">
         <a
