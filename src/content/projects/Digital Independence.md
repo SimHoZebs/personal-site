@@ -1,6 +1,6 @@
 ---
 title: Digital Independence
-summary: All the ways I'm doing to avoid subscriptions and giving away my data.
+summary: All the ways I avoid subscriptions and giving away my data.
 order: 3
 ---
 This page is still work in progress, but here's the gist of how I'm working towards digital independence.
@@ -15,7 +15,7 @@ This page is still work in progress, but here's the gist of how I'm working towa
 
 ## Quantified Self
 [What is Quantified Self?](https://quantifiedself.com/about/what-is-quantified-self/)
-- Obsidian: General Knowledge management
+- Obsidian: General knowledge management
 -  ActivityWatch: Desktop activity tracking
 - OwnTracks: Location tracking
 - Regularly downloading personal data from services
