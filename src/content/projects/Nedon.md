@@ -12,9 +12,7 @@ link:
     { name: demo, url: https://nedon.vercel.app },
   ]
 ---
-
 ![nedon in action](../../assets/nedon-preview.png)
-
 
 <h3 align="center">Finance tracker that actually tracks properly.</h3>
 
