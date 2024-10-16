@@ -41,14 +41,14 @@ Or Excel. That's pretty good too.
 | Custom budget period           | Planned | O      | X           |      | X         | X              |
 | AI receipt scan                | O       | X      | X           | X    | X         | X              |
 | Manual transaction entry       | Planned | O      | X           | X    | O         | X              |
-| Split payment with others      | O       | X      | Paid        | O    | O         | 1 member limit |
+| Split payment with others      | O       | O      | Paid        | O    | O         | 1 member limit |
 | Custom categories              | Planned | X      | O           | X    | X         | X              |
 | Assign multiple categories     | O       | X      | X           | X    | X         | O              |
 | Assign cost to categories      | O       | X      | X           | X    | X         | O              |
 | Group spending overview        | Planned | X      | X           | X    | Paid      | O              |
 | Individual spending overview   | O       | O      | O           | O    | X         | X              |
 | Net worth tracking             | O       | O      | Paid        | X    | X         | X              |
-| Web view                       | O       | X      | X           | X    | X         | X              |
+| Web view                       | O       | O      | X           | X    | X         | X              |
 | Mobile app                     | Planned | O      | O           | O    | O         | O              |
 | Open source                    | O       | O      | X           | X    | X         | X              |
 
