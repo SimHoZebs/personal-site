@@ -1,23 +1,27 @@
 ---
 published: 2024-10-15
-summary: I learned a lot throughout the weeks I spent fiddling with this tiny computer. It was the first time I created a Docker container and did any sort of network administration. This post is for those who are interested in building a home server and gives an overview of all the concepts I learned while building one myself.
+summary: I learned a lot throughout the weeks I spent fiddling with this tiny computer. This was the first time I created a Docker container and did any sort of network administration. This post will go over the challenges and requirements of a home server and give an overview of the solutions and concepts I learned on the way.
+edited: 2024-10-16
 ---
 
 ![](../../assets/blogs/my-home-server.png)
 
 This is my Raspberry Pi 4B with a 6TB external hard disk attached. It currently functions as a photo and video viewer for my family, host of very legally owned movies and TV shows, and home assistant to control all my smart home devices with more granular control.
 
-I learned a lot throughout the weeks I spent fiddling with this tiny computer. It was the first time I created a Docker container and did any sort of network administration. This post is for those who are interested in building a home server and gives an overview of all the concepts I learned while building one myself.
+I learned a lot throughout the weeks I spent fiddling with this tiny computer. This was the first time I created a Docker container and did any sort of network administration. This post will go over the challenges and requirements of a home server and give an overview of the solutions and concepts I learned on the way.
+
 ## Docker/Containers
 
-As obvious as this will sound, home servers are nothing without the software running on them. These softwares typically run via 'containers', which are minimal virtualization of an operating system that provide an environment for applications to run on. It's like having a small computer run inside your computer! ([but isn't that a VM?](https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms))
+Home servers are nothing without the services running on them. The most handy way to run them is via a 'container' - a minimal virtualization of an operating system that provides an environment for applications to run on. It's like having a small, stripped down version of a computer run inside your computer! ([but isn't that a VM?](https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms))
 
-This is incredibly convenient for both developers and users. The containers are isolated from the host computer and other containers, ensuring the environment the developers build and test the software is identical to the users'. The blueprint of containers, known as Dockerfile, makes it super easy to set up complex environments with a single command. Users never have to know how to set up a Postgresql database or worry about using the wrong version of a specific dependency.
+That sounds a lot like a virtual machine, but the key difference is that containers still share resources such as memory, storage, and processing power with the host, while VMs require them to be allocated for their own use from the start. The container engine is responsible for flexibly allocating resources on the fly and ensuring just enough resources to be taken up by an application.
+
+The blueprint of containers, known as Dockerfile, makes it super easy to set up complex environments with a single command. Users never have to know how to set up a Postgresql database or worry about using the wrong version of a specific dependency.
 
 ![](../../assets/blogs/containers.png)
 all containers in my home server
 
-You don't necessarily have to *learn* these tools and concepts to set up services on your home server. As long as you know how to access the command line and install Docker, it usually takes just one or two commands to set one up. At the very least, there is always a YouTube tutorial for it.
+You don't necessarily have to *learn* Docker to set up services on your home server. As long as you know how to access the command line and install Docker, it usually takes just one or two commands to set one up. At the very least, there is always a YouTube tutorial for it.
 ## Ports
 
 Naturally, all these services communicate with its network. How do they uniquely identify themselves on the device and the network?
