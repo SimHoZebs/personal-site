@@ -1,6 +1,6 @@
 ---
 published: 2024-05-21
-edited: 2024-06-16
+edited: 2024-10-16
 summary: A lot changed very quickly after I started my Bachelor's in Computer Science.
 ---
 > *In 2023, I'll meet more people with similar interests and find opportunities to gain real developer experience. I'll make content sharing what I think and learn. I'll finish building my projects and truly prove what I am capable of.*
@@ -11,14 +11,25 @@ summary: A lot changed very quickly after I started my Bachelor's in Computer Sc
 
 > *Meet more people... and find opportunities to gain real developer experience.*
 
-A lot changed very quickly after I started my Bachelor's in Computer Science.
+### Education
+
+I completed my Associate's Degree this year and finally started my Bachelor's this August. A lot changed very quickly after I started my Bachelor's in Computer Science. 
+
+To learn how I got to this point in life, read [How Did I Get Here?](How%20Did%20I%20Get%20Here.md) 
+### Hackathons
 
 ![](../../assets/blogs/hackathon.png)
 
 I participated in two largest Hackathons in Florida and secured winning positions! In ShellHacks, my team placed second in Google's challenge, and in KnightHacks, first place in RBC & Microsoft's challenge. I was very fortunate to have friends that resonated with my ideas and worked hard to bring them to life. I never meant to, but I learned I'm pretty comfortable taking the role of a leader when it comes to software development.
 
-Right after, I started volunteering as a developer for a research lab to build software for a wearable device. This was the first time I started working with a team long term. I quickly understood the codebase and practically took over the development, but there were some challenges along the way with the lack of processes for communicating ideas. This has verified my understanding and knowledge of asynchronous communication, software development, and project management. It's been a good experience for improving clear communication of ideas and managing safe, incremental enhancement/migration of codebase.
+### Team Software Development
+Right after, I started volunteering as a developer for a [research lab in my school](https://mae.ucf.edu/joonpark/) to build software for a wearable device. This was the first time I started working with a team long term. I quickly understood the codebase and practically took over the development. This experience verified my understanding and knowledge of software development and project management. It also helped me get up to date with React Native development (the last time I tried was [2 years ago](https://github.com/SimHoZebs/react-native-alarm-app) ) and learn how complicated it can be to work with Bluetooth connectivity. t's been a good experience for improving clear communication of ideas and managing safe, incremental enhancement/migration of codebase.
 
+It wasn't without its challenges - there were immediate issues with the lack of processes for communicating ideas and the lack of motivation from the team. The project was delayed significantly in my attempts to ensure everyone contributed to parts of the project and gain experience in software development. All I could do was to offer support, but it was pointless without their attempts to contribute.
+
+I learned that when you're changing a light bulb, having too many people only slows down the installation. Regardless,
+
+### Career development
 I also spoke with dozens of recruiters and people within the industry throughout my internship search. There were a lot of scuffed moments, but ultimately, I am much better speaking to strangers than I was before. 
 
 ![](../../assets/blogs/walmart-bye.png)
@@ -27,9 +38,13 @@ Did I learn anything from recruiters and employees? To be honest, not really. I 
 
 Unexpectedly, the most meaningful conversation was with a senior dev at my marriage brunch. His perspective of how software development changed over time (why Java and C# exists at all, how languages had proprietary compilers) and security and efficiency considerations he has when building software was insightful.
 
+---
+
 > *\...sharing what I think and learn.*
 
-I built this website for this purpose. This is the space that displays all my social links, projects I built, and the thoughts I want to share. I published a post about Rust by the end of the year, so I consider this goal sufficiently achieved.
+I built this website for this purpose. This is the space that displays all my social links, projects I built, and the thoughts I want to share. I published a [post about Rust](Rust%20made%20me%20rethink%20everything.md) by the end of the year, so I consider this goal sufficiently achieved.
+
+---
 
 > *I'll finish building my projects...*
 
