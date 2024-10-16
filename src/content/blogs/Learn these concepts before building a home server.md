@@ -1,5 +1,6 @@
 ---
 published: 2024-10-15
+summary: I learned a lot throughout the weeks I spent fiddling with this tiny computer. It was the first time I created a Docker container and did any sort of network administration. This post is for those who are interested in building a home server and gives an overview of all the concepts I learned while building one myself.
 ---
 
 ![](../../assets/blogs/my-home-server.png)
