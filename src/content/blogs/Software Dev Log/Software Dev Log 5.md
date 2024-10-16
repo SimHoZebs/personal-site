@@ -13,7 +13,7 @@ Here I am on a streak of being on time. Studies are going smoother everyday, and
 2. Algorithms and Data Structures
 3. Studying More efficiently
 
-## 1. C#
+## 1. C\#
 
 I've spent the 2 weeks mostly focusing on learning the basics of C# through [Mike Dane's tutorial](https://youtu.be/GhQdlIFylQ8), [Microsoft's C# documentation](https://docs.microsoft.com/en-us/dotnet/csharp/), and [Bob Tablor's tutorial](https://youtu.be/FPeGkedZykA?list=WL). Here are some notable things I learn from them.
 
