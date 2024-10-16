@@ -91,6 +91,15 @@ function rehypePlugin() {
 
       console.log("Skipped");
 
+      if (node.tagName === "img" && node.properties.alt) {
+        const altText = node.properties.alt as string;
+        const [alt, width] = altText.split("|");
+        if (width) {
+          node.properties.width = width;
+          node.properties.alt = alt; // Update alt text to remove width part
+        }
+      }
+
       if (node.tagName !== "p") return;
 
       //relative link fixes
