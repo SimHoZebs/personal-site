@@ -1,8 +1,8 @@
 ---
 title: How Did I Get Here?
-summary: "I lived most of my life without a thought of pursuing computer science. In fact, most of my childhood went by without thinking much at all. I just entertained myself with whatever I enjoyed whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science."
+summary: I lived most of my life without a thought of pursuing computer science. In fact, most of my childhood went by without thinking much at all. I just entertained myself with whatever I enjoyed whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science.
 published: 2024-02-01
-edited: 2024-02-07
+edited: 2024-10-16
 ---
 > Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I'm still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
 
@@ -10,18 +10,20 @@ edited: 2024-02-07
 
 I guess thunders do strike.
 
-I lived most of my life without a thought of pursuing computer science. In fact, most of my childhood went by without thinking much at all. I just entertained myself with whatever I enjoyed whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science.
+I passed most of my childhood without a thought of pursuing computer science. In fact, most of it went by without much thinking at all. I just entertained myself by doing whatever I enjoyed regardless of whether I was good at them or not. When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue a career in software development.
 
-How did I get here?
+This is a story about almost everything I tried, and why I stopped.
 ## Before the Internet
 Like most 8-year-olds, I found ways to do anything but pay attention to the class. When I wasn't sending secret notes or throwing balls of eraser dusts with friends, we passed around a sheet of paper or an empty exercise book after drawing a panel or two. Most of them concluded by the end of the class, but some went on for days with an unpredictable, chaotic, and random story - exactly what we enjoyed.
 
-I eventually took this more seriously and started a long-term comic called Cure For a Devil. Like in previous comics, my classmates represented all the characters, with each having a special power/unique concept. There was not much of a story, but it still featured good-ol' randomness and cool fights, which was good enough for my friends to beg for more.
+I eventually took this more seriously and started a long-term comic called Cure For a Devil. Like in previous comics, my classmates represented all the characters, with each having a special power/unique concept. There was not much of a story, but it still featured good-ol' randomness and cool fights, which was good enough for my friends to enjoy.
 
 ![image](../../assets/blogs/1142.jpg)
 My first comic, 악마치료법(Cure For a Devil)
 
-I know this has nothing to do with engineering, biology, or computer science, but it is one of many arcs of my life where I dedicated creativity and effort to making something I was proud of. I worked on the comic for just under two years, where at some point, our standard for story-telling rose higher than what I could output. I became more conscious of the comic's shallow storyline and my poor drawing skills. I eventually scraped the whole thing and started a redraw with a better foundation, but ultimately lost interest in continuing it. I still do a bit of world-building whenever it comes up in my mind, but the comic was never finished and now exists only in my memories.
+I know this has nothing to do with engineering, biology, or computer science, but it is one of many arcs of my life where I dedicated creativity and effort to making something I was proud of. My friends would check in constantly to see if the next chapter was ready and I'd always manage to get laughs from the jokes I inserted in them. I even had a comment section on the back for them!
+
+I worked on the comic for just under two years. As we grew older, some point, our standard for story-telling rose higher than what I could output. I became more conscious of the comic's shallow storyline and my poor drawing skills. I eventually scraped the whole thing and started a redraw with a better foundation, but ultimately lost interest in continuing it. I still do a bit of world-building whenever it comes up in my mind, but the comic was never finished and now exists only in my memories.
 
 As my comic dwindled in popularity, "Book-RPGs" started getting popular among my friend group. It was somewhat like DnD (if my understanding of DnD is correct) - the game creator would set up a book with pages of UI for player stats and inventory, in-game shops, combat areas, and so on. The creator would repeatedly erase and draw on top of these pages to indicate gameplay while players made their decisions verbally. No two games were the same, but they were all inspired by some computer games or TV shows we enjoyed.
 
@@ -45,7 +47,7 @@ Then I found [Pencilmation](https://www.youtube.com/@pencilmation). Again, I *ha
 
 It didn't take long for me to discover the [first Minecraft video](https://www.youtube.com/watch?v=LxzwaJmpYwc) I ever watched, which I weirdly remember to this day. That led to discovering AntVenom, YogsCast, Sky, EditZP, and many others that I don't even remember anymore. Soon, Minecraft not only became the only game I played but also the game that brought together the friends I still chat with to this day.
 
-As I religiously watched Minecraft content and learned about the game, I started to get slightly frustrated with people's gameplay. They were either missing the 1obvious or lacking game knowledge; they could be playing better! I believed I could play better than them. To prove it, I started my own YouTube channel and show people how you truly play Minecraft. The best player.
+As I religiously watched Minecraft content and learned about the game, I started to get slightly frustrated with people's gameplay. They were either missing the 1obvious or lacking game knowledge; they could be playing better! I believed I could play better than them. To prove it, I started my own YouTube channel and show people how you truly play Minecraft. The *best* player.
 
 ![](../../assets/blogs/old-screen.jpg)
 Hence the name.

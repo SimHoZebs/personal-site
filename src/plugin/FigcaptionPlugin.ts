@@ -89,8 +89,6 @@ function rehypePlugin() {
         node.children = [clone];
       }
 
-      console.log("Skipped");
-
       if (node.tagName === "img" && node.properties.alt) {
         const altText = node.properties.alt as string;
         const [alt, width] = altText.split("|");
@@ -110,7 +108,7 @@ function rehypePlugin() {
       if (aEl && propertiesHaveHref(aEl)) {
         console.log("href", aEl.properties.href);
 
-        if (aEl.properties.href.startsWith("./")) {
+        if (aEl.properties.href.endsWith(".md")) {
           aEl.properties.href = aEl.properties.href
             .replaceAll("%20", "-")
             .toLowerCase();
