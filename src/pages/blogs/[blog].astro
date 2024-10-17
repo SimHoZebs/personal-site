@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import ContentWrapper from "../../components/ContentWrapper.astro";
+import ContentLayout from "../../layouts/ContentLayout.astro";
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blogs");
@@ -21,7 +21,7 @@ if (!entry.data.title)
 const { Content } = await entry.render();
 ---
 
-<ContentWrapper entry={entry}>
+<ContentLayout entry={entry}>
   <div slot="header" class="flex flex-col gap-y-2 items-center">
     <h1
       id={entry.data.title}
@@ -33,4 +33,4 @@ const { Content } = await entry.render();
   </div>
 
   <Content />
-</ContentWrapper>
+</ContentLayout>
