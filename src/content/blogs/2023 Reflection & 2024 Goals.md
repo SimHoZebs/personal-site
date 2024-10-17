@@ -27,11 +27,11 @@ Right after, I started volunteering as a developer for a [research lab in my sch
 
 
 ### Career development
-I also spoke with dozens of recruiters and people within the industry throughout my internship search. There were a lot of scuffed moments, but ultimately, I am much better speaking to strangers than I was before. 
+I also spoke with dozens of recruiters and people within the industry throughout my internship search. There were a lot of scuffed moments, but ultimately, this helped me get much better speaking to strangers than I was before. 
 
 ![](../../assets/blogs/walmart-bye.png)
 
-Did I learn anything from recruiters and employees? To be honest, not really. I already knew these big corporations give great benefits, and they always say their company has a great culture. The description of their projects are always too vague to walk away with much meaningful knowledge. The only memorable conversations I have is complaining to Google employees that Google Podcast is dying and privacy concerns with proprietary LLMs.
+Did I learn anything meaningful from recruiters and employees? To be honest, *not really*. I already knew these big corporations gave great benefits, and of course their company has a great culture. I'd ask about what they do, but they are either a recruiter that vaguely know about what software developers are actually doing in their company or a person working in an area so different that I have nothing to go off of.  If I manage to meet an actual software developer, they describe their projects way too vague for me to gain meaningful insight. The only memorable conversation I had through these employer events was when I questioned a Google employee about the contradiction of Google's mission to organize the world's information while killing off Google Podcast, and my privacy concerns with proprietary LLMs.
 
 Unexpectedly, the most meaningful conversation was with a senior dev at my marriage brunch. His perspective of how software development changed over time (why Java and C# exists at all, how languages had proprietary compilers) and security and efficiency considerations he has when building software was insightful.
 
@@ -39,7 +39,7 @@ Unexpectedly, the most meaningful conversation was with a senior dev at my marri
 
 > *\...sharing what I think and learn.*
 
-I built this website for this purpose. This is the space that displays all my social links, projects I built, and the thoughts I want to share. I published a [post about Rust](Rust%20made%20me%20rethink%20everything.md) by the end of the year, so I consider this goal sufficiently achieved.
+That's why I built this website. This is the space that displays all my social links, projects I built, and the thoughts I want to share. I published a [post about Rust](Rust%20made%20me%20rethink%20everything.md) by the end of the year, so I consider this goal sufficiently achieved.
 
 ---
 
