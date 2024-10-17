@@ -111,6 +111,7 @@ function rehypePlugin() {
         if (aEl.properties.href.endsWith(".md")) {
           aEl.properties.href = aEl.properties.href
             .replaceAll("%20", "-")
+            .replace(".md", "")
             .toLowerCase();
         }
       }
