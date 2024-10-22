@@ -1,7 +1,7 @@
 ---
 published: 2024-10-15
 summary: I learned a lot throughout the weeks I spent fiddling with this tiny computer. This was the first time I created a Docker container and did any sort of network administration. This post will go over the challenges and requirements of a home server and give an overview of the solutions and concepts I learned on the way.
-edited: 2024-10-16
+edited: 2024-10-22
 ---
 
 ![](../../assets/blogs/my-home-server.png)
@@ -10,6 +10,8 @@ This is my Raspberry Pi 4B with a 6TB external hard disk attached. It currently 
 
 I learned a lot throughout the weeks I spent fiddling with this tiny computer. This was the first time I created a Docker container and did any sort of network administration. This post will go over the challenges and requirements of a home server and give an overview of the solutions and concepts I learned on the way.
 
+>[!note]
+>This post assumes you have some (but not extensive) understanding of the internet and experience with software development.
 ## Docker/Containers
 
 Home servers are nothing without the services running on them. The most handy way to run them is via a 'container' - a minimal virtualization of an operating system that provides an environment for applications to run on. It's like having a small, stripped down version of a computer run inside your computer!
@@ -38,15 +40,15 @@ Naturally, all these services (containers) communicate with its network to funct
 127.0.0.0.1:3000     <-- port 3000
 ```
 
-I introduce you: ports. These are numbers that follow after an IP address that identifies a process communicating under the IP address. If you've done any basic web development or opened a Minecraft server, you've probably seen them a lot.
+I introduce you: ports. These are numbers that follow after an IP address that identifies a process communicating under the IP address. If IP addresses are like home addresses, ports are the names assigned to those living in it. If you've done any basic web development or opened a Minecraft server, you've probably seen them a lot.
 
 Many home server services will demand a handful of ports for themselves so you and/or other processes can communicate with each other. It is important to know that **only one service may control a port - you can't have multiple containers use the same port!** 
 
 Why is that an issue? Well, a lot of services with a web interface ask for port 80 and/or 443, but only one service can have each one. To get around this issue, you have to *remap* ports through Docker.
 
-For example, let's say your movie service is asking for port 5353. Remap it to port 8080, and it will think it is accessing `ipaddress:80`, while it actually has access to `ipaddress:8080` in reality. This way, you ensure every process has access to a port while having no idea that they've been reassigned. 
+For example, let's say your movie service is asking for port 5353. Remap it to port 8080, and it will think it is accessing `ipaddress:5353`, while it actually communicates through `ipaddress:8080`. This way, you ensure every process has access to a port while having no idea that they've been reassigned.
 
-You have to be careful with this, though. Your movie service could've been asking for port 5353 because its database expects to communicate with it through that port. Make sure to remap that port on the database's container's configuration as well so it knows that the port has been changed. 
+You have to be careful with this, though. Your movie service could've been asking for port 5353 because it expects to communicate with its database through that port. Make sure to remap that port on the database's container's configuration as well so it knows that the port has been changed.
 
 You'll want to avoid default ports unless you know what you are doing. Here are some default ports:
 - 22; this is for SSH.
@@ -56,6 +58,8 @@ You'll want to avoid default ports unless you know what you are doing. Here are 
 - [and many more](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 
 Personally, I just avoid anything under 10000 and assign unexpected numbers, like 19827.
+
+Here's an important fact: there is no such thing as just communicating with an IP address. You are always interacting with a port. Using the analogy from above, you don't communicate with a home address - you do with the person in it. I'll get into specific examples later.
 ## DNS
 
 You'll quickly realize it's annoying to connect to home applications by their IP address and port. You'll also start memorizing them without trying, but wouldn't it be nice if you could access your movie service through a link like, `movies.home`, and your legally downloaded e-books through `legallydownloadedebooks.home`?
@@ -70,6 +74,7 @@ If you never messed with your router, your DNS is most likely your Internet Serv
 You see where this is going?
 
 Apps such as [Pi-Hole](https://pi-hole.net/) and [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) can turn your home server into a DNS server, allowing you to intercept a request to custom links like `immich.home` and direct it to your home server's IP address. Now we can set any URL for our server!
+
 ## Dynamic & Static IP Address and DHCP
 
 This is an issue you'll eventually run into after restarting your home server.
@@ -119,8 +124,8 @@ I have more things to talk about but I've left this in draft for too long:
 ## NAT Loopback
 ## Tunnels
 ## Security measures
-- Geofencing
 - HTTPS, Let's Encrypt, SSL Certs
 - Cloudflare
-- fail2ban
-- VPN
+- fail2ban: ban IP addresses that causes multiple auth errors
+- Geofencing: Allow only specific geolocations to connect to your server
+- VPN: Allow only those in your VPN to connect to your server. Requires a separate server. Tailscale.
