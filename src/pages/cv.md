@@ -20,7 +20,8 @@ simhozebs@gmail.com | [simho.xyz](https://simho.xyz) | [github.com/simhozebs](ht
 
 ---
 
-**Bachelor of Science, Computer Science** **Dec 2025 (Expected)**  
+**Bachelor of Science, Computer Science** **Dec 2025 (Expected)**
+
 _University of Central Florida_  
 - GPA: 3.9/4.0  
 - Organization: KnightHacks Kickstart Mentor  
@@ -30,18 +31,21 @@ _University of Central Florida_
 
 ---
 
-**SRAM** **May 2024 - Present**
+**SRAM** **May 2025 - Present**
+
 *Software Engineering Intern*
 - Cut development time by 70% by automating dev environment setup and system for running tests locally
 - Increased test coverage by 40% by building unit and integration tests; streamlined existing CI/CD pipelines
 - Upgraded tool security without disruption by implementing Single Sign-On and upgrading to HTTPS
 
 **Center for Distributed Learning, UCF** **April 2024 - Sep 2024**
+
 *Web Developer, Part-time (Techranger)*
 - Reduced deployment time by 80% by automating database initialization and container orchestration
 - Helped enhance LMS tool accessibility by researching implementations for math equations, videos, etc.
 
 **Wearable Engineering & Assistive Robotics Lab, UCF** **Oct 2023 – May 2024**
+
 *Undergraduate Researcher*
 - Led the full-stack development of a React Native app gathering biometrics from a wearable device
 - Improved development velocity with agile methodologies, code reviews, and documentation
