@@ -7,16 +7,15 @@ title: me
 
 My name is Ho Sim, but I go by "Simho" in most forms of communication for reasons I'll simply put as: that's what I've been called throughout my life in Korea and Malaysia.
 
-For the last few years, I've been trying build systems that privately organize all personal information and create apps that reveal insights from them. There's more data about me than ever before - instead of leaving them to be used for nothing but personalizing ads and YouTube feed, let's use it to improve understanding of ourselves. My budgeting app, [Nedon](projects/Nedon.md), is a small, but important piece of this effort.
+For the last few years, I've been trying to build systems that privately organize all personal information and create apps that reveal insights from them. There's more data about me than ever before - instead of leaving them to be used for nothing but personalizing ads and YouTube feeds, let's use it to improve understanding of ourselves. My budgeting app, [Nedon](projects/Nedon.md), is a small, but important piece of this effort.
 
 I'm also very invested in technologies that empower individuals to get more done and enhance digital freedom. Example:
-- Notion is one of the most powerful tools that empower individuals to get more done. AppFlowy aims to do the same without the worry of the tool disappearing when it stops being maintained.
-- LLMs unlock incredible opportunities. SLMs designed to run locally eliminates dependence from LLM providers.
-- Google Photos is great, but never eternal. Immich is.
+- Social media platforms - like ArtStation, Twitter, YouTube, Discord - empowers free speech and freedom of expression to everyone in the world.
+- Power tools - like Notion, Obsidian, Figma, - are some of the most powerful tools to organize information and empower individuals to get more done.
+- Artificial Intelligence - recognizes patterns much better than typical software and frees up humans to spend their time more meaningfully.
+- Open source alternatives of all of the above takes an extra step at enhancing digital freedom and independence.
 
-<small>(I am not anti-corporate, I just appreciate open source and non-profit work.)</small>
-
-This all stems from my philosophy - everyone should be free and powerful enough to protect their freedom. Yes, I know, **most people** agree with this. The arguments are always *how* that should be achieved. I'm still highlighting it here because I want to spend the rest of my life figuring out that *how* and working towards it.  
+This all stems from my philosophy - everyone should be free and powerful enough to protect their freedom. **Most people** agree with this, but it's infinitely difficult to answer *how* humanity should take that path. I want to spend the rest of my life discovering the answers.
 
 ## What Am I Doing Now?
 
