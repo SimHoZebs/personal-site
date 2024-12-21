@@ -79,9 +79,6 @@ function rehypePlugin() {
       }
 
       if (node.tagName === "table" && !node.properties.className) {
-        console.log("table");
-        console.log(node.properties.className);
-
         const clone = structuredClone(node);
         clone.properties.className = "inside";
         node.tagName = "div";
@@ -106,8 +103,6 @@ function rehypePlugin() {
       ) as Element | undefined;
 
       if (aEl && propertiesHaveHref(aEl)) {
-        console.log("href", aEl.properties.href);
-
         if (aEl.properties.href.endsWith(".md")) {
           aEl.properties.href = aEl.properties.href
             .replaceAll("%20", "-")
