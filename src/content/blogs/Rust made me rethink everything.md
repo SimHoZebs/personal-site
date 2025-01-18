@@ -29,7 +29,7 @@ With the intro out of the way, here's a growing list of things that I learned in
 > [!Note]
 > All the features I'm talking about may exist in other languages or in the languages I think I know very well, but unaware of. I'd love to know them, so feel free to contact me [@SimHoZebs](https://twitter.com/SimHoZebs) about it.
 
-## Error handling and rust-analyzer
+## rust-analyzer
 
 ![](../../assets/blogs/rust-examples-chatgpt.png)
 
@@ -43,7 +43,35 @@ Oh, and the error messages. You can't change how languages work, but you sure as
 
 File system can crash. Type conversion may fail, and not all `char` can convert to an integer. JS/TS doesn't care whether that happens; it's up to you to wrap it with a `try/catch` clause.
 
-With `Result<T>` and `Option<T>`, you are forced to handle the error and narrow the type down. Reading a file? Well, it may be `String` or `Error`. Using `.to_digit()`? It might be `u32` or `None`! I love that Rust makes me handle errors when they may happen, instead of being weirdly optimistic like JS/TS.
+```js
+let char = "k"
+
+//this crashes the program. Up to the dev to recognize it, which is unnecessary cognitive load.
+parseInt(char, 10) 
+
+// Even when the dev does recognize it, it's not pretty...
+try {
+	let intValue = parseInt(char, 10);
+	if (isNaN(intValue)) {
+		throw new Error("Conversion failed: Not a number");
+	}
+	return intValue;
+} catch (error) {
+	console.error("Error:", error.message);
+	return null;
+}
+```
+
+With `Result<T>` and `Option<T>`, you are forced to handle the error and narrow the type down. Reading a file? Well, it may be `String` or `Error`. Using `.to_digit()`? It might be `u32` or `None`!
+
+```rust
+let char = 'k';
+
+// dev MUST unwrap the type and handle error cases
+let foo = char.parse::<u32>().unwrap_or(0);
+```
+
+I love that Rust makes me handle errors when they may happen, instead of being weirdly optimistic like JS/TS.
 
 ### `if let`
 

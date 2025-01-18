@@ -10,14 +10,16 @@ This page is still work in progress, but here's the gist of how I'm working towa
 - Immich: Image/video storage & viewer
 - Home Assistant: Alexa/Google Home replacement
 - Jellyfin: media transcoding and player
-- Reverse proxy and DNS via NGINX & PiHole
+- OwnTracks: Location tracking
+- PiHole: Stop sending tracking data from my home network thanks
 - Syncthing: P2P immediate file synchronization
+- RustDesk: Locally hosted remote desktop application
+- Ollama: LLM at home
 
 ## Quantified Self
 [What is Quantified Self?](https://quantifiedself.com/about/what-is-quantified-self/)
 - Obsidian: General knowledge management
 -  ActivityWatch: Desktop activity tracking
-- OwnTracks: Location tracking
 - Regularly downloading personal data from services
 
 ## Misc
