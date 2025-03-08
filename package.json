@@ -9,7 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "prettier": "prettier --write . --plugin=prettier-plugin-astro",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "pull": "rsync -avPu /mnt/c/Users/simho/Documents/Obsidian/personal-site/ . --exclude node_modules/ --exclude .git/ --exclude .astro/ --delete",
+    "push": "rsync -avPu . /mnt/c/Users/simho/Documents/Obsidian/personal-site/ --exclude node_modules/ --exclude .git/ --exclude .astro/ --exclude components/ --exclude layouts/ --delete"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.3",

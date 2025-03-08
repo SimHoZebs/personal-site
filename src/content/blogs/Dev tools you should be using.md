@@ -35,7 +35,7 @@ Of course, with the next tool, I never have to `cd` too far...
 
 _zoxide is a smarter cd command, inspired by z and autojump._
 
-![Pasted_image_20240307151530](../../assets/blogs/Pasted_image_20240307151530.png)
+![Pasted_image_20240307151530](../../assets/blogs/zoxide.png)
 
 It feels like I'm traveling half way across the world when typing `cd ~/AppData/Local/nvim/lua` (`cd ~/.config/nvim/lua` is not any better) just to make some quick changes. Sure, I can set an alias for it, but that's such a chore.
 

@@ -102,7 +102,7 @@ I began by listing the technological advancements that would be required to make
 
 While individual technological improvements necessary for my exoskeleton robot to come to life were useful in many applications, I started to question the value of the goal itself. In a world with countless other problems, it didn't seem like something of high priority. Nothing matters if our society isn't around to use it. That's when I had the epiphany: **The world must be sustainable before I can build fun things.**
 
-![](../../assets/blogs/20160813194856.jpg)
+![](../../assets/blogs/problems-diagram.jpg)
 
 I went back to the drawing board and wrote down all the major global issues I was aware of. I drew a diagram showing the relationship between land pollution & scarcity, water pollution & scarcity, world hunger, air pollution, excess waste and lack of management, etc. This short reflection resulted in a shocking conclusion: agriculture needs a revolution. I say "shocking", because it never occurred to me that producing food was unsustainable. I mean, haven't we been doing that since existence?
 
