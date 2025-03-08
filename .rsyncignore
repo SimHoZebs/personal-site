@@ -1,0 +1,22 @@
+# Ignore everything
+*
+
+# Don't ignore markdown files
+!*.md
+
+# Don't ignore images
+!*.jpg
+!*.jpeg
+!*.png
+!*.gif
+!*.webp
+!*.svg
+
+# Don't ignore videos
+!*.mp4
+!*.webm
+!*.mov
+!*.mkv
+
+# Don't ignore directories, so rsync can traverse them
+!*/
