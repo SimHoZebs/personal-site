@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import { Image } from "astro:assets";
 import ContentLayout from "../../layouts/ContentLayout.astro";
 
@@ -7,7 +7,7 @@ export async function getStaticPaths() {
   const projectEntries = await getCollection("projects");
 
   return projectEntries.map((entry) => ({
-    params: { project: entry.slug },
+    params: { project: entry.id },
     props: { entry },
   }));
 }
@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 if (!entry.data.title)
   entry.data.title = entry.id.split("/").at(-1)!.slice(0, -3);
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <ContentLayout entry={entry}>

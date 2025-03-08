@@ -10,11 +10,11 @@ export default defineConfig({
   integrations: [react(), mdx()],
 
   markdown: {
-      rehypePlugins: [figcaptionPlugin],
-      shikiConfig: {
-          theme: "github-dark-dimmed",
-      },
-	},
+    rehypePlugins: [figcaptionPlugin],
+    shikiConfig: {
+      theme: "github-dark-dimmed",
+    },
+  },
 
   vite: {
     plugins: [tailwindcss()],

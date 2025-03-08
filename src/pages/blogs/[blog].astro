@@ -1,34 +1,37 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import ContentLayout from "../../layouts/ContentLayout.astro";
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection("blogs");
-  return blogEntries.map((entry) => {
-    const slug = entry.slug.split("/");
-
+  const blogArray = await getCollection("blogs");
+  return blogArray.map((blog) => {
     return {
-      params: { blog: slug.at(-1) },
-      props: { entry },
+      params: { blog: blog.id.split("/").at(-1) },
+      props: { blog },
     };
   });
 }
 
-const { entry } = Astro.props;
+const { blog } = Astro.props;
 
-if (!entry.data.title)
-  entry.data.title = entry.id.split("/").at(-1)!.slice(0, -3);
-const { Content } = await entry.render();
+if (!blog.data.title)
+  blog.data.title =
+    blog.data.title ||
+    blog.filePath?.split("/").at(-1)?.slice(0, -3) ||
+    blog.id.split("/").at(-1) ||
+    "untitled";
+
+const { Content } = await render(blog);
 ---
 
-<ContentLayout entry={entry}>
+<ContentLayout entry={blog}>
   <div slot="header" class="flex flex-col gap-y-2 items-center">
     <h1
-      id={entry.data.title}
+      id={blog.data.title}
       class="text-4xl sm:text-5xl font-bold text-center"
-      transition:name={entry.data.title}
+      transition:name={blog.data.title}
     >
-      {entry.data.title}
+      {blog.data.title}
     </h1>
   </div>
 

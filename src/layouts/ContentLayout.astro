@@ -19,10 +19,7 @@ interface Props {
 const { entry, frontmatter } = Astro.props;
 
 const data = {
-  title:
-    entry?.data.title ||
-    entry?.id.split("/").at(-1)!.slice(0, -3) ||
-    frontmatter.title,
+  title: entry?.data.title || entry?.id.split("/").at(-1)! || frontmatter.title,
   published: entry?.data.published,
   edited: entry?.data.edited,
 };
