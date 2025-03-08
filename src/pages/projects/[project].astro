@@ -4,50 +4,50 @@ import { Image } from "astro:assets";
 import ContentLayout from "../../layouts/ContentLayout.astro";
 
 export async function getStaticPaths() {
-  const projectEntries = await getCollection("projects");
+  const projectArray = await getCollection("projects");
 
-  return projectEntries.map((entry) => ({
-    params: { project: entry.id },
-    props: { entry },
+  return projectArray.map((project) => ({
+    params: { project: project.id },
+    props: { project },
   }));
 }
 
-const { entry } = Astro.props;
-if (!entry.data.title)
-  entry.data.title = entry.id.split("/").at(-1)!.slice(0, -3);
-const { Content } = await render(entry);
+const { project } = Astro.props;
+if (!project.data.title)
+  project.data.title = project.id.split("/").at(-1)?.slice(0, -3);
+const { Content } = await render(project);
 ---
 
-<ContentLayout entry={entry}>
+<ContentLayout entry={project}>
   <div class="flex flex-col gap-y-2 items-center" slot="header">
     {
-      entry.data.headerImage && entry.data.headerAlt ? (
+      project.data.headerImage && project.data.headerAlt ? (
         <Image
           height={54}
-          src={entry.data.headerImage}
-          alt={entry.data.headerAlt}
-          transition:name={entry.data.title}
+          src={project.data.headerImage}
+          alt={project.data.headerAlt}
+          transition:name={project.data.title}
         />
       ) : (
         <h1
           class="text-5xl md:text-6xl font-bold text-center"
-          transition:name={entry.data.title}
+          transition:name={project.data.title}
         >
-          {entry.data.title}
+          {project.data.title}
         </h1>
       )
     }
     <p
       class="text-balance text-center"
-      transition:name={entry.data.title + " summary"}
+      transition:name={project.data.title + " summary"}
     >
-      {entry.data.summary}
+      {project.data.summary}
     </p>
 
     <div class="flex gap-x-5">
       {
-        entry.data.link &&
-          entry.data.link.map((l) => (
+        project.data.link &&
+          project.data.link.map((l) => (
             <a
               href={l.url}
               class="flex items-center gap-1 hover:text-indigo-300"
