@@ -29,13 +29,17 @@ We live in a time where technology is advancing faster than ever before. We need
 As a side note, there are great questions relevant to this post that I may or may not answer further in a different post:
 
 Q. How do we live without work? Wouldn't life be so boring?
+
 - We would do whatever we find entertaining for the sake of entertainment instead of **needing** a financial incentive.
 
 Q. Making everything cost near nothing will destroy economy!
+
 - Good. The economy merely exists as one of many points of incentive for progress. Let's remove the need for financial incentive and return our focus to the actual incentive: the improvement of our lives.
 
 Q. We can't have the government invest in automated systems like this! They'll grow too powerful and allow even more control over the people!
+
 - Valid concern, but I don't know any alternative non-profit organization designed solely to gather funds for movements such as this.
 
 Q. You don't know shit!
+
 - Who said I did?

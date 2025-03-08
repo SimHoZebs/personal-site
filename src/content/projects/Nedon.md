@@ -12,6 +12,7 @@ link:
     { name: demo, url: https://nedon.vercel.app },
   ]
 ---
+
 ![nedon in action](../../assets/nedon-preview.png)
 
 <h3 align="center">Finance tracker that actually tracks properly.</h3>
@@ -32,7 +33,7 @@ And if you have some transactions that's mixed with another person - good luck e
 
 Or Excel. That's pretty good too.
 
-##  Alternatives comparison
+## Alternatives comparison
 
 | Features/Apps                  | Nedon   | Cashew | RocketMoney | GPay | SplitWise | Honeydue       |
 | ------------------------------ | ------- | ------ | ----------- | ---- | --------- | -------------- |

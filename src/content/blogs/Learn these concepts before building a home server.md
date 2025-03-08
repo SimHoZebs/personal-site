@@ -10,8 +10,9 @@ This is my Raspberry Pi 4B with a 6TB external hard disk attached. It currently 
 
 I learned a lot throughout the weeks I spent fiddling with this tiny computer. This was the first time I created a Docker container and did any sort of network administration. This post will go over the challenges and requirements of a home server and give an overview of the solutions and concepts I learned on the way.
 
->[!note]
->This post assumes you have some (but not extensive) understanding of the internet and experience with software development.
+> [!note]
+> This post assumes you have some (but not extensive) understanding of the internet and experience with software development.
+
 ## Docker/Containers
 
 Home servers are nothing without the services running on them. The most handy way to run them is via a 'container' - a minimal virtualization of an operating system that provides an environment for applications to run on. It's like having a small, stripped down version of a computer run inside your computer!
@@ -24,14 +25,15 @@ That sounds a lot like a virtual machine, but there are [many ways they differ f
 ![Dockerfile builds a Docker Image, which then runs a Docker Container.](../../assets/blogs/dockerfile-image-container.png)
 [source](https://medium.com/swlh/understand-dockerfile-dd11746ed183)
 
-This post isn't the place to give a whole lecture on containers, so I highly recommend reading all the sources I linked, along with [this 100-second video on Docker](https://www.youtube.com/watch?v=Gjnup-PuquQ). 
+This post isn't the place to give a whole lecture on containers, so I highly recommend reading all the sources I linked, along with [this 100-second video on Docker](https://www.youtube.com/watch?v=Gjnup-PuquQ).
 
 Ultimately, Docker simplifies distributing large applications, especially ones with several microservices. As a user, I don't have to figure out how to set up a Postgresql database or manage various configurations for the app to work and worry about installing the wrong package version or having the wrong operating system.
 
 ![](../../assets/blogs/containers.png)
 all containers in my home server
 
-This might sound like a lot if you've never touched Docker before, but you don't necessarily have to *learn* all of the concepts to set up services on your home server. As long as you know how to access the command line, install Docker, and run `docker compose pull && docker compose up -d`, you should be able to set up most applications with ease.
+This might sound like a lot if you've never touched Docker before, but you don't necessarily have to _learn_ all of the concepts to set up services on your home server. As long as you know how to access the command line, install Docker, and run `docker compose pull && docker compose up -d`, you should be able to set up most applications with ease.
+
 ## Ports
 
 Naturally, all these services (containers) communicate with its network to function. How do they uniquely identify themselves on the device and the network?
@@ -42,15 +44,16 @@ Naturally, all these services (containers) communicate with its network to funct
 
 I introduce you: ports. These are numbers that follow after an IP address that identifies a process communicating under the IP address. If IP addresses are like home addresses, ports are the names assigned to those living in it. If you've done any basic web development or opened a Minecraft server, you've probably seen them a lot.
 
-Many home server services will demand a handful of ports for themselves so you and/or other processes can communicate with each other. It is important to know that **only one service may control a port - you can't have multiple containers use the same port!** 
+Many home server services will demand a handful of ports for themselves so you and/or other processes can communicate with each other. It is important to know that **only one service may control a port - you can't have multiple containers use the same port!**
 
-Why is that an issue? Well, a lot of services with a web interface ask for port 80 and/or 443, but only one service can have each one. To get around this issue, you have to *remap* ports through Docker.
+Why is that an issue? Well, a lot of services with a web interface ask for port 80 and/or 443, but only one service can have each one. To get around this issue, you have to _remap_ ports through Docker.
 
 For example, let's say your movie service is asking for port 5353. Remap it to port 8080, and it will think it is accessing `ipaddress:5353`, while it actually communicates through `ipaddress:8080`. This way, you ensure every process has access to a port while having no idea that they've been reassigned.
 
 You have to be careful with this, though. Your movie service could've been asking for port 5353 because it expects to communicate with its database through that port. Make sure to remap that port on the database's container's configuration as well so it knows that the port has been changed.
 
 You'll want to avoid default ports unless you know what you are doing. Here are some default ports:
+
 - 22; this is for SSH.
 - 53; DNS.
 - 80; HTTP.
@@ -60,11 +63,12 @@ You'll want to avoid default ports unless you know what you are doing. Here are 
 Personally, I just avoid anything under 10000 and assign unexpected numbers, like 19827.
 
 Here's an important fact: there is no such thing as just communicating with an IP address. You are always interacting with a port. Using the analogy from above, you don't communicate with a home address - you do with the person in it. I'll get into specific examples later.
+
 ## DNS
 
 You'll quickly realize it's annoying to connect to home applications by their IP address and port. You'll also start memorizing them without trying, but wouldn't it be nice if you could access your movie service through a link like, `movies.home`, and your legally downloaded e-books through `legallydownloadedebooks.home`?
 
-But first, what does it mean to make a URL? Think of a URL as making a nickname for a physical address. For example, "University of Central Florida" or "the Starbucks near me" don't actually mean anything on their own, but they are very meaningful when associated with physical locations via a record, like my memories. Likewise, Google.com and many other links are simply names that a Domain Name System server (DNS server) recognizes and *routes* to specific devices that actually return meaningful information.
+But first, what does it mean to make a URL? Think of a URL as making a nickname for a physical address. For example, "University of Central Florida" or "the Starbucks near me" don't actually mean anything on their own, but they are very meaningful when associated with physical locations via a record, like my memories. Likewise, Google.com and many other links are simply names that a Domain Name System server (DNS server) recognizes and _routes_ to specific devices that actually return meaningful information.
 
 ![](../../assets/blogs/shocked-img.png)
 Me when I learned routers do routing
@@ -100,7 +104,7 @@ A reverse proxy solves this. Here's how:
 
 Yay!
 
-The reverse proxy solution I use is [NGINX](https://nginx.org/en/). Reverse proxy isn't the *only* thing it can do, but that's all we have to know for the purpose of this section.
+The reverse proxy solution I use is [NGINX](https://nginx.org/en/). Reverse proxy isn't the _only_ thing it can do, but that's all we have to know for the purpose of this section.
 
 ## SSH with key
 
@@ -119,11 +123,17 @@ The problem is that you have a new thing to protect - your key. After all, an RS
 (What puts the 'Secure' in SSH is also a [great read](https://www.digitalocean.com/community/tutorials/understanding-the-ssh-encryption-and-connection-process))
 
 ---
+
 I have more things to talk about but I've left this in draft for too long:
+
 ## Exposing an IP address to the public
+
 ## NAT Loopback
+
 ## Tunnels
+
 ## Security measures
+
 - HTTPS, Let's Encrypt, SSL Certs
 - Cloudflare
 - fail2ban: ban IP addresses that causes multiple auth errors

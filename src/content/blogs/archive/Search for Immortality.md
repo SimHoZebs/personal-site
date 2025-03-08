@@ -19,7 +19,11 @@ If we consider that about 56,000,000 dies every year[^4], about 5% of deaths eve
 "The current causes of aging in humans are cell loss (without replacement), DNA damage, oncogenic nuclear mutations and epimutations, cell senescence, mitochondrial mutations, lysosomal aggregates, extracellular aggregates, random extracellular cross-linking, immune system decline, and endocrine changes. Eliminating aging would require finding a solution to each of these causes, a program de Grey calls engineered negligible senescence."[^5]
 
 [^1]: (https://dataunodc.un.org/crime/intentional-homicide-victims)
+
 [^2]: (https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death)
+
 [^3]: (https://www.who.int/mental_health/prevention/suicide/suicideprevent/en/)
+
 [^4]: (http://data.un.org/Data.aspx?d=PopDiv&amp;f=variableID:65)
+
 [^5]: (https://t.umblr.com/redirect?z=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FImmortality%23Aging&t=OTBhMzY3NmRmM2YxODY0YzA3NTY0OGU0MmE3YTM3Y2RiNzRmYzU5MixmZDVhMTJlMmViMmVjNWY2NmFjMzdiYTRiOWZlMWFlMDZjOTk0YmU3)
