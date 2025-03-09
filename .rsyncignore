@@ -1,22 +1,38 @@
-# Ignore everything
-*
+# build output
+dist/
+.vscode/
 
-# Don't ignore markdown files
-!*.md
+# generated types
+.astro/
 
-# Don't ignore images
-!*.jpg
-!*.jpeg
-!*.png
-!*.gif
-!*.webp
-!*.svg
+# dependencies
+node_modules/
 
-# Don't ignore videos
-!*.mp4
-!*.webm
-!*.mov
-!*.mkv
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Don't ignore directories, so rsync can traverse them
-!*/
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+##Syncthing/obsidian
+.stversions/
+.obsidian/
+.trash/
+.stignore
+.smart-env/
+
+.git/
+*.js
+*.ts
+*.mjs
+*.astro
+*.*ignore
+*.css
+package*.json

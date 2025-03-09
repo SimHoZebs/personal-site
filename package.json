@@ -10,8 +10,8 @@
     "astro": "astro",
     "prettier": "prettier --write . --plugin=prettier-plugin-astro",
     "tsc": "tsc",
-    "pull": "rsync -avPu /mnt/c/Users/simho/Documents/Obsidian/personal-site/ . --exclude-from=.rsyncignore --delete",
-    "push": "rsync -avPu . /mnt/c/Users/simho/Documents/Obsidian/personal-site/ --exclude-from=.rsyncignore --delete"
+    "pull": "rsync -avPu --no-perms /mnt/c/Users/simho/Documents/Obsidian/personal-site/ . --exclude-from=.rsyncignore --delete",
+    "push": "rsync -avPu --no-perms . /mnt/c/Users/simho/Documents/Obsidian/personal-site/ --exclude-from=.rsyncignore --delete"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.1.0",

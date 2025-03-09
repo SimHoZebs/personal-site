@@ -1,0 +1,22 @@
+---
+edited: 2019-02-24
+---
+
+Rain.
+test
+
+There are apps that make calming noises to drown out silence during studies. And my noise is the sound of rain. It promotes inactiveness, which I'm pretty good at. I don't use it that often since I rarely study at home, but it's something I always use when it is too quiet.
+
+Rain is alright, unless I'm going out. Half a year is left before I'm free from my title, but till then I still have to go to school. Even on summer holidays. Luckily, because it's summer holidays, I don't have to reach there by 8. Well, I should, but I'm not going to because, I can.
+
+I walk out of the apartment, standing below the concrete overhead protection. It's raining heavier than I thought; Almost as much as a rainforest biome. I put my black school bag down and put on a black waterproof cover. My umbrella isn't going to cover the bulge on my back - not at this size. I wish I had a bigger one. A beach parasol could be enough. Thinking back, I did borrow one before from a junior in my school, but they were still defective at waterproofing my shoes and legs, so a parasol wouldn't really satisfy me. A parasol is not what I need. I need a pair of rainboots.
+
+Few steps out of the apartment entrance, and I already feel a shower at my lower half. Multiple things cross my mind. Do I need a dry towel to dry myself at school? I should put on my meaninglessly short raincoat. My shoes are going to get wet. I should go back. So I do - I walk back up to the overhead and pull out a black, meaninglessly short raincoat. It's as long as my shorts, completely ignoring the area that actually gets wet. But in this much rain, it is better than nothing. Wind is probably going to screw me from the side, and the water that'd drip from the cover of my bag will hit the coat instead of my ass. This is all I'm doing. I'm not going back up there to get a towel. I'm already late by 15 minutes, and any later I'd have no excuse to tell the teacher. Not like he's going to ask, but in case he does.
+
+Finally ready to go, I walk out of protection and head to school. Rain still splashes on my thighs, and I already see bits of soaked spots on my shoes. It'll be alright, I just have to shorten my pacing. I walk through the mushy gravel path next to the apartment. The sides are decorated with trees and bushes, and since it's now summer, spiders as well. Thanks to the rain, they seem to have washed away. But spider webs aren't opaque at all; I unintentionally just walk through them a lot, so I might be just missing them. At the end of the path there is the red brick intersection. Either I walk down the white stone stairs and walk in between two separate apartments, or take the long way around our apartments. Obviously, I take the shorter path. I used to take the longer, but now is not the time for silence.
+
+A step on the stairs and I already know I don't want to take this path. Flooded in rainwater, I can even see a water current in it, as if it's a river. _'They need to make more sewer holes,'_ I think. I turn and start walking the long way around. However, it's no different. The rain water splashes around me as I walk, as if rain isn't doing a good job of wetting me already. Should I go back home? This is too much rain to handle. What should I tell my teacher? Maybe school's closed. Is it closed? Were there any messages about it that I missed? I pull out my phone and nope, nothing. Even the emergency centre didn't send me a heavy rain alert. Well, they never send me alerts. Anyway, I still have to go to school. I could simply not go there. I have classes at 11, so I could stay home till then. When is it going to rain till? I pull out my phone again, and... 6PM. It's going to rain till 6PM.
+
+Crossing through the water-filled pavement, I stand waiting for the red light to turn green. Not too long later, all the cars align behind the white lines, waiting for their red to turn green. Because no one wants to be out in this weather I'm the only one crossing the road. And for some reason, I have a feeling at least one of them is watching me. I am now conscious about my walking. Am I spreading my legs too wide? Do I look weird wearing a useless raincoat? is the bag cover still on? Am I u-
+
+I dipped in to a pool of rainwater, right at the end of the cross. My feet, what was once partially wet, is now COMPLETELY soaked. I quickly pull my leg away, and jump on to the pavement. _'What must they think of me?',_ I continue.

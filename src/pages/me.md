@@ -7,7 +7,7 @@ title: me
 
 My name is Ho Sim, but I go by "Simho" in most forms of communication for reasons I'll simply put as: that's what I've been called throughout my life in Korea and Malaysia.
 
-For the last few years, I've been trying to build systems that privately organize all personal information and create apps that reveal insights from them. There's more data about me than ever before - instead of leaving them to be used for nothing but personalizing ads and YouTube feeds, let's use it to improve understanding of ourselves. My budgeting app, [Nedon](projects/Nedon.md), is a small, but important piece of this effort.
+For the last few years, I've been trying to build systems that privately organize all personal information and create apps that reveal insights from them. There's more data about me than ever before - instead of leaving them to be used for nothing but personalizing ads and YouTube feeds, let's use it to improve understanding of ourselves. My budgeting app, [Nedon](Nedon.md), is a small, but important piece of this effort.
 
 I'm also very invested in technologies that empower individuals to get more done and enhance digital freedom. Example:
 
@@ -20,7 +20,7 @@ This all stems from my philosophy - everyone should be free and powerful enough 
 
 ## What Am I Doing Now?
 
-Other than building [Nedon](../content/projects/Nedon.md) in my spare time, I'm pursuing a Bachelor's in Computer Science at University of Central Florida. I am a mentor at KnightHacks, pushing students to build skills outside of classes.
+Other than building [Nedon](Nedon.md) in my spare time, I'm pursuing a Bachelor's in Computer Science at University of Central Florida. I am a mentor at KnightHacks, pushing students to build skills outside of classes.
 
 Professionally, I am doing a software engineering internship at SRAM, mainly handling DevOps and Backend development.
 
