@@ -118,6 +118,7 @@ Since I have no concrete idea of where I'll be, I don't really have a plan for t
 ---
 
 ![](../../src/assets/blogs/amazon-oa.png)
+
 Little side note - Amazon invited me to take their Online Assessment. It feels like an achievement because this is the first time I’m hearing back after all the applications I’ve been submitting to them in the past 2 years. It feels like I'm finally recognized for my experiences. But at the same time, I’ve solved several OAs from many companies with perfect/near-perfect score, only to be told that I’m somehow a great candidate yet not the best fit at this very moment.
 
 Even if I do get through it and get an interview, it'll most likely end up being a really good learning experience, knowing my Leetcode skills and limited interview experience. I don't mean to be pessimistic - I just know where I stand. I'll still keep climbing.
