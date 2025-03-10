@@ -4,21 +4,16 @@ import "@fontsource/iosevka-aile";
 import Layout from "./Layout.astro";
 
 import { fade } from "astro:transitions";
-import type { getStaticPaths as getBlog } from "../pages/blogs/[blog].astro";
-import type { getStaticPaths as getProject } from "../pages/projects/[project].astro";
 import Footer from "../components/Footer.astro";
 
-type Blog = Awaited<ReturnType<typeof getBlog>>[0]["props"]["blog"];
-type Project = Awaited<ReturnType<typeof getProject>>[0]["props"]["project"];
-
 interface Props {
-  entry: Blog | Project;
+  title: string;
 }
 
-const { entry } = Astro.props;
+const { title } = Astro.props;
 ---
 
-<Layout title={entry.data.title}>
+<Layout title={title}>
   <div
     class="w-full h-full flex flex-col items-center bg-slate-900 px-5 overflow-scroll overflow-x-hidden"
   >
@@ -28,7 +23,7 @@ const { entry } = Astro.props;
           title="Back to home"
           class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
           back-button"
-          href=`/#${entry.data.title}`
+          href=`/#${title}`
         >
         </a>
       </div>
@@ -37,25 +32,6 @@ const { entry } = Astro.props;
     <header class="max-w-2xl w-full flex flex-col gap-y-10 pb-10">
       <section class="flex flex-col gap-y-3 items-center mt-10 text-zinc-300">
         <slot name="header" />
-        {
-          entry && (
-            <div class="items-center w-full justify-evenly flex gap-x-5 text-sm text-zinc-400">
-              {entry?.data.published && (
-                <p class="text-balance">
-                  Published: {entry.data.published.toUTCString().slice(0, -13)}
-                </p>
-              )}
-              {entry?.data.edited && (
-                <p class="text-balance">
-                  Edited: {entry.data.edited.toUTCString().slice(0, -13)}
-                </p>
-              )}
-              <p class="whitespace-nowrap">
-                ~{Math.floor(entry.body.split(" ").length / 238)} min read
-              </p>
-            </div>
-          )
-        }
       </section>
     </header>
 

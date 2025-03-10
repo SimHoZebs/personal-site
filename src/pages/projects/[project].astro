@@ -13,12 +13,17 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
-if (!project.data.title)
-  project.data.title = project.id.split("/").at(-1)?.slice(0, -3);
+
+const title =
+  project.data.title ||
+  project.filePath?.split("/").at(-1)?.slice(0, -3) ||
+  project.id.split("/").at(-1) ||
+  "untitled";
+
 const { Content } = await render(project);
 ---
 
-<ContentLayout entry={project}>
+<ContentLayout title={title}>
   <div class="flex flex-col gap-y-2 items-center" slot="header">
     {
       project.data.headerImage && project.data.headerAlt ? (

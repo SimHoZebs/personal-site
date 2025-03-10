@@ -14,17 +14,16 @@ export async function getStaticPaths() {
 
 const { blog } = Astro.props;
 
-if (!blog.data.title)
-  blog.data.title =
-    blog.data.title ||
-    blog.filePath?.split("/").at(-1)?.slice(0, -3) ||
-    blog.id.split("/").at(-1) ||
-    "untitled";
+const title =
+  blog.data.title ||
+  blog.filePath?.split("/").at(-1)?.slice(0, -3) ||
+  blog.id.split("/").at(-1) ||
+  "untitled";
 
 const { Content } = await render(blog);
 ---
 
-<ContentLayout entry={blog}>
+<ContentLayout title={title}>
   <div slot="header" class="flex flex-col gap-y-2 items-center">
     <h1
       id={blog.data.title}
@@ -33,6 +32,19 @@ const { Content } = await render(blog);
     >
       {blog.data.title}
     </h1>
+    <div
+      class="items-center w-full justify-evenly flex gap-x-5 text-sm text-zinc-400"
+    >
+      <p class="text-balance">
+        Published: {blog.data.published?.toUTCString().slice(0, -13)}
+      </p>
+      <p class="text-balance">
+        Edited: {blog.data.edited?.toUTCString().slice(0, -13)}
+      </p>
+      <p class="whitespace-nowrap">
+        ~{Math.floor(blog.body.split(" ").length / 238)} min read
+      </p>
+    </div>
   </div>
 
   <Content />
