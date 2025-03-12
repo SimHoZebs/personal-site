@@ -36,3 +36,4 @@ pnpm-debug.log*
 *.*ignore
 *.css
 package*.json
+pnpm-lock.yaml
