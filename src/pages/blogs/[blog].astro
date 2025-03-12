@@ -38,12 +38,20 @@ const { Content } = await render(blog);
       <p class="text-balance">
         Published: {blog.data.published?.toUTCString().slice(0, -13)}
       </p>
-      <p class="text-balance">
-        Edited: {blog.data.edited?.toUTCString().slice(0, -13)}
-      </p>
-      <p class="whitespace-nowrap">
-        ~{Math.floor(blog.body.split(" ").length / 238)} min read
-      </p>
+      {
+        blog.data.edited && (
+          <p class="text-balance">
+            Edited: {blog.data.edited?.toUTCString().slice(0, -13)}
+          </p>
+        )
+      }
+      {
+        blog.body && (
+          <p class="whitespace-nowrap">
+            ~{Math.floor(blog.body.split(" ").length / 238)} min read
+          </p>
+        )
+      }
     </div>
   </div>
 
