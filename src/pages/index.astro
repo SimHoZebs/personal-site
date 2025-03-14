@@ -7,6 +7,8 @@ import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
 import links from "../util/links";
 
+const CHAR_PER_MIN = 238;
+
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
 // Example: retrieve `src/content/blog/**`
@@ -26,33 +28,37 @@ const allBlog = (await getCollection("blogs"))
     return blog;
   })
   .sort((b, a) => {
-    return a.data.published.getTime() - b.data.published.getTime();
+    // biome-ignore lint/style/noNonNullAssertion: filter already eliminates null values
+    return a.data.published!.getTime() - b.data.published!.getTime();
   });
 
 const allBlogMetadata = allBlog.map((blog) => {
-  const body = blog.body.split("\n");
+  const body = blog.body || "";
+  const paragraphs = body.split("\n");
 
-  //index 0 is frontmatter
-  let summary = body[1].trim();
+  //avoid callouts, headings, and images
+  const skip = /^[!#>]/;
 
-  let i = 2;
-  const markdown = /^[!#*>]/;
-  const ending = /[\.!?;~:]$/;
-  while (
-    (summary.match(markdown) || !summary.match(ending)) &&
-    i < body.length - 1
-  ) {
-    if (summary.match(markdown)) summary = body[i].trim();
-    else summary += `\n ${body[i].trim()}`;
+  let autoSummary = paragraphs[0].trim();
+  //if the first paragraph is markdown or empty, skip it
+  for (let i = 0; i < paragraphs.length - 1; i++) {
+    if (paragraphs[i].match(skip) || paragraphs[i].trim() === "") continue;
 
-    i++;
+    autoSummary = `\n ${paragraphs[i].trim()}`;
+    //strip markdown, like bolds and italics
+    // may become an issue if the blog uses * or _ in a non-markdown context
+    autoSummary = autoSummary.replace(/[*_]/g, "");
+
+    if (autoSummary.length > CHAR_PER_MIN)
+      autoSummary = autoSummary.slice(0, CHAR_PER_MIN) + "...";
+    break;
   }
 
-  const readMin = Math.floor(blog.body.split(" ").length / 238);
+  const readMin = Math.floor(body.split(" ").length / 238);
 
   return {
     readMin,
-    summary,
+    summary: blog.data.summary || autoSummary,
   };
 });
 ---
@@ -170,12 +176,9 @@ const allBlogMetadata = allBlog.map((blog) => {
                 </div>
 
                 <p class="flex flex-col w-full text-zinc-200">
-                  {blog.data.summary ||
-                    allBlogMetadata[i].summary
-                      .split("\n")
-                      .map((line) => (
-                        <p class="w-full text-start text-zinc-200">{line}</p>
-                      ))}
+                  {allBlogMetadata[i].summary.split("\n").map((line) => (
+                    <p class="w-full text-start text-zinc-200">{line}</p>
+                  ))}
                 </p>
               </article>
               <div class="self-start font-semibold text-indigo-300">
