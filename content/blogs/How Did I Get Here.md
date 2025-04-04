@@ -2,7 +2,7 @@
 title: How Did I Get Here?
 summary: When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science.
 published: 2024-02-01
-edited: 2024-10-16
+edited: 2025-04-04
 ---
 
 > Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I'm still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
@@ -50,7 +50,7 @@ Then I found [Pencilmation](https://www.youtube.com/@pencilmation). Again, I _ha
 
 It didn't take long for me to discover the [first Minecraft video](https://www.youtube.com/watch?v=LxzwaJmpYwc) I ever watched, which I weirdly remember to this day. That led to discovering AntVenom, YogsCast, Sky, EditZP, and many others that I don't even remember anymore. Soon, Minecraft not only became the only game I played but also the game that brought together the friends I still chat with to this day.
 
-As I religiously watched Minecraft content and learned about the game, I started to get slightly frustrated with people's gameplay. They were either missing the 1obvious or lacking game knowledge; they could be playing better! I believed I could play better than them. To prove it, I started my own YouTube channel and show people how you truly play Minecraft. The _best_ player.
+As I religiously watched Minecraft content and learned about the game, I started to get slightly frustrated with people's gameplay. They were either missing the obvious or lacking game knowledge; they could be playing better! I believed I could play better than them. To prove it, I started my own YouTube channel and show people how you truly play Minecraft. The _best_ player.
 
 ![](../../src/assets/blogs/old-screen.jpg)
 Hence the name.
@@ -83,12 +83,12 @@ I don't know what got me so interested. I just was. One of my dream careers was 
 
 My curiosity only grew bigger over time, but leaned towards Physics. I frequently read articles from sites like IFuckingLoveScience (which turned out to be controversial) and Phys.org[^physorg]. MinutePhysics, SciShow, PBS Space Time, and SmarterEveryday were some of my favorite channels to learn easier stuff. On breaks between classes, I studied Physics with my friends, discussing whether light was a particle or a wave, the Big Bang and the universe's expansion, and so on.
 
-I learned new things in classes for sure, but a lot seemed terribly simplified and sometimes contradictory. When I proved how Bohr's atomic model made no sense, I quickly became the guy that "asks more than what we need to know for the exams".
+I learned new things in classes for sure, but a lot seemed terribly simplified and sometimes contradictory. When I proved how Bohr's atomic model made no sense, some of my 'friends' refused to include me in study session simply because I "confused them by asking more than what we need to know for the exams".
 
 ![A segment of a Reddit comment that reads: You know, for an 'O' level student your insight into these questions is remarkable. During my 'O' level days I didn't give a shit about covalent bonds, all I knew was that they shared electrons. I applaud you for your effort and curiousity!](../../src/assets/blogs/compliment.png)
 Thankfully, some thought otherwise. (Reddit)
 
-Once my tiny brain got stuck on quantum mechanics, engineering won over a significant portion of my interests. I participated in a nationwide engineering competition at 14, being one of two in our school to get through the written assessment and make it through the quarterfinals[^masmo]. 'Physics of the Impossible' by Michio Kaku became my most influential book - I learned that nothing was impossible if we tried hard enough.
+Once my tiny brain couldn't progress understanding quantum mechanics, I started leaning towards mechanical engineering. I participated in a nationwide engineering competition at 14, being one of two in our school to get through the written assessment and make it through the quarterfinals[^masmo]. 'Physics of the Impossible' by Michio Kaku became my most influential book - I learned that nothing was impossible if we tried hard enough.
 
 ![Iron man](https://i0.wp.com/scifiinterfaces.com/wp-content/uploads/2015/09/iron-drone.png?resize=768%2C320&ssl=1)
 
@@ -106,9 +106,9 @@ While individual technological improvements necessary for my exoskeleton robot t
 
 I went back to the drawing board and wrote down all the major global issues I was aware of. I drew a diagram showing the relationship between land pollution & scarcity, water pollution & scarcity, world hunger, air pollution, excess waste and lack of management, etc. This short reflection resulted in a shocking conclusion: agriculture needs a revolution. I say "shocking", because it never occurred to me that producing food was unsustainable. I mean, haven't we been doing that since existence?
 
-The most attractive solution to all this seemed to lie in cellular agriculture research - nothing close to the kind of study I did for the 16 years of my life. In fact, for a long time, Biology was just a boring subject that I happened to score better than Physics. I even claimed that it was a pointless study explaining what Physics already covered. Despite all this, it felt like it was my duty to pursue it.
+The most attractive solution to all this seemed to lie in cellular agriculture research - nothing close to the kind of study I did for the 16 years of my life. In fact, for a long time, Biology was just a boring subject that I happened to score better than Physics. I even claimed that it was a pointless study - a redundant subject explaining what Physics could cover. Despite all this, it felt like it was my duty to pursue it.
 
-Even though I had some distaste for Biology, it quickly became the most fascinating subject. YouTube videos, /r/transhumanism, and random articles helped me realize that Physics was never sufficient to explain the complexities of life and start appreciating the ways biologists figure out explanations and predictions for things that always seem unpredictable. While Physics helped me understand the world around me, Biology helped me understand how _I_ - everyone - worked.
+Even though I had some distaste for Biology, it quickly became the most fascinating subject. YouTube videos, /r/transhumanism, and random articles helped me quickly realize that Physics was never sufficient to explain the complexities of life and start appreciating the ways biologists figure out explanations and predictions for things that always seem unpredictable. While Physics helped me understand the world around me, Biology helped me understand how _I_ - everyone - worked.
 
 ![](../../src/assets/blogs/kast-orientation.png)
 I'm on the second row from the top, all the way to the right end.
@@ -123,7 +123,7 @@ I always had an interest in programming. When I learned how to animate in Flash,
 
 I [tried to learn programming in the past](https://youtu.be/wIrc13w1sMY?list=PLgeX8ilKjqWMtTOPXkB09YX2mL9mex4Kh), but I never had the motivation to dedicate enough time. I was mostly busy playing games, but I was also confident I'd pursue mechanical engineering (it never occurred to me that programming skills were necessary). By the time I was in high school, I was too busy focusing my energy on studying for college entrance exams and building an attractive biology-related portfolio.
 
-Funnily enough, university admission was what freed me to learn Python. I decided to self-study the language before my first semester started to prepare for the programming course I had to take in my freshman year. I purchased a Zero-to-Hero course on Udemy, never imagining that I would wake up **every day purely excited to learn it.**
+Funnily enough, university admission was what freed me enough to learn Python. I decided to self-study the language before my first semester started to prepare for the programming course I had to take in my freshman year. I purchased a Zero-to-Hero course on Udemy, never imagining that I would wake up **every day purely excited to learn it.**
 
 I put a pause on programming once my freshman year started and went back to being fascinated by Biology. I always saw it as a study of reverse engineering extremely complicated machines, and that was more apparent than ever before. I joined a club and participated in group research projects, which were some of the most fun activities throughout the semester. There was some disparity between my interests and others; I was the only one who cared about making meat without cows, while most were focused on medical/pharmaceutical/cosmetic purposes of stem cell research. Regardless, I still enjoyed Biology. Nothing was more meaningful than contributing to humanity's prosperity.
 
@@ -134,9 +134,9 @@ The second semester was when things started to get confusing. Once the first sem
 
 I started to think, "Maybe I'm in the wrong major."
 
-This was terrifying. Throughout high school, I woke up at 6 AM and studied in the school library till 10 PM every day - including all public holidays - so I could stand a chance against others trying to take one of the ~40 spots available to major in Stem cell and Regenerative Biotechnology. I failed once, so I spent another excruciating year studying for the entrance exam. After years of effort, I joined one of the top universities in Korea for biotechnology, just to find something else much more enjoyable.
+This was terrifying. Throughout high school, I woke up at 6 AM and studied in the school library till 10 PM every day - including all public holidays - so I could stand a chance against others trying to take one of the ~40 spots available to major in Stem cell and Regenerative Biotechnology. When I got rejected by all universities, I spent another excruciating year studying for the entrance exam. After years of effort, I joined one of the top universities in Korea for biotechnology... Just to find something else much more enjoyable.
 
-And how was I going to justify ditching cellular agriculture? I had planned my education in the path that would eventually contribute to solving problems endangering humanity's survival. Software development, on the other hand, was purely entertaining. It was fun seeing my work come to life immediately, and that was all there was to it. I had to pick between personal joy and the greater good.
+How was I going to justify ditching cellular agriculture? I had planned my education in the path that would eventually contribute to solving problems endangering humanity's survival. Software development, on the other hand, was purely entertaining. It was fun seeing my work come to life immediately, and that was all there was to it. I had to pick between personal joy and the greater good.
 
 ![](../../src/assets/blogs/19esc.jpg)
 Speaking of the greater good...
@@ -145,7 +145,7 @@ I joined the army right after my freshman year to serve Korea's mandatory milita
 
 It was a difficult decision, but it felt right. All this time I tried to find how my talents could be better utilized in software development than cellular agriculture research, but I realized that wasn't the only thing that mattered. My happiness mattered more - in fact - it mattered above all else. I have to enjoy the process to a certain degree before finding motivation in its altruistic significance. While I enjoyed _learning_ Biology, I wasn't confident that I would enjoy _discovering_ Biology. Research demands patience and a heart of steel to push through countless failures, especially in the biotech field. Software development, on the other hand, delivers results pretty much instantaneously the moment the code is compiled. The quicker feedback loop felt much more rewarding and the sense of control.
 
-Above all, I always had an inherent passion for creating things. Going back to the beginning, I drew comics because I wanted to _create_ my own comic. I went ahead and _created_ my own web novel, Book-RPG, YouTube skits, Minecraft videos, and so on. That was why engineering felt like the natural choice. Even my path to cellular agriculture was because I wanted to design and _create_ systems that would grow meat without cows. And now, I just happened to discover the best tool to express this love for creation; software development. There's a quote that goes along the lines of, "Programming is as close as you can get to becoming God himself".
+Above all, I always had an inherent passion for creating things. Going back to the beginning, I drew comics because I wanted to _create_ my own comic. I went ahead and _created_ my own web novel, Book-RPG, YouTube skits, Minecraft videos, and so on. That was why engineering felt like the natural choice. Even my path to cellular agriculture was because I wanted to design and _create_ systems that would grow meat without cows. And now, I just happened to discover the best tool to express this love for creation; software development. There's a quote that goes along the lines of, "Programming is as close as you can get to imitating God himself".
 
 ## Now
 
