@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/profile.png";
 import Footer from "../components/Footer.astro";
 import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
@@ -77,6 +77,7 @@ const allBlogMetadata = allBlog.map((blog) => {
           src={profilePic}
           alt="Profile pic"
           height={180}
+          quality={"high"}
           class="rounded-lg border-slate-700 border-1"
         />
         <div class="flex items-center md:items-start flex-col gap-y-2">
@@ -84,7 +85,9 @@ const allBlogMetadata = allBlog.map((blog) => {
             Hi! I'm Ho Sim <br /> (심호).
           </p>
 
-          <p class="flex gap-y-1 flex-col text-center md:text-start">
+          <p
+            class="flex gap-y-1 flex-col text-center md:text-start text-balance"
+          >
             I'm building a system that privately organize personal data and
             create apps that reveal insights from them.
             <span></span>
