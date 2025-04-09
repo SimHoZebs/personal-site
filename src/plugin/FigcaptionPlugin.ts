@@ -7,14 +7,10 @@ function isElement(node: Node): node is Element {
   return node.type === "element";
 }
 
-function isText(node: Node): node is Text {
-  return node.type === "text";
-}
-
 function propertiesHaveHref(
   node: Element,
 ): node is Element & { properties: { href: string } } {
-  return !!(node.properties && node.properties.href);
+  return !!node.properties?.href;
 }
 
 // Types for callouts

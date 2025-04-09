@@ -8,7 +8,7 @@ I initially had this as a part of [2024 Reflection & 2025 Goals](2024%20Reflecti
 
 ## The Hunt
 
-![|300](../../src/assets/blogs/internship-rejections.png)
+![|350](../../src/assets/blogs/internship-rejections.png)
 
 Like every Computer Science student, I was on the hunt for a software engineering experience to put on my resume. I participated in two hackathons, went to career fairs, and submitted _hundreds_ of resumes across the United States. Despite all that, all I got back was a handful of fruitless OAs (TikTok is insane), 1 phone screening interview, and 1 in-person interview with Walmart. And that wasn't even a software engineering position!
 
@@ -28,7 +28,7 @@ I wasn't assigned to build a new project. Instead, my goal was to improve the te
 
 This tool had grown to a state where initial decisions were no longer scaling well for the future. Its architecture made it difficult to isolate issues and build new features safely. There was no easy way to create a development clone of the tool, pushing devs to literally test in prod. Most importantly, there were barely any automation for tests, let alone a foundation to support them. There were countless other improvements to be made, and my job was to make as many as I could.
 
-![|400](../../src/assets/blogs/slow-pipeline.png)
+![|350](../../src/assets/blogs/slow-pipeline.png)
 Struggles before I optimized the pipelines
 
 Okay - I don't want to sound negative, because this was a fun experience in the end - but I also want to be honest about my first impression: this sounded boring as hell. I mean, every software engineer knows writing tests isn't fun. That's exactly why this tool is lacking it! I was being tasked to do the annoying part. What kind of impact was I going to make by the end of the internship? "_Hey, the tool does exactly the same thing, but now we're more likely to know when it breaks that it's, in fact, broken"_ was not what I wanted my accomplishment to be.
@@ -55,7 +55,7 @@ None of this is to say my experience at SRAM was bad. _Oh no_, not at all. Despi
 
 ## My Performance
 
-![|400](../../src/assets/blogs/gitlab-github-enemy.png)
+![|350](../../src/assets/blogs/gitlab-github-enemy.png)
 muh github contribution streak
 
 Long before the internship, I heard a lot about Impostor Syndrome and how I was going to suffer from it. And suffer from it I did. I frequently found it hard to justify my pace, and for some problems, I couldn't tell why it took me so long to figure out the solution. It felt like I wasn't _thinking_ most of the time. Lack of experience with DevOps, direct postgresql manipulations, and server administration tools didn't help.
