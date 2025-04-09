@@ -53,18 +53,25 @@ function rehypePlugin() {
  */
 function processBlockquote(node: Element): void {
   const calloutData = extractCalloutData(node);
-  
+
   if (!calloutData) {
     node.properties = { className: "quote" };
     return;
   }
-  
-  const { calloutEl, firstTextIndex, calloutType, firstTextSplit, calloutElIndex } = calloutData;
-  
+
+  const {
+    calloutEl,
+    firstTextIndex,
+    calloutType,
+    firstTextSplit,
+    calloutElIndex,
+  } = calloutData;
+
   // Apply style based on callout type
-  const style = CALLOUT_STYLES[calloutType as CalloutType] || CALLOUT_STYLES.default;
+  const style =
+    CALLOUT_STYLES[calloutType as CalloutType] || CALLOUT_STYLES.default;
   node.properties = { className: style.className };
-  
+
   // Create header element for callout
   const callOutTextEl: Element = {
     type: "element",
@@ -72,10 +79,10 @@ function processBlockquote(node: Element): void {
     children: [{ type: "text", value: firstTextSplit[0] }],
     properties: {},
   };
-  
+
   // Update the existing text node to remove the callout marker
   (calloutEl.children[firstTextIndex] as Text).value = firstTextSplit[1];
-  
+
   // Insert the callout header
   node.children.splice(calloutElIndex - 1, 0, callOutTextEl);
 }
@@ -106,13 +113,19 @@ function extractCalloutData(node: Element) {
   const firstTextSplit = (
     calloutEl.children[firstTextIndex] as Text
   ).value.split("\n");
-  
+
   const calloutType = firstTextSplit[0]
     .replace("[!", "")
     .replace("]", "")
     .toLowerCase();
 
-  return { calloutEl, firstTextIndex, calloutType, firstTextSplit, calloutElIndex };
+  return {
+    calloutEl,
+    firstTextIndex,
+    calloutType,
+    firstTextSplit,
+    calloutElIndex,
+  };
 }
 
 /**
@@ -121,7 +134,7 @@ function extractCalloutData(node: Element) {
 function wrapTableWithScrollContainer(node: Element): void {
   const clone = structuredClone(node);
   clone.properties.className = "inside";
-  
+
   node.tagName = "div";
   node.properties = { className: "overflow-x-scroll w-full" };
   node.children = [clone];
@@ -133,7 +146,7 @@ function wrapTableWithScrollContainer(node: Element): void {
 function processImageAlt(node: Element): void {
   const altText = node.properties.alt as string;
   const [alt, width] = altText.split("|");
-  
+
   if (width) {
     node.properties.width = width;
     node.properties.alt = alt; // Update alt text to remove width part
@@ -146,7 +159,7 @@ function processImageAlt(node: Element): void {
 function processParagraph(node: Element): void {
   // Fix relative markdown links
   fixRelativeLinks(node);
-  
+
   // Convert paragraph with image to figure-figcaption
   transformToFigureIfNeeded(node);
 }
@@ -174,7 +187,7 @@ function transformToFigureIfNeeded(node: Element): void {
   const hasImage = node.children.some(
     (child) => isElement(child) && child.tagName === "img",
   );
-  
+
   if (!hasImage || node.children.length < 2) return;
 
   const figcaptionNode: ElementContent = {
