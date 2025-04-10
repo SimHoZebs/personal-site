@@ -1,6 +1,6 @@
 ---
 published: 2025-03-09
-edited: 2025-04-08
+edited: 2025-04-10
 ---
 
 > [!Note]
@@ -65,24 +65,26 @@ Then we also had to go back
 
 I've been skinny for most of my life, but there have been two instances where I put on a healthy amount of weight along with some muscle. The first was in the army, back in 2020/2021. This is the second instance. Pairing high calorie, protein rich food with daily weight lifting session throughout the summer was the key. I'm happy about the result, but I still have ways to go and need to be consistent.
 
-I also started caring about nutrients a bit more. I never had a sweet tooth, but I took extra steps to avoid sugar, like sticking to diet/zero variants of soda. I started taking Omega-3, magnesium, and multi vitamins supplements. Healthy balanced meals are still challenging to me, but I started following YouTube content relevant to healthy living so I can remind myself of the quality I should be treating my body. It's important to know healthy habits shouldn't start when you're sick, but when you're healthy.
+I also started caring about nutrients a bit more. I never had a sweet tooth, but I took extra steps to avoid sugar, like sticking to diet/zero variants of soda. I started taking Omega-3, magnesium, and multi vitamins supplements. Healthy balanced meals are still challenging to me, but I started following YouTube content relevant to healthy living so I can remind myself of the quality I should be treating my body. It's important to know healthy habits shouldn't start when you're sick, but before you're sick.
 
 ## Family
 
-I've only discussed personal and career growth throughout my reflection posts. Perhaps this is a sign that I'm getting old?
+I've only discussed personal and career growth in my previous reflection posts, but I'm including family this time. Perhaps this is a sign that I'm getting old?
 
 ![top-us|400](../../src/assets/blogs/top-us.png)
 I'm aware some finds this use of AI offensive; this is to keep others anonymous.
 
-My siblings visited me in the U.S. and had an awesome time together. This was my sister, Subin's first visit to America (second for my brother, John), and sharing this experience with them brought us closer as a family. Having lived apart for so long, this trip was a reminder of the importance of nurturing family bonds, especially considering the frequency we see each other. The Twenty One Pilots concert was unforgettable. It was great to see my family so excited and happy.
+My siblings visited me in the U.S. and had an awesome time together. This was my sister, Subin's first visit to America (second for my brother, John), and sharing this experience brought us closer as a family. This trip was a reminder of the importance of nurturing family bonds, especially considering the time zone difference and frequency we see each other. The Twenty One Pilots concert was unforgettable. It was great to see my family so excited and happy.
 
 ## Projects
 
-My goal was to complete [Nedon](../projects/Nedon.md) by the end of the year, but I still haven’t finished it. Balancing time between this project and other priorities, like grinding Leetcode, school assignments, and part-time internship, has been difficult. Sometimes, I wonder if I’m just slow at building features, fixing bugs, or if the project is genuinely complex.
+My goal was to complete [Nedon](../projects/Nedon.md) by the end of the year, but I still haven’t finished it. Balancing time between this project and other priorities, like grinding Leetcode, school assignments, and part-time internship, has been difficult. Sometimes, I wonder if I’m just slow at building features, fixing bugs, or if the project is genuinely complex. The biggest takeaway from this is recognizing my struggle to distribute effort across everything I want and need to do. I learned that I need to build a habit of scheduling my tasks, sticking to that schedule, and regularly reflecting on my progress. This is something I still need to work on.
 
-I did, however build a [home server](../projects/Digital%20Independence.md). Its taught me a ton when it comes to networking and system administration, and there's still more to learn.
+I did, however, build a [home server](../projects/Digital%20Independence.md). It has taught me a ton when it comes to networking and system administration, and there's still more to learn and fix.
 
-The biggest takeaway is recognizing my struggle to distribute effort across everything I want and need to do. I learned that I need to build a habit of scheduling my tasks, sticking to that schedule, and regularly reflecting on my progress. This is something I still need to work on.
+![custom-kb|350](../../src/assets/blogs/custom-kb.jpg)
+
+And after falling into a rabbit hole of ergonomic keyboards, I built a custom keyboard. It's not creamy or thocky as most prebuilt premium keyboards, but its functionally perfect. I'll make a blog post about it some day.
 
 ## 2025 Plans & Goals
 

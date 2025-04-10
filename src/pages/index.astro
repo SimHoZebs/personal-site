@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../../public/profile.png";
 import Footer from "../components/Footer.astro";
 import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
@@ -51,7 +51,7 @@ const allBlogMetadata = allBlog.map((blog) => {
     autoSummary = autoSummary.replace(/\[(.*?)\]\(.*?\)/g, "$1"); // Replace links with link text
 
     if (autoSummary.length > CHAR_PER_MIN)
-      autoSummary = autoSummary.slice(0, CHAR_PER_MIN) + "...";
+      autoSummary = `${autoSummary.slice(0, CHAR_PER_MIN)}...`;
     break;
   }
 
