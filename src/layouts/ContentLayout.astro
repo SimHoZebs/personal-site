@@ -21,9 +21,10 @@ const { title, summary } = Astro.props;
         <a
           title="Back to home"
           class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
-          back-button"
+          cursor-pointer"
           id="back-button"
-          href="javascript:window.history.back()"
+          role="button"
+          aria-label="Go back"
         >
         </a>
       </div>
@@ -204,3 +205,27 @@ const { title, summary } = Astro.props;
     }
   </style>
 </Layout>
+
+<script>
+  const init = () => {
+    document
+      .getElementById("back-button")
+      ?.addEventListener("click", (event) => {
+        // Check if the referrer is from the same origin
+        const referrerUrl = document.referrer
+          ? new URL(document.referrer)
+          : null;
+        const currentOrigin = window.location.origin;
+
+        if (referrerUrl && referrerUrl.origin === currentOrigin) {
+          // If the user came from within the site, go back
+          window.history.back();
+        } else {
+          // If the user came from an external site or directly, go to homepage
+          window.location.href = "/";
+        }
+      });
+  };
+
+  document.addEventListener("astro:page-load", init);
+</script>
