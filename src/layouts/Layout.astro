@@ -4,21 +4,23 @@ import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description = "Sim Ho's personal website" } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <script
       is:inline
       defer
       src="https://sim-analytics.duckdns.org/script.js"
       data-website-id="37252d51-9ed4-4e2c-a76b-b120f05318b7"></script>
     <meta charset="UTF-8" />
-    <meta name="description" content="Sim Ho's personal website" />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
