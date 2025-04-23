@@ -15,9 +15,9 @@ const { title, summary } = Astro.props;
 ---
 
 <Layout title={title} description={summary}>
-  <div class="w-full h-full flex flex-col items-center bg-slate-900 px-5">
-    <nav class="self-start sticky top-0 z-10 pt-5">
-      <div class="bg-slate-900 flex rounded-full p-2">
+  <div class="w-full flex flex-col items-center bg-slate-900 px-5">
+    <nav class="self-start md:self-center sticky top-0 z-10 pt-5 md:pr-190">
+      <div class="bg-slate-900 flex rounded-full p-2 hover:bg-slate-800">
         <a
           title="Back to home"
           class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6

@@ -31,20 +31,21 @@ const { title, description = "Sim Ho's personal website" } = Astro.props;
     class="flex flex-col font-sans leading-snug bg-slate-900 text-zinc-300 w-[100dvw] h-[100dvh] overflow-x-hidden"
   >
     <slot />
-    <style is:global>
-      .text-custom {
-        color: #d4d4d4;
-      }
-
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-      }
-    </style>
   </body>
 </html>
+
+<style is:global>
+  .text-custom {
+    color: #d4d4d4;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+</style>
