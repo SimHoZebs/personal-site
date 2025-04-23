@@ -15,9 +15,7 @@ const { title, summary } = Astro.props;
 ---
 
 <Layout title={title} description={summary}>
-  <div
-    class="w-full h-full flex flex-col items-center bg-slate-900 px-5 overflow-scroll overflow-x-hidden"
-  >
+  <div class="w-full h-full flex flex-col items-center bg-slate-900 px-5">
     <nav class="self-start sticky top-0 z-10 pt-5">
       <div class="bg-slate-900 flex rounded-full p-2">
         <a
@@ -25,7 +23,7 @@ const { title, summary } = Astro.props;
           class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
           back-button"
           id="back-button"
-          href="javascript:history.back()"
+          href="javascript:window.history.back()"
         >
         </a>
       </div>
