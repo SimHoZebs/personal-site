@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import ContentLayout from "../../layouts/ContentLayout.astro";
+import { generateAutoSummary } from "../../util/generateAutoSummary";
 
 export async function getStaticPaths() {
   const blogArray = await getCollection("blogs");
@@ -14,35 +15,13 @@ export async function getStaticPaths() {
 
 const { blog } = Astro.props;
 
-const CHAR_PER_MIN = 238;
-
 const title =
   blog.data.title ||
   blog.filePath?.split("/").at(-1)?.slice(0, -3) ||
   blog.id.split("/").at(-1) ||
   "untitled";
 
-// Generate auto summary
-const body = blog.body || "";
-const paragraphs = body.split("\n");
-const skip = /^[!#>]/; // Avoid callouts, headings, images
-let autoSummary = blog.data.summary || ""; // Use frontmatter description if available
-
-if (!autoSummary) {
-  for (let i = 0; i < paragraphs.length; i++) {
-    const paragraph = paragraphs[i].trim();
-    if (paragraph.match(skip) || paragraph === "") continue;
-
-    autoSummary = paragraph;
-    // Strip markdown
-    autoSummary = autoSummary.replace(/[*_]/g, "");
-    autoSummary = autoSummary.replace(/\[(.*?)\]\(.*?\)/g, "$1"); // Replace links with link text
-
-    if (autoSummary.length > CHAR_PER_MIN)
-      autoSummary = `${autoSummary.slice(0, CHAR_PER_MIN)}...`;
-    break; // Use the first valid paragraph
-  }
-}
+const autoSummary = generateAutoSummary(blog.body || "", blog.data.summary);
 
 const { Content } = await render(blog);
 ---

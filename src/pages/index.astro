@@ -6,6 +6,7 @@ import Footer from "../components/Footer.astro";
 import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
 import links from "../util/links";
+import { generateAutoSummary } from "../util/generateAutoSummary"; // Import the utility
 
 const CHAR_PER_MIN = 238;
 
@@ -34,32 +35,12 @@ const allBlog = (await getCollection("blogs"))
 
 const allBlogMetadata = allBlog.map((blog) => {
   const body = blog.body || "";
-  const paragraphs = body.split("\n");
-
-  //avoid callouts, headings, and images
-  const skip = /^[!#>]/;
-
-  let autoSummary = paragraphs[0].trim();
-  //if the first paragraph is markdown or empty, skip it
-  for (let i = 0; i < paragraphs.length - 1; i++) {
-    if (paragraphs[i].match(skip) || paragraphs[i].trim() === "") continue;
-
-    autoSummary = `\n ${paragraphs[i].trim()}`;
-    //strip markdown, like bolds and italics
-    // may become an issue if the blog uses * or _ in a non-markdown context
-    autoSummary = autoSummary.replace(/[*_]/g, "");
-    autoSummary = autoSummary.replace(/\[(.*?)\]\(.*?\)/g, "$1"); // Replace links with link text
-
-    if (autoSummary.length > CHAR_PER_MIN)
-      autoSummary = `${autoSummary.slice(0, CHAR_PER_MIN)}...`;
-    break;
-  }
-
-  const readMin = Math.floor(body.split(" ").length / 238);
+  const autoSummary = generateAutoSummary(body, blog.data.summary); // Use the utility function
+  const readMin = Math.floor(body.split(" ").length / CHAR_PER_MIN);
 
   return {
     readMin,
-    summary: blog.data.summary || autoSummary,
+    summary: autoSummary, // Use the result from the utility
   };
 });
 ---
