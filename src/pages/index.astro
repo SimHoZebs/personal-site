@@ -152,10 +152,16 @@ const allBlogMetadata = allBlog.map((blog) => {
                 </h2>
 
                 <div class="flex gap-x-5">
-                  <p class="text-sm text-zinc-400">
+                  <p
+                    class="text-sm text-zinc-400"
+                    transition:name={`${blog.data.title} published`}
+                  >
                     {blog.data.published?.toLocaleDateString()}
                   </p>
-                  <p class="text-sm text-zinc-400">
+                  <p
+                    class="text-sm text-zinc-400"
+                    transition:name={`${blog.data.title} read-time`}
+                  >
                     ~{allBlogMetadata[i].readMin} min read
                   </p>
                 </div>

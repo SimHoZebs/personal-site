@@ -23,7 +23,7 @@ const title =
 const { Content } = await render(project);
 ---
 
-<ContentLayout title={title}>
+<ContentLayout title={title} summary={project.data.summary}>
   <div class="flex flex-col gap-y-2 items-center" slot="header">
     {
       project.data.headerImage && project.data.headerAlt ? (

@@ -25,6 +25,7 @@ const { title, summary } = Astro.props;
           class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
           back-button"
           id="back-button"
+          href="javascript:history.back()"
         >
         </a>
       </div>
@@ -205,17 +206,3 @@ const { title, summary } = Astro.props;
     }
   </style>
 </Layout>
-
-<script>
-  import { navigate } from "astro:transitions/client";
-
-  // Navigate to the selected option automatically.
-  const backButton = document.querySelector("#back-button");
-  if (!backButton) {
-    console.error("Back button not found");
-  } else {
-    backButton.addEventListener("click", () => {
-      navigate("../");
-    });
-  }
-</script>
