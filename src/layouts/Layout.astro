@@ -14,11 +14,6 @@ const { title, description = "Sim Ho's personal website" } = Astro.props;
 <html lang="en">
   <head>
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <script
-      is:inline
-      defer
-      src="https://sim-analytics.duckdns.org/script.js"
-      data-website-id="37252d51-9ed4-4e2c-a76b-b120f05318b7"></script>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
@@ -26,6 +21,11 @@ const { title, description = "Sim Ho's personal website" } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ClientRouter fallback="swap" />
+    <script
+      is:inline
+      async
+      src="https://sim-analytics.duckdns.org/script.js"
+      data-website-id="37252d51-9ed4-4e2c-a76b-b120f05318b7"></script>
   </head>
   <body
     class="flex flex-col font-sans leading-snug bg-slate-900 text-zinc-300 w-[100dvw] h-[100dvh] overflow-x-hidden"

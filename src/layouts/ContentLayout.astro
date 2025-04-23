@@ -14,7 +14,7 @@ interface Props {
 const { title, summary } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout title={title} description={summary}>
   <div
     class="w-full h-full flex flex-col items-center bg-slate-900 px-5 overflow-scroll overflow-x-hidden"
   >
@@ -24,7 +24,7 @@ const { title, summary } = Astro.props;
           title="Back to home"
           class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
           back-button"
-          href=`/#${title}`
+          id="back-button"
         >
         </a>
       </div>
@@ -205,3 +205,17 @@ const { title, summary } = Astro.props;
     }
   </style>
 </Layout>
+
+<script>
+  import { navigate } from "astro:transitions/client";
+
+  // Navigate to the selected option automatically.
+  const backButton = document.querySelector("#back-button");
+  if (!backButton) {
+    console.error("Back button not found");
+  } else {
+    backButton.addEventListener("click", () => {
+      navigate("../");
+    });
+  }
+</script>
