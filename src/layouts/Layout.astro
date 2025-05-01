@@ -50,3 +50,52 @@ const { title, description = "Sim Ho's personal website" } = Astro.props;
     scrollbar-width: none; /* Firefox */
   }
 </style>
+
+<script>
+  import { navigate } from "astro:transitions/client";
+
+  const init = () => {
+    const fromHome = window.sessionStorage.getItem("fromHome");
+    if (fromHome) {
+      // Verified that the user came from the index page.
+      window.sessionStorage.removeItem("fromHome");
+    }
+
+    document.addEventListener("click", (e) => {
+      console.log("clicked", e.target);
+      if (e.target instanceof HTMLAnchorElement)
+        console.log("clicked link", e.target.href);
+      window.sessionStorage.setItem("fromHome", "true");
+    });
+
+    document
+      .getElementById("back-button")
+      ?.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const referrerUrl = document.referrer
+          ? new URL(document.referrer)
+          : null;
+
+        if (!referrerUrl || !fromHome) {
+          console.log("no referrer");
+          // Was linked directly or from an external site
+          navigate("/");
+          return;
+        }
+
+        const currentOrigin = window.location.origin;
+
+        console.log("before if", referrerUrl.origin, currentOrigin);
+        if (fromHome === "true" || referrerUrl.origin === currentOrigin) {
+          // If the user came from within the site, go back
+          window.history.back();
+        } else {
+          // If the user came from an external site or directly, go to homepage
+          navigate("/");
+        }
+      });
+  };
+
+  document.addEventListener("astro:page-load", init);
+</script>
