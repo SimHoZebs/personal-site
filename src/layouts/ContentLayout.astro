@@ -208,24 +208,40 @@ const { title, summary } = Astro.props;
 </Layout>
 
 <script>
+  import { navigate } from "astro:transitions/client";
+
   const init = () => {
+    const fromHome = window.sessionStorage.getItem("fromHome");
+    if (fromHome) {
+      // Verified that the user came from the index page.
+      window.sessionStorage.removeItem("fromHome");
+    }
+
     document
       .getElementById("back-button")
       ?.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent default link behavior when JS is enabled
+        event.preventDefault();
 
-        // Check if the referrer is from the same origin
         const referrerUrl = document.referrer
           ? new URL(document.referrer)
           : null;
+
+        if (!referrerUrl || !fromHome) {
+          console.log("no referrer");
+          // Was linked directly or from an external site
+          navigate("/");
+          return;
+        }
+
         const currentOrigin = window.location.origin;
 
-        if (referrerUrl && referrerUrl.origin === currentOrigin) {
+        console.log("before if", referrerUrl.origin, currentOrigin);
+        if (fromHome === "true" || referrerUrl.origin === currentOrigin) {
           // If the user came from within the site, go back
           window.history.back();
         } else {
           // If the user came from an external site or directly, go to homepage
-          window.location.href = "/";
+          navigate("/");
         }
       });
   };

@@ -136,6 +136,7 @@ const allBlogMetadata = allBlog.map((blog) => {
             <a
               class="flex w-full flex-col gap-y-1"
               aria-label={`Read ${blog.data.title}`}
+              id="blog-link"
               href={"/blogs/" + blog.id.split("/").at(-1)}
             >
               <article
@@ -186,3 +187,25 @@ const allBlogMetadata = allBlog.map((blog) => {
     <Footer />
   </main>
 </Layout>
+
+<script>
+  const init = () => {
+    document.addEventListener("click", (e) => {
+      if (e.target)
+        if (target) {
+          window.sessionStorage.setItem("fromHome", "false");
+        }
+    });
+
+    const blogLinks = document.querySelectorAll("#blog-link");
+
+    blogLinks.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        console.log("clicked");
+        window.sessionStorage.setItem("fromHome", "true");
+      });
+    });
+  };
+
+  document.addEventListener("astro:page-load", init);
+</script>
