@@ -7,7 +7,7 @@ Think about it. Biomedical researchers don't plan to research cure to cancer for
 
 Then there are maintenance jobs. Farming tools improve over time, but the act of farming simply maintains the foundation of society, rather than move it forward. Most hospital doctors cure patients of known illnesses using known methods and tools, but do not discover new ones. Cooks, taxi drivers, lawyers, cashiers - all primarily exist to support existing infrastructure rather than build it. These jobs don't eliminate themselves.
 
-![](../../src/assets/blogs/traffic-light-as-a-job.png)
+![](assets/traffic-light-as-a-job.png)
 Traffic light as a job
 
 However, these jobs only exist because we haven't found an economical way to automate them yet. We already replaced cashiers with Kiosks and self-checkout machines. We avoid interacting with bank employees by using apps and websites. We don't need paperboys to deliver the latest news, and we don't need librarians to have a doctorate degree because who needs them to attain such high level education for their tasks when you have the god damn internet???

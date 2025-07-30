@@ -1,4 +1,4 @@
-![](../../src/assets/blogs/custom-kb.jpg)
+![](assets/custom-kb.jpg)
 
 My journey with the Lily58 has been a wild one.
 
@@ -16,14 +16,14 @@ So what exactly was I looking for in an ergonomic keyboard?
 
 **Mechanical key switches**: Obviously the superior choice. They're more repairable and feel more responsive than the alternatives.
 
-![](../../src/assets/blogs/keychron-alice.png)
+![](assets/keychron-alice.png)
 Keychron K11 Pro
 
 **Split/Alice layout**: This layout curves and spaces the board slightly to lessen shoulder curvature when typing. This reduces shoulder, back, and neck strain.
 
 **True split**: If my keyboard is actually in two separate pieces, I could space them out far enough to avoid shoulder strain entirely!
 
-![](../../src/assets/blogs/ergo-tented.png)
+![](assets/ergo-tented.png)
 Kinesis Advantage360 Split Keyboard [source](https://kinesis-ergo.com/split-keyboards/)
 
 **Tenting**: Traditional keyboards strain wrists from pronation, contributing to the development of carpal tunnel for many office workers. Tenting, as seen above, prevents and alleviates such strain and damage. It is naturally the most ergonomic upgrade for a keyboard and, naturally, is a no-brainer requirement as someone who uses an ergonomic mouse.

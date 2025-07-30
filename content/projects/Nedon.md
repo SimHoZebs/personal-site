@@ -13,7 +13,7 @@ link:
   ]
 ---
 
-![nedon in action](../../src/assets/nedon-preview.png)
+![nedon in action](assets/nedon-preview.png)
 
 <h3 align="center">Finance tracker that actually tracks properly.</h3>
 

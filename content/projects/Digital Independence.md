@@ -15,6 +15,7 @@ This page is still work in progress, but here's the gist of how I'm working towa
 - OwnTracks: Location tracking
 - PiHole: Stop sending tracking data from my home network thanks
 - Syncthing: P2P immediate file synchronization
+- Umami: Anonymous website analytics
 - RustDesk: Locally hosted remote desktop application
 - Ollama: LLM at home
 

@@ -11,7 +11,7 @@ Rust is the 5th language I'm learning seriously. First was Python, then C#, Java
 
 Go was a consideration. I heard a lot about its simplicity and great performance despite being a garbage-collector language. It's also a very popular language for backend development, meaning there are clear ways to implement it in my existing and/or future projects. I read about its concurrency model, and comparing it to JS's Promises, it's quite attractive.
 
-![](../../src/assets/blogs/language-admired-desired.png)
+![](./assets/language-admired-desired.png)
 Alas, Rust is admired much more than Go.
 
 But ultimately, I'm learning Rust because it seems fun! TypeScript made me realize how important types are, but C made me REALLY realize how important types are, and how satisfying it is to have control over my code. It now kind of pains me to know that the 257 item array I created in JS is a linked list with 512 nodes instead of a fixed length, integer array. _Yes_, it doesn't really matter in the real world, and JS provides far superior iteration speed in most cases. But that doesn't change the fact that I like to have control when I can.
@@ -29,19 +29,18 @@ With the intro out of the way, here's a growing list of things that I learned in
 > [!Note]
 > All the features I'm talking about may exist in other languages or in the languages I think I know very well, but unaware of. I'd love to know them, so feel free to contact me [@SimHoZebs](https://twitter.com/SimHoZebs) about it.
 
-## rust-analyzer
+## The Great
+### rust-analyzer
 
-![](../../src/assets/blogs/rust-examples-chatgpt.png)
+![](assets/rust-examples-chatgpt.png)
 
-This isn't exactly about the language itself, but language support on editors is inseparable from programming languages in modern-day programming. DX goes down the trash without basic autocomplete and linting support.
+This isn't exactly about the language itself, but language support on editors is now a basic expectations in modern-day programming languages. But Rust sets itself apart from others with thorough, ultra-specific messages. As a learner, I feel gifted whenever I hover over a new method and see incredible examples. Paired with ChatGPT and coding problems, I don't need to watch hour-long tutorials to learn the language. This isn't something you easily find in JS/TS, nor Python.
 
-As a learner, I feel gifted whenever I hover over a new method and see incredible examples. Paired with ChatGPT and coding problems, I don't need to watch hour-long tutorials to learn the language. JS/TS, and AFAIR, Python doesn't give examples, only descriptions.
+Oh, and the error messages. Rust compiler doesn't just tell you what and where the error is - it tells you what you might want to do to fix it too. Why can't we have this for every language?
 
-Oh, and the error messages. You can't change how languages work, but you sure as hell can make error messages as readable as Rust does. Rust compiler doesn't just tell you what and where the error is - it tells you what you might want to do to fix it too. Why can't we have this for every language?
+### `Result<T>` and `Option<T>`
 
-## `Result<T>` and `Option<T>`
-
-File system can crash. Type conversion may fail, and not all `char` can convert to an integer. JS/TS doesn't care whether that happens; it's up to you to wrap it with a `try/catch` clause.
+File systems can crash. Type conversion may fail, and not all `char` can convert to an integer. JS/TS doesn't care whether that happens; it's up to you to wrap it with a `try/catch` clause.
 
 ```js
 let char = "k";
@@ -49,7 +48,6 @@ let char = "k";
 //this crashes the program. Up to the dev to recognize it, which is unnecessary cognitive load.
 parseInt(char, 10);
 
-// Even when the dev does recognize it, it's not pretty...
 try {
   let intValue = parseInt(char, 10);
   if (isNaN(intValue)) {
@@ -62,48 +60,17 @@ try {
 }
 ```
 
-With `Result<T>` and `Option<T>`, you are forced to handle the error and narrow the type down. Reading a file? Well, it may be `String` or `Error`. Using `.to_digit()`? It might be `u32` or `None`!
+With `Result<T>` and `Option<T>`, you can't access the outcome of a function without handling the error it might return.
 
 ```rust
 let char = 'k';
 
-// dev MUST unwrap the type and handle error cases
+// MUST unwrap the type and handle potential error. This defaults to 0 on error.
 let foo = char.parse::<u32>().unwrap_or(0);
 ```
 
 I love that Rust makes me handle errors when they may happen, instead of being weirdly optimistic like JS/TS.
-
-### `if let`
-
-```rust
-let char = '9';
-
-let foo = if let Some(digit) = char.to_digit(10) {
-	digit
-} else {
-	0
-};
-```
-
-When I first saw this syntax, I was like, "How the hell does this even make sense?"
-
-`if let` is a statement that assigns a variable a value if the condition is true; and when the condition is true, run the lines in its curly brace.
-
-In the snippet, I'm converting `char` to decimal using `.to_digit()`. That function returns a value of type `Option< Some<u32> , None>`, meaning it could either be some unsigned 32bit integer or nothing. Whichever it is, it is assigned to `digit`. If `digit` is of type `Some<T>` (which `Some<u32>` is), then the if statement is true.
-
-Since we've assigned the value to `digit`, we can use that value to do whatever we want inside the if statement. In the snippet, I'm assigning `digit`'s value to `foo` when the if statement is true - otherwise 0. Notice how there are no semicolons within the if/else statement (line 4 and 6). I have no idea why.
-
-It's a lot. Of course, in this specific case, I could just write this instead:
-
-```rust
-let char = '9';
-
-let foo = char.parse::<u32>().unwrap_or(0);
-```
-
-Regardless, it's quite an interesting syntax. It's somewhat confusing to read at first, but I can see the option to conditionally initialize a variable being useful.
-
-## `string.split()`
+### `string.split()`
 
 `.split()` doesn't create an array.
 
@@ -147,9 +114,9 @@ let array = string.replace("guys", "people").split(' ');
 //the above doesn't work because the string the split occurred on no longer exists after the operation.
 ```
 
-## `String`
+### `String`
 
-C taught me that a string is a contiguous array of `char`s, where a `char` is a 1 byte ASCII character. Since the size of each character is fixed, the program can identify exactly where a character within a string is in the memory - it is **iterable**. This is why you can access characters in a string via index.
+C taught me that a string is a contiguous array of `char`s, where a `char` is a 1 byte ASCII character. Since the size of each character is fixed, the program can pinpoint exactly where a character is located in the memory; the string is **iterable**.
 
 ```js
 //JS
@@ -157,7 +124,7 @@ let string = "Hello World!";
 let character = string[0]; //"H"
 ```
 
-Not in Rust! Here, characters are UTF-8, meaning they may be 1 to 4 bytes in size. This size variability prevents the program from iterating over a string like an ASCII string. Because of this, all characters must first be decoded to have a fixed size of 4 bytes before the string they can be accessed by index (Decoding returns an array of `char`, not `String`, which are different in Rust).
+Not in Rust! Here, characters are encoded in UTF-8, meaning they may be 1 to 4 bytes in size. This variability makes it impossible to locate a specific character's position in a string in memory. Instead, the string must be decoded to have each character as a fixed size of 4 bytes before they can be accessed by index. This converts `String` to a `Vec<char>` - a data type we are more familiar with.
 
 ```rust
 //Rust
@@ -174,9 +141,118 @@ This got me wondering: how does Rust know where a character starts in memory, th
 
 \- ChatGPT
 
-In a sense, Rust _could_ technically iterate over a string by decoding on the go, but that would certainly be less performant than jumping a fixed number of bytes.
+In a sense, Rust _could_ technically iterate over a string with the information above, but I'm guessing doing that on function call might be less performant than jumping a fixed number of bytes.
 
-And that is all I have to say so far! This post will continue to update as I continue learning Rust (by solving [Advent of Code 2023](https://adventofcode.com)). Please feel free to share your thoughts by reaching out to me on [Twitter](https://twitter.com/simhozebs)
+## The Weird
+## Implicit return
+
+```rust
+fn why(){
+	some_fn_that_returns_smth()
+}
+```
+
+Running `why()` returns the value of `some_fn_that_returns_smth()`.
+
+```rust
+fn why(){
+	some_fn_that_returns_smth();
+}
+```
+
+Here, `why()` returns nothing.
+
+Who in the right mind thought this was necessary?
+
+### `if let`
+
+```rust
+let char = 'k';
+
+let foo = if let Some(digit) = char.to_digit(10) {
+	digit
+} else {
+	//more logic here
+	0
+};
+```
+
+When I first saw this syntax, I was like, "How the hell does this even make sense?"
+
+`if let` is a statement that assigns a variable a value if the condition is true; and when the condition is true, run the lines in its curly brace.
+
+Functionally, it's the same as the `unwarp_or()` snippet I showed previously, but this syntax allows a more complex logic to be implemented in the process of assigning a fallback value. But to translate the steps in English, it's:
+
+- `let foo =`: `foo` should be a value. What should the value be?
+- `char.to_digit(10)`: Well, let's look ahead. The function call `char.to_digit()` returns `Option<Some<u32>, None>` (It's either some value that's an unsigned 32bit integer or None). 
+- `if let Some(digit) = char.to_digit(10)`: Let's call the return value `digit`. Check if it is a of type `Some` with `Some()` If it is, then the value is true, running the `if` block of the code (implicitly returning `digit`) Otherwise, return `0`.
+
+It's a lot and kind of confusing, but I guess being able to conditionally initialize a variable is useful? I would never use it for error handling, at the least, because there are better options.
+## Error handling shenanigans
+
+We just covered two ways we can implement fallback values; `unwrap_or()`, and for more complex logic, with the `if let` pattern. While I absolutely adore explicit error handling, I feel like Rust makes it easy for beginners to implement unnecessarily verbose and less readable approach.
+
+Let's use File System as an example. We are going to build a function that accepts a path as a string and return all files within the directory as a list of strings (`Vec<String>`). This is actually something I was trying to build for a project, so I asked some LLMs for help, since - unlike the integer conversion examples we looked at earlier - when a file doesn't exist at a given path, there isn't really a *fallback* value to use.
+
+```rust
+use std::fs;
+
+//Generated by GPT-4.1
+fn list_files_in_directory(path: String) -> Result<Vec<String>, String> {
+    let entries = fs::read_dir(&path)
+        .map_err(|e| e.to_string())?
+        .filter_map(|entry| entry.ok())
+        .filter_map(|entry| {
+            let file_type = entry.file_type().ok()?;
+            if file_type.is_file() {
+                Some(entry.file_name().to_string_lossy().to_string())
+            } else {
+                None
+            }
+        })
+        .collect();
+    Ok(entries)
+}
+```
+
+Let's walk through the code.
+- `fs::read_dir(&path)` Pretty straight forward. Read the contents of the directory in the given path. This can error, since the path could be invalid, restricted privileges, etc. Hence, this function returns `Result<T,E>`.
+- `.map_err(|e| e.to_string())?` Well, what should we do with the error? Let's just call it `e`, convert it to a string. Have the function throw an error and exit (the `?` syntax).
+
+In this case, this works fine. The function will return `Result` instead of a value and require the consumer to handle the error. Quite similar to `throw`. It doesn't hide the error cases from the consumer and provides them the flexibility to behave however it seems fit.
+
+But what if I'm modifying a function that never returned `Result`? Adding `?` requires every consumer to change their implementation to handle the error. What if its an error that you shouldn't be deferring to the consumer and should handle within the function?
+
+
+
+```rust
+use std::fs;
+use std::path::Path;
+
+fn list_files_in_directory(path: String) -> Result<Vec<String>, String> {
+	let path = Path::new(&path);  //convert string input to Path
+    let mut files = Vec::new();  //Store for file names
+
+    match fs::read_dir(path) {
+        Ok(entries) => {
+            for entry in entries {
+                match entry {
+                    Ok(dir_entry) => {
+                        if let Ok(file_type) = dir_entry.file_type() {
+                            if file_type.is_file() {
+                                files.push(dir_entry.file_name().to_string_lossy().to_string());
+                            }
+                        }
+                    }
+                    Err(e) => return Err(format!("Error reading entry: {}", e)),
+                }
+            }
+            Ok(files)
+        }
+        Err(e) => Err(format!("Error reading directory: {}", e)),
+    }
+}
+```
 
 ## Small things I learned from ChatGPT
 
@@ -195,3 +271,5 @@ So on a 64bit architecture, it would be more efficient to use `u32` if we know t
 > However, in terms of performance, the difference is usually negligible. Modern CPUs are optimized for their native word sizes (32 bits on a 32-bit CPU, 64 bits on a 64-bit CPU), so operations on `usize` can be faster than operations on `u32` on a 64-bit CPU, even though `usize` uses more memory.
 >
 > In general, you should use `usize` for sizes, lengths, and indices, because these need to be able to address the entire memory space. For other numbers that have a known range, you can use `u32`, `u16`, `u8`, etc. to save memory.
+
+And that is all I have to say so far! This post will continue to update as I continue learning Rust (by solving [Advent of Code 2023](https://adventofcode.com)). Please feel free to share your thoughts by reaching out to me on [Twitter](https://twitter.com/simhozebs)

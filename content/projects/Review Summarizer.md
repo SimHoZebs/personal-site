@@ -1,7 +1,7 @@
 ---
 title: Review Summarizer 9000
 summary: So many products, too many reviews! Can we just get a summary, please?
-headerImage: ../../src/assets/icon-straight.png
+headerImage: ../projects/assets/icon-straight.png
 headerAlt: Review Summarizer 9000
 order: 1
 link:
@@ -19,7 +19,7 @@ link:
   ]
 ---
 
-![review generator 9000 in action](../../src/assets/review-generator-example.png)
+![review generator 9000 in action](assets/review-generator-example.png)
 
 ## Problem
 
