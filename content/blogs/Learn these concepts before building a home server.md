@@ -4,7 +4,7 @@ summary: I learned a lot throughout the weeks I spent fiddling with this tiny co
 edited: 2024-10-22
 ---
 
-![](assets/my-home-server.png)
+![](./assets/my-home-server.png)
 
 This is my Raspberry Pi 4B with a 6TB external hard disk attached. It currently functions as a photo and video viewer for my family, host of very legally owned movies and TV shows, and home assistant to control all my smart home devices with more granular control.
 
@@ -17,19 +17,19 @@ I learned a lot throughout the weeks I spent fiddling with this tiny computer. T
 
 Home servers are nothing without the services running on them. The most handy way to run them is via a 'container' - a minimal virtualization of an operating system that provides an environment for applications to run on. It's like having a small, stripped down version of a computer run inside your computer!
 
-![](assets/vm-vs-containers.png)
+![](./assets/vm-vs-containers.png)
 [source](https://www.netapp.com/blog/containers-vs-vms/)
 
 That sounds a lot like a virtual machine, but there are [many ways they differ from each other](https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms). Most notably, containers share resources - such as memory, storage, and compute - with the host instead of pre-allocating them at initialization. The container's engine is responsible for flexibly allocating just enough resources required by its containers on the fly.
 
-![Dockerfile builds a Docker Image, which then runs a Docker Container.](assets/dockerfile-image-container.png)
+![Dockerfile builds a Docker Image, which then runs a Docker Container.](./assets/dockerfile-image-container.png)
 [source](https://medium.com/swlh/understand-dockerfile-dd11746ed183)
 
 This post isn't the place to give a whole lecture on containers, so I highly recommend reading all the sources I linked, along with [this 100-second video on Docker](https://www.youtube.com/watch?v=Gjnup-PuquQ).
 
 Ultimately, Docker simplifies distributing large applications, especially ones with several microservices. As a user, I don't have to figure out how to set up a Postgresql database or manage various configurations for the app to work and worry about installing the wrong package version or having the wrong operating system.
 
-![](assets/containers.png)
+![](./assets/containers.png)
 all containers in my home server
 
 This might sound like a lot if you've never touched Docker before, but you don't necessarily have to _learn_ all of the concepts to set up services on your home server. As long as you know how to access the command line, install Docker, and run `docker compose pull && docker compose up -d`, you should be able to set up most applications with ease.
@@ -70,7 +70,7 @@ You'll quickly realize it's annoying to connect to home applications by their IP
 
 But first, what does it mean to make a URL? Think of a URL as making a nickname for a physical address. For example, "University of Central Florida" or "the Starbucks near me" don't actually mean anything on their own, but they are very meaningful when associated with physical locations via a record, like my memories. Likewise, Google.com and many other links are simply names that a Domain Name System server (DNS server) recognizes and _routes_ to specific devices that actually return meaningful information.
 
-![](assets/shocked-img.png)
+![](./assets/shocked-img.png)
 Me when I learned routers do routing
 
 If you never messed with your router, your DNS is most likely your Internet Service Provider's (ISP). Meaning, when you search Google.com, your ISP is in charge of taking you to the right place. Theoretically, they can take you wherever they want. They can choose to take you nowhere, which is how some websites get blocked. If you use your own DNS, you decide where links take you.

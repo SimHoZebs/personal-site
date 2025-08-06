@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prettier": "prettier --write . --plugin=prettier-plugin-astro",
+    "format:astro": "prettier --write src/**/*.astro --plugin=prettier-plugin-astro",
+    "format": "biome format --write .",
     "tsc": "tsc",
     "pull": "rsync -avPu --no-perms /mnt/c/Users/simho/Documents/Obsidian/personal-site/ . --exclude-from=.rsyncignore --delete",
     "push": "rsync -avPu --no-perms . /mnt/c/Users/simho/Documents/Obsidian/personal-site/ --exclude-from=.rsyncignore --delete"

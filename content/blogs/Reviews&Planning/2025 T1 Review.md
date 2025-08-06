@@ -2,12 +2,13 @@
 published: 2025-07-30
 edited: 2025-08-06
 ---
->[!Note]
+
+> [!Note]
 > This blog is missing the "Planning" section because I'm publishing this too late into T2.
 
 One of the first things I learned this year is that it's very important to conduct retrospections frequently. In fact, I think the leading cause of poor/unsatisfactory life decisions is the lack of reviews.
 
-Because I'm still a student, a [12 Week Year](https://12weekyear.com/) doesn't align with my schedule. I've instead adapted it into a 16 Week Year, making this January to April the one of the three *Thirds* (T1) of the Year.
+Because I'm still a student, a [12 Week Year](https://12weekyear.com/) doesn't align with my schedule. I've instead adapted it into a 16 Week Year, making this January to April the one of the three _Thirds_ (T1) of the Year.
 
 ## Health
 
@@ -16,7 +17,7 @@ I was never consistent with going to the gym, but I wanted to change that this t
 ![|300](../assets/2025-T1-Gym-frequency.png)
 March - April gym frequency
 
-*Aaand* I did terribly. I visited the gym 14 times this Third. That's like, less than once a week. I have my excuses, like Senior Design and other classes adding extra strain on my free time and lacking a motivated partner, but the real culprit is lackluster time management. Had I intentionally scheduled my activities throughout the days and weeks, effectively distributing my efforts to various priorities, I would've visited the gym more than 14 times.
+_Aaand_ I did terribly. I visited the gym 14 times this Third. That's like, less than once a week. I have my excuses, like Senior Design and other classes adding extra strain on my free time and lacking a motivated partner, but the real culprit is lackluster time management. Had I intentionally scheduled my activities throughout the days and weeks, effectively distributing my efforts to various priorities, I would've visited the gym more than 14 times.
 
 Regardless, I'm still gonna claim some wins here. 14 is more than 0. And considering my wife was part of most of it, I've maintained not just my health, but hers as well. Making her more motivated has been a challenge, but I learned near the end of the Third that its much easier to make her agree to a short cardio than an hour long weight lifting session.
 
@@ -24,11 +25,12 @@ Speaking of cardio - resting heart rate was another thing I tracked after learni
 
 ![|400](../assets/2025-T1-Resting-heart-rate.png)
 
-Not much has changed. If anything, it's gone *up*. Not good. Again, I need to go to the gym more and make sure I include some cardio.
+Not much has changed. If anything, it's gone _up_. Not good. Again, I need to go to the gym more and make sure I include some cardio.
 
 Something else I got interested in are in supplements. I'm not going to go deep on my research, but I've essentially categorized some under three tiers. The first is for supplements with sufficient studies of their effects and have shown measurable benefits. Tier 2s are ones under active research and have shown benefits under some respectable sample sizes, but not robust enough to claim tier 1. Tier 3 are the more experimental stuff.
 
 Given those tiers, my interests have been in:
+
 1. Magnesium-zinc complex, Omega-3 (DHA, ALA), Potassium, Fiber, Creatine Monohydrate
 2. Curcumin-Bioperin
 3. Cognizin, NMN
@@ -41,7 +43,7 @@ Last year was the most important year of my life career-wise. My goal for this y
 
 That's right - the online assessment I took last year led to an interview about a month and a half after. I was **SHOCKED** when they asked for my interview date preference. Like every other OA I took, I just assumed I failed it. I stopped solving Leetcode since then! I grinded once more for the 2 weeks, annoying my wife about how it's all doomed regardless. I just couldn't see myself getting the internship when I had less than 30 Leetcode questions solved in my lifetime. Still, I told myself I'll do my best and learn what it's like to interview with Big Tech.
 
-But when I ended the call with the interviewer, I couldn't see myself *not* getting the offer. It just went so well! I solved the DSA question perfectly and none of my behavioral questions had any hiccups. The only *issue*, if there ever was one, was that the experiences I shared were somewhat mediocre. I answered them according to Amazon's Leadership Principles, but they weren't particularly *eye-opening*. I couldn't see such a minor thing hindering me. Now my worry was getting unlucky with headcount limit or something I couldn't control. Regardless, I was proud of my performance and felt that it was a very good interview practice.
+But when I ended the call with the interviewer, I couldn't see myself _not_ getting the offer. It just went so well! I solved the DSA question perfectly and none of my behavioral questions had any hiccups. The only _issue_, if there ever was one, was that the experiences I shared were somewhat mediocre. I answered them according to Amazon's Leadership Principles, but they weren't particularly _eye-opening_. I couldn't see such a minor thing hindering me. Now my worry was getting unlucky with headcount limit or something I couldn't control. Regardless, I was proud of my performance and felt that it was a very good interview practice.
 
 ![|400](../assets/amazong.png)
 The LinkedIn post
@@ -49,12 +51,13 @@ The LinkedIn post
 I eventually emailed Amazon on the 6th day, and they sent me the offer within few hours. This was the most exciting news I had to share with everyone in a long time. Well, the second most.
 
 ### Finalizing my internship at SRAM
+
 This means I reneged the mobile software engineering internship with SRAM. Not the kind of bridge I wanted to burn, especially considering the potential full time offer, but the potential career boost through Amazon is worth the risk. Besides, not all bridges were burnt.
 
 ![|400](../assets/SRAM-return-welcome.png)
 The team I worked with for nearly a year was happy to have me back.
 
-And of course, I *have* to talk about my final semester with SRAM. It was super challenging to juggle between it and school, but I managed to make significant performance and maintainability improvements to the project that I was contributing to. As always, I wish I could've done more. There was this major refactor that I was tackling since early last year, and just as I thought I completed it around March, I learned that I had misunderstood the direction and scope of the work the whole time. I didn't have to scrap everything, but I did have to get rid of my approach and come up with something more fitting. It was frustrating that this was somehow never caught throughout the code reviews and stand ups.
+And of course, I _have_ to talk about my final semester with SRAM. It was super challenging to juggle between it and school, but I managed to make significant performance and maintainability improvements to the project that I was contributing to. As always, I wish I could've done more. There was this major refactor that I was tackling since early last year, and just as I thought I completed it around March, I learned that I had misunderstood the direction and scope of the work the whole time. I didn't have to scrap everything, but I did have to get rid of my approach and come up with something more fitting. It was frustrating that this was somehow never caught throughout the code reviews and stand ups.
 
 ## School
 
@@ -64,8 +67,9 @@ This has been the busiest semester of all time. The combination of Senior Design
 He did nothing
 
 Senior Design's been awful as well. I greatly regret not preparing a custom project proposal before the course began, let alone find out that's even a thing, because I ended up being assigned a project that I do not care for with members who's presence in Computer Science major is questionable. Except one member - thankfully, they've been fairly motivated to collaborate on the project closely while the remaining members put their energy into deferring all important critical thinking processes to others.
+
 ## Personal Projects
 
-A project my team and I built over Processed for Object Oriented System Design was a journaling system that automatically creates and updates organized documents based on its entries. Specifically, this project was scoped to detect content regarding persons and constantly evolve their *profile* page over time. This enables automatic documentation about everything you know about a specific person and the evolution of your relationship to them without you having to manually parse through bunch of entries to remember. 
+A project my team and I built over Processed for Object Oriented System Design was a journaling system that automatically creates and updates organized documents based on its entries. Specifically, this project was scoped to detect content regarding persons and constantly evolve their _profile_ page over time. This enables automatic documentation about everything you know about a specific person and the evolution of your relationship to them without you having to manually parse through bunch of entries to remember.
 
 If that sounds useful, I've been working on improving it even further! I'm working on integrating voice input, as I typically like to do my brain dump in voice. The goal is to generalize the app beyond just profiles, making it a more comprehensive tool for capturing and reflecting on my life. It's not usable at all yet, but you can follow the development [here](https://github.com/SimHoZebs/journal-organizer).

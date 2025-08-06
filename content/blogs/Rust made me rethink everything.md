@@ -11,7 +11,7 @@ Rust is the 5th language I'm learning seriously. First was Python, then C#, Java
 
 Go was a consideration. I heard a lot about its simplicity and great performance despite being a garbage-collector language. It's also a very popular language for backend development, meaning there are clear ways to implement it in my existing and/or future projects. I read about its concurrency model, and comparing it to JS's Promises, it's quite attractive.
 
-![](assets/language-admired-desired.png)
+![](./assets/language-admired-desired.png)
 Alas, Rust is admired much more than Go.
 
 But ultimately, I'm learning Rust because it seems fun! TypeScript made me realize how important types are, but C made me REALLY realize how important types are, and how satisfying it is to have control over my code. It now kind of pains me to know that the 257 item array I created in JS is a linked list with 512 nodes instead of a fixed length, integer array. _Yes_, it doesn't really matter in the real world, and JS provides far superior iteration speed in most cases. But that doesn't change the fact that I like to have control when I can.
@@ -30,9 +30,10 @@ With the intro out of the way, here's a growing list of things that I learned in
 > All the features I'm talking about may exist in other languages or in the languages I think I know very well, but unaware of. I'd love to know them, so feel free to contact me [@SimHoZebs](https://twitter.com/SimHoZebs) about it.
 
 ## The Great
+
 ### rust-analyzer
 
-![](assets/rust-examples-chatgpt.png)
+![](./assets/rust-examples-chatgpt.png)
 
 This isn't exactly about the language itself, but language support on editors is now a basic expectations in modern-day programming languages. But Rust sets itself apart from others with thorough, ultra-specific messages. As a learner, I feel gifted whenever I hover over a new method and see incredible examples. Paired with ChatGPT and coding problems, I don't need to watch hour-long tutorials to learn the language. This isn't something you easily find in JS/TS, nor Python.
 
@@ -70,6 +71,7 @@ let foo = char.parse::<u32>().unwrap_or(0);
 ```
 
 I love that Rust makes me handle errors when they may happen, instead of being weirdly optimistic like JS/TS.
+
 ### `string.split()`
 
 `.split()` doesn't create an array.
@@ -144,6 +146,7 @@ This got me wondering: how does Rust know where a character starts in memory, th
 In a sense, Rust _could_ technically iterate over a string with the information above, but I'm guessing doing that on function call might be less performant than jumping a fixed number of bytes.
 
 ## The Weird
+
 ## Implicit return
 
 ```rust
@@ -184,15 +187,16 @@ When I first saw this syntax, I was like, "How the hell does this even make sens
 Functionally, it's the same as the `unwarp_or()` snippet I showed previously, but this syntax allows a more complex logic to be implemented in the process of assigning a fallback value. But to translate the steps in English, it's:
 
 - `let foo =`: `foo` should be a value. What should the value be?
-- `char.to_digit(10)`: Well, let's look ahead. The function call `char.to_digit()` returns `Option<Some<u32>, None>` (It's either some value that's an unsigned 32bit integer or None). 
+- `char.to_digit(10)`: Well, let's look ahead. The function call `char.to_digit()` returns `Option<Some<u32>, None>` (It's either some value that's an unsigned 32bit integer or None).
 - `if let Some(digit) = char.to_digit(10)`: Let's call the return value `digit`. Check if it is a of type `Some` with `Some()` If it is, then the value is true, running the `if` block of the code (implicitly returning `digit`) Otherwise, return `0`.
 
 It's a lot and kind of confusing, but I guess being able to conditionally initialize a variable is useful? I would never use it for error handling, at the least, because there are better options.
+
 ## Error handling shenanigans
 
 We just covered two ways we can implement fallback values; `unwrap_or()`, and for more complex logic, with the `if let` pattern. While I absolutely adore explicit error handling, I feel like Rust makes it easy for beginners to implement unnecessarily verbose and less readable approach.
 
-Let's use File System as an example. We are going to build a function that accepts a path as a string and return all files within the directory as a list of strings (`Vec<String>`). This is actually something I was trying to build for a project, so I asked some LLMs for help, since - unlike the integer conversion examples we looked at earlier - when a file doesn't exist at a given path, there isn't really a *fallback* value to use.
+Let's use File System as an example. We are going to build a function that accepts a path as a string and return all files within the directory as a list of strings (`Vec<String>`). This is actually something I was trying to build for a project, so I asked some LLMs for help, since - unlike the integer conversion examples we looked at earlier - when a file doesn't exist at a given path, there isn't really a _fallback_ value to use.
 
 ```rust
 use std::fs;
@@ -216,14 +220,13 @@ fn list_files_in_directory(path: String) -> Result<Vec<String>, String> {
 ```
 
 Let's walk through the code.
+
 - `fs::read_dir(&path)` Pretty straight forward. Read the contents of the directory in the given path. This can error, since the path could be invalid, restricted privileges, etc. Hence, this function returns `Result<T,E>`.
 - `.map_err(|e| e.to_string())?` Well, what should we do with the error? Let's just call it `e`, convert it to a string. Have the function throw an error and exit (the `?` syntax).
 
 In this case, this works fine. The function will return `Result` instead of a value and require the consumer to handle the error. Quite similar to `throw`. It doesn't hide the error cases from the consumer and provides them the flexibility to behave however it seems fit.
 
 But what if I'm modifying a function that never returned `Result`? Adding `?` requires every consumer to change their implementation to handle the error. What if its an error that you shouldn't be deferring to the consumer and should handle within the function?
-
-
 
 ```rust
 use std::fs;

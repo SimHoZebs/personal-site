@@ -1,7 +1,10 @@
 const CHAR_PER_MIN = 238;
 const skip = /^[!#>]/; // Avoid callouts, headings, images
 
-export function generateAutoSummary(body: string, description?: string): string {
+export function generateAutoSummary(
+  body: string,
+  description?: string,
+): string {
   if (description) {
     return description; // Return frontmatter description if available
   }
