@@ -1,10 +1,13 @@
 ---
 published: 2025-07-30
+edited: 2025-08-06
 ---
+>[!Note]
+> This blog is missing the "Planning" section because I'm publishing this too late into T2.
 
 One of the first things I learned this year is that it's very important to conduct retrospections frequently. In fact, I think the leading cause of poor/unsatisfactory life decisions is the lack of reviews.
 
-Because I'm still a student, a [12 Week Year](https://12weekyear.com/) doesn't align with my schedule. I've instead adapted it into a 4 Month Year, making this January to April the one of the three *Thirds* of the Year.
+Because I'm still a student, a [12 Week Year](https://12weekyear.com/) doesn't align with my schedule. I've instead adapted it into a 16 Week Year, making this January to April the one of the three *Thirds* (T1) of the Year.
 
 ## Health
 
@@ -63,9 +66,6 @@ He did nothing
 Senior Design's been awful as well. I greatly regret not preparing a custom project proposal before the course began, let alone find out that's even a thing, because I ended up being assigned a project that I do not care for with members who's presence in Computer Science major is questionable. Except one member - thankfully, they've been fairly motivated to collaborate on the project closely while the remaining members put their energy into deferring all important critical thinking processes to others.
 ## Personal Projects
 
-During the course, I built a journaling app for Process for Object Oriented System Design. The original idea was to let me write about my day and have an AI preprocess the entries to extract information about people I interact with, building profiles that summarize my relationships and interactions. This way, instead of digging through old entries to find patterns or recall details about someone, the AI-generated profiles serve as a one-stop overview.
+A project my team and I built over Processed for Object Oriented System Design was a journaling system that automatically creates and updates organized documents based on its entries. Specifically, this project was scoped to detect content regarding persons and constantly evolve their *profile* page over time. This enables automatic documentation about everything you know about a specific person and the evolution of your relationship to them without you having to manually parse through bunch of entries to remember. 
 
-It makes reviewing relationships and patterns much easier and more efficient.
-
-Since then, I've been expanding the app's functionality. Now, I'm working on integrating voice recordings—converting them into journal entries so I don't lose thoughts or experiences. This also makes it easier for both myself and AI to review and analyze my data, since text is much more accessible than audio. The goal is to generalize the app beyond just profiles, making it a more comprehensive tool for capturing and reflecting on my life.
-
+If that sounds useful, I've been working on improving it even further! I'm working on integrating voice input, as I typically like to do my brain dump in voice. The goal is to generalize the app beyond just profiles, making it a more comprehensive tool for capturing and reflecting on my life. It's not usable at all yet, but you can follow the development [here](https://github.com/SimHoZebs/journal-organizer).
