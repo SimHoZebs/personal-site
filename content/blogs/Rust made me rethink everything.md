@@ -11,7 +11,7 @@ Rust is the 5th language I'm learning seriously. First was Python, then C#, Java
 
 Go was a consideration. I heard a lot about its simplicity and great performance despite being a garbage-collector language. It's also a very popular language for backend development, meaning there are clear ways to implement it in my existing and/or future projects. I read about its concurrency model, and comparing it to JS's Promises, it's quite attractive.
 
-![](./assets/language-admired-desired.png)
+![](assets/language-admired-desired.png)
 Alas, Rust is admired much more than Go.
 
 But ultimately, I'm learning Rust because it seems fun! TypeScript made me realize how important types are, but C made me REALLY realize how important types are, and how satisfying it is to have control over my code. It now kind of pains me to know that the 257 item array I created in JS is a linked list with 512 nodes instead of a fixed length, integer array. _Yes_, it doesn't really matter in the real world, and JS provides far superior iteration speed in most cases. But that doesn't change the fact that I like to have control when I can.

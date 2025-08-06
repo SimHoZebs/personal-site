@@ -16,7 +16,7 @@ summary: A lot changed very quickly after I started my Bachelor's in Computer Sc
 
 I completed my Associate's Degree this year and finally started my Bachelor's this August. A lot changed very quickly after I started my Bachelor's in Computer Science.
 
-To learn how I got to this point in life, read [How Did I Get Here?](How%20Did%20I%20Get%20Here.md)
+To learn how I got to this point in life, read [How Did I Get Here?](../How%20Did%20I%20Get%20Here.md)
 
 ### Hackathons
 
@@ -42,7 +42,7 @@ Unexpectedly, the most meaningful conversation was with a senior dev at my marri
 
 > _\...sharing what I think and learn._
 
-That's why I built this website. This is the space that displays all my social links, projects I built, and the thoughts I want to share. I published a [post about Rust](Rust%20made%20me%20rethink%20everything.md) by the end of the year, so I consider this goal sufficiently achieved.
+That's why I built this website. This is the space that displays all my social links, projects I built, and the thoughts I want to share. I published a [post about Rust](../Rust%20made%20me%20rethink%20everything.md) by the end of the year, so I consider this goal sufficiently achieved.
 
 ---
 

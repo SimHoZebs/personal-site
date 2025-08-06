@@ -7,7 +7,7 @@ edited: 2025-04-04
 
 > Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I'm still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
 
-\- Me, in my 2018 post [(2) My Goals and Plans](<Goals.md#(2) My Goals and Plans>)
+\- Me, in my 2018 post [(2) My Goals and Plans](<archive/Goals.md#(2) My Goals and Plans>)
 
 I guess thunders do strike.
 
@@ -113,7 +113,7 @@ Even though I had some distaste for Biology, it quickly became the most fascinat
 ![](assets/kast-orientation.png)
 I'm on the second row from the top, all the way to the right end.
 
-This was the first time I drastically changed my goals, but I was proud and excited. I applied for the program for Science-Gifted Youth with Biology as my field of interest and was fortunate enough to be selected. I learned a lot from the biomedical lab, struggling to pipet samples into the agar properly and gruesomely (but ethically) killing mice with genetic markers. I kept building my portfolio of biology-related activities like the [Fruit Fly Genome Mapping Project](Fruit%20Fly%20Genome%20Mapping-%20Day%201.md) and [studied super hard](https://www.youtube.com/watch?v=CSszchMt6N8&list=PLgeX8ilKjqWNvKqiv9PVU987QJKS-VA9y&index=3) to get into one of the best biotechnology schools in Korea. _I fucking did it_.
+This was the first time I drastically changed my goals, but I was proud and excited. I applied for the program for Science-Gifted Youth with Biology as my field of interest and was fortunate enough to be selected. I learned a lot from the biomedical lab, struggling to pipet samples into the agar properly and gruesomely (but ethically) killing mice with genetic markers. I kept building my portfolio of biology-related activities like the [Fruit Fly Genome Mapping Project](FFGM/Fruit%20Fly%20Genome%20Mapping-%20Day%201.md) and [studied super hard](https://www.youtube.com/watch?v=CSszchMt6N8&list=PLgeX8ilKjqWNvKqiv9PVU987QJKS-VA9y&index=3) to get into one of the best biotechnology schools in Korea. _I fucking did it_.
 
 ...So why am I studying Computer Science now?
 
@@ -141,7 +141,7 @@ How was I going to justify ditching cellular agriculture? I had planned my educa
 ![](assets/19esc.jpg)
 Speaking of the greater good...
 
-I joined the army right after my freshman year to serve Korea's mandatory military service. It was the perfect excuse to pause my education and spend some time figuring out whether this love for software development would be short-lived, something to pursue alongside my biotech degree, or something worth giving up everything. There wasn't _a lot_ of time to study, considering I had to - you know - serve the military before anything, but I made progress every day, learning game and web development on the way. Along the way, I wrote the [Software Dev Log series](Software%20Dev%20Log%201.md) and weekly [#MyDevWeek](https://twitter.com/SimHoZebs/status/1463492277393756164) updates, and eventually, made the choice to transfer to Computer Science.
+I joined the army right after my freshman year to serve Korea's mandatory military service. It was the perfect excuse to pause my education and spend some time figuring out whether this love for software development would be short-lived, something to pursue alongside my biotech degree, or something worth giving up everything. There wasn't _a lot_ of time to study, considering I had to - you know - serve the military before anything, but I made progress every day, learning game and web development on the way. Along the way, I wrote the [Software Dev Log series](Software%20Dev%20Log/Software%20Dev%20Log%201.md) and weekly [#MyDevWeek](https://twitter.com/SimHoZebs/status/1463492277393756164) updates, and eventually, made the choice to transfer to Computer Science.
 
 It was a difficult decision, but it felt right. All this time I tried to find how my talents could be better utilized in software development than cellular agriculture research, but I realized that wasn't the only thing that mattered. My happiness mattered more - in fact - it mattered above all else. I have to enjoy the process to a certain degree before finding motivation in its altruistic significance. While I enjoyed _learning_ Biology, I wasn't confident that I would enjoy _discovering_ Biology. Research demands patience and a heart of steel to push through countless failures, especially in the biotech field. Software development, on the other hand, delivers results pretty much instantaneously the moment the code is compiled. The quicker feedback loop felt much more rewarding and the sense of control.
 
