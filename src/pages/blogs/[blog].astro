@@ -24,6 +24,10 @@ const title =
 const autoSummary = generateAutoSummary(blog.body || "", blog.data.summary);
 
 const { Content } = await render(blog);
+
+// Determine series name from subdirectory (exclude 'archive')
+const seriesName = blog.id.includes("/") ? blog.id.split("/")[0] : undefined;
+const showSeries = seriesName && seriesName.toLowerCase() !== "archive";
 ---
 
 <ContentLayout title={title} summary={autoSummary}>
@@ -38,6 +42,11 @@ const { Content } = await render(blog);
     <div
       class="items-center w-full justify-evenly flex gap-x-5 text-sm text-zinc-400"
     >
+      {showSeries && (
+        <p class="text-balance" transition:name={`${title} series`}>
+          Series: {seriesName}
+        </p>
+      )}
       <p class="text-balance" transition:name={`${title} published`}>
         Published: {blog.data.published?.toUTCString().slice(0, -13)}
       </p>
