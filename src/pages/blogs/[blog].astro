@@ -40,30 +40,34 @@ const showSeries = seriesName && seriesName.toLowerCase() !== "archive";
       {title}
     </h1>
     <div
-      class="items-center w-full justify-evenly flex gap-x-5 text-sm text-zinc-400"
+      class="items-center w-full justify-evenly flex flex-col gap-y-5 text-sm text-zinc-400"
     >
-      {showSeries && (
-        <p class="text-balance" transition:name={`${title} series`}>
-          Series: {seriesName}
+      {
+        showSeries && (
+          <p class="text-balance" transition:name={`${title} series`}>
+            #{seriesName}
+          </p>
+        )
+      }
+      <div class="flex gap-x-5 justify-evenly">
+        <p class="text-balance" transition:name={`${title} published`}>
+          Published: {blog.data.published?.toUTCString().slice(0, -13)}
         </p>
-      )}
-      <p class="text-balance" transition:name={`${title} published`}>
-        Published: {blog.data.published?.toUTCString().slice(0, -13)}
-      </p>
-      {
-        blog.data.edited && (
-          <p class="text-balance">
-            Edited: {blog.data.edited?.toUTCString().slice(0, -13)}
-          </p>
-        )
-      }
-      {
-        blog.body && (
-          <p class="whitespace-nowrap" transition:name={`${title} read-time`}>
-            ~{Math.floor(blog.body.split(" ").length / 238)} min read
-          </p>
-        )
-      }
+        {
+          blog.data.edited && (
+            <p class="text-balance">
+              Edited: {blog.data.edited?.toUTCString().slice(0, -13)}
+            </p>
+          )
+        }
+        {
+          blog.body && (
+            <p class="whitespace-nowrap" transition:name={`${title} read-time`}>
+              ~{Math.floor(blog.body.split(" ").length / 238)} min read
+            </p>
+          )
+        }
+      </div>
     </div>
   </div>
 
