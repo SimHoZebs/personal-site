@@ -209,8 +209,6 @@ const { title, summary } = Astro.props;
 </style>
 
 <script>
-  import { navigate } from "astro:transitions/client";
-
   const init = () => {
     // Track the previous URL in sessionStorage for SPA navigation (handled globally in Layout.astro)
 
@@ -226,7 +224,7 @@ const { title, summary } = Astro.props;
 
       if (isInternalNavigation && isInternalNavigation == "true") {
         console.log("using astro trasnisitoin");
-        navigate("/");
+        window.history.back();
       } else {
         // If the user came from an external site or directly, go to homepage
         window.location.href = "/";
