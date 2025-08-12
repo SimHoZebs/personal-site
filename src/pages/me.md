@@ -22,6 +22,4 @@ This all stems from my philosophy - everyone should be free and powerful enough 
 
 Other than building [Nedon](Nedon.md) in my spare time, I'm pursuing a Bachelor's in Computer Science at University of Central Florida. I am a mentor at KnightHacks, pushing students to build skills outside of classes.
 
-Professionally, I am doing a software engineering internship at SRAM, mainly handling DevOps and Backend development.
-
 I am looking for full-time opportunities to work with web technologies in a software-driven organization.
