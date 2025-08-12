@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import ContentLayout from "../../layouts/ContentLayout.astro";
 import { generateAutoSummary } from "../../util/generateAutoSummary";
+import getTitle from "../../util/getTitle";
 
 export async function getStaticPaths() {
   const blogArray = await getCollection("blogs");
@@ -15,11 +16,7 @@ export async function getStaticPaths() {
 
 const { blog } = Astro.props;
 
-const title =
-  blog.data.title ||
-  blog.filePath?.split("/").at(-1)?.slice(0, -3) ||
-  blog.id.split("/").at(-1) ||
-  "untitled";
+const title = getTitle(blog);
 
 const autoSummary = generateAutoSummary(blog.body || "", blog.data.summary);
 

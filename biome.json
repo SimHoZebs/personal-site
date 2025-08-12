@@ -4,6 +4,6 @@
     "indentStyle": "space"
   },
   "files": {
-    "include": ["./src/**/*.ts", "./**/*.md", "!.obsidian/"]
+    "includes": ["./src/**/*.ts", "./**/*.md", "!.obsidian/"]
   }
 }

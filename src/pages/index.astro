@@ -7,8 +7,8 @@ import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
 import links from "../util/links";
 import { generateAutoSummary } from "../util/generateAutoSummary"; // Import the utility
-
-const CHAR_PER_MIN = 238;
+import readingMinsEstimation from "../util/readTimeEstimation";
+import getTitle from "../util/getTitle";
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
@@ -21,11 +21,7 @@ allProject.sort((b, a) => b.data.order - a.data.order);
 const allBlog = (await getCollection("blogs"))
   .filter((blog) => blog.data.published && !blog.data.isArchive)
   .map((blog) => {
-    blog.data.title =
-      blog.data.title ||
-      blog.filePath?.split("/").at(-1)?.slice(0, -3) ||
-      blog.id.split("/").at(-1) ||
-      "untitled";
+    blog.data.title = getTitle(blog);
     return blog;
   })
   .sort((b, a) => {
@@ -35,12 +31,12 @@ const allBlog = (await getCollection("blogs"))
 
 const allBlogMetadata = allBlog.map((blog) => {
   const body = blog.body || "";
-  const autoSummary = generateAutoSummary(body, blog.data.summary); // Use the utility function
-  const readMin = Math.floor(body.split(" ").length / CHAR_PER_MIN);
+  const autoSummary = generateAutoSummary(body, blog.data.summary);
+  const readMin = readingMinsEstimation(body.split("").length);
 
   return {
     readMin,
-    summary: autoSummary, // Use the result from the utility
+    summary: autoSummary,
   };
 });
 ---
@@ -165,16 +161,7 @@ const allBlogMetadata = allBlog.map((blog) => {
                     ~{allBlogMetadata[i].readMin} min read
                   </p>
                 </div>
-
-                <!-- <p class="flex flex-col w-full text-zinc-200"> -->
-                <!--   {allBlogMetadata[i].summary.split("\n").map((line) => ( -->
-                <!--     <p class="w-full text-start text-zinc-200">{line}</p> -->
-                <!--   ))} -->
-                <!-- </p> -->
               </article>
-              <!-- <div class="self-start font-semibold text-indigo-300"> -->
-              <!--   Read more -->
-              <!-- </div> -->
             </a>
           ))
         ) : (

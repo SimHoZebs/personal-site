@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import { Image } from "astro:assets";
 import ContentLayout from "../../layouts/ContentLayout.astro";
+import getTitle from "../../util/getTitle";
 
 export async function getStaticPaths() {
   const projectArray = await getCollection("projects");
@@ -14,11 +15,7 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 
-const title =
-  project.data.title ||
-  project.filePath?.split("/").at(-1)?.slice(0, -3) ||
-  project.id.split("/").at(-1) ||
-  "untitled";
+const title = getTitle(project);
 
 const { Content } = await render(project);
 ---
