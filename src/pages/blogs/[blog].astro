@@ -17,7 +17,6 @@ export async function getStaticPaths() {
 const { blog } = Astro.props;
 
 const title = getTitle(blog);
-
 const autoSummary = generateAutoSummary(blog.body || "", blog.data.summary);
 
 const { Content } = await render(blog);

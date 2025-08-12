@@ -21,6 +21,15 @@ const { title, description = "Sim Ho's personal website" } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ClientRouter fallback="swap" />
+    <script is:inline>
+      if (!sessionStorage.getItem("internal-navigation")) {
+        sessionStorage.setItem("internal-navigation", "false");
+      }
+
+      document.addEventListener("astro:before-preparation", () => {
+        sessionStorage.setItem("internal-navigation", "true");
+      });
+    </script>
     <script
       is:inline
       async

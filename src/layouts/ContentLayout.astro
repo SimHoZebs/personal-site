@@ -17,7 +17,10 @@ const { title, summary } = Astro.props;
 <Layout title={title} description={summary}>
   <div class="w-full flex flex-col items-center bg-slate-900 px-5">
     <nav class="self-start md:self-center sticky top-0 z-10 pt-5 md:pr-190">
-      <div class="bg-slate-900 flex rounded-full p-2 hover:bg-slate-800">
+      <div
+        class="bg-slate-900 flex rounded-full p-2 hover:bg-slate-800 size-fit"
+      >
+        <!-- // href purely exists as a fallback in case JS is disabled -->
         <a
           href="/"
           title="Back to home"
@@ -25,9 +28,7 @@ const { title, summary } = Astro.props;
           cursor-pointer"
           id="back-button"
           role="button"
-          aria-label="Go back"
-        >
-        </a>
+          aria-label="Go back"></a>
       </div>
     </nav>
 
@@ -46,188 +47,191 @@ const { title, summary } = Astro.props;
 
     <Footer />
   </div>
-
-  <style is:global>
-    :root {
-      --small-size: 640px;
-      --code-bg: #22272e;
-      --zinc-300: rgb(212, 212, 216);
-      --zinc-400: rgb(161, 161, 170);
-      --zinc-400-fade: rgb(161, 161, 170, 0.3);
-      --slate-900: rgb(15, 23, 42);
-    }
-    .text-custom {
-      color: #d4d4d4;
-    }
-
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-    blockquote {
-      width: 100%;
-    }
-
-    .callout {
-      padding: 1rem;
-      border-radius: 0.5rem;
-    }
-
-    .quote {
-      border-width: 0 0 0 4px;
-      border-color: rgb(129, 140, 248, 0.7);
-      padding-left: 1rem;
-    }
-
-    figure {
-      align-self: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    hr {
-      width: 80%;
-      align-self: center;
-      border: 0;
-      border-top: 1px solid var(--zinc-400-fade);
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    img {
-      max-height: 70vh;
-      width: fit-content;
-    }
-
-    figcaption {
-      width: 100%;
-      font-size: 14px;
-      align-items: center;
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-      color: var(--zinc-400);
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
-
-    h2 {
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--zinc-300);
-    }
-
-    h3 {
-      font-size: larger;
-      font-weight: 700;
-    }
-
-    @media (min-width: var(--small-size)) {
-      h2 {
-        font-size: xx-large;
-      }
-      h3 {
-        font-size: x-large;
-      }
-    }
-
-    ul,
-    ol {
-      padding-left: 20px;
-    }
-
-    ol > li {
-      list-style-type: decimal;
-    }
-
-    li {
-      list-style-type: disc;
-      list-style-position: outside;
-    }
-
-    table {
-      width: max-content;
-      text-align: center;
-    }
-
-    code {
-      font-family: "Iosevka Aile", "Courier New", Courier, monospace;
-      color: var(--zinc-300);
-      background-color: var(--code-bg);
-      padding: 0px 2px;
-      border-radius: 4px;
-    }
-
-    code:has(span) {
-      padding: 0.5rem;
-    }
-
-    pre {
-      display: flex;
-      width: 70ch;
-      max-width: 100%;
-      font-size: 16px;
-      align-self: center;
-      text-wrap: wrap;
-      border-radius: 0.5rem;
-    }
-
-    a {
-      font-weight: 600;
-      --tw-text-opacity: 1;
-      color: rgb(129 140 248);
-      text-decoration-line: underline;
-    }
-
-    .footnotes {
-      font-size: 14px;
-    }
-
-    .footnotes > h2 {
-      font-size: x-large;
-    }
-
-    td,
-    th {
-      padding: 4px 12px 4px 12px;
-    }
-
-    table,
-    th,
-    td {
-      font-size: 16px;
-      border-width: 1px;
-      border-color: rgb(30, 41, 59);
-    }
-  </style>
 </Layout>
 
+<style is:global>
+  :root {
+    --small-size: 640px;
+    --code-bg: #22272e;
+    --zinc-300: rgb(212, 212, 216);
+    --zinc-400: rgb(161, 161, 170);
+    --zinc-400-fade: rgb(161, 161, 170, 0.3);
+    --slate-900: rgb(15, 23, 42);
+  }
+  .text-custom {
+    color: #d4d4d4;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  blockquote {
+    width: 100%;
+  }
+
+  .callout {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .quote {
+    border-width: 0 0 0 4px;
+    border-color: rgb(129, 140, 248, 0.7);
+    padding-left: 1rem;
+  }
+
+  figure {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  hr {
+    width: 80%;
+    align-self: center;
+    border: 0;
+    border-top: 1px solid var(--zinc-400-fade);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    max-height: 70vh;
+    width: fit-content;
+  }
+
+  figcaption {
+    width: 100%;
+    font-size: 14px;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    color: var(--zinc-400);
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--zinc-300);
+  }
+
+  h3 {
+    font-size: larger;
+    font-weight: 700;
+  }
+
+  @media (min-width: var(--small-size)) {
+    h2 {
+      font-size: xx-large;
+    }
+    h3 {
+      font-size: x-large;
+    }
+  }
+
+  ul,
+  ol {
+    padding-left: 20px;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+  li {
+    list-style-type: disc;
+    list-style-position: outside;
+  }
+
+  table {
+    width: max-content;
+    text-align: center;
+  }
+
+  code {
+    font-family: "Iosevka Aile", "Courier New", Courier, monospace;
+    color: var(--zinc-300);
+    background-color: var(--code-bg);
+    padding: 0px 2px;
+    border-radius: 4px;
+  }
+
+  code:has(span) {
+    padding: 0.5rem;
+  }
+
+  pre {
+    display: flex;
+    width: 70ch;
+    max-width: 100%;
+    font-size: 16px;
+    align-self: center;
+    text-wrap: wrap;
+    border-radius: 0.5rem;
+  }
+
+  a {
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(129 140 248);
+    text-decoration-line: underline;
+  }
+
+  .footnotes {
+    font-size: 14px;
+  }
+
+  .footnotes > h2 {
+    font-size: x-large;
+  }
+
+  td,
+  th {
+    padding: 4px 12px 4px 12px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 16px;
+    border-width: 1px;
+    border-color: rgb(30, 41, 59);
+  }
+</style>
+
 <script>
+  import { navigate } from "astro:transitions/client";
+
   const init = () => {
-    document
-      .getElementById("back-button")
-      ?.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent default link behavior when JS is enabled
+    // Track the previous URL in sessionStorage for SPA navigation (handled globally in Layout.astro)
 
-        // Check if the referrer is from the same origin
-        const referrerUrl = document.referrer
-          ? new URL(document.referrer)
-          : null;
-        const currentOrigin = window.location.origin;
+    const backButton = document.getElementById("back-button");
+    if (!backButton) return;
 
-        if (referrerUrl && referrerUrl.origin === currentOrigin) {
-          // If the user came from within the site, go back
-          window.history.back();
-        } else {
-          // If the user came from an external site or directly, go to homepage
-          window.location.href = "/";
-        }
-      });
+    backButton.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent default link behavior when JS is enabled
+
+      const isInternalNavigation = sessionStorage.getItem(
+        "internal-navigation",
+      );
+
+      if (isInternalNavigation && isInternalNavigation == "true") {
+        console.log("using astro trasnisitoin");
+        navigate("/");
+      } else {
+        // If the user came from an external site or directly, go to homepage
+        window.location.href = "/";
+      }
+    });
   };
 
   document.addEventListener("astro:page-load", init);
