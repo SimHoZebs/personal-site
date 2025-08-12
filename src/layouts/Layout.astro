@@ -4,10 +4,10 @@ import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 interface Props {
   title: string;
-  description?: string;
+  description: string;
 }
 
-const { title, description = "Sim Ho's personal website" } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
