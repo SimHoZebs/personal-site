@@ -2,7 +2,7 @@
 title: How Did I Get Here?
 summary: When I grew old enough to start considering my future career, I was certain I wanted to become a mechatronics engineer and build cool robots. That abruptly changed at the age of 17 as I realized there was so much I could contribute to humanity through cellular agriculture research. And just as I was confident my goals wouldn't change, I decided to drop everything and pursue computer science.
 published: 2024-02-01
-edited: 2025-04-04
+edited: 2025-08-12
 ---
 
 > Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I'm still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
@@ -88,7 +88,7 @@ I learned new things in classes for sure, but a lot seemed terribly simplified a
 ![A segment of a Reddit comment that reads: You know, for an 'O' level student your insight into these questions is remarkable. During my 'O' level days I didn't give a shit about covalent bonds, all I knew was that they shared electrons. I applaud you for your effort and curiousity!](./assets/compliment.png)
 Thankfully, some thought otherwise. (Reddit)
 
-Once my tiny brain couldn't progress understanding quantum mechanics, I started leaning towards mechanical engineering. I participated in a nationwide engineering competition at 14, being one of two in our school to get through the written assessment and make it through the quarterfinals[^masmo]. 'Physics of the Impossible' by Michio Kaku became my most influential book - I learned that nothing was impossible if we tried hard enough.
+Once my tiny brain couldn't progress understanding quantum mechanics, I started leaning towards mechanical engineering. I participated in a [nationwide engineering competition](https://youtu.be/Wgk0EoSgzxA) at 14, being one of two in our school to get through the written assessment and make it through the quarterfinals[^masmo]. 'Physics of the Impossible' by Michio Kaku became my most influential book - I learned that nothing was impossible if we tried hard enough.
 
 ![Iron man](https://i0.wp.com/scifiinterfaces.com/wp-content/uploads/2015/09/iron-drone.png?resize=768%2C320&ssl=1)
 
@@ -113,7 +113,7 @@ Even though I had some distaste for Biology, it quickly became the most fascinat
 ![](./assets/kast-orientation.png)
 I'm on the second row from the top, all the way to the right end.
 
-This was the first time I drastically changed my goals, but I was proud and excited. I applied for the program for Science-Gifted Youth with Biology as my field of interest and was fortunate enough to be selected. I learned a lot from the biomedical lab, struggling to pipet samples into the agar properly and gruesomely (but ethically) killing mice with genetic markers. I kept building my portfolio of biology-related activities like the [Fruit Fly Genome Mapping Project](FFGM/Fruit%20Fly%20Genome%20Mapping-%20Day%201.md) and [studied super hard](https://www.youtube.com/watch?v=CSszchMt6N8&list=PLgeX8ilKjqWNvKqiv9PVU987QJKS-VA9y&index=3) to get into one of the best biotechnology schools in Korea. _I fucking did it_.
+This was the first time I drastically changed my goals, but I was proud and excited. I applied for the program for Science-Gifted Youth with Biology as my field of interest and was fortunate enough to be selected[^kast-video]. I learned a lot from the biomedical lab, struggling to pipet samples into the agar properly and gruesomely (but ethically) killing mice with genetic markers. I kept building my portfolio of biology-related activities like the [Fruit Fly Genome Mapping Project](FFGM/Fruit%20Fly%20Genome%20Mapping-%20Day%201.md) and [studied super hard](https://www.youtube.com/watch?v=CSszchMt6N8&list=PLgeX8ilKjqWNvKqiv9PVU987QJKS-VA9y&index=3) to get into one of the best biotechnology schools in Korea. _I fucking did it_.
 
 ...So why am I studying Computer Science now?
 
@@ -168,3 +168,7 @@ There are many other aspects of the world I'm interested in contributing to with
 [^physorg]: Of course, I never understood the majority of the articles posted on Phys.org. But it gave me a place to start and eventually learn many things.
 
 [^java]: I also lacked motivation.
+
+[^anime]: it was School Days. Highly unrecommended.
+
+[^kast-video]: you can watch the video here: [KAST Camp - Day 1 - YouTube](https://youtu.be/Xn_icgb42dQ?si=GZ7opjv3__9OVxt7)
