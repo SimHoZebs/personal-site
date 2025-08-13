@@ -21,17 +21,13 @@ link:
 
 ## The problem
 
-Existing budgeting apps suck.
-
 You spend $230 at Walmart. Your banking app assigns it a category: 'Groceries'. But that's not right. The other $50 were supplies for the bathrooms.
 
 Budgeting apps lets you know you hit your budget. It gives you little to nothing to help you stay in your budget or adjust if needed.
 
 And if you have some transactions that's mixed with another person - good luck excluding their portion from it.
 
-**Your banking app is useless. The solution? Nedon.**
-
-Or Excel. That's pretty good too.
+**Your banking app is useless. The solution? Nedon.** Or Excel. That's pretty good too.
 
 ## Alternatives comparison
 
