@@ -3,7 +3,7 @@ title: homelab
 summary: you either die a SWE or live long enough to become a hobbyist sys admin
 order: 3
 link:
-[
+  [
     {
       name: Github,
       url: https://github.com/SimHoZebs/home-server,
