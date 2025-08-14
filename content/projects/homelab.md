@@ -12,7 +12,6 @@ link:
   ]
 ---
 
-# Home Server Architecture
 Multi-node home server infrastructure distributed across debian-server (primary) and rbpi (Raspberry Pi). Uses Docker containerization, NGINX reverse proxy, Tailscale mesh networking, and DuckDNS dynamic DNS.
 
 ## System Architecture Diagram
@@ -60,13 +59,6 @@ flowchart TD
   Router <--> |tailscale| TailscaleDebian
   TailscaleDebian <--> DockerDebian
   TailscaleRPi <--> DockerRPi
-
-  %% Access Type Legend
-  subgraph Legend["Access Type Legend"]
-    PublicTailscaleInternal["Public & Tailscale & Internal"]
-    TailscaleInternal["Tailscale & Internal"]
-    InternalOnly["Internal only"]
-  end
 
   classDef public_only fill:#ffd600,stroke:#ff6f00,stroke-width:3px,color:#222,font-weight:bold;
   classDef public_tailscale_internal fill:#ff9800,stroke:#e65100,stroke-width:3px,color:#222,font-weight:bold;

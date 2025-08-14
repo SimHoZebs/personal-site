@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
 import figcaptionPlugin from "./src/plugin/FigcaptionPlugin";
+import rehypeMermaid from "rehype-mermaid";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -13,7 +14,10 @@ export default defineConfig({
   integrations: [react(), mdx(), sitemap()],
 
   markdown: {
-    rehypePlugins: [figcaptionPlugin],
+    rehypePlugins: [ rehypeMermaid, figcaptionPlugin],
+    syntaxHighlight:{
+      excludeLangs: ['mermaid'],
+    },
     shikiConfig: {
       theme: "github-dark-dimmed",
     },
