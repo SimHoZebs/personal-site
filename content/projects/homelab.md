@@ -11,7 +11,6 @@ link:
     }
   ]
 ---
-
 Multi-node home server infrastructure distributed across debian-server (primary) and rbpi (Raspberry Pi). Uses Docker containerization, NGINX reverse proxy, Tailscale mesh networking, and DuckDNS dynamic DNS.
 
 ## System Architecture Diagram
@@ -48,11 +47,11 @@ flowchart TD
   end
 
   %% Connections
-  Router <--> |Public access from DuckDNS| NGINX
+  Router <--> |Public access| NGINX
   NGINX --> Certbot
-  Router -->|Public access from NGINX | DockerDebian
-  Router -->|Direct internal access| DockerDebian
-  Router -->|Direct internal access| DockerRPi
+  Router -->|Rbpi NGINX | DockerDebian
+  Router -->|LAN | DockerDebian
+  Router -->|LAN | DockerRPi
 
   %% Tailscale mesh and coordination
   Router <--> |tailscale| TailscaleRPi
