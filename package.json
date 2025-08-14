@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npx playwright install chromium && astro build",
+    "build": "pnpm playwright install chromium && pnpm exec playwright install-deps && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "format:astro": "prettier --write src/**/*.astro --plugin=prettier-plugin-astro",
