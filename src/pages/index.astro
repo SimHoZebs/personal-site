@@ -9,6 +9,7 @@ import links from "../util/links";
 import { generateAutoSummary } from "../util/generateAutoSummary"; // Import the utility
 import readingMinsEstimation from "../util/readTimeEstimation";
 import getTitle from "../util/getTitle";
+import { profile } from "console";
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
@@ -51,11 +52,10 @@ const allBlogMetadata = allBlog.map((blog) => {
       <section
         class="gap-y-2 items-center flex flex-col h-fit border-slate-700 p-3 rounded-xl md:bg-slate-800 md:border w-full md:w-64 min-w-[16rem]"
       >
-        <img
-          src="/profile.png"
+        <Image
+          src={profilePic}
           alt="Profile pic"
-          height={180}
-          width={180}
+          quality={100}
           class="rounded-lg border-slate-700 border-1"
         />
         <div class="flex items-center md:items-start flex-col gap-y-2">
