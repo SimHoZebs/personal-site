@@ -1,7 +1,6 @@
 ---
 title: Digital Independence
 summary: All the ways I avoid subscriptions and giving away my data.
-order: 3
 ---
 
 This page is still work in progress, but here's the gist of how I'm working towards digital independence.

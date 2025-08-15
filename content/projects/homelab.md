@@ -15,61 +15,7 @@ Multi-node home server infrastructure distributed across debian-server (primary)
 
 ## System Architecture Diagram
 
-```mermaid
-flowchart TD
-  %% Home Network
-  subgraph Home_Network["Home Network"]
-    Router
-    subgraph RPi["rbpi"]
-      TailscaleRPi["Tailscale Daemon"]
-      NGINX["NGINX"]
-      Certbot["Certbot"]
-      Fail2ban["Fail2ban"]
-      subgraph DockerRPi["Docker"]
-        HA["Home Assistant"]
-        RustDesk["RustDesk"]
-        OwnTracks["OwnTracks"]
-        Mosquitto["Mosquitto"]
-      end
-    end
-
-    subgraph DebianServer["debian-server"]
-      TailscaleDebian["Tailscale Daemon"]
-      subgraph DockerDebian["Docker"]
-        Streamer["Streamer"]
-        Jellyfin["Jellyfin"]
-        Immich["Immich"]
-        Umami["Umami"]
-        Seafile["Seafile"]
-        Ollama["Ollama"]
-      end
-    end
-  end
-
-  %% Connections
-  Router <--> |Public access| NGINX
-  NGINX --> Certbot
-  Router -->|Rbpi NGINX | DockerDebian
-  Router -->|LAN | DockerDebian
-  Router -->|LAN | DockerRPi
-
-  %% Tailscale mesh and coordination
-  Router <--> |tailscale| TailscaleRPi
-  Router <--> |tailscale| TailscaleDebian
-  TailscaleDebian <--> DockerDebian
-  TailscaleRPi <--> DockerRPi
-
-  classDef public_only fill:#ffd600,stroke:#ff6f00,stroke-width:3px,color:#222,font-weight:bold;
-  classDef public_tailscale_internal fill:#ff9800,stroke:#e65100,stroke-width:3px,color:#222,font-weight:bold;
-  classDef tailscale_internal fill:#2196f3,stroke:#0d47a1,stroke-width:3px,color:#fff,font-weight:bold;
-  classDef tailscale_only fill:#8e24aa,stroke:#4a148c,stroke-width:3px,color:#fff,font-weight:bold;
-  classDef internal_only fill:#43a047,stroke:#1b5e20,stroke-width:3px,color:#fff,font-weight:bold;
-
-  %% Node assignments
-  class Jellyfin,Immich,Umami,PublicTailscaleInternal public_tailscale_internal;
-  class Seafile,Ollama,HA,RustDesk,OwnTracks,Mosquitto,TailscaleInternal tailscale_internal;
-  class Streamer,InternalOnly internal_only;
-```
+![[home server mermaid.png]]
 
 ## Infrastructure Components
 - **debian-server**: Primary server; configuration present in `debian-server/` directory. NVIDIA GPU for hardware acceleration.
