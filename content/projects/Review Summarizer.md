@@ -1,25 +1,19 @@
 ---
 title: Review Summarizer 9000
 summary: So many products, too many reviews! Can we just get a summary, please?
-headerImage: ../projects/assets/icon-straight.png
+headerImage: ../../public/projects/icon-straight.png
 headerAlt: Review Summarizer 9000
 order: 1
 link:
-  [
-    {
-      name: Github,
-      url: https://github.com/the-bigbrains/review-summarizer,
-      icon: "icon-[mdi--github]",
-    },
-    {
-      name: Devpost,
-      url: https://devpost.com/software/review-generator-9000,
-      icon: "icon-[simple-icons--devpost]",
-    },
-  ]
+  - name: Github
+    url: https://github.com/the-bigbrains/review-summarizer
+    icon: icon-[mdi--github]
+  - name: Devpost
+    url: https://devpost.com/software/review-generator-9000
+    icon: icon-[simple-icons--devpost]
 ---
 
-![review generator 9000 in action](assets/review-generator-example.png)
+![review generator 9000 in action](../../public/blogs/review-generator-example.png)
 
 ## Problem
 

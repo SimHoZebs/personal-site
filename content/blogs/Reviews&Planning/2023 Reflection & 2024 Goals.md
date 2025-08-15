@@ -20,7 +20,7 @@ To learn how I got to this point in life, read [How Did I Get Here?](../How%20Di
 
 ### Hackathons
 
-![](../assets/hackathon.png)
+![](../../../public/blogs/hackathon.png)
 
 I participated in two largest Hackathons in Florida and secured winning positions! In ShellHacks, my team placed second in Google's challenge, and in KnightHacks, first place in RBC & Microsoft's challenge. I was very fortunate to have friends that resonated with my ideas and worked hard to bring them to life. I never meant to, but I learned I'm pretty comfortable taking the role of a leader when it comes to software development.
 
@@ -32,7 +32,7 @@ Right after, I started volunteering as a developer for a [research lab in my sch
 
 I also spoke with dozens of recruiters and people within the industry throughout my internship search. There were a lot of scuffed moments, but ultimately, this helped me get much better speaking to strangers than I was before.
 
-![](../assets/walmart-bye.png)
+![](../../../public/blogs/walmart-bye.png)
 
 Did I learn anything meaningful from recruiters and employees? To be honest, _not really_. I already knew these big corporations gave great benefits, and of course their company has a great culture. I'd ask about what they do, but they are either a recruiter that vaguely know about what software developers are actually doing in their company or a person working in an area so different that I have nothing to go off of. If I manage to meet an actual software developer, they describe their projects way too vague for me to gain meaningful insight. The only memorable conversation I had through these employer events was when I questioned a Google employee about the contradiction of Google's mission to organize the world's information while killing off Google Podcast, and my privacy concerns with proprietary LLMs.
 
@@ -56,7 +56,7 @@ I have way better understanding of Data Structures and Algorithms. Even though I
 
 ## Unexpected loss
 
-![](../assets/last-translation-mail.png)
+![](../../../public/blogs/last-translation-mail.png)
 Last email I received from my freelance translation gig.
 
 I lost my primary source of income. I've been unemployed ever since and mostly living off my student loans. I tried to search for other gigs and have landed a few, but it hasn't been great. I'm hoping to find a part time job at school and/or invest more time to offer variety of skills for my freelance work.

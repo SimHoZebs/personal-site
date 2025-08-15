@@ -15,8 +15,7 @@ Multi-node home server infrastructure distributed across debian-server (primary)
 
 ## System Architecture Diagram
 
-![[home server mermaid.png]]
-
+![home server mermaid](../../public/projects/home%20server%20mermaid.png)
 ## Infrastructure Components
 - **debian-server**: Primary server; configuration present in `debian-server/` directory. NVIDIA GPU for hardware acceleration.
 - **rbpi**: Raspberry Pi; configuration present in `rbpi/` directory. Home automation and remote access services.

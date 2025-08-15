@@ -20,7 +20,7 @@ In the University of Central Florida, Computer Science students must pass **the 
 
 Instead of waiting until the last day to study, I gave myself about 2 weeks to solve two older exam papers. Then I scored 92 out of 100.
 
-![fe-pass-rate](../assets/fe-pass-rate.png)
+![fe-pass-rate](../../../public/blogs/fe-pass-rate.png)
 The test statistics. 46.5% was an all-time low, meaning we either had the hardest exam, or we are the dumbest set of students to have taken the exam.
 
 Our Associate Dean gave me a smile of approval when I brought this up in a meeting with him, so I think it's safe to be proud of myself. Not to brag, but I genuinely didn't think the exam was that hard. The DSA course I took before it was harder.
@@ -37,7 +37,7 @@ Oh yeah, I got a new job.
 
 Rewinding to 2023 briefly - before my first semester in UCF, I applied for a position called **Techranger**, a part-time software developer role for students at UCF's Center for Distributed Learning. Some of their work involves building apps and extensions for the school's learning management system, and maintaining several digital systems that support the school's diverse set of students and instructors. Frankly, I didn't understand what any of that meant back then and just applied so I can make some money with code, especially since [I had lost my only source of income at this time](2023%20Reflection%20&%202024%20Goals.md#Unexpected%20loss).
 
-![|250](../assets/techranger.png)
+![|250](../../../public/blogs/techranger.png)
 https://techrangers.cdl.ucf.edu/past-techrangers.html
 
 I was rejected back then, but this year, I got it! This was my first experience working with people who are actually paid to do software development, not some unmotivated students looking to gain contribution points with minimal effort. The team was a gathering of talented people who truly cared about making education more accessible and seamless for all kinds of students.
@@ -46,7 +46,7 @@ I had a wonderful experience there, and even now, I wish I could've continued wo
 
 ## My Very First Corporate Job
 
-![sram|500](../assets/sram.png)
+![sram|500](../../../public/blogs/sram.png)
 
 Thanks to a friend I made through [previous Hackathons](2023%20Reflection%20&%202024%20Goals.md#Hackathons), I was referred to a software engineering internship at SRAM for the Summer. This was the level up I was looking for, even before securing my position as a Techranger. Unlike LS&T - which functions under a non-profit public school and doesn't directly generate revenue - SRAM is a financially driven organization of a much bigger size. I was very curious of the kind of work environment that entailed from such a difference.
 
@@ -64,7 +64,7 @@ This blog about [a 28 Year Old Staff Engineer @ Google](https://www.developing.d
 
 ## Health
 
-![long-bike-ride|200](../assets/long-bike-ride.png)
+![long-bike-ride|200](../../../public/blogs/long-bike-ride.png)
 Then we also had to go back
 
 I've been skinny for most of my life, but there have been two instances where I put on a healthy amount of weight along with some muscle. The first was in the army, back in 2020/2021. This is the second instance. Pairing high calorie, protein rich food with daily weight lifting session throughout the summer was the key. I'm happy about the result, but I still have ways to go and need to be consistent.
@@ -75,7 +75,7 @@ I also started caring about nutrients a bit more. I never had a sweet tooth, but
 
 I've only discussed personal and career growth in my previous reflection posts, but I'm including family this time. Perhaps this is a sign that I'm getting old?
 
-![top-us|400](../assets/top-us.png)
+![top-us|400](../../../public/blogs/top-us.png)
 I'm aware some find this use of AI offensive; this is to keep others anonymous.
 
 My siblings visited me in the U.S. and had an awesome time together. This was my sister, Subin's first visit to America (second for my brother, John), and sharing this experience brought us closer as a family. This trip was a reminder of the importance of nurturing family bonds, especially considering the time zone difference and frequency we see each other. The Twenty One Pilots concert was unforgettable. It was great to see my family so excited and happy.
@@ -86,7 +86,7 @@ My goal was to complete [Nedon](../../projects/Nedon.md) by the end of the year,
 
 I did, however, build a [home server](../../projects/Digital%20Independence.md). It has taught me a ton when it comes to networking and system administration, and there's still more to learn and fix.
 
-![custom-kb|350](../assets/custom-kb.jpg)
+![custom-kb|350](../../../public/blogs/custom-kb.jpg)
 
 And after falling into a rabbit hole of ergonomic keyboards, I built a custom keyboard. It's not creamy or thocky as most prebuilt premium keyboards, but its functionally perfect. I'll make a blog post about it some day.
 
@@ -96,7 +96,7 @@ Unlike before, I not only have goals, but relevant plans for the coming year.
 
 First, I'm going to stay consistent in improving my health. I need to start quantifying my health with measurements and set some targets, but currently, I want to focus on improving my cardiovascular health. I want to lower my resting heart rate and be able to maintain peak heart rate for longer.
 
-![|500](../assets/mobile-fulltime.png)
+![|500](../../../public/blogs/mobile-fulltime.png)
 
 Second, progressing my professional career. I have an internship lined up with SRAM for the Summer again, but this time, it'll be as a mobile application developer. This is in a completely separate team, and - at least for the internship - a different office in a different state! As I said, I prefer to work closer to the product, and this role reflects that desire closer than my current role. Plus, the manager sounded relatively positive about reserving a full-time position if I perform well. I'll be honest - that's what I need more than anything.
 
@@ -106,7 +106,7 @@ Since I have no concrete idea of where I'll be, I don't really have a plan for t
 
 ---
 
-![|400](../assets/amazon-oa.png)
+![|400](../../../public/blogs/amazon-oa.png)
 
 Little side note - Amazon invited me to take their Online Assessment. It feels like an achievement because this is the first time I’m hearing back after all the applications I’ve been submitting to them in the past 2 years. It feels like I'm finally recognized for my experiences. But at the same time, I’ve solved several OAs from many companies with perfect/near-perfect score, only to be told that I’m somehow a great candidate yet not the best fit at this very moment.
 

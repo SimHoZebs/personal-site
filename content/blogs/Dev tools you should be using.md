@@ -15,7 +15,7 @@ With that said, here we go:
 
 _A GPU-accelerated cross-platform terminal emulator and multiplexer written by [@wez](https://github.com/wez) and implemented in Rust_
 
-![Pasted-image-20240311074215](./assets/wezterm.png)
+![Pasted-image-20240311074215](../../public/blogs/wezterm.png)
 
 Ever since I learned about tmux during my efforts to avoid Windows, terminal mutiplexing has become essential to my workflow. Powershell isn't blessed with such tool, unfortunately, leaving me with Windows Terminal's multiplexing support. There's nothing particularly wrong with it; it's jsut missing one thing: `<leader>` key support.
 
@@ -35,7 +35,7 @@ Of course, with the next tool, I never have to `cd` too far...
 
 _zoxide is a smarter cd command, inspired by z and autojump._
 
-![Pasted_image_20240307151530](./assets/zoxide.png)
+![Pasted_image_20240307151530](../../public/blogs/zoxide.png)
 
 It feels like I'm traveling half way across the world when typing `cd ~/AppData/Local/nvim/lua` (`cd ~/.config/nvim/lua` is not any better) just to make some quick changes. Sure, I can set an alias for it, but that's such a chore.
 
@@ -49,7 +49,7 @@ _fzf is a general-purpose command-line fuzzy finder._ <br>
 _ripgrep recursively searches directories for a regex pattern while respecting your gitignore_ <br>
 _PsFzf: A PowerShell wrapper around the fuzzy finder fzf_
 
-![Pasted-image-20240311081210](./assets/fzf.png)
+![Pasted-image-20240311081210](../../public/blogs/fzf.png)
 
 I don't always remember which directory to go to, or even know where the file is. Sometimes I want to look through my command history to get a clue. These three tools enable that superpower.[^1]
 
@@ -59,7 +59,7 @@ These infinity stones singlehandedly solve file searching on Windows. It blows m
 
 _simple terminal UI for git commands_
 
-![Pasted-image-20240311081329](./assets/lazygit.png)
+![Pasted-image-20240311081329](../../public/blogs/lazygit.png)
 
 On one hand, I think it's important to know your common git commands. On the other hand, I think anyone should be able to do the common workflows without knowing the commands at all. Lazygit supports the latter.
 

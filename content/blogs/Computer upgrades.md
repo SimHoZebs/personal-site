@@ -1,5 +1,7 @@
 ## DEC 21st, 2023 ~ Now
 
+### Laptop
+
 | CPU                              | GPU                 | RAM             | Storage       |
 | -------------------------------- | ------------------- | --------------- | ------------- |
 | AMD Ryzen 7 7735HS (Radeon 680M) | AMD Radeon RX 7600S | 2x16GB DDR-5600 | WD 3TB (NVMe) |
@@ -62,20 +64,16 @@
 
 ## Unknown, 2012 ~ Unknown, 2014
 
-| CPU           | GPU | RAM                            | Storage                    |
-| ------------- | --- | ------------------------------ | -------------------------- |
-| [CPU Unknown] |     | 1GB RAM [Speed & Type Unknown] | [Storage size unknown] HDD |
+| CPU           | GPU | RAM                                 | Storage                    |
+| ------------- | --- | ----------------------------------- | -------------------------- |
+| [CPU Unknown] |     | 2GB DDR2 RAM [Speed & Type Unknown] | [Storage size unknown] HDD |
 
 **Model:** HP Pavilion dv6000
 
 ### **General Specifications (Range)**
 
 - **Processor:** Typically came with either:
-    
     - Intel Core Duo or Core 2 Duo processors.
-        
-    - AMD Turion 64 X2 dual-core processors.
-        
 - **Memory (RAM):** Originally shipped with 1 GB to 4 GB of DDR2 RAM. The chipset typically supported a maximum of 4 GB.
     
 - **Graphics (GPU):** This series was notable for its graphics options and unfortunately, high failure rates on the dedicated NVIDIA chips.

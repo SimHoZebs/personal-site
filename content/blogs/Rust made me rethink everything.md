@@ -11,7 +11,7 @@ Rust is the 5th language I'm learning seriously. First was Python, then C#, Java
 
 Go was a consideration. I heard a lot about its simplicity and great performance despite being a garbage-collector language. It's also a very popular language for backend development, meaning there are clear ways to implement it in my existing and/or future projects. I read about its concurrency model, and comparing it to JS's Promises, it's quite attractive.
 
-![](./assets/language-admired-desired.png)
+![](../../public/blogs/language-admired-desired.png)
 Alas, Rust is admired much more than Go.
 
 But ultimately, I'm learning Rust because it seems fun! TypeScript made me realize how important types are, but C made me REALLY realize how important types are, and how satisfying it is to have control over my code. It now kind of pains me to know that the 257 item array I created in JS is a linked list with 512 nodes instead of a fixed length, integer array. _Yes_, it doesn't really matter in the real world, and JS provides far superior iteration speed in most cases. But that doesn't change the fact that I like to have control when I can.
@@ -33,7 +33,7 @@ With the intro out of the way, here's a growing list of things that I learned in
 
 ### rust-analyzer
 
-![](./assets/rust-examples-chatgpt.png)
+![](../../public/blogs/rust-examples-chatgpt.png)
 
 This isn't exactly about the language itself, but language support on editors is now a basic expectations in modern-day programming languages. But Rust sets itself apart from others with thorough, ultra-specific messages. As a learner, I feel gifted whenever I hover over a new method and see incredible examples. Paired with ChatGPT and coding problems, I don't need to watch hour-long tutorials to learn the language. This isn't something you easily find in JS/TS, nor Python.
 

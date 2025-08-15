@@ -14,7 +14,7 @@ Because I'm still a student, a [12 Week Year](https://12weekyear.com/) doesn't a
 
 I was never consistent with going to the gym, but I wanted to change that this time. With that, I decided to actually track the frequency to reflect on.
 
-![|300](../assets/2025-T1-Gym-frequency.png)
+![|300](../../../public/blogs/2025-T1-Gym-frequency.png)
 March - April gym frequency
 
 _Aaand_ I did terribly. I visited the gym 14 times this Third. That's like, less than once a week. I have my excuses, like Senior Design and other classes adding extra strain on my free time and lacking a motivated partner, but the real culprit is lackluster time management. Had I intentionally scheduled my activities throughout the days and weeks, effectively distributing my efforts to various priorities, I would've visited the gym more than 14 times.
@@ -23,7 +23,7 @@ Regardless, I'm still gonna claim some wins here. 14 is more than 0. And conside
 
 Speaking of cardio - resting heart rate was another thing I tracked after learning about how important it is to have a healthy heart. I mean, it's an obviously obvious fact, but it's not something that's I kept in my conscious until recently.
 
-![|400](../assets/2025-T1-Resting-heart-rate.png)
+![|400](../../../public/blogs/2025-T1-Resting-heart-rate.png)
 
 Not much has changed. If anything, it's gone _up_. Not good. Again, I need to go to the gym more and make sure I include some cardio.
 
@@ -45,7 +45,7 @@ That's right - the online assessment I took last year led to an interview about 
 
 But when I ended the call with the interviewer, I couldn't see myself _not_ getting the offer. It just went so well! I solved the DSA question perfectly and none of my behavioral questions had any hiccups. The only _issue_, if there ever was one, was that the experiences I shared were somewhat mediocre. I answered them according to Amazon's Leadership Principles, but they weren't particularly _eye-opening_. I couldn't see such a minor thing hindering me. Now my worry was getting unlucky with headcount limit or something I couldn't control. Regardless, I was proud of my performance and felt that it was a very good interview practice.
 
-![|400](../assets/amazong.png)
+![|400](../../../public/blogs/amazong.png)
 The LinkedIn post
 
 I eventually emailed Amazon on the 6th day, and they sent me the offer within few hours. This was the most exciting news I had to share with everyone in a long time. Well, the second most.
@@ -54,7 +54,7 @@ I eventually emailed Amazon on the 6th day, and they sent me the offer within fe
 
 This means I reneged the mobile software engineering internship with SRAM. Not the kind of bridge I wanted to burn, especially considering the potential full time offer, but the potential career boost through Amazon is worth the risk. Besides, not all bridges were burnt.
 
-![|400](../assets/SRAM-return-welcome.png)
+![|400](../../../public/blogs/SRAM-return-welcome.png)
 The team I worked with for nearly a year was happy to have me back.
 
 And of course, I _have_ to talk about my final semester with SRAM. It was super challenging to juggle between it and school, but I managed to make significant performance and maintainability improvements to the project that I was contributing to. As always, I wish I could've done more. There was this major refactor that I was tackling since early last year, and just as I thought I completed it around March, I learned that I had misunderstood the direction and scope of the work the whole time. I didn't have to scrap everything, but I did have to get rid of my approach and come up with something more fitting. It was frustrating that this was somehow never caught throughout the code reviews and stand ups.
@@ -63,7 +63,7 @@ And of course, I _have_ to talk about my final semester with SRAM. It was super 
 
 This has been the busiest semester of all time. The combination of Senior Design (our final, two semester long graduation project course) and Process of Object Oriented Software Design (another software development course) was brutal, especially while keeping up with the demands of my job. The problem wasn't because it was a lot of work, but because working with a bunch of unmotivated students with no passion for software engineering in a course with near zero-risk of failing is god awful.
 
-![|400](../assets/kiyoshi-is-useless.png)
+![|400](../../../public/blogs/kiyoshi-is-useless.png)
 He did nothing
 
 Senior Design's been awful as well. I greatly regret not preparing a custom project proposal before the course began, let alone find out that's even a thing, because I ended up being assigned a project that I do not care for with members who's presence in Computer Science major is questionable. Except one member - thankfully, they've been fairly motivated to collaborate on the project closely while the remaining members put their energy into deferring all important critical thinking processes to others.
