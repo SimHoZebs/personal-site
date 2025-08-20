@@ -27,7 +27,7 @@ Our Associate Dean gave me a smile of approval when I brought this up in a meeti
 
 ## Biggest Failure
 
-Last year, [I shared that I joined a research lab to do volunteer software development](2023%20Reflection%20&%202024%20Goals.md#Team%20Software%20Development). It was quite a frustrating experience that ultimately led to failure due to terrible team dynamics. Having taken the leading role for the project's development, I learned that it's easy to provide support, but challenging to inspire motivation. No matter what I offered, it didn't matter if no one cared to take them. My efforts to ensure everyone learns something from this experience ultimately delayed progress significantly.
+Last year, [I shared that I joined a research lab to do volunteer software development](./2023%20Reflection%20&%202024%20Goals.md#Team%20Software%20Development). It was quite a frustrating experience that ultimately led to failure due to terrible team dynamics. Having taken the leading role for the project's development, I learned that it's easy to provide support, but challenging to inspire motivation. No matter what I offered, it didn't matter if no one cared to take them. My efforts to ensure everyone learns something from this experience ultimately delayed progress significantly.
 
 Near the end of the project, the professor overseeing the project recognized this issue and cut the team to just the previous lead and me. But by then, I was too busy with my new job to continue contributing.
 
@@ -35,7 +35,7 @@ Oh yeah, I got a new job.
 
 ## My Very First Software Development Job
 
-Rewinding to 2023 briefly - before my first semester in UCF, I applied for a position called **Techranger**, a part-time software developer role for students at UCF's Center for Distributed Learning. Some of their work involves building apps and extensions for the school's learning management system, and maintaining several digital systems that support the school's diverse set of students and instructors. Frankly, I didn't understand what any of that meant back then and just applied so I can make some money with code, especially since [I had lost my only source of income at this time](2023%20Reflection%20&%202024%20Goals.md#Unexpected%20loss).
+Rewinding to 2023 briefly - before my first semester in UCF, I applied for a position called **Techranger**, a part-time software developer role for students at UCF's Center for Distributed Learning. Some of their work involves building apps and extensions for the school's learning management system, and maintaining several digital systems that support the school's diverse set of students and instructors. Frankly, I didn't understand what any of that meant back then and just applied so I can make some money with code, especially since [I had lost my only source of income at this time](./2023%20Reflection%20&%202024%20Goals.md#Unexpected%20loss).
 
 ![|250](../../../public/blogs/techranger.png)
 https://techrangers.cdl.ucf.edu/past-techrangers.html
@@ -48,7 +48,7 @@ I had a wonderful experience there, and even now, I wish I could've continued wo
 
 ![sram|500](../../../public/blogs/sram.png)
 
-Thanks to a friend I made through [previous Hackathons](2023%20Reflection%20&%202024%20Goals.md#Hackathons), I was referred to a software engineering internship at SRAM for the Summer. This was the level up I was looking for, even before securing my position as a Techranger. Unlike LS&T - which functions under a non-profit public school and doesn't directly generate revenue - SRAM is a financially driven organization of a much bigger size. I was very curious of the kind of work environment that entailed from such a difference.
+Thanks to a friend I made through [previous Hackathons](./2023%20Reflection%20&%202024%20Goals.md#Hackathons), I was referred to a software engineering internship at SRAM for the Summer. This was the level up I was looking for, even before securing my position as a Techranger. Unlike LS&T - which functions under a non-profit public school and doesn't directly generate revenue - SRAM is a financially driven organization of a much bigger size. I was very curious of the kind of work environment that entailed from such a difference.
 
 I have so much to share - in fact, I decided to make it [its own blog post](../My%20Experience%20as%20a%20SWE%20Intern%20at%20SRAM.md)! But to summarize, it was a very interesting experience being in a team that was important, but not the main money-maker like the mechanical/design engineers were. SRAM is a bike company at the core, regardless of how technological advanced they were. As a result, while I understood that the software development work was foundational, this support/behind-the-scenes role didn't quite feel like the right for me in the long term. I learned that I appreciate software-centric, customer-facing work more than I thought.
 
@@ -84,7 +84,7 @@ My siblings visited me in the U.S. and had an awesome time together. This was my
 
 My goal was to complete [Nedon](../../projects/Nedon.md) by the end of the year, but I still haven’t finished it. Balancing time between this project and other priorities, like grinding Leetcode, school assignments, and part-time internship, has been difficult. Sometimes, I wonder if I’m just slow at building features, fixing bugs, or if the project is genuinely complex. The biggest takeaway from this is recognizing my struggle to distribute effort across everything I want and need to do. I learned that I need to build a habit of scheduling my tasks, sticking to that schedule, and regularly reflecting on my progress. This is something I still need to work on.
 
-I did, however, build a [home server](../../projects/Digital%20Independence.md). It has taught me a ton when it comes to networking and system administration, and there's still more to learn and fix.
+I did, however, build a [home server](../../projects/homelab.md). It has taught me a ton when it comes to networking and system administration, and there's still more to learn and fix.
 
 ![custom-kb|350](../../../public/blogs/custom-kb.jpg)
 

@@ -42,7 +42,7 @@ Unexpectedly, the most meaningful conversation was with a senior dev at my marri
 
 > _\...sharing what I think and learn._
 
-That's why I built this website. This is the space that displays all my social links, projects I built, and the thoughts I want to share. I published a [post about Rust](../Rust%20made%20me%20rethink%20everything.md) by the end of the year, so I consider this goal sufficiently achieved.
+That's why I built this website. This is the space that displays all my social links, projects I built, and the thoughts I want to share. I published a [Rust made me rethink everything](../Rust%20made%20me%20rethink%20everything.md) by the end of the year, so I consider this goal sufficiently achieved.
 
 ---
 

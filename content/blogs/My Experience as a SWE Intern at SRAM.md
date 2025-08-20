@@ -4,7 +4,6 @@ published: 2025-04-09
 
 > This posts only describes the summer internship. It does not include the co-op extension that followed.
 
-I initially had this as a part of [2024 Reflection & 2025 Goals](Reviews&Planning/2024%20Reflection%20&%202025%20Goals.md), but I decided it was too long to not be its own blog post.
 
 ## The Hunt
 
@@ -12,7 +11,7 @@ I initially had this as a part of [2024 Reflection & 2025 Goals](Reviews&Plannin
 
 Like every Computer Science student, I was on the hunt for a software engineering experience to put on my resume. I participated in two hackathons, went to career fairs, and submitted _hundreds_ of resumes across the United States. Despite all that, all I got back was a handful of fruitless OAs (TikTok is insane), 1 phone screening interview, and 1 in-person interview with Walmart. And that wasn't even a software engineering position!
 
-But life is a mix of luck and effort. A friend I made through the [previous Hackathon](Reviews&Planning/2023%20Reflection%20&%202024%20Goals.md#Hackathons) referred me to an internship opportunity with SRAM. He felt that I was the best fit, considering how much the team liked the projects we built together.
+But life is a mix of luck and effort. A friend I made through the [previous Hackathon](./Reviews&Planning/2023%20Reflection%20&%202024%20Goals.md#Hackathons) referred me to an internship opportunity with SRAM. He felt that I was the best fit, considering how much the team liked the projects we built together.
 
 After a few emails and video calls with the recruiter and employees, I was set to join the Electrical and Software Engineering team for the summer as a Software Engineer in Test intern! While they didn't pay for my flight to their headquarters in Chicago, they did provide us a great place to stay. It was right in the middle of downtown Chicago, being a 10 minute walk from The Bean and a 20-minute bike ride to the office.
 
@@ -67,8 +66,12 @@ Despite my worries, I was evaluated very positively throughout the summer. I was
 ![|400](../../public/blogs/internship-extension.png)
 On top of all that, they extended the offer till next year!
 
-When my team offered me to continue working for them part-time remotely, I asked myself if I should continue working with [Techrangers](Reviews&Planning/2024%20Reflection%20&%202025%20Goals.md#My%20Very%20First%20Software%20Development%20Job), where I could continue to grow my web development skills and work in a software-centric environment, or with SRAM, where I would not only improve my career opportunities in the long term, but also get nearly **double** the pay. (Especially considering that [this was the only source of income for me at the time](Reviews&Planning/2023%20Reflection%20&%202024%20Goals.md#Unexpected%20loss)). I chose the latter, because despite my feelings about DevOps, I believed I hadn't spent enough time to write it off already.
+When my team offered me to continue working for them part-time remotely, I asked myself if I should continue working with [Techrangers](./Reviews&Planning/2024%20Reflection%20&%202025%20Goals.md#My%20Very%20First%20Software%20Development%20Job), where I could continue to grow my web development skills and work in a software-centric environment, or with SRAM, where I would not only improve my career opportunities in the long term, but also get nearly **double** the pay. (Especially considering that [this was the only source of income for me at the time](./Reviews&Planning/2023%20Reflection%20&%202024%20Goals.md#Unexpected%20loss)). I chose the latter, because despite my feelings about DevOps, I believed I hadn't spent enough time to write it off already.
 
 This internship taught me what it means to be a full stack developer more than I ever was (if that title is still relevant). However, it also opened my eyes to many areas I actively need to improve on. I still don't know the best timing to ask for help. Sometimes find myself zoning out and applying quick, meaningless attempts at debugging rather than taking a step back and approaching the problem surgically. I still struggle to understand some explanations without granular, dumbed down examples paired with them. I'm still hesitant to bother others while knowing I shouldn't be struggling on my own too much. Active communication and extensive experience is the only solution to these issues. It's unfortunate I can't rush them.
 
 I'll keep growing.
+
+---
+
+I initially had this as a part of [2024 Reflection & 2025 Goals](./Reviews&Planning/2024%20Reflection%20&%202025%20Goals.md), but I decided it was too long to not be its own blog post.

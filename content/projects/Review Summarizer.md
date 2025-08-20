@@ -13,7 +13,7 @@ link:
     icon: icon-[simple-icons--devpost]
 ---
 
-![review generator 9000 in action](../../public/blogs/review-generator-example.png)
+![review generator 9000 in action](../../public/projects/review-generator-example.png)
 
 ## Problem
 

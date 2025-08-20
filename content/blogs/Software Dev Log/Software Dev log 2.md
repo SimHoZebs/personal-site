@@ -14,7 +14,7 @@ Ever since I started 'Bank Account Interest Calculator Development' I didn't tou
 
 This project continued for more than a day because I thought my code's result was wrong. It took me 15 days to figure out that it was right all along, but by then the project became more than just to find the result, but to see how far I can optimize my code while following & learning common programming conventions.
 
-In my [last post](Software%20Dev%20Log%201.md)'s last image, I put `.sort()` at the end of the list assigned to variable `interval_interest`. This was to sort the items in ascending order based on `item[0]`, which is important for a later process.
+In my [last post](./Software%20Dev%20Log%201.md)'s last image, I put `.sort()` at the end of the list assigned to variable `interval_interest`. This was to sort the items in ascending order based on `item[0]`, which is important for a later process.
 
 ![image](https://i.gyazo.com/c55c31f99200530ead35e12a66d34f32.png)
 last post's last image.

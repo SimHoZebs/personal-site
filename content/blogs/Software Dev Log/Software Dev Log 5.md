@@ -45,7 +45,7 @@ This topic was something I wanted to invest time in, and this week I came to dec
 
 ## 3. Studying More Efficiently
 
-Like I mentioned in the [last Dev Log](Software%20Dev%20Log%204.md), I'm reading on computer systems for the most of the morning and afternoon. I wrote notes along with the reading to solidify my understanding and make a reference to more important and notable (ha) information. This is taking way more time than I expected, to a point that I'm not even done with the first chapter yet. I'm dropping the note taking, and switching the highlighting lines in the book and attaching sticky notes to pages that require more information for my understanding.
+Like I mentioned in the [last Dev Log](./Software%20Dev%20Log%204.md), I'm reading on computer systems for the most of the morning and afternoon. I wrote notes along with the reading to solidify my understanding and make a reference to more important and notable (ha) information. This is taking way more time than I expected, to a point that I'm not even done with the first chapter yet. I'm dropping the note taking, and switching the highlighting lines in the book and attaching sticky notes to pages that require more information for my understanding.
 
 Productivity tools have been catching my interest lately, especially with my efforts to organize my studies and schedule more effectively. Previously, **Todoist** (mobile app) was the only tool I used, for just knowing what I should be doing the next day.
 
