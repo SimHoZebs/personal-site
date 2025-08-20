@@ -31,12 +31,14 @@ const allBlog = (await getCollection("blogs"))
 
 const allBlogMetadata = allBlog.map((blog) => {
   const body = blog.body || "";
-  const autoSummary = generateAutoSummary(body, blog.data.summary);
+  const summary = generateAutoSummary(body, blog.data.summary);
   const readMin = readingMinsEstimation(body);
+  const seriesName = blog.id.includes("/") ? blog.id.split("/")[0] : undefined;
 
   return {
     readMin,
-    summary: autoSummary,
+    summary,
+    seriesName,
   };
 });
 ---
@@ -98,7 +100,6 @@ const allBlogMetadata = allBlog.map((blog) => {
       <section class="flex flex-col gap-y-3 items-center justify-center">
         <div class="text-center flex-col flex gap-1">
           <h2 class="text-5xl font-extrabold">Projects</h2>
-          <p class="text-slate-400 text-sm">Click to expand</p>
         </div>
 
         <div class="flex flex-wrap gap-4 text-center justify-center">
@@ -138,28 +139,39 @@ const allBlogMetadata = allBlog.map((blog) => {
                 data-link={blog.id.split("/").at(-1)}
                 class="flex flex-col w-full max-w-xl gap-y-1 hover:cursor-pointer"
               >
-                <h2
-                  id={blog.data.title}
-                  class="text-3xl font-bold"
-                  transition:name={blog.data.title}
-                >
-                  {blog.data.title}
-                </h2>
+                <div class="flex gap-x-3 items-end">
+                  <h2
+                    id={blog.data.title}
+                    class="text-3xl font-bold"
+                    transition:name={blog.data.title}
+                  >
+                    {blog.data.title}
+                  </h2>
 
-                <div class="flex gap-x-5">
                   <p
-                    class="text-sm text-zinc-400"
-                    transition:name={`${blog.data.title} published`}
+                    class="text-sm text-zinc-400 hidden md:inline"
+                    transition:name={`${blog.data.title} series`}
                   >
-                    {blog.data.published?.toLocaleDateString()}
-                  </p>
-                  <p
-                    class="text-sm text-zinc-400"
-                    transition:name={`${blog.data.title} read-time`}
-                  >
-                    ~{allBlogMetadata[i].readMin} min read
+                    {allBlogMetadata[i].seriesName &&
+                      `#${allBlogMetadata[i].seriesName}`}
                   </p>
                 </div>
+                <div class="flex gap-x-5 text-sm text-zinc-400">
+                  <p transition:name={`${blog.data.title} published`}>
+                    {blog.data.published?.toLocaleDateString()}
+                  </p>
+                  <p transition:name={`${blog.data.title} read-time`}>
+                    ~{allBlogMetadata[i].readMin} min read
+                  </p>
+                  <p
+                    class="text-sm text-zinc-400 md:hidden inline"
+                    transition:name={`${blog.data.title} series`}
+                  >
+                    {allBlogMetadata[i].seriesName &&
+                      `#${allBlogMetadata[i].seriesName}`}
+                  </p>
+                </div>
+                <p class="line-clamp-2">{allBlogMetadata[i].summary}</p>
               </article>
             </a>
           ))
