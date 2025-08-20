@@ -7,7 +7,7 @@ edited: 2025-08-12
 
 > Finally after all these years, I have a job I am very sure to strive for (at least, I think it is. I'm still 17, so you never know if a thunder would strike me one day and change my goal completely): Biotechnology researcher.
 
-\- Me, in my 2018 post [(2) My Goals and Plans](./archive/Goals.md#(2) My Goals and Plans>)
+\- Me, in my 2018 post [(2) My Goals and Plans](archive/Goals.md#(2)%20My%20Goals%20and%20Plans)
 
 I guess thunders do strike.
 

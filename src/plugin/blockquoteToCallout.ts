@@ -26,14 +26,20 @@ function blockquoteToCallout(blockquote: Element) {
       ),
   );
 
-  if (calloutHeaderIndex < 0) return null;
+  if (calloutHeaderIndex < 0) {
+    blockquote.properties = { className: "quote" };
+    return;
+  }
 
   const callout = blockquote.children[calloutHeaderIndex] as Element;
   const calloutTextNodeIndex = callout.children.findIndex(
     (child) => child.type === "text",
   );
 
-  if (calloutTextNodeIndex < 0) return null;
+  if (calloutTextNodeIndex < 0) {
+    blockquote.properties = { className: "quote" };
+    return;
+  }
 
   const calloutTextArray = (
     callout.children[calloutTextNodeIndex] as Text
