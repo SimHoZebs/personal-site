@@ -3,6 +3,7 @@ import { getCollection, render } from "astro:content";
 import ContentLayout from "../../layouts/ContentLayout.astro";
 import { generateAutoSummary } from "../../util/generateAutoSummary";
 import getTitle from "../../util/getTitle";
+import readingMinsEstimation from "../../util/readTimeEstimation";
 
 export async function getStaticPaths() {
   const blogArray = await getCollection("blogs");
@@ -59,7 +60,7 @@ const showSeries = seriesName && seriesName.toLowerCase() !== "archive";
         {
           blog.body && (
             <p class="whitespace-nowrap" transition:name={`${title} read-time`}>
-              ~{Math.floor(blog.body.split(" ").length / 238)} min read
+              ~{readingMinsEstimation(blog.body)} min read
             </p>
           )
         }

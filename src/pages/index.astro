@@ -6,10 +6,9 @@ import Footer from "../components/Footer.astro";
 import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
 import links from "../util/links";
-import { generateAutoSummary } from "../util/generateAutoSummary"; // Import the utility
+import { generateAutoSummary } from "../util/generateAutoSummary";
 import readingMinsEstimation from "../util/readTimeEstimation";
 import getTitle from "../util/getTitle";
-import { profile } from "console";
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
@@ -33,7 +32,7 @@ const allBlog = (await getCollection("blogs"))
 const allBlogMetadata = allBlog.map((blog) => {
   const body = blog.body || "";
   const autoSummary = generateAutoSummary(body, blog.data.summary);
-  const readMin = readingMinsEstimation(body.split("").length);
+  const readMin = readingMinsEstimation(body);
 
   return {
     readMin,
@@ -56,7 +55,7 @@ const allBlogMetadata = allBlog.map((blog) => {
           src={profilePic}
           alt="Profile pic"
           quality={100}
-          class="rounded-lg border-slate-700 border-1"
+          class="rounded-lg border-slate-700 border-1 w-48 h-48 md:w-auto md:h-auto"
         />
         <div class="flex items-center md:items-start flex-col gap-y-2">
           <p class="text-2xl font-semibold text-center md:text-start">
