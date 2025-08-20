@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "rm -rf .astro && astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build --force",
     "preview": "astro preview",
     "astro": "astro",
     "format:astro": "prettier --write src/**/*.astro --plugin=prettier-plugin-astro",

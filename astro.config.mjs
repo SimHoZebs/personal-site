@@ -13,13 +13,19 @@ export default defineConfig({
   integrations: [react(), mdx(), sitemap()],
 
   markdown: {
-    rehypePlugins: [ figcaptionPlugin],
+    rehypePlugins: [figcaptionPlugin],
     syntaxHighlight:{
       excludeLangs: ['mermaid'],
     },
     shikiConfig: {
       theme: "github-dark-dimmed",
     },
+  },
+
+  image:{
+    service: {
+      entrypoint: './src/integrations/high-quality-image-service.ts'
+    }
   },
 
   vite: {
