@@ -1,6 +1,7 @@
 import { visit } from "unist-util-visit";
 import type { Node } from "unist";
-import type { Element, ElementContent, Text } from "hast";
+import type { Element, ElementContent } from "hast";
+import blockquoteToCallout from "./blockquoteToCallout";
 
 // Type guards
 function isElement(node: Node): node is Element {
@@ -13,26 +14,14 @@ function propertiesHaveHref(
   return !!node.properties?.href;
 }
 
-// Types for callouts
-type CalloutType = "warning" | "danger" | "caution" | "question" | "default";
-type CalloutStyle = {
-  className: string;
-};
-
-// Callout styles mapping
-const CALLOUT_STYLES: Record<CalloutType, CalloutStyle> = {
-  warning: { className: "callout bg-red-400/20" },
-  danger: { className: "callout bg-red-400/20" },
-  caution: { className: "callout bg-red-400/20" },
-  question: { className: "callout bg-orange-400/20" },
-  default: { className: "callout bg-indigo-400/20" },
-};
-
 function rehypePlugin() {
+  console.log("rehypePlugin initialized");
   return (tree: Node) => {
     visit(tree, "element", (node: Element) => {
+      console.log("Processing node:", node.tagName);
       if (node.tagName === "blockquote") {
-        processBlockquote(node);
+        console.log("Processing blockquote to callout");
+        blockquoteToCallout(node);
       } else if (node.tagName === "table" && !node.properties.className) {
         wrapTableWithScrollContainer(node);
       } else if (node.tagName === "img" && node.properties.alt) {
@@ -41,86 +30,6 @@ function rehypePlugin() {
         processParagraph(node);
       }
     });
-  };
-}
-
-/**
- * Process blockquote elements to handle callouts
- */
-function processBlockquote(node: Element): void {
-  const calloutData = extractCalloutData(node);
-
-  if (!calloutData) {
-    node.properties = { className: "quote" };
-    return;
-  }
-
-  const {
-    calloutEl,
-    firstTextIndex,
-    calloutType,
-    firstTextSplit,
-    calloutElIndex,
-  } = calloutData;
-
-  // Apply style based on callout type
-  const style =
-    CALLOUT_STYLES[calloutType as CalloutType] || CALLOUT_STYLES.default;
-  node.properties = { className: style.className };
-
-  // Create header element for callout
-  const callOutTextEl: Element = {
-    type: "element",
-    tagName: "p",
-    children: [{ type: "text", value: firstTextSplit[0] }],
-    properties: {},
-  };
-
-  // Update the existing text node to remove the callout marker
-  (calloutEl.children[firstTextIndex] as Text).value = firstTextSplit[1];
-
-  // Insert the callout header
-  node.children.splice(calloutElIndex - 1, 0, callOutTextEl);
-}
-
-/**
- * Extract callout data from a blockquote if it contains a callout marker
- */
-function extractCalloutData(node: Element) {
-  const calloutElIndex = node.children.findIndex(
-    (child) =>
-      child.type === "element" &&
-      child.children &&
-      child.children.find(
-        (grandChild) =>
-          grandChild.type === "text" && grandChild.value.startsWith("[!"),
-      ),
-  );
-
-  if (calloutElIndex < 0) return null;
-
-  const calloutEl = node.children[calloutElIndex] as Element;
-  const firstTextIndex = calloutEl.children.findIndex(
-    (child) => child.type === "text",
-  );
-
-  if (firstTextIndex < 0) return null;
-
-  const firstTextSplit = (
-    calloutEl.children[firstTextIndex] as Text
-  ).value.split("\n");
-
-  const calloutType = firstTextSplit[0]
-    .replace("[!", "")
-    .replace("]", "")
-    .toLowerCase();
-
-  return {
-    calloutEl,
-    firstTextIndex,
-    calloutType,
-    firstTextSplit,
-    calloutElIndex,
   };
 }
 
