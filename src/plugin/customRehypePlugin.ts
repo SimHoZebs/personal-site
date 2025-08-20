@@ -14,11 +14,10 @@ function propertiesHaveHref(
   return !!node.properties?.href;
 }
 
+// Instead of separate plugins, we handle multiple transformations to eliminate repeated traversals
 function rehypePlugin() {
-  console.log("rehypePlugin initialized");
   return (tree: Node) => {
     visit(tree, "element", (node: Element) => {
-      console.log("Processing node:", node.tagName);
       if (node.tagName === "blockquote") {
         console.log("Processing blockquote to callout");
         blockquoteToCallout(node);
@@ -27,7 +26,8 @@ function rehypePlugin() {
       } else if (node.tagName === "img" && node.properties.alt) {
         processImageAlt(node);
       } else if (node.tagName === "p") {
-        processParagraph(node);
+        fixRelativeLinks(node);
+        transformToFigureIfNeeded(node);
       }
     });
   };
@@ -59,17 +59,6 @@ function processImageAlt(node: Element): void {
 }
 
 /**
- * Process paragraphs for relative links and figure-figcaption transformation
- */
-function processParagraph(node: Element): void {
-  // Fix relative markdown links
-  fixRelativeLinks(node);
-
-  // Convert paragraph with image to figure-figcaption
-  transformToFigureIfNeeded(node);
-}
-
-/**
  * Fix relative markdown links
  */
 function fixRelativeLinks(node: Element): void {
@@ -77,12 +66,25 @@ function fixRelativeLinks(node: Element): void {
     (child) => isElement(child) && child.tagName === "a",
   ) as Element | undefined;
 
-  if (aEl && propertiesHaveHref(aEl) && aEl.properties.href.endsWith(".md")) {
-    aEl.properties.href = aEl.properties.href
-      .replaceAll("%20", "-")
-      .replace(".md", "")
-      .toLowerCase();
-  }
+  if (
+    !aEl ||
+    !propertiesHaveHref(aEl) ||
+    aEl.properties.href.startsWith("http") ||
+    !aEl.properties.href.includes(".md")
+  )
+    return;
+
+  const href = aEl.properties.href;
+  const end = href.split("/").pop();
+
+  console.log("Fixing relative link:", href, "to", end);
+
+  if (!end) return;
+
+  aEl.properties.href = end
+    .replaceAll("%20", "-")
+    .replace(".md", "")
+    .toLowerCase();
 }
 
 /**

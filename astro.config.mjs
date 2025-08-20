@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
-import figcaptionPlugin from "./src/plugin/FigcaptionPlugin";
+import figcaptionPlugin from "./src/plugin/customRehypePlugin";
 
 import tailwindcss from "@tailwindcss/vite";
 

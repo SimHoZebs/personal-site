@@ -26,7 +26,6 @@ function blockquoteToCallout(blockquote: Element) {
       ),
   );
 
-  console.log("calloutHeaderIndex", calloutHeaderIndex);
   if (calloutHeaderIndex < 0) return null;
 
   const callout = blockquote.children[calloutHeaderIndex] as Element;
@@ -34,7 +33,6 @@ function blockquoteToCallout(blockquote: Element) {
     (child) => child.type === "text",
   );
 
-  console.log("calloutTextNodeIndex", calloutTextNodeIndex);
   if (calloutTextNodeIndex < 0) return null;
 
   const calloutTextArray = (
@@ -64,8 +62,6 @@ function blockquoteToCallout(blockquote: Element) {
 
   // Insert the callout header
   blockquote.children.splice(calloutHeaderIndex - 1, 0, calloutHeader);
-
-  console.log("blockquote children", blockquote.children);
 }
 
 export default blockquoteToCallout;
