@@ -1,6 +1,6 @@
 ---
 published: 2020-07-02
-tags: ["software dev log"]
+tags:
 ---
 
 It took almost a month to finish writing my first log, which is not really ideal when the plan was to write about once a week or two. It's not as easy when you aren't used to writing, along with trying to pack it in a pretty busy schedule between 5:30 AM to 9:40 PM. The progress on the projects and studies slowed down as well trying to write this, so it wasn't particularly a productive month. Hopefully I get this done quicker this time.

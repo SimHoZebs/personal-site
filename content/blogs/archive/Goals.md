@@ -81,9 +81,7 @@ Finally after all these years, I have a job I am very sure to thrive for(at leas
 
 …or a professor.
 
-**So what am I doing right and planning to do to reach this goal?** I'm studying in a special class called 'Cheong-Ah (CA)', where only the top students in our school are grouped up to study for
-
-[College Scholastic Ability Test](<https://en.wikipedia.org/wiki/College_Scholastic_Ability_Test_(South_Korea)>) (CSAT). Along with this class and other additional classes I take in school, I get to stay in school for whole 13 hours every school days. As a student of Class CA, it's not even a question if we can rest at home during holidays. Continuous school days until 2017 December with additional classes are planned to improve my scores for both school exams and CSAT/National Exams, which are crucial for university enrollment.
+**So what am I doing right and planning to do to reach this goal?** I'm studying in a special class called 'Cheong-Ah (CA)', where only the top students in our school are grouped up to study for [College Scholastic Ability Test](https://en.wikipedia.org/wiki/College_Scholastic_Ability_Test_(South_Korea)) (CSAT). Along with this class and other additional classes I take in school, I get to stay in school for whole 13 hours every school days. As a student of Class CA, it's not even a question if we can rest at home during holidays. Continuous school days until 2017 December with additional classes are planned to improve my scores for both school exams and CSAT/National Exams, which are crucial for university enrollment.
 
 Personally, the school exams are easy, so I don't have much plans for it other than maintaining my grades and continuously improve it till I take the first place in the entire school. I have no solid data to support my words, but I believe I sit as the second best student in the school.
 
