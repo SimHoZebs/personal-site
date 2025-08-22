@@ -12,11 +12,11 @@ const { props } = Astro;
 ---
 
 <a
-  class="text-zinc-200 sm:min-w-[20rem] justify-center items-center rounded-xl border-slate-700 px-3 py-3 border max-w-xs gap-2 flex flex-col transition-all hover:scale-105 hover:border-slate-600"
+  class="text-zinc-200 sm:min-w-[20rem] rounded-xl border-stone-700 px-5 py-3 border w-xs gap-3 flex flex-col transition-all hover:scale-105 hover:border-stone-600"
   href={"/projects/" + props.ref}
   transition:name={props.title + " bg"}
 >
-  <div class="flex gap-x-2 items-center">
+  <div class="flex gap-x-4">
     {
       props.textIcon ? (
         <div class="p-2 aspect-square text-sm rounded-lg bg-slate-800 text-slate-400">
@@ -25,25 +25,13 @@ const { props } = Astro;
       ) : null
     }
 
-    {
-      props.img && props.alt ? (
-        <Image
-          id={props.title}
-          slot="heading"
-          src={props.img}
-          alt={props.alt}
-          transition:name={props.title}
-        />
-      ) : (
-        <h3
-          id={props.title}
-          class="text-xl font-bold text-zinc-300"
-          transition:name={props.title}
-        >
-          {props.title}
-        </h3>
-      )
-    }
+    <h2
+      id={props.title}
+      class="text-3xl font-bold text-zinc-300"
+      transition:name={props.title}
+    >
+      {props.title}
+    </h2>
   </div>
 
   <slot />

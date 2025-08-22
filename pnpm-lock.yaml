@@ -17,6 +17,12 @@ importers:
       '@astrojs/sitemap':
         specifier: ^3.5.0
         version: 3.5.0
+      '@fontsource-variable/bitter':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource-variable/lexend':
+        specifier: ^5.2.9
+        version: 5.2.9
       '@fontsource-variable/space-grotesk':
         specifier: ^5.2.6
         version: 5.2.8
@@ -26,6 +32,9 @@ importers:
       '@fontsource/iosevka-aile':
         specifier: ^5.2.5
         version: 5.2.5
+      '@fontsource/tinos':
+        specifier: ^5.2.6
+        version: 5.2.6
       '@tailwindcss/vite':
         specifier: ^4.1.12
         version: 4.1.12(vite@6.3.5(@types/node@24.3.0)(jiti@2.5.1)(lightningcss@1.30.1)(yaml@2.8.1))
@@ -439,6 +448,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@fontsource-variable/bitter@5.2.8':
+    resolution: {integrity: sha512-zDksVRD2g2Z8enfl9Y2vG9Xx0hZMyJifC5bDN5uyfKRLiWki7Spob+OO5Lb38KbnwB9Ocn5UxB6kgFu1m49Gdg==}
+
+  '@fontsource-variable/lexend@5.2.9':
+    resolution: {integrity: sha512-m0AmQ/DC7g0VU4PCnh6O+T1aqAHt8QxUBb2h5FtuFHNJlH9U4UT2NZNiy2vYijFQ6c1xKl/yHUyKaHwPJVc3Gw==}
+
   '@fontsource-variable/space-grotesk@5.2.8':
     resolution: {integrity: sha512-ei9jNXzZVgBGEBVfHZqPe6F9ZxpPUG8kJYrtlLsivlWJZLCfrfSxcayjnMYAmslEGvvfjth7qybl7PNNqE8ZHw==}
 
@@ -447,6 +462,9 @@ packages:
 
   '@fontsource/iosevka@5.2.5':
     resolution: {integrity: sha512-Zv/UHJodDug1LcnWv2u2+GPp3oWP3U6Xp16cJOsqqZQNsCu8sA/ttT331N0NypxBZ+7c8szlSRlYDcy9liZ8pw==}
+
+  '@fontsource/tinos@5.2.6':
+    resolution: {integrity: sha512-n0rODw5NVjAqo2VAV7SxzUbKaDv1MM179OPgiADuB4ROHdQAZqLkSKiuGOA77RrAUTK5o9lczQINM4GgMphgwA==}
 
   '@iconify/json@2.2.376':
     resolution: {integrity: sha512-2jQ+5zPV7Lva9iuFOvMkcq5XQyRx7xvLuodpDI+yjAxOnB2gpWa4caFz53tyPgCWU50Zd9/JSNZaCNYSTniSrg==}
@@ -2843,11 +2861,17 @@ snapshots:
   '@esbuild/win32-x64@0.25.8':
     optional: true
 
+  '@fontsource-variable/bitter@5.2.8': {}
+
+  '@fontsource-variable/lexend@5.2.9': {}
+
   '@fontsource-variable/space-grotesk@5.2.8': {}
 
   '@fontsource/iosevka-aile@5.2.5': {}
 
   '@fontsource/iosevka@5.2.5': {}
+
+  '@fontsource/tinos@5.2.6': {}
 
   '@iconify/json@2.2.376':
     dependencies:

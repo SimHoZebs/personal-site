@@ -1,5 +1,4 @@
 ---
-import "@fontsource-variable/space-grotesk";
 import "@fontsource/iosevka-aile";
 import Layout from "./Layout.astro";
 
@@ -15,16 +14,16 @@ const { title, summary } = Astro.props;
 ---
 
 <Layout title={title} description={summary}>
-  <div class="w-full flex flex-col items-center bg-slate-900 px-5">
+  <div class="w-full flex flex-col items-center px-5">
     <nav class="self-start md:self-center sticky top-0 z-10 pt-5 md:pr-190">
       <div
-        class="bg-slate-900 flex rounded-full p-2 hover:bg-slate-800 size-fit"
+        class="bg-stone-900 flex rounded-full p-2 hover:bg-stone-800 size-fit"
       >
         <!-- // href purely exists as a fallback in case JS is disabled -->
         <a
           href="/"
           title="Back to home"
-          class="text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
+          class="text-slate-700 hover:text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
           cursor-pointer"
           id="back-button"
           role="button"
@@ -40,7 +39,7 @@ const { title, summary } = Astro.props;
 
     <main
       transition:animate={fade({ duration: "1s" })}
-      class="flex flex-col gap-4 max-w-2xl w-full text-base md:text-[16.5px] items-start leading-snug text-zinc-200"
+      class="flex flex-col gap-4 max-w-2xl w-full items-start text-zinc-200"
     >
       <slot />
     </main>
@@ -182,8 +181,13 @@ const { title, summary } = Astro.props;
   a {
     font-weight: 600;
     --tw-text-opacity: 1;
-    color: rgb(129 140 248);
+    color: rgb(165 180 252);
     text-decoration-line: underline;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: rgb(129 140 248);
   }
 
   .footnotes {

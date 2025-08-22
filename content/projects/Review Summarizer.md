@@ -1,9 +1,8 @@
 ---
-title: Review Summarizer 9000
-summary: So many products, too many reviews! Can we just get a summary, please?
+title: Review Summarizer
+summary: Summarizing product reviews before Amazon thought it was cool
 headerImage: ../../public/projects/icon-straight.png
-headerAlt: Review Summarizer 9000
-order: 1
+order: 2
 link:
   - name: Github
     url: https://github.com/the-bigbrains/review-summarizer

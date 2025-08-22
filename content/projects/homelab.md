@@ -1,7 +1,7 @@
 ---
 title: homelab
 summary: you either die a SWE or live long enough to become a hobbyist sys admin
-order: 3
+order: 1
 link:
   [
     {

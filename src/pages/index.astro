@@ -46,109 +46,113 @@ const allBlogMetadata = allBlog.map((blog) => {
 
 <Layout title="Simho" description="Ho Sim's personal website">
   <main
-    class="flex px-5 pt-20 flex-col w-full h-full justify-between gap-10 items-center"
+    class="flex px-5 xl:px-20 py-20 flex-col w-full h-full justify-between items-center"
   >
-    <div
-      class="flex w-full flex-col items-start md:flex-row-reverse justify-evenly max-w-6xl gap-y-12 gap-x-4"
-    >
-      <section
-        class="gap-y-2 items-center flex flex-col h-fit border-stone-700 p-3 rounded-xl md:bg-stone-800 md:border w-full md:w-64 min-w-[16rem]"
-      >
-        <Image
-          src={profilePic}
-          alt="Profile pic"
-          quality={100}
-          class="rounded-lg border-stone-700 border-1 w-48 h-48 md:w-auto md:h-auto"
-        />
-        <div class="flex items-center md:items-start flex-col gap-y-2">
-          <p class="text-2xl font-semibold text-center md:text-start">
-            Hi! I'm Ho Sim <br /> (심호).
-          </p>
+    <div class="flex flex-col lg:flex-row justify-between gap-10">
+      <div class="lg:w-72">
+        <section
+          class="gap-y-2 items-center flex flex-col h-fit border-stone-700 p-3 rounded-xl lg:bg-stone-800 lg:border w-full min-w-[16rem]"
+        >
+          <Image
+            src={profilePic}
+            alt="Profile pic"
+            quality={100}
+            class="rounded-lg border-stone-700 border-1 w-48 h-48 lg:w-auto lg:h-auto"
+          />
+          <div class="flex items-center lg:items-start flex-col gap-y-2">
+            <p class="text-2xl font-semibold text-center lg:text-start">
+              Hi! I'm Ho Sim <br /> (심호).
+            </p>
 
-          <p
-            class="flex gap-y-1 flex-col text-center md:text-start text-balance"
-          >
-            I'm building a system that privately organize personal data and
-            create apps that reveal insights from them.
-            <span></span>
-            I'm invested in technologies that empower individuals to get more done
-            and enhance digital freedom.
-          </p>
-
-          <a class="text-indigo-300 hover:text-indigo-400" href="./me"
-            >more about me</a
-          >
-
-          <div class="flex self-center justify-between">
-            <!-- <a href="" class="font-semibold text-indigo-400">Learn more</a> -->
-            <nav class="flex gap-4">
-              {
-                links.map((link) => (
-                  <a
-                    title={link.name}
-                    href={link.link}
-                    class={"flex w-6 h-6 hover:text-indigo-400 " + link.icon}
-                  >
-                    <p>{link.name}</p>
-                  </a>
-                ))
-              }
-            </nav>
-          </div>
-        </div>
-      </section>
-
-      <section class="flex flex-col gap-y-3 items-center justify-center">
-        <div class="text-center flex-col flex gap-1">
-          <h2 class="text-5xl font-extrabold">Projects</h2>
-        </div>
-
-        <div class="flex flex-wrap gap-4 text-center justify-center">
-          {
-            allProject.map((project) => (
-              <Project
-                title={project.data.title}
-                ref={project.id.split("/").at(-1) || ""}
-                img={project.data.headerImage}
-                alt={project.data.headerAlt}
-              >
-                <p
-                  class="text-balance text-center"
-                  transition:name={project.data.title + " summary"}
-                >
-                  {project.data.summary}
-                </p>
-              </Project>
-            ))
-          }
-        </div>
-      </section>
-    </div>
-
-    <section class="w-full flex items-center flex-col gap-y-10 max-w-xl">
-      <h1 class="text-5xl font-extrabold">Writing</h1>
-      {
-        allBlog.length ? (
-          allBlog.map((blog, i) => (
-            <a
-              class="flex w-full flex-col gap-y-1"
-              aria-label={`Read ${blog.data.title}`}
-              href={"/blogs/" + blog.id.split("/").at(-1)}
+            <p
+              class="flex gap-y-1 flex-col text-center lg:text-start text-balance"
             >
-              <Blog
-                title={blog.data.title as string}
-                seriesName={allBlogMetadata[i].seriesName}
-                readMin={allBlogMetadata[i].readMin}
-                published={blog.data.published}
-                summary={allBlogMetadata[i].summary}
-              />
-            </a>
-          ))
-        ) : (
-          <p>Coming soon...</p>
-        )
-      }
-    </section>
+              I'm building a system that privately organize personal data and
+              create apps that reveal insights from them.
+              <span></span>
+              I'm invested in technologies that empower individuals to get more done
+              and enhance digital freedom.
+            </p>
+
+            <a
+              class="text-indigo-300 hover:text-indigo-400 ease-in-out transition-colors duration-200"
+              href="./me">more about me</a
+            >
+
+            <div class="flex self-center justify-between">
+              <nav class="flex gap-4">
+                {
+                  links.map((link) => (
+                    <a
+                      title={link.name}
+                      href={link.link}
+                      class={
+                        "flex w-6 h-6 hover:text-indigo-400 ease-in-out transition-colors duration-200 " +
+                        link.icon
+                      }
+                    >
+                      <p>{link.name}</p>
+                    </a>
+                  ))
+                }
+              </nav>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="md:w-full flex flex-col items-center gap-y-20">
+        <section
+          class="flex flex-col gap-y-10 items-center justify-center w-full"
+        >
+          <div class="text-center flex-col flex gap-1">
+            <h1 class="text-5xl font-extrabold">Projects</h1>
+          </div>
+
+          <div class="grid auto-cols-auto md:grid-cols-2 gap-5">
+            {
+              allProject.map((project) => (
+                <Project
+                  title={project.data.title}
+                  ref={project.id.split("/").at(-1) || ""}
+                  img={project.data.headerImage}
+                  alt={project.data.headerAlt}
+                >
+                  <p transition:name={project.data.title + " summary"}>
+                    {project.data.summary}
+                  </p>
+                </Project>
+              ))
+            }
+          </div>
+        </section>
+
+        <section class="w-full flex items-center flex-col gap-y-10 max-w-xl">
+          <h1 class="text-5xl font-extrabold">Writing</h1>
+          {
+            allBlog.length ? (
+              allBlog.map((blog, i) => (
+                <a
+                  class="flex w-full flex-col gap-y-1"
+                  aria-label={`Read ${blog.data.title}`}
+                  href={"/blogs/" + blog.id.split("/").at(-1)}
+                >
+                  <Blog
+                    title={blog.data.title as string}
+                    seriesName={allBlogMetadata[i].seriesName}
+                    readMin={allBlogMetadata[i].readMin}
+                    published={blog.data.published}
+                    summary={allBlogMetadata[i].summary}
+                  />
+                </a>
+              ))
+            ) : (
+              <p>Coming soon...</p>
+            )
+          }
+        </section>
+      </div>
+    </div>
 
     <Footer />
   </main>
