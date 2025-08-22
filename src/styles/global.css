@@ -3,8 +3,130 @@
 
 @theme {
   --font-sans:
-    "Bitter Variable", "Lexend Variable", "Space Grotesk Variable", "ui-sans-serif", "system-ui", "-apple-system",
+    "Bitter Variable", "ui-sans-serif", "system-ui", "-apple-system",
     "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial",
     "Noto Sans", "sans- serif", "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: "Iosevka Aile", "Courier New", Courier, monospace;
+}
+
+.bg {
+  @apply bg-stone-900;
+}
+
+/* general purpose - typically good enough */
+.text {
+  @apply text-zinc-300;
+}
+
+.primary {
+  @apply text-indigo-400;
+}
+
+.markdown {
+  &.text {
+    @apply text-zinc-200;
+  }
+
+  a {
+    @apply text-indigo-300 underline hover:text-indigo-300 transition-colors;
+
+    &:hover {
+      @apply text-indigo-400;
+    }
+  }
+
+  blockquote {
+    @apply w-full;
+  }
+
+  .callout {
+    @apply rounded-lg p-4;
+  }
+
+  .quote {
+    @apply border-l-4 border-indigo-400/70 pl-4;
+  }
+
+  p:has(img) {
+    @apply self-center;
+  }
+
+  figure {
+    @apply flex flex-col items-center self-center gap-1;
+  }
+
+  hr {
+    @apply mt-4 mb-4 w-4/5 self-center border-0 border-t border-zinc-400/30;
+  }
+
+  img {
+    @apply max-h-[70vh] w-fit;
+  }
+
+  figcaption {
+    @apply w-full flex-col items-center gap-2 text-center text-sm text-zinc-300;
+  }
+
+  h2 {
+    @apply text-2xl font-bold text-zinc-300 md:text-3xl;
+  }
+
+  h3 {
+    @apply text-lg font-bold md:text-xl;
+  }
+
+  ul,
+  ol {
+    @apply pl-5;
+  }
+
+  ol {
+    li {
+      @apply list-decimal;
+    }
+  }
+
+  li {
+    @apply list-outside list-disc;
+  }
+
+  code {
+    @apply rounded bg-zinc-800 px-0.5 py-0 font-mono text-zinc-300 w-full;
+  }
+
+  code:has(span) {
+    @apply p-2;
+  }
+
+  pre {
+    @apply flex w-[70ch] max-w-full self-center rounded-lg text-base text-wrap bg-zinc-800;
+  }
+
+  .footnotes {
+    @apply text-sm;
+  }
+
+  .footnotes>h2 {
+    @apply text-xl;
+  }
+
+  div:has(table) {
+    @apply overflow-x-scroll w-full;
+  }
+
+  table {
+    @apply w-max text-center;
+  }
+
+  td,
+  th {
+    @apply px-3 py-1;
+  }
+
+  table,
+  th,
+  td {
+    @apply border border-stone-700 text-base;
+  }
 }

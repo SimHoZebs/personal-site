@@ -20,8 +20,6 @@
     "@astrojs/react": "^4.2.3",
     "@astrojs/sitemap": "^3.5.0",
     "@fontsource-variable/bitter": "^5.2.8",
-    "@fontsource-variable/lexend": "^5.2.9",
-    "@fontsource-variable/space-grotesk": "^5.2.6",
     "@fontsource/iosevka": "^5.2.5",
     "@fontsource/iosevka-aile": "^5.2.5",
     "@fontsource/tinos": "^5.2.6",

@@ -27,7 +27,10 @@ function blockquoteToCallout(blockquote: Element) {
   );
 
   if (calloutHeaderIndex < 0) {
-    blockquote.properties = { className: "quote" };
+    blockquote.properties = {
+      ...blockquote.properties,
+      className: "quote",
+    };
     return;
   }
 
@@ -53,7 +56,10 @@ function blockquoteToCallout(blockquote: Element) {
   // Apply style based on callout type
   const style =
     CALLOUT_STYLES[calloutType as CalloutType] || CALLOUT_STYLES.default;
-  blockquote.properties = { className: style.className };
+  blockquote.properties = {
+    ...blockquote.properties,
+    className: style.className,
+  };
 
   // Create header element for callout
   const calloutHeader: Element = {

@@ -39,10 +39,6 @@ function wrapTableWithScrollContainer(node: Element): void {
   clone.properties.className = "inside";
 
   node.tagName = "div";
-  node.properties = {
-    ...node.properties,
-    className: "overflow-x-scroll w-full",
-  };
   node.children = [clone];
 }
 

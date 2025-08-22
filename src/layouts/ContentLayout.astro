@@ -17,13 +17,13 @@ const { title, summary } = Astro.props;
   <div class="w-full flex flex-col items-center px-5">
     <nav class="self-start md:self-center sticky top-0 z-10 pt-5 md:pr-190">
       <div
-        class="bg-stone-900 flex rounded-full p-2 hover:bg-stone-800 size-fit"
+        class="bg-stone-900 flex rounded-full p-2 hover:bg-stone-800 group size-fit"
       >
         <!-- // href purely exists as a fallback in case JS is disabled -->
         <a
           href="/"
           title="Back to home"
-          class="text-slate-700 hover:text-slate-300 self-start icon-[tabler--chevron-left] w-6 h-6
+          class="text-zinc-300 group-hover:text-indigo-400 self-start icon-[tabler--chevron-left] w-6 h-6
           cursor-pointer"
           id="back-button"
           role="button"
@@ -32,14 +32,14 @@ const { title, summary } = Astro.props;
     </nav>
 
     <header class="max-w-2xl w-full flex flex-col gap-y-10 pb-10">
-      <section class="flex flex-col gap-y-3 items-center mt-10 text-zinc-300">
+      <section class="flex flex-col gap-y-3 items-center mt-10">
         <slot name="header" />
       </section>
     </header>
 
     <main
       transition:animate={fade({ duration: "1s" })}
-      class="flex flex-col gap-4 max-w-2xl w-full items-start text-zinc-200"
+      class="flex flex-col gap-4 max-w-2xl w-full items-start markdown text"
     >
       <slot />
     </main>
@@ -47,170 +47,6 @@ const { title, summary } = Astro.props;
     <Footer />
   </div>
 </Layout>
-
-<style is:global>
-  :root {
-    --small-size: 640px;
-    --code-bg: #22272e;
-    --zinc-300: rgb(212, 212, 216);
-    --zinc-400: rgb(161, 161, 170);
-    --zinc-400-fade: rgb(161, 161, 170, 0.3);
-    --slate-900: rgb(15, 23, 42);
-  }
-  .text-custom {
-    color: #d4d4d4;
-  }
-
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  blockquote {
-    width: 100%;
-  }
-
-  .callout {
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .quote {
-    border-width: 0 0 0 4px;
-    border-color: rgb(129, 140, 248, 0.7);
-    padding-left: 1rem;
-  }
-
-  figure {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  hr {
-    width: 80%;
-    align-self: center;
-    border: 0;
-    border-top: 1px solid var(--zinc-400-fade);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  img {
-    max-height: 70vh;
-    width: fit-content;
-  }
-
-  figcaption {
-    width: 100%;
-    font-size: 14px;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-    color: var(--zinc-400);
-  }
-
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  h2 {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--zinc-300);
-  }
-
-  h3 {
-    font-size: larger;
-    font-weight: 700;
-  }
-
-  @media (min-width: var(--small-size)) {
-    h2 {
-      font-size: xx-large;
-    }
-    h3 {
-      font-size: x-large;
-    }
-  }
-
-  ul,
-  ol {
-    padding-left: 20px;
-  }
-
-  ol > li {
-    list-style-type: decimal;
-  }
-
-  li {
-    list-style-type: disc;
-    list-style-position: outside;
-  }
-
-  table {
-    width: max-content;
-    text-align: center;
-  }
-
-  code {
-    font-family: "Iosevka Aile", "Courier New", Courier, monospace;
-    color: var(--zinc-300);
-    background-color: var(--code-bg);
-    padding: 0px 2px;
-    border-radius: 4px;
-  }
-
-  code:has(span) {
-    padding: 0.5rem;
-  }
-
-  pre {
-    display: flex;
-    width: 70ch;
-    max-width: 100%;
-    font-size: 16px;
-    align-self: center;
-    text-wrap: wrap;
-    border-radius: 0.5rem;
-  }
-
-  a {
-    font-weight: 600;
-    --tw-text-opacity: 1;
-    color: rgb(165 180 252);
-    text-decoration-line: underline;
-    transition: color 0.2s ease;
-  }
-
-  a:hover {
-    color: rgb(129 140 248);
-  }
-
-  .footnotes {
-    font-size: 14px;
-  }
-
-  .footnotes > h2 {
-    font-size: x-large;
-  }
-
-  td,
-  th {
-    padding: 4px 12px 4px 12px;
-  }
-
-  table,
-  th,
-  td {
-    font-size: 16px;
-    border-width: 1px;
-    border-color: rgb(30, 41, 59);
-  }
-</style>
 
 <script>
   const init = () => {
