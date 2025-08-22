@@ -5,6 +5,7 @@ import profilePic from "../../public/profile.png";
 import Footer from "../components/Footer.astro";
 import Project from "../components/Project.astro";
 import Layout from "../layouts/Layout.astro";
+import Blog from "../components/Blog.astro";
 import links from "../util/links";
 import { generateAutoSummary } from "../util/generateAutoSummary";
 import readingMinsEstimation from "../util/readTimeEstimation";
@@ -31,7 +32,7 @@ const allBlog = (await getCollection("blogs"))
 
 const allBlogMetadata = allBlog.map((blog) => {
   const body = blog.body || "";
-  const summary = generateAutoSummary(body, blog.data.summary);
+  const summary = generateAutoSummary(body);
   const readMin = readingMinsEstimation(body);
   const seriesName = blog.id.includes("/") ? blog.id.split("/")[0] : undefined;
 
@@ -51,13 +52,13 @@ const allBlogMetadata = allBlog.map((blog) => {
       class="flex w-full flex-col items-start md:flex-row-reverse justify-evenly max-w-6xl gap-y-12 gap-x-4"
     >
       <section
-        class="gap-y-2 items-center flex flex-col h-fit border-slate-700 p-3 rounded-xl md:bg-slate-800 md:border w-full md:w-64 min-w-[16rem]"
+        class="gap-y-2 items-center flex flex-col h-fit border-stone-700 p-3 rounded-xl md:bg-stone-800 md:border w-full md:w-64 min-w-[16rem]"
       >
         <Image
           src={profilePic}
           alt="Profile pic"
           quality={100}
-          class="rounded-lg border-slate-700 border-1 w-48 h-48 md:w-auto md:h-auto"
+          class="rounded-lg border-stone-700 border-1 w-48 h-48 md:w-auto md:h-auto"
         />
         <div class="flex items-center md:items-start flex-col gap-y-2">
           <p class="text-2xl font-semibold text-center md:text-start">
@@ -134,45 +135,13 @@ const allBlogMetadata = allBlog.map((blog) => {
               aria-label={`Read ${blog.data.title}`}
               href={"/blogs/" + blog.id.split("/").at(-1)}
             >
-              <article
-                id="blog"
-                data-link={blog.id.split("/").at(-1)}
-                class="flex flex-col w-full max-w-xl gap-y-1 hover:cursor-pointer"
-              >
-                <div class="flex gap-x-3 items-end">
-                  <h2
-                    id={blog.data.title}
-                    class="text-3xl font-bold"
-                    transition:name={blog.data.title}
-                  >
-                    {blog.data.title}
-                  </h2>
-
-                  <p
-                    class="text-sm text-zinc-400 hidden md:inline"
-                    transition:name={`${blog.data.title} series`}
-                  >
-                    {allBlogMetadata[i].seriesName &&
-                      `#${allBlogMetadata[i].seriesName}`}
-                  </p>
-                </div>
-                <div class="flex gap-x-5 text-sm text-zinc-400">
-                  <p transition:name={`${blog.data.title} published`}>
-                    {blog.data.published?.toLocaleDateString()}
-                  </p>
-                  <p transition:name={`${blog.data.title} read-time`}>
-                    ~{allBlogMetadata[i].readMin} min read
-                  </p>
-                  <p
-                    class="text-sm text-zinc-400 md:hidden inline"
-                    transition:name={`${blog.data.title} series`}
-                  >
-                    {allBlogMetadata[i].seriesName &&
-                      `#${allBlogMetadata[i].seriesName}`}
-                  </p>
-                </div>
-                <p class="line-clamp-2">{allBlogMetadata[i].summary}</p>
-              </article>
+              <Blog
+                title={blog.data.title as string}
+                seriesName={allBlogMetadata[i].seriesName}
+                readMin={allBlogMetadata[i].readMin}
+                published={blog.data.published}
+                summary={allBlogMetadata[i].summary}
+              />
             </a>
           ))
         ) : (

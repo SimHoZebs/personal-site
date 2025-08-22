@@ -1,0 +1,52 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Blog = CollectionEntry<"blogs">;
+
+interface Props {
+  title: string;
+  seriesName?: string;
+  readMin: number;
+  published?: Date;
+  summary: string;
+}
+
+const { props } = Astro;
+---
+
+<article
+  id="blog"
+  class="flex flex-col w-full max-w-xl gap-y-1 hover:cursor-pointer"
+>
+  <div class="flex gap-x-3 items-end">
+    <h2
+      id={props.title}
+      class="text-3xl font-bold"
+      transition:name={props.title}
+    >
+      {props.title}
+    </h2>
+
+    <p
+      class="text-sm text-zinc-400 hidden md:inline"
+      transition:name={`${props.title} series`}
+    >
+      {props.seriesName && `#${props.seriesName}`}
+    </p>
+  </div>
+  <div class="flex gap-x-5 text-sm text-zinc-400">
+    <p transition:name={`${props.title} published`}>
+      {props.published?.toLocaleDateString()}
+    </p>
+    <p transition:name={`${props.title} read-time`}>
+      ~{props.readMin} min read
+    </p>
+    <p
+      class="text-sm text-zinc-400 md:hidden inline"
+      transition:name={`${props.title} series`}
+    >
+      {props.seriesName && `#${props.seriesName}`}
+    </p>
+  </div>
+  <p class="line-clamp-2">{props.summary}</p>
+</article>
