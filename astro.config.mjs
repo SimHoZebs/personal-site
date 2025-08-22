@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
 import figcaptionPlugin from "./src/plugin/customRehypePlugin";
+import centerImg from "./src/plugin/centerImg.ts";
+import inferImgProperties from "./src/plugin/inferImgProperties.ts"
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -13,7 +15,8 @@ export default defineConfig({
   integrations: [react(), mdx(), sitemap()],
 
   markdown: {
-    rehypePlugins: [figcaptionPlugin],
+    // Beware of the order of these plugins
+    rehypePlugins: [figcaptionPlugin, centerImg, inferImgProperties],
     syntaxHighlight:{
       excludeLangs: ['mermaid'],
     },

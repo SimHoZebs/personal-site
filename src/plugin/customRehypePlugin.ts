@@ -23,8 +23,6 @@ function rehypePlugin() {
         blockquoteToCallout(node);
       } else if (node.tagName === "table" && !node.properties.className) {
         wrapTableWithScrollContainer(node);
-      } else if (node.tagName === "img" && node.properties.alt) {
-        processImageAlt(node);
       } else if (node.tagName === "p") {
         fixRelativeLinks(node);
         transformToFigureIfNeeded(node);
@@ -41,21 +39,11 @@ function wrapTableWithScrollContainer(node: Element): void {
   clone.properties.className = "inside";
 
   node.tagName = "div";
-  node.properties = { className: "overflow-x-scroll w-full" };
+  node.properties = {
+    ...node.properties,
+    className: "overflow-x-scroll w-full",
+  };
   node.children = [clone];
-}
-
-/**
- * Process image alt text to extract width information
- */
-function processImageAlt(node: Element): void {
-  const altText = node.properties.alt as string;
-  const [alt, width] = altText.split("|");
-
-  if (width) {
-    node.properties.width = width;
-    node.properties.alt = alt; // Update alt text to remove width part
-  }
 }
 
 /**
