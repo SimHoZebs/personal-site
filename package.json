@@ -9,10 +9,11 @@
     "preview": "astro preview",
     "astro": "astro",
     "format:astro": "prettier --write src/**/*.astro --plugin=prettier-plugin-astro",
-    "format": "biome format --write .",
+    "format": "biome format --write . && pnpm run strip-trailing",
     "tsc": "tsc",
     "pull": "rsync -avPu --no-perms /mnt/c/Users/simho/projects/personal-site/ . --exclude-from=.rsyncignore --delete",
-    "push": "rsync -avPu --no-perms . /mnt/c/Users/simho/projects/personal-site/ --exclude-from=.rsyncignore --delete"
+    "push": "rsync -avPu --no-perms . /mnt/c/Users/simho/projects/personal-site/ --exclude-from=.rsyncignore --delete",
+    "strip-trailing": "git ls-files '*.js' '*.ts' '*.json' '*.md' '*.astro' | tr '\\n' '\\0' | xargs -0 sed -i 's/[[:space:]]*$//'"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.4",

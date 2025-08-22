@@ -33,7 +33,6 @@ const blogCollection = defineCollection({
       published: z.date().optional(),
       edited: z.date().optional(),
       isArchive: z.boolean().optional(),
-      tags: z.array(z.string()).optional(),
     }),
 });
 

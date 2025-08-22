@@ -75,17 +75,17 @@
 - **Processor:** Typically came with either:
     - Intel Core Duo or Core 2 Duo processors.
 - **Memory (RAM):** Originally shipped with 1 GB to 4 GB of DDR2 RAM. The chipset typically supported a maximum of 4 GB.
-    
+
 - **Graphics (GPU):** This series was notable for its graphics options and unfortunately, high failure rates on the dedicated NVIDIA chips.
-    
+
     - **Integrated:** Intel GMA 950 or GMA X3100.
-        
+
     - **Dedicated:** NVIDIA GeForce Go 7000 series or, more commonly, the **NVIDIA GeForce 8400M GS**, which was known for overheating issues.
-        
+
 - **Display:** 15.4-inch WXGA widescreen display with a resolution of 1280×800 pixels.
-    
+
 - **Storage:** A SATA Hard Disk Drive (HDD), with capacities typically ranging from 80 GB to 250 GB.
-    
+
 - **Operating System:** Originally shipped with Windows Vista.
 - Minecraft
 
