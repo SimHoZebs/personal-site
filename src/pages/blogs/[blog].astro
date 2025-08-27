@@ -48,12 +48,15 @@ const showSeries = seriesName && seriesName.toLowerCase() !== "archive";
       }
       <div class="flex gap-x-5 justify-evenly">
         <p class="text-balance" transition:name={`${title} published`}>
-          Published: {blog.data.published?.toLocaleDateString()}
+          Published: {
+            blog.data.published?.toUTCString().split(" ").slice(1, 4).join(" ")
+          }
         </p>
         {
           blog.data.edited && (
             <p class="text-balance">
-              Edited: {blog.data.edited?.toLocaleDateString()}
+              Edited:{" "}
+              {blog.data.edited?.toUTCString().split(" ").slice(1, 4).join(" ")}
             </p>
           )
         }

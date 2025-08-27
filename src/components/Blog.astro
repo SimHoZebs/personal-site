@@ -36,7 +36,7 @@ const { props } = Astro;
   </div>
   <div class="flex gap-x-5 text-sm text-zinc-400">
     <p transition:name={`${props.title} published`}>
-      {props.published?.toLocaleDateString()}
+      {props.published?.toUTCString().split(" ").slice(1, 4).join(" ")}
     </p>
     <p transition:name={`${props.title} read-time`}>
       ~{props.readMin} min read

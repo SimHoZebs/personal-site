@@ -15,6 +15,8 @@ const CALLOUT_STYLES: Record<CalloutType, CalloutStyle> = {
   default: { className: "callout bg-indigo-400/20" },
 };
 
+const CALLOUT_TYPES = ["warning", "danger", "caution", "question"];
+
 function blockquoteToCallout(blockquote: Element) {
   const calloutHeaderIndex = blockquote.children.findIndex(
     (child) =>
@@ -40,7 +42,10 @@ function blockquoteToCallout(blockquote: Element) {
   );
 
   if (calloutTextNodeIndex < 0) {
-    blockquote.properties = { className: "quote" };
+    blockquote.properties = {
+      ...blockquote.properties,
+      className: "quote",
+    };
     return;
   }
 
@@ -54,11 +59,10 @@ function blockquoteToCallout(blockquote: Element) {
     .toLowerCase();
 
   // Apply style based on callout type
-  const style =
-    CALLOUT_STYLES[calloutType as CalloutType] || CALLOUT_STYLES.default;
+  const style = CALLOUT_TYPES.includes(calloutType) ? calloutType : "default";
   blockquote.properties = {
     ...blockquote.properties,
-    className: style.className,
+    className: "callout " + style,
   };
 
   // Create header element for callout
