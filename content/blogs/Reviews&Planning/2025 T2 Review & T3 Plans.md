@@ -4,9 +4,9 @@ published: 2025-08-27
 
 T2 is a period of time from May 1st to August 31st. As with all Review & Planning, the post primarily details learnings, achievements, and feelings. I'm not here to share specific events and experiences unless they're critical for context. Such detail can be found in their own respective posts. 
 
-# Review
+## Review
 
-## SDE Internship @ AWS
+### SDE Internship @ AWS
 
 ![](../../../public/blogs/me-aws.jpg)
 
@@ -32,7 +32,7 @@ It's hard to share that kind of complaint while also being bombarded by Big Tech
 
 To hear more specifically about the internship, read [My Experience as a SDE Intern at AWS](../_draft/My%20Experience%20as%20a%20SDE%20Intern%20at%20AWS.md).
 
-## Education
+### Education
 
 Continuing from [last semester](../Reviews&Planning/2025%20T1%20Review.md#School), my Senior Design team and I completed the largest project I've worked on outside of internships. I built a service that handles several automations helpful for the process of converting geoJSONs to IMDF files, along with a web-based frontend to interact with the features intuitively. We roughly estimate that my contribution automates ~30% of the conversion workflow, bringing significant time savings and laying a solid foundation for our project sponsor to streamline the conversion processes even further.
 
@@ -44,7 +44,7 @@ Look at all the contributions over the semesters!
 And the poor team dynamic didn't make it any better. The project only had its success thanks to me and another team member, who spearheaded the mobile application development, while the two other members cluelessly dumped LLM-generated code into the codebase. One of them proudly shared that they did not enjoy software engineering and had no plans to pursue it as a career, which was really great to hear from someone who needed to do software engineering in the team 🙂. We ended up serving him a graduation degree that he didn't deserve.
 
 With that said, I still learned a few things from the project. The progressive growth of the codebase naturally taught me to architect components more consistent with the SOLID principles. This wasn't the first time I learned the principles, of course, but pairing the development with my internship meant I could immediately apply the things I learned from them. There were several instances where I thought, "The codebase I'm working with in AWS does this part much better... I should apply that pattern here."
-## Health
+### Health
 
 ![|300](../../../public/blogs/estimate-1RM-dumbell-benchpress-2025-T2.png)
 Estimated 1RM for dumbbell bench press
@@ -55,7 +55,7 @@ The biggest change I made is tracking my diet. Google's Gemini has been a great 
 
 But to be frank, *doubling* my gym frequency still means a bit less than 2 times a week on average, which isn't impressive at all. My diet wasn't clean either - I ate out most of the time and enjoyed Shake Shack and Domino's a little too much. Still, achievements are still achievements. 
 
-## Personal Productivity
+### Personal Productivity
 
 It's been [5 years](../Software%20Dev%20Log/Software%20Dev%20Log%205.md) since I started looking into this and I'm still trying to figure out how to make it work. Specifically, figuring out:
 1. a system for logging information
@@ -72,7 +72,7 @@ I also started to see value in bringing ceremonies and practices done in busines
 
 After a lot of documents and organizing ideas, and making incremental improvements to my solutions, I finally switched over to a system that seems to work. It's a manual, step-by-step system that relies heavily on my grit to follow it regularly and there's still room to reduce friction, but it's the best one yet. Specifics of my system and strategy are more fitting as a blog of its own, but I took tons of inspiration from productivity books, such as The PARA Method, Get Things Done, Atomic Habits, and The 12 Week Year. While I haven't read all of them (since their core philosophies are easily found online), I highly recommend you do and create a system that works for you. 
 
-## Personal projects
+### Personal projects
 
 With the internship and school taking up most of my time, I had little to no time to work on any personal project other than my Second Brain. I was completely free since the start of August, so I got a few things done for a few projects.
 
@@ -80,7 +80,7 @@ Personal website has a new look - I find it to give much more of an *elegant*, *
 
 My home server is now tracked by git and [publicly viewable](https://github.com/SimHoZebs/home-server). The documentation should be fairly comprehensive to give you a good idea as to what services it supports and how. I still have so much I want to do for it - including work that would cost me a pretty penny.
 
-## AI
+### AI
 
 Quite an unavoidable technology as a software developer and a college student.
 
@@ -104,9 +104,9 @@ There's a saying that you learn better by writing your own notes instead of read
 
 What I'm gathering is that everyone pretty much feels this way about AI; It certainly brings benefits, but hard to work around its downfalls. I expect the solution to simply be the development of more consistent and accurate AI tools.
 
-# Plan
+## Plan
 
-## Career
+### Career
 
 Being in my last semester of my Bachelor's Degree, the remainder of the year will primarily be focused on securing a full-time software engineering role by the end of the year. That means actively applying online, going to career fairs, and solving Leetcode (*ugh*). I'm hoping to receive a return offer from AWS, but until then, I will be actively searching. This is also a chance to join organizations that align more with [my philosophy](https://simho.xyz/me), so I'll see what my chances are with them throughout the year.
 
@@ -115,12 +115,12 @@ Being in my last semester of my Bachelor's Degree, the remainder of the year wil
 - Solve at least 1 medium+ difficulty Leetcode problem daily
 - Participate in career fairs & hackathons
 
-## Personal productivity
+### Personal productivity
 
 While I have a system to log information, I still don't have a good task management system outside of Notion. That's a problem, because I want to keep my personal data locally so I have full control over data persistence and access between different software. I'll be migrating out of Notion and trying to find a way it can work with Obsidian. At the same time, I'm eyeing [Anytype](https://anytype.io/) as a potential upgrade in data visualization. The other, more important goal is to build a habit to utilize the system and extensively test how well it works. By the end of the year, I want to have solid documentation for the whole process so I can begin automating it.
 
 **Habits:** Engage with the system daily
-## Personal Projects
+### Personal Projects
 
 I know I've been saying this for a while, but I really plan to complete [Nedon](https://simho.xyz/projects/nedon) this time. I'm going to upgrade all the packages, list all the bugs and missing features, and then bring it to a state that it's stable enough to demo. I don't want to invest too much time and make it the greatest finance app like I meant to, but I want to finally say I completed a project.
 
