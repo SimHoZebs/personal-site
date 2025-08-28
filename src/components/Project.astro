@@ -12,7 +12,7 @@ const { props } = Astro;
 ---
 
 <a
-  class="text-zinc-200 sm:min-w-[20rem] rounded-xl border-stone-700 px-5 py-3 border w-xs gap-3 flex flex-col transition-all hover:scale-105 hover:border-stone-600"
+  class="text-zinc-200 rounded-xl border-stone-700 px-5 py-3 border max-w-xs gap-3 flex flex-col transition-all hover:scale-105 hover:border-stone-600"
   href={"/projects/" + props.ref}
   transition:name={props.title + " bg"}
 >

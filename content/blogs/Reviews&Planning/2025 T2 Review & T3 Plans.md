@@ -30,7 +30,7 @@ can't complain about money
 
 It's hard to share that kind of complaint while also being bombarded by Big Tech money, which was an experience all on its own. I didn't spend a lot to save for the remainder of this year, but I did buy the majority of meals instead of cooking to save time for more meaningful activities. **I was essentially buying time, and for the first time, it was sustainable**. So many inconveniences could be bought away - which is something I already knew, but this time, I got a 12-week trial of such reality. Money may not buy happiness, but it absolutely buys more room for it.
 
-To hear more specifically about the internship, read [My Experience as a SDE Intern at AWS](../_draft/My%20Experience%20as%20a%20SDE%20Intern%20at%20AWS.md).
+To hear more specifically about the internship, read [My Experience as a SDE Intern at AWS (not available yet)](../_draft/My%20Experience%20as%20a%20SDE%20Intern%20at%20AWS.md).
 
 ### Education
 

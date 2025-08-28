@@ -48,8 +48,8 @@ const allBlogMetadata = allBlog.map((blog) => {
   <main
     class="flex px-5 xl:px-20 py-20 flex-col w-full h-full justify-between items-center"
   >
-    <div class="flex flex-col lg:flex-row justify-between gap-10">
-      <div class="lg:w-72">
+    <div class="flex flex-col lg:flex-row w-full justify-center gap-10">
+      <div class="lg:w-64">
         <section
           class="gap-y-2 items-center flex flex-col h-fit border-stone-700 p-3 rounded-xl lg:bg-stone-800 lg:border w-full min-w-[16rem]"
         >
@@ -101,7 +101,7 @@ const allBlogMetadata = allBlog.map((blog) => {
         </section>
       </div>
 
-      <div class="md:w-full flex flex-col items-center gap-y-20">
+      <div class="md:w-full flex max-w-6xl flex-col items-center gap-y-20">
         <section
           class="flex flex-col gap-y-10 items-center justify-center w-full"
         >
@@ -109,7 +109,9 @@ const allBlogMetadata = allBlog.map((blog) => {
             <h1 class="text-5xl font-extrabold">Projects</h1>
           </div>
 
-          <div class="grid auto-cols-auto md:grid-cols-2 gap-5">
+          <div
+            class="grid auto-cols-auto md:grid-cols-2 2xl:grid-cols-3 flex-wrap gap-5"
+          >
             {
               allProject.map((project) => (
                 <Project
@@ -127,7 +129,7 @@ const allBlogMetadata = allBlog.map((blog) => {
           </div>
         </section>
 
-        <section class="w-full flex items-center flex-col gap-y-10 max-w-xl">
+        <section class="w-full flex items-center flex-col gap-y-10 max-w-2xl">
           <h1 class="text-5xl font-extrabold">Writing</h1>
           {
             allBlog.length ? (
