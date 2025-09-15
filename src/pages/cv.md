@@ -15,11 +15,11 @@ simhozebs@gmail.com | [simho.xyz](https://simho.xyz) | [github.com/simhozebs](ht
 
 _University of Central Florida_
 
-- GPA: 3.8
+- GPA: 3.8/4.0
 - Organization: KnightHacks Kickstart Mentor
 - Relevant Coursework: Data Structures & Algorithms, Computer Logic & Organization, Computer Architecture, Systems Software, Web & User Experience, Algorithms for Machine Learning
 
-## PROFESSIONAL EXPERIENCE
+## EXPERIENCES
 
 ---
 
@@ -36,12 +36,12 @@ _Software Development Engineering Intern_
 _Software Engineering Intern_
 
 - Sped up development time by 70% by automating dev environment setup and system for running tests locally
-- Improved project maintainability by migrating custom SQL query builder module to utilize Django ORM
-- Decreased pipeline duration by 50% by imporving CI/CD pipeline conditions for rebuilding images
+- Led the migration of custom SQL query builder module to Django ORM, improving service maintainability
+- Decreased pipeline duration by 50% by improving CI/CD pipeline conditions for rebuilding images
 
 **Center for Distributed Learning, UCF** **Apr 2024 - Sep 2024**
 
-_Web Developer, Part-time (Techranger)_
+_Web Developer | Techranger_
 
 - Cut deployment time by 80% by automating database initialization and container orchestration
 - Helped enhance LMS tool accessibility by researching implementations for math equations, videos, etc.
@@ -50,17 +50,9 @@ _Web Developer, Part-time (Techranger)_
 
 _Undergraduate Researcher_
 
-- Led the full-stack development of a React Native app gathering biometrics from a wearable device
-- Improved development velocity with agile methodologies, code reviews, and documentation
-- Migrated the app to Expo Router and implemented a custom native Bluetooth module for better maintainability and performance
-
-## TECHNICAL SKILLS
-
----
-
-- **Languages**: JavaScript, TypeScript, Python, Java, HTML/CSS
-- **Frameworks**: React/Next.js, React Native, Express, Django, Flask, Prisma, tRPC, Dagger, Lombok
-- **Tools**: AWS, Git, Docker, NGINX, GitLab CI/CD, Webpack, Babel, Vite, Figma, OpenAI, Supabase
+- Led the full-stack development of a React Native app, gathering biometrics from a wearable device
+- Improved developer velocity by leveraging agile methodologies, code reviews, and documentation
+- Improved codebase maintainability by migrating to Expo Router and adding a custom native Bluetooth module
 
 ## INDEPENDENT PROJECTS
 
@@ -71,7 +63,7 @@ _TypeScript, Python, React.js, Flask, OpenAI, Semantic Kernel_
 
 - Won 1st place in Microsoft & RBC’s challenge: “Use Generative AI to create better shopping experiences”
 - Improved response times by 1,200% with asynchronous request processing and response streaming
-- Built a hard-to-detect web scraper to gather product reviews
+- Engineered a resilient web scraper with rotating user agents to gather product reviews
 - Protected against AI hallucination by attaching source references to AI-summarized reviews
 
 **[HandyDollars](https://devpost.com/software/handydollar)**
@@ -83,6 +75,16 @@ _TypeScript, Next.js, Node.js, Azure AI Vision, OpenAI, Supabase, TailwindCSS_
 
 **Mapping for the Masses**
 _TypeScript, React, jest, Flask, pytest, QGIS_
-- Integrated headless QGIS into backend workflows to automate GeoJSON processing, layer filtering, and venue size estimation.
-- Implemented project-based UI enabling concurrent blueprint conversions, reducing conversion time by 10–30%.
-- Developed robust testing framework and detailed logging for improved debugging and maintainability.
+
+- Developed a tool to automate various aspects of converting floor plans to the IMDF standard
+- Integrated headless QGIS into backend for GeoJSON processing, layer filtering, & venue size estimation
+- Reduced blueprint conversion time by 30% by implementing project-based UI, enabling concurrent conversions
+- Improved maintainability by developing a robust testing framework for the frontend and backend**
+
+## TECHNICAL SKILLS
+
+---
+
+- **Languages**: JavaScript, TypeScript, Python, Java, HTML/CSS
+- **Frameworks**: React/Next.js, React Native, Express, Django, Flask, Prisma, tRPC, Dagger, Lombok
+- **Tools**: AWS, Git, Docker, NGINX, GitLab CI/CD, Webpack, Babel, Vite, Figma, OpenAI, Supabase
