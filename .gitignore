@@ -24,8 +24,8 @@ pnpm-debug.log*
 ##Syncthing/obsidian
 .stversions/
 .stfolder/
-_draft/
 .obsidian/
 .trash/
 .stignore
 .smart-env/
+_draft/

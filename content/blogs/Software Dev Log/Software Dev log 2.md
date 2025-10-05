@@ -5,10 +5,10 @@ tags:
 
 It took almost a month to finish writing my first log, which is not really ideal when the plan was to write about once a week or two. It's not as easy when you aren't used to writing, along with trying to pack it in a pretty busy schedule between 5:30 AM to 9:40 PM. The progress on the projects and studies slowed down as well trying to write this, so it wasn't particularly a productive month. Hopefully I get this done quicker this time.
 
-Ever since I started 'Bank Account Interest Calculator Development' I didn't touch on 'Kivy module study', because I was sure I'd get it over with in few days. Jokes on me, I'm terrible at focusing on one thing and now I'm almost two months in. ~However, I do have something other than 'Bank Account Interest Calculator Development' to talk about in this post;~
+Ever since I started 'Bank Account Interest Calculator Development' I didn't touch on 'Kivy module study', because I was sure I'd get it over with in few days. Jokes on me, I'm terrible at focusing on one thing and now I'm almost two months in. ~~However, I do have something other than 'Bank Account Interest Calculator Development' to talk about in this post;~~
 
 1. Bank Account Interest Calculator Development
-2. ~IEEE 754 double precision floating point~ (Not enough time)
+2. ~~IEEE 754 double precision floating point~~ (Not enough time)
 
 ## 1. Bank Account Interest Calculator Development
 
