@@ -12,7 +12,7 @@ When I was offered to schedule an interview near the end of January, I freaked o
 
 I spent the week or so before the interview with LeetCode, Gemini, and ChatGPT. I didn't have anyone to help me with mock interviews, but my family was there to hear my doom and gloom; about how I wasn’t going to make it and fail the biggest opportunity. I mean, how was I possibly going to pass the technical portion just having solved **35** LeetCode questions and near-zero experience with interviews? I soon reached a conclusion that, at the very least, I was going to gain a valuable experience and understand how Big Tech conducts interviews.
 
-Then I had my interview. I came out of the interview, shocked not how difficult it was, but how I absolutely nailed it. It couldn't have been smoother. Yeah, my experiences aren't extraordinary, and I could've noticed the typo with the variable before the interviewer caught it, but there was nothing that would fail me from the interview. Now I was worried that *if* I didn't get the offer, I would have no idea why.
+Then I had my interview. I ended the Chime call, shocked not how difficult it was, but how I absolutely nailed it. It couldn't have been smoother! Sure, my experiences aren't extraordinary, and I didn't noticed the typo with the variable until the interviewer mentioned it, but there was nothing that would fail me. Now I was worried that *if* I didn't get the offer, I would have no idea why.
 
 I waited about 5 days, then sent them a "I have a competing offer, send one now" email, and got one within a few hours.
 
@@ -20,31 +20,20 @@ I waited about 5 days, then sent them a "I have a competing offer, send one now"
 
 I don't exactly know how much I can talk about my project without getting in trouble. Nothing I did *felt* confidential, but I don't want Amazon coming for my blog posts.
 
-I wasn't presented with a solution to implement. Rather, I was told that the no-code ticketing system the internal teams were using was not designed to scale and that they wanted something better. That's it. 
-
-Because of this ambiguity, I spent **A LOT** of time figuring out:
+I wasn't presented with a solution to implement. Rather, I was told that the no-code ticketing system the internal teams were using was not designed to scale and that they wanted something better. That's it. Because of this ambiguity, I spent **A LOT** of time figuring out:
 - what the problems actually were 
 - what problems I could actually solve within my internship
 - how to solve them
 - what tools exist to implement those solutions
 - and how to use them. 
 
-This was quite a unique experience - instead of being told what to do with instructions down to the details, I felt fully responsible for how my project was going to look like. I felt ownership. Of course, my team helped me extensively, but I ultimately determined the scope of the project and how things were going to get done. There were some moments I felt embarrassed and confused, but I kept setting up meetings with the team to make sure I kept moving. 
+This was quite a unique experience - instead of being told what to do with instructions down to the details, I felt fully responsible for how my project was going to look like. I felt ownership, especially since my team didn't really know what the project was supposed to be until I shaped it into something tangible. It felt weird setting up meetings and leading them as a mere intern, and that feeling honestly never went away. However, the support from my team made it always so worth it.
 
+My team was incredibly helpful throughout the planning, of course. They made sure to understand my pitch as well as I did so they could provide meaningful insights and criticisms. And oh, did they have a lot of questions for me to answer. As my iterated my design document, I was told that I eventually had to figure out when to put my foot down and go with the plan, even if there are hanging comments. Not because I was slow, but because a perfect plan doesn't exist - and if it did, it was certainly not worth the time figuring one out, compared to just implementing something decent. This is where I felt that the purpose of my plan wasn't necessarily to get approval, but as somewhat of a structured announcement as to what I'll be doing. Again, it was up to me when and how the project will be built.
 
-Aftergo over my system design and my proof of concept, where I received constructive criticisms and feedback until the idea sounded good enough to start working on. 
-
-
-
-- Felt a little embarrassed when I wasn't following some of the discussions
-- 
-
-My internship began on May 5th - only a few days after my semester ended. I was considered to be part of an earlier batch of interns, with most starting near the end of May to mid June.
-
+Now for some technical aspect 
 
 here's definitely a silent pressure to prove that you are useful to the manager, and for the manager to show their team shouldn't be the next to be cut down.
-
-I'll write a blog post about this.
 
 Refer to the big OOPs video here
 
