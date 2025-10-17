@@ -1,6 +1,6 @@
 ---
 published: 2025-08-27
-edited: 2025-09-08
+edited: 2025-10-16
 ---
 
 T2 is a period of time from May 1st to August 31st. As with all Review & Planning, the post primarily details learnings, achievements, and feelings. I'm not here to share specific events and experiences unless they're critical for context. Such detail can be found in their own respective posts. 
