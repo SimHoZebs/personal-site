@@ -14,6 +14,11 @@
   @apply bg-stone-900;
 }
 
+lite-youtube {
+  @apply self-center min-w-[100%];
+}
+
+
 /* general purpose - typically good enough */
 .text {
   @apply text-zinc-300;
@@ -29,11 +34,8 @@
   }
 
   a {
-    @apply text-indigo-300 underline hover:text-indigo-300 transition-colors;
+    @apply text-indigo-300 underline hover:text-indigo-400 transition-colors;
 
-    &:hover {
-      @apply text-indigo-400;
-    }
   }
 
   blockquote {

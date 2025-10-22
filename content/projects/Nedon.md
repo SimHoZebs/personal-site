@@ -3,14 +3,11 @@ title: Nedon
 summary: Finance tracker that actually tracks properly.
 order: 0
 link:
-  [
-    {
-      name: Github,
-      url: https://github.com/SimHoZebs/nedon,
-      icon: "icon-[mdi--github]",
-    },
-    { name: demo, url: https://nedon.vercel.app },
-  ]
+  - name: Github
+    url: https://github.com/SimHoZebs/nedon
+    icon: "icon-[mdi--github]"
+  - name: demo
+    url: https://nedon.vercel.app
 ---
 
 ![nedon in action](../../public/projects/nedon-preview.png)

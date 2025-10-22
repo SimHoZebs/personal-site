@@ -9,7 +9,7 @@ I didn't think much of it when I took the OA as well. I was pleasantly surprised
 
 It was only when I was offered to schedule an interview near the end of January that I freaked out. This was (and still is) the only interview I landed for a software engineering role that wasn't an in-campus position or via referral. I had solved less than 20 Leetcode questions in my entire life, let alone gone through a technical interview. I didn't know what STAR method was and never looked into Amazon's Leadership Principles.
 
-![](public/blogs/gemini-helping-interview-prep.png)
+![](../../../public/blogs/gemini-helping-interview-prep.png)
 
 I spent the week or so before the interview with LeetCode, Gemini, and ChatGPT. I didn't have anyone to help me with mock interviews, but my family was there to hear my doom and gloom; about how I wasn’t going to make it and fail the biggest opportunity. I mean, how was I possibly going to pass the technical portion just having solved **35** LeetCode questions and near-zero experience with interviews? I soon reached a conclusion that, at the very least, I was going to gain a valuable experience and understand how Big Tech conducts interviews.
 
@@ -19,7 +19,7 @@ I waited about 5 days, then sent them a "I have a competing offer, send one now"
 
 ## The Design Doc
 
-![](public/blogs/Discord_ug6BkZaQH1.png)
+![](../../../public/blogs/Discord_ug6BkZaQH1.png)
 Accurate depiction of the internship
 
 The internship has a few phases that are *mostly* the same across all software engineering teams in AWS. It starts with onboarding and design document, where you spent weeks learning the foundations of working in AWS and the tools your team uses, while writing a document about how you are going to build your solution. The depth and difficulty of the document differs by team and project. Some teams expect multiple low-level designs (LLDs), detailing class diagrams and how they interact with the system. Some want a single high-level design (HLD), where you determine the overall architecture without describing exactly how they will be implemented. Regardless of the level, you are expected to justify every decision - address alternative approaches, outline limitations, approximate impact, and even plan how to identify failures while minimizing operational overhead.
@@ -38,7 +38,7 @@ Even after weeks writing my design doc, I was slow and careful about how I wrote
 
 The biggest challenge was with handling unknowns that appeared throughout my project. There were features that were more complex to implement than expected. New hurdles appeared as I further understood the platform I was working to replace. Some features just couldn't be done with the limitations I was working with. I never really got stuck throughout development, but these challenges had me skip a few lunches and/or work overtime so I can deliver (see what I did there) as scheduled.
 
-![](public/blogs/late-night-cr.png)
+![](../../../public/blogs/late-night-cr.png)
 I rarely worked late, but when I did...
 
 Code reviews were one of the most valuable medium of learning throughout the internship. My team always had left useful comments to help improve the scalability and observability of my code. I rarely had better insight to argue otherwise and my team never had issues with them. After weeks of receiving such high quality feedback loop genuinely made me feel like I was leveling up as a software engineer.

@@ -1,0 +1,44 @@
+---
+title: LazyFood
+summary: Logging meals are annoying. Just find the nutrition info for me.
+order: 3
+link:
+  - name: Github
+    url: https://github.com/simhozebs/ai-nutrition-tracker
+    icon: icon-[mdi--github]
+  - name: Devpost
+    url: https://devpost.com/software/lazyfood
+    icon: icon-[simple-icons--devpost]
+---
+import { YouTube } from 'astro-embed';
+
+<YouTube id="https://youtu.be/z-aMN7k4vfw" title="LazyFood demo"/>
+Note: the video was made with like, 6 hours of sleep over the course of 48 hours
+
+
+## Inspiration
+
+Many of us would like to keep better track of our own diet, but let's be honest - logging food is a pain.
+
+Apps expect you to know exactly what you ate. You have to search through a complex database, and good luck if it's a home cooked meal!
+
+Wouldn't it be great if your app just *knows* the nutritional value of the food you ate?
+
+## What it does
+
+### Intuitive logging
+
+Making exact queries for database sucks. Just type natural language. Oh, you don't want to type? Just speak to it? Oh, you don't want to speak? Fine, just take a picture of your food!
+
+Log multiple foods. Log for multiple DAYS. LazyFood understands it all.
+
+### Personalized estimates
+To ensure you get the most accurate estimates, LazyFood can also ask a short set of brief, multiple choice questions to help clarify important factors about your meal (such as if a food was fried or baked, used whole wheat bread or white, etc.).
+
+Additionally, if you have regular patterns in your diet - such as always eating baked chips as opposed to fried - LazyFood allows you to save these patterns as memories to always be taken into account when you log a meal.
+
+## How we built it
+- Database - PostgreSQL
+- Frontend - React, TypeScript, CSS
+- Backend - Django, Django Rest Framework (DRF)
+- Agents - Google ADK (Agent Development Kit)
