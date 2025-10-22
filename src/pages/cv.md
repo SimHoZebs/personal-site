@@ -11,13 +11,13 @@ simhozebs@gmail.com | [simho.xyz](https://simho.xyz) | [github.com/simhozebs](ht
 
 ---
 
-**Bachelor of Science, Computer Science** **Dec 2025 (Expected)**
+**Bachelor of Science, Computer Science** **Dec 2025**
 
 _University of Central Florida_
 
 - GPA: 3.8/4.0
-- Organization: KnightHacks Kickstart Mentor
-- Relevant Coursework: Data Structures & Algorithms, Computer Logic & Organization, Computer Architecture, Systems Software, Web & User Experience, Algorithms for Machine Learning
+- Organization: KnightHacks Kickstart Mentor (2024 - 2025)
+- Relevant Coursework: Data Structures & Algorithms, Web & User Experience, Algorithms for Machine Learning
 
 ## EXPERIENCES
 
@@ -28,63 +28,59 @@ _University of Central Florida_
 _Software Development Engineering Intern_
 
 - Reduced service maintenance overhead by **75%** by centralizing business logic from a no‑code decision‑tree ticketing framework into a Java AWS Lambda - S3 microservice.
-- Reduced customers’ time spent creating tickets by **50%** by implementing support for multi-regional workflow.
+- Reduced time spent creating tickets by 50% for **~300 AWS services** by implementing a multi-regional workflow.
 - Improved service maintainability by consolidating routing logic to an S3‑backed configuration store.
 
 **SRAM** **May 2024 - Apr 2025**
 
 _Software Engineering Intern_
 
-- Sped up development time by 70% by automating dev environment setup and system for running tests locally
-- Led the migration of custom SQL query builder module to Django ORM, improving service maintainability
-- Decreased pipeline duration by 50% by improving CI/CD pipeline conditions for rebuilding images
+- Contributed to the test data storage pipeline & analysis tool used by all internal engineers across SRAM
+- Sped up tool development time by 70% by automating dev environment setup and building local test systems
+- Reduced client memory usage by migrating client-side interactions to the server and paginating query outputs
+- Decreased pipeline duration by 50% by improving CI/CD conditions for rebuilding images
 
-**Center for Distributed Learning, UCF** **Apr 2024 - Sep 2024**
+**Center for Distributed Learning, UCF** **Oct 2023 - May 2024**
 
-_Web Developer | Techranger_
+_Web Developer (Techranger)_
 
-- Cut deployment time by 80% by automating database initialization and container orchestration
-- Helped enhance LMS tool accessibility by researching implementations for math equations, videos, etc.
+- Optimized UDOIT’s deployment time by 80% by automating database initialization and container orchestration; an admin tool used by 100+ instructors in UCF
+- Helped enhance LMS tool accessibility by researching accessible implementations for math equations and videos.
 
-**Wearable Engineering & Assistive Robotics Lab, UCF** **Oct 2023 – May 2024**
+**Wearable Engineering & Assistive Robotics Lab, UCF** **Oct 2023 - May 2024**
 
 _Undergraduate Researcher_
 
-- Led the full-stack development of a React Native app, gathering biometrics from a wearable device
-- Improved developer velocity by leveraging agile methodologies, code reviews, and documentation
-- Improved codebase maintainability by migrating to Expo Router and adding a custom native Bluetooth module
+- Led the development of a mobile biometrics analysis app for UCF’s biomechanics research
+- Reduced codebase complexity by 33% by migrating to Expo Router and adding a native Bluetooth module
 
-## INDEPENDENT PROJECTS
+## PROJECTS
 
 ---
 
-**[Review Summarizer](https://devpost.com/software/review-generator-9000)**
-_TypeScript, Python, React.js, Flask, OpenAI, Semantic Kernel_
+**[Review Summarizer](https://devpost.com/software/review-generator-9000)** _TypeScript, React.js, Flask, OpenAI, Semantic Kernel_
 
-- Won 1st place in Microsoft & RBC’s challenge: “Use Generative AI to create better shopping experiences”
-- Improved response times by 1,200% with asynchronous request processing and response streaming
-- Engineered a resilient web scraper with rotating user agents to gather product reviews
-- Protected against AI hallucination by attaching source references to AI-summarized reviews
+- 1st place in Microsoft & RBC’s sponsor challenge ”Use Generative AI to create better shopping experiences”
+- Engineered a resilient web scraper with rotating user agents to gather product reviews and summarize them
+- Improved agent response times by 120% with async request processing and response streaming
 
-**[HandyDollars](https://devpost.com/software/handydollar)**
-_TypeScript, Next.js, Node.js, Azure AI Vision, OpenAI, Supabase, TailwindCSS_
+**[HandyDollars](https://devpost.com/software/handydollar)** _TypeScript, Next.js, Node.js, Azure AI Vision, OpenAI, Supabase, TailwindCSS_
 
-- Secured 2nd place in Google’s challenge: “Empowering Learners with Technology” at ShellHacks 2023
-- Digitized physical receipts using Vision AI and linked them to bank transactions for added context
-- Built secure caches to eliminate redundant processing
+- 2nd place in Google’s sponsor challenge “Empowering Learners with Technology" at ShellHacks 2023
+- Built a system to automatically digitize physical receipts with a Vision AI and a Large Language Model
+- Automated linking of digitized receipts with bank transactions through similarity comparisons
+- Improved AI credibility through an intuitive UI that displays source references to AI-summarized reviews
 
-**Mapping for the Masses**
-_TypeScript, React, jest, Flask, pytest, QGIS_
+**Mapping for the Masses** _TypeScript, React, Flask, QGIS, TailwindCSS_
 
-- Developed a tool to automate various aspects of converting floor plans to the IMDF standard
-- Integrated headless QGIS into backend for GeoJSON processing, layer filtering, & venue size estimation
-- Reduced blueprint conversion time by 30% by implementing project-based UI, enabling concurrent conversions
-- Improved maintainability by developing a robust testing framework for the frontend and backend**
+- Led the development of a platform for managing and automating conversions of floor plans to indoor map data
+- Reduced blueprint conversion time by 30% through automatic GeoJSON processing & venue size estimation
+- Improved maintainability by developing a robust testing framework for the frontend and backend
 
 ## TECHNICAL SKILLS
 
 ---
 
-- **Languages**: JavaScript, TypeScript, Python, Java, HTML/CSS
-- **Frameworks**: React/Next.js, React Native, Express, Django, Flask, Prisma, tRPC, Dagger, Lombok
-- **Tools**: AWS, Git, Docker, NGINX, GitLab CI/CD, Webpack, Babel, Vite, Figma, OpenAI, Supabase
+- **Languages**: JavaScript, TypeScript, Python, C, Java, C#, HTML/CSS, SQL (PostgreSQL)
+- **Libraries/Frameworks**: React/Next.js, React Native, Express, Django, Flask, Prisma, tRPC, Dagger, Lombok
+- **Tools**: AWS, Git, Docker, NGINX, GitLab CI/CD, Webpack, Babel, Vite, Figma, LLMs/AI
