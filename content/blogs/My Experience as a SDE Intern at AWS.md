@@ -90,7 +90,7 @@ You may have noticed how often I've praised my team members here. This isn't som
 ![](../../public/blogs/lake-serene-hike.png)
 hiking with interns (Lake Serene)
 
-Being in such a massive organization, it was impossible to find people who *didn't* share a similar interest. I was into Chess at the time, and of course, there is a group for that. There were people who maintained wikis and unofficial tools to improve the experience of using it within AWS. There was also the largest Korean community I've been a part of since moving to the US three years ago. I still find it challenging to actually form deep connections with people over the internet, but already being part of the community has lowered the barrier to communication. I can see myself being more active in these communities if I were to return.
+Being in such a massive organization, it was impossible to find people who *didn't* share a similar interest. I was into Chess at the time, and of course, there is a group for that. There were Neovim users who maintained wikis and unofficial tools to improve the experience of using it within AWS. There was also the largest Korean community I've been a part of since moving to the US three years ago. I still find it challenging to actually form deep connections with people over the internet, but already being part of the community has lowered the barrier to communication. I can see myself being more active in these communities if I were to return.
 
 ## The Company
 
