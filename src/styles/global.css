@@ -15,9 +15,8 @@
 }
 
 lite-youtube {
-  @apply self-center min-w-[100%];
+  @apply min-w-[100%] self-center;
 }
-
 
 /* general purpose - typically good enough */
 .text {
@@ -34,8 +33,7 @@ lite-youtube {
   }
 
   a {
-    @apply text-indigo-300 underline hover:text-indigo-400 transition-colors;
-
+    @apply text-indigo-300 underline transition-colors hover:text-indigo-400;
   }
 
   blockquote {
@@ -55,7 +53,7 @@ lite-youtube {
   }
 
   figure {
-    @apply flex flex-col items-center self-center gap-1;
+    @apply flex flex-col items-center gap-1 self-center;
   }
 
   hr {
@@ -94,7 +92,7 @@ lite-youtube {
   }
 
   code {
-    @apply rounded bg-zinc-800 px-0.5 py-0 font-mono text-zinc-300 w-full;
+    @apply w-full rounded bg-zinc-800 px-0.5 py-0 font-mono text-zinc-300;
   }
 
   code:has(span) {
@@ -102,19 +100,19 @@ lite-youtube {
   }
 
   pre {
-    @apply flex w-[70ch] max-w-full self-center rounded-lg text-base text-wrap bg-zinc-800;
+    @apply flex w-[70ch] max-w-full self-center rounded-lg bg-zinc-800 text-base text-wrap;
   }
 
   .footnotes {
     @apply text-sm;
   }
 
-  .footnotes>h2 {
+  .footnotes > h2 {
     @apply text-xl;
   }
 
   div:has(table) {
-    @apply overflow-x-scroll w-full;
+    @apply w-full overflow-x-scroll;
   }
 
   table {

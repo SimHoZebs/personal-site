@@ -40,7 +40,7 @@ const canonical = Astro.request.url;
       data-do-not-track="true"></script>
   </head>
   <body
-    class="flex flex-col font-sans text-base md:text-lg bg text w-[100dvw] h-[100dvh] overflow-x-hidden"
+    class="flex flex-col font-sans text-base md:text-lg bg text w-[100dvw] h-[100dvh] overflow-x-hidden before:content-[''] before:fixed before:inset-0 before:bg-[url('/noise.avif')] before:bg-repeat before:opacity-25 before:pointer-events-none"
   >
     <slot />
   </body>
