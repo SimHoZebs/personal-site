@@ -35,7 +35,7 @@ can't complain about money
 
 It's hard to share that kind of complaint while also being bombarded by Big Tech money, which was an experience all on its own. I didn't spend a lot to save for the remainder of this year, but I did buy the majority of meals instead of cooking to save time for more meaningful activities. **I was essentially buying time, and for the first time, it was sustainable**. So many inconveniences could be bought away - which is something I already knew, but this time, I got a 12-week trial of such reality. Money may not buy happiness, but it absolutely buys more room for it.
 
-I'll follow up with a more specific blog post for the internship in the future.
+You can read more about my experience in [this blog post](My%20Experience%20as%20a%20SDE%20Intern%20at%20AWS.md).
 ### Education
 
 Continuing from [last semester](../Reviews&Planning/2025%20T1%20Review.md#School), my Senior Design team and I completed the largest project I've worked on outside of internships. I built a service that handles several automations helpful for the process of converting geoJSONs to IMDF files, along with a web-based frontend to interact with the features intuitively. We roughly estimate that my contribution automates ~30% of the conversion workflow, bringing significant time savings and laying a solid foundation for our project sponsor to streamline the conversion processes even further.

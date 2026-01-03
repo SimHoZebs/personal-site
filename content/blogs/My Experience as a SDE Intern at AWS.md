@@ -1,5 +1,6 @@
 ---
 published: 2025-10-28
+edited: 2025-11-04
 ---
 
 ![me-aws](../../public/blogs/me-aws.jpg)
@@ -10,9 +11,9 @@ I applied online on October 19th, took the OA on December 18th, interviewed on F
 
 This was the 4th application I submitted to Amazon throughout my college. In fact, I put another one in November, not expecting much to come out of it. It was just one of many applications I submitted over the Fall semester in hopes of landing something.
 
-I didn't think much of it when I took the OA as well. I was pleasantly surprised to see a recruiter's name attached to the communication, but that didn't necessarily mean they weren't auto-generated read-only emails like the rest. Tons of companies have sent out an OA only to never contact me again.
+I didn't think much of it when I took the OA as well. I was pleasantly surprised to see a recruiter's name attached to the communication, but so did many auto-generated, no-reply emails. Tons of companies have sent out an OA only to never contact me again.
 
-It was only when I was offered to schedule an interview near the end of January that I freaked out. This was (and still is) the only interview I landed for a software engineering role that wasn't an in-campus position or via referral. I had solved fewer than 20 LeetCode questions in my entire life, let alone gone through a technical interview. I didn't know what the STAR method was and never looked into Amazon's Leadership Principles.
+It was only when I was offered to schedule an interview near the end of January that I freaked out. This was (and still is) the only interview I landed for a software engineering role that wasn't an in-campus position or via referral. By this time, I had solved fewer than 20 LeetCode questions in my entire life, let alone gone through a technical interview. I didn't know what the STAR method was and never looked into Amazon's Leadership Principles.
 
 ![](../../public/blogs/gemini-helping-interview-prep.png)
 
@@ -77,7 +78,7 @@ can't complain about money
 
 The most important benefit is the money, they say, and I agree. I tried to keep spending low to survive the remainder of this year, but I also bought the majority of meals out instead of cooking to save time for more meaningful activities. I was essentially buying time, and **for the first time, it was sustainable**. So many inconveniences could be bought away; which is something I already knew, but this time, I got a 12-week trial of such reality. Money may not buy happiness, but it absolutely buys more room for it.
 
-I also enjoyed being able to get anywhere within the city for free. Our ORCA cards were paid for, and we could expense $230 a month to Lime subscriptions and Lyft rides. The scooters are pretty fun to ride around.
+I also enjoyed being able to get anywhere within the city for free. Our ORCA cards were paid for, and we could expense $230 a month to Lime subscriptions and Lyft rides. The scooters are pretty fun to ride around and gets you pretty much anywhere in Seattle.
 
 There weren't really any other benefits from that. Big Tech doesn't seem to give out free food anymore - they're in other Fortune 500 companies that are actually competing to get top talent. No snacks or budget for team meals. We did get one free coffee a day from the cafes in our building and free bananas from the banana stands spread across the city.
 

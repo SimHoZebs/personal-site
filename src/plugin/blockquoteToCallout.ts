@@ -59,10 +59,12 @@ function blockquoteToCallout(blockquote: Element) {
     .toLowerCase();
 
   // Apply style based on callout type
-  const style = CALLOUT_TYPES.includes(calloutType) ? calloutType : "default";
+  const style = CALLOUT_TYPES.includes(calloutType)
+    ? CALLOUT_STYLES[calloutType as CalloutType].className
+    : CALLOUT_STYLES.default.className;
   blockquote.properties = {
     ...blockquote.properties,
-    className: "callout " + style,
+    className: style,
   };
 
   // Create header element for callout
@@ -70,7 +72,7 @@ function blockquoteToCallout(blockquote: Element) {
     type: "element",
     tagName: "p",
     children: [{ type: "text", value: calloutType }],
-    properties: {},
+    properties: { className: "callout-header font-bold" },
   };
 
   // Update the existing text node to remove the callout marker
