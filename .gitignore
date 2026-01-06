@@ -29,3 +29,5 @@ pnpm-debug.log*
 .stignore
 .smart-env/
 _draft/
+_.obsidian/
+.trashed-*

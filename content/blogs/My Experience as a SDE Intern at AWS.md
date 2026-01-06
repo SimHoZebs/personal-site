@@ -25,7 +25,7 @@ I waited about 5 days, then sent them a "I have a competing offer, send one now"
 
 ## The Design Doc
 
-![](../../public/blogs/Discord_ug6BkZaQH1.png)
+![](../../public/blogs/aws-internship-reality-discord.png)
 Accurate depiction of the internship
 
 The internship has a few phases that are _mostly_ the same across all software engineering teams in AWS. It starts with onboarding and a design document, where you spend weeks learning the foundations of working in AWS and the tools your team uses, while writing a document about how you are going to build your solution. The depth and difficulty of the document differ by team and project. Some teams expect multiple low-level designs (LLDs), detailing class diagrams and how they interact with the system. Some want a single high-level design (HLD), where you determine the overall architecture without describing exactly how they will be implemented. Regardless of the level, you are expected to justify every decision - address alternative approaches, outline limitations, approximate impact, and even plan how to identify failures while minimizing operational overhead.
