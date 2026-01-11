@@ -181,7 +181,7 @@ I've been feeling like billionaires are trying *really* hard to make us believe 
 
 Towards the end of my internship at Amazon, I felt more productive *not* using AI for generating code. Learning Go and Google's ADK? I used AI to aid search, not as the source of truth. I felt more confident and connected to the codebase than the lines of code I generated with AI. **AI feels good as a helper, not the worker, as long as humans are still involved in the loop**.
 
-Contrary to above, I'm not anti-AI. In fact, I always saw myself working with AI in some capacity [since 2020](../Software%20Dev%20Log/Software%20Dev%20Log%204.md#D.%20The%20Rest)- years before the ChatGPT moment. I'm just not buying the delusions and the products being shoved at our face.
+Contrary to above, I'm not anti-AI. In fact, I always saw myself working with AI in some capacity [since 2020](../Software%20Dev%20Log/Software%20Dev%20Log%204.md#D.%20The%20Rest) - years before the ChatGPT moment. AI agents have enabled me to get things done much faster. I'm just not buying the delusions and the products being shoved at our face.
 
 ### Consumer Goods
 
