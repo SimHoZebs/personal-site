@@ -23,3 +23,5 @@ This all stems from my philosophy - everyone should be free and powerful enough 
 In the meantime, I do my best to share what I've learned with the world in digestible mediums.
 
 I am looking for full-time opportunities to work with web technologies in a software-driven organization.
+
+I currently work for AWS, but all my words do not repesent them nor the work I do for them.

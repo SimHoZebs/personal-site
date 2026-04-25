@@ -22,6 +22,11 @@ _University of Central Florida_
 ## EXPERIENCES
 
 ---
+**Amazon Web Services** **May 2025 - Now**
+
+_Software Development Engineer_
+
+- Driving Region Build Automation initiative within AWS
 
 **Amazon Web Services** **May 2025 - Jul 2025**
 
