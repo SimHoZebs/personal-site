@@ -13,7 +13,7 @@ I eventually built a wrapper around the API definitions and the client calls. Th
 
 Then I learned about tRPC through a newsletter, scrapped everything I made, and used that instead. It was better than what I could've ever built, and erased my pain completely.
 
-In contrast, an AI coding agent wouldn't have flagged this unless I prompted it to. It wouldn't even generate my wrapper. It would happily reconcile the types between the frontend and the backend. Actually, no - it wouldn't mind using JavaScript instead.
+In contrast, an AI coding agent wouldn't have flagged this unless I prompted it to. It wouldn't even generate my wrapper. It would happily reconcile the types between the frontend and the backend every single time the contract changed. In fact, it wouldn't have cared to write it in JavaScript instead.
 
 AI isn't designed to feel pain. It doesn't care about what monospace font is used. It doesn't need syntax highlighting to visually differentiate a variable from a function. It can detect duplicate functions when asked, but doesn't cringe over making them. It struggles over long context retrieval, but doesn't stop itself to think, *"Maybe I should split this 1000+ lines of code into multiple files."* It doesn't feel pain on its own - it must be asked to simulate it.
 
