@@ -28,7 +28,7 @@ I'm never going to be an undergrad student again; I feel like I missed out on ex
 
 To be clear, I _did_ involve myself with a club for around two years: [KnightHacks](https://club.knighthacks.org/). I served as a mentor for their programs and hackathons. I just wish I tried to join their dev team, or pick up an officer role, or do more workshops. [I did participate in undergrad research](content/blogs/Reviews&Planning/2023%20Reflection%20&%202024%20Goals.md). But I wish I worked on something where I really learned something; work in a really cool problem space, like in computer architecture or embedded systems. And yes, I did make friends and acquaintances that heavily impacted my career and brought joy throughout college. They just never became someone whom I could comfortably chat up on Discord and play games with.
 
-Alright, I'm done with the negative sentiment. Even if the education itself felt lackluster, I am very, very proud of my achievements _during_ my education. My successful translation freelance business that kept me afloat since 2022; Two wins at hackathons in 2023; two different entry-level professional software engineering positions in 2024; and a successful internship at Big Tech this year. Luck has played a significant role, but these opportunities and successes wouldn't have existed without my time and passion. 
+Alright, I'm done with the negative sentiment. Even if the education itself felt lackluster, I am very, very proud of my achievements _during_ my education. My successful translation freelance business that kept me afloat since 2022; Two wins at hackathons in 2023; two different entry-level professional software engineering positions in 2024; and a successful internship at Big Tech this year. Luck has played a significant role, but these opportunities and successes wouldn't have existed without my time and passion.
 
 While I have no plans to pursue a Master's degree yet, *learning* never stops as a software engineer. Part of my hobby is reading technical blogs/articles already, where I continue to learn insights from others' experience. There are [a handful of Computer Science books](https://teachyourselfcs.com/) I want to read over time, starting with Designing Data-Intensive Applications. No particular reason other than the fact that I have a physical copy.
 ## Career
@@ -59,7 +59,7 @@ I made significant improvements to [Nedon](../../projects/Nedon.md) without addi
 
 But after that, I deliberately put it on hold to focus on LazyFood (now called Mugo). Mugo's scope was just way smaller and manageable to create an MVP by the end of the trimester. Unfortunately, the little work I've done doesn't even match the features of the hackathon version.
 
-These lackluster results still do no good to prove that I can complete a project outside of a hackathon. I'm more disappointment than usual, as I didn't have a major time investment like a job or school work. This and the coming quarter are the only time frame where I'll have the most free time to build something cool completely - and I can't keep wasting it. 
+These lackluster results still do no good to prove that I can complete a project outside of a hackathon. I'm more disappointment than usual, as I didn't have a major time investment like a job or school work. This and the coming quarter are the only time frame where I'll have the most free time to build something cool completely - and I can't keep wasting it.
 
 For 2026 Q1, my major focus will be on creating an MVP of Mugo and publishing it on the Play Store.
 
@@ -94,7 +94,7 @@ I am now dual-booting Fedora alongside Windows with the goal to replace Windows 
 ![|100](../../../public/blogs/kernel-panic.png)
 
 I ran into problems that were universal to Linux. To list a few:
-- KakaoTalk (Korea's major chat platform) runs through Wine, but its notifications don't pass through very well. 
+- KakaoTalk (Korea's major chat platform) runs through Wine, but its notifications don't pass through very well.
 - I used Outlook Desktop was because it was the only desktop email reader that supported my school email, but I guess now I can use ThunderBird.
 - There's no replacement for Figma Desktop or Notion Calendar. I have to use their webapp instead. Blows my fucking mind, considering their desktop app is literally built on a framework for **CROSS PLATFORM DEVELOPMENT**
 - Davinci Resolve doesn't support major codecs on free tier.
@@ -118,7 +118,7 @@ I'm not trying to sell you on Notion AI; it just so happens that the best use ca
 
 ![|500](../../../public/blogs/notion-task-list.png)
 
-Another improvement is in visualization. My task database now tells me when a task is overdue, delayed, due soon, doing, planned, and blocked based on a set of rules. I can also see if I made any updates to specific projects and other areas of responsibility to make sure that I address them before the end of the week. 
+Another improvement is in visualization. My task database now tells me when a task is overdue, delayed, due soon, doing, planned, and blocked based on a set of rules. I can also see if I made any updates to specific projects and other areas of responsibility to make sure that I address them before the end of the week.
 
 So far, this is the most I've engaged with the system, and I'm optimistic that there won't be any major changes in the near future. I still struggle to actually engage with the tasks as the work was never a solution to procrastination and lack of motivation (it's good at exposing it, though). Making calls and convincing my weird cats to the vet isn't as easy as writing a blog post. I'm not exactly sure how I'll improve myself to do better there.
 
@@ -185,7 +185,7 @@ Contrary to above, I'm not anti-AI. In fact, I always saw myself working with AI
 
 ### Consumer Goods
 
-It feels like it gets more challenging every day to find a product that provides genuine value without constantly siphoning every drop of value they can extract out of me. When I bought Blu-Rays of a movie, I owned it. When I buy a physical copy of a book, I own it. But god forbid I can own my games, my car, my Nintendo Switch, and the fucking camera I paid for. 
+It feels like it gets more challenging every day to find a product that provides genuine value without constantly siphoning every drop of value they can extract out of me. When I bought Blu-Rays of a movie, I owned it. When I buy a physical copy of a book, I own it. But god forbid I can own my games, my car, my Nintendo Switch, and the fucking camera I paid for.
 
 So many software and technology seem to provide bare minimum functionality with little stability so they can serve their true purpose: data collection. I'm so sick of it. I'm gonna build my own shit sooner or later.
 
