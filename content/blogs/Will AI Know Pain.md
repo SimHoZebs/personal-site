@@ -3,7 +3,6 @@ published: 2026-05-26
 title: Will AI Know Pain?
 edited: 2026-05-28
 ---
-
 A few years ago, I was building a web app using TypeScript and Next.js. The choice wasn't based on some thoughtful architectural decision - I was still learning web development, and all this noise about this full-stack serverless framework just sounded like a convenient way to avoid learning backend development.
 
 The REST API started simple. I built basic CRUD operations that my frontend could call using Axios. Again, I didn't know much about what made it so popular, but I learned that I could use TypeScript to type the response instead of getting `any` in all responses.
@@ -26,9 +25,9 @@ But pain is often what tell us the difference between a good UI and a bad one be
 
 I'm not arguing that pain can't be reduced to pattern recognition. I *am* arguing that pain is derived from something much more complex than what even the best LLM can absorb from training text alone.
 
-Think about it - we didn't invent software engineering for the sake of it. It's just one of many ways we represent the solutions to the pain we experienced yesterday, today, and expect to experience tomorrow. Experiences which cannot be reduced to text.
+Language is not a replica of experience. Neither are video or audio. They all heavily depend on the receiver having some shared frame of reference be interpret them meaningfully. "I'm soaking wet from the rain" means something more than its mere dictionary definitions because I have experienced it. In contrast, I have no clue what the hell, "I have too much money" means.
 
-Language is not a replica of experience. Neither are video or audio. They all heavily depend on the receiver having some shared frame of reference be interpret them meaningfully. "I'm soaking wet from the rain" means something more than its mere dictionary definitions because I have experienced it. In contrast, I have no clue what the hell "I have too much money" means. For AI to truly originate innovation, it can't merely imitate representations of pain. It must experience the constraints of living.
+Software engineering is one of many ways we represent the solutions to the pain we experienced yesterday, today, and expect to experience tomorrow. And no matter how we capture it in blog posts, codebases, post mortems, it will never capture it as well as the experience itself. A software engineer that has ever only read blog posts and documentations, but never dealt with service failures, regret architectural decisions, and maintained software, would certainly be a good resource to reference, but difficult to delegate meaningful work to. So if AI is meant to be more than just a tool and truly originate innovation, it can't simply learn from representations of pain. It must be shaped by the conditions that made those representations necessary in the first place.
 
 Not every pain is derived from individual experience; some pain is shared and learned. I understand the benefits of auto-scaling serverless functions, not because I actually struggled handling an influx of users on my bare metal backend, but because I can connect the dots from my minimal experience to the rich, painful experience of other developers who came before me. These shared scars of software engineering is one of many engines powering its progress. Will AI make this ecosystem obsolete, or sufficiently emulate it? How?
 
