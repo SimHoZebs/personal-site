@@ -1,7 +1,7 @@
 ---
 published: 2026-05-26
 title: Will AI Know Pain?
-edited: 2026-05-28
+edited: 2026-06-05
 ---
 A few years ago, I was building a web app using TypeScript and Next.js. The choice wasn't based on some thoughtful architectural decision - I was still learning web development, and all this noise about this full-stack serverless framework just sounded like a convenient way to avoid learning backend development.
 
@@ -23,11 +23,11 @@ But pain is often what tells us the difference between a good UI and a bad one b
 
 So if an AI is to truly learn what pain means well enough to generate innovative software engineering behavior, it must be shaped by the conditions that produced its training data in the first place.
 
-I'm not saying that it's impossible. I'm also not saying they have to actually live like a human being; whatever that means. What I am saying is that, for an AI system to do more than code generate code and fully automate the software engineering process, it needs to be trained and architected around something much more than just artifacts of pain.
+I'm not saying that it's impossible. I'm also not saying they have to actually live like a human being; whatever that means. What I am saying is that, for an AI system to do more than code generation and fully automate the software engineering process, it needs to be architected around something much more than just training on the artifacts of pain.
 
 Not every pain is derived from individual experience; some pain is shared and learned. I understand the benefits of auto-scaling serverless functions, not because I actually struggled handling an influx of users on my bare metal backend, but because I can connect the dots from my minimal experience to the rich, painful experience of other developers who came before me. I get to avoid potential frustrations and struggles because other people shared their scars and my capacity to understand them.
 
-That ecosystem works because humans aren't identical. No two developers share the same background and interpretation of reality. They might reach the same conclusion and implementation most of the time, but it's still the seed to the learnings and diversity of approaches we have today. Software engineering, too, evolves through natural selection.
+That ecosystem works because humans aren't identical. No two developers share the same background and interpretation of reality. They might reach the same conclusion and implementation most of the time, but it's THE seed to the learnings and diversity of approaches we have today. Software engineering, too, evolves through natural selection.
 
 To me, that sounds like the recursive self improvement the AI industry keeps reaching for. For AI to continue pushing software engineering forward, it would need some mechanism for preserving that ecosystem, or somehow make it obsolete through some better mechanism we do not yet have.
 
