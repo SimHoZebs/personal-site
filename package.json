@@ -11,9 +11,10 @@
     "format:astro": "prettier --write src/**/*.astro --plugin=prettier-plugin-astro",
     "format": "biome format --write . && pnpm run strip-trailing",
     "tsc": "tsc",
-    "pull": "rsync -avPu --no-perms /mnt/c/Users/simho/Documents/personal-site/ . --exclude-from=.rsyncignore --delete",
-    "push": "rsync -avPu --no-perms . /mnt/c/Users/simho/Documents/personal-site/ --exclude-from=.rsyncignore",
-    "strip-trailing": "git ls-files '*.js' '*.ts' '*.json' '*.md' '*.astro' | tr '\\n' '\\0' | xargs -0 sed -i 's/[[:space:]]*$//'"
+    "seo": "node scripts/seo-check.mjs https://simho.xyz",
+    "verify": "node --check scripts/umami-site-ensure.mjs && node --check scripts/seo-check.mjs && node --check scripts/umami-track-verify.mjs && bash -n scripts/vercel-wait.sh && node scripts/seo-check.mjs https://simho.xyz",
+    "strip-trailing": "git ls-files '*.js' '*.ts' '*.json' '*.md' '*.astro' | tr '\\n' '\\0' | xargs -0 sed -i 's/[[:space:]]*$//'",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.4",
@@ -41,6 +42,7 @@
     "@types/hast": "^3.0.4",
     "@types/node": "^24.3.0",
     "@types/unist": "^3.0.3",
+    "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
