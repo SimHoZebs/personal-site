@@ -1,0 +1,10 @@
+# pre-commit: fast local gates (no network).
+# `tsc` script is bare `tsc`, so pass --noEmit to keep this check-only.
+pnpm tsc --noEmit
+
+# Biome check on staged files only (lint-staged style, check-only, no --write).
+# Mirrors the `format` script's scope without touching unrelated files.
+# -z/-0 keeps this safe for paths with spaces.
+if [ -n "$(git diff --cached --name-only --diff-filter=ACMR)" ]; then
+  git diff --cached --name-only --diff-filter=ACMR -z | xargs -0 pnpm exec biome check --
+fi

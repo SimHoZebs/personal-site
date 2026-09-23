@@ -1,0 +1,5 @@
+# pre-push: full verification before code leaves the machine.
+# `build` runs the Astro production build; `seo` is a read-only
+# network check against the live site (no writes, no deploys).
+pnpm build
+pnpm seo
