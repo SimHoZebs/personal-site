@@ -17,6 +17,10 @@ const CALLOUT_STYLES: Record<CalloutType, CalloutStyle> = {
 
 const CALLOUT_TYPES = ["warning", "danger", "caution", "question"];
 
+function toClassArray(className: string): string[] {
+  return className.split(" ").filter(Boolean);
+}
+
 function blockquoteToCallout(blockquote: Element) {
   const calloutHeaderIndex = blockquote.children.findIndex(
     (child) =>
@@ -31,7 +35,7 @@ function blockquoteToCallout(blockquote: Element) {
   if (calloutHeaderIndex < 0) {
     blockquote.properties = {
       ...blockquote.properties,
-      className: "quote",
+      className: ["quote"],
     };
     return;
   }
@@ -44,7 +48,7 @@ function blockquoteToCallout(blockquote: Element) {
   if (calloutTextNodeIndex < 0) {
     blockquote.properties = {
       ...blockquote.properties,
-      className: "quote",
+      className: ["quote"],
     };
     return;
   }
@@ -64,7 +68,7 @@ function blockquoteToCallout(blockquote: Element) {
     : CALLOUT_STYLES.default.className;
   blockquote.properties = {
     ...blockquote.properties,
-    className: style,
+    className: toClassArray(style),
   };
 
   // Create header element for callout
@@ -72,7 +76,7 @@ function blockquoteToCallout(blockquote: Element) {
     type: "element",
     tagName: "p",
     children: [{ type: "text", value: calloutType }],
-    properties: { className: "callout-header font-bold" },
+    properties: { className: ["callout-header", "font-bold"] },
   };
 
   // Update the existing text node to remove the callout marker

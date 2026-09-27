@@ -7,7 +7,12 @@ const MAX_WIDTH = 600;
 const customSharpService: LocalImageService = {
   ...sharpService, // Spread the default service to inherit all its properties/methods
 
-  transform(buffer: Uint8Array, transform: ImageTransform, imageConfig) {
+  transform(
+    buffer: Uint8Array,
+    transform: ImageTransform,
+    imageConfig,
+    logger,
+  ) {
     // --- Our Custom Logic ---
     // Set the desired quality and enforce a max width when needed.
     const modifiedTransform: ImageTransform = {
@@ -52,6 +57,7 @@ const customSharpService: LocalImageService = {
       buffer,
       modifiedTransform as any,
       imageConfig,
+      logger,
     );
   },
   // We likely don't need to override parseURL or getHTMLAttributes

@@ -1,6 +1,6 @@
-import { visit } from "unist-util-visit";
-import type { Node } from "unist";
 import type { Element, ElementContent } from "hast";
+import type { Node } from "unist";
+import { visit } from "unist-util-visit";
 import blockquoteToCallout from "./blockquoteToCallout";
 
 // Type guards
@@ -36,7 +36,7 @@ function rehypePlugin() {
  */
 function wrapTableWithScrollContainer(node: Element): void {
   const clone = structuredClone(node);
-  clone.properties.className = "inside";
+  clone.properties.className = ["inside"];
 
   node.tagName = "div";
   node.children = [clone];
