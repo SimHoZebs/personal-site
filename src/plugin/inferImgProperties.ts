@@ -1,6 +1,6 @@
-import { visit } from "unist-util-visit";
-import type { Node } from "unist";
 import type { Element } from "hast";
+import type { Node } from "unist";
+import { visit } from "unist-util-visit";
 
 // Instead of separate plugins, we handle multiple transformations to eliminate repeated traversals
 function rehypePlugin() {

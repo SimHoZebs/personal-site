@@ -9,7 +9,7 @@ export function generateAutoSummary(body: string): string {
     const paragraph = paragraphs[i].trim();
     if (paragraph.match(skip) || paragraph === "") continue;
 
-    autoSummary += paragraph + " ";
+    autoSummary += `${paragraph} `;
     // Strip markdown
     autoSummary = autoSummary.replace(/[*_]/g, "");
     autoSummary = autoSummary.replace(/\[(.*?)\]\(.*?\)/g, "$1"); // Replace links with link text

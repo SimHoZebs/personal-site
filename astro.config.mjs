@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import react from "@astrojs/react";
 import mdx from "@astrojs/mdx";
 import figcaptionPlugin from "./src/plugin/customRehypePlugin.ts";
 import inferImgProperties from "./src/plugin/inferImgProperties.ts"
@@ -11,7 +10,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://simho.xyz",
-  integrations: [react(), mdx(), sitemap()],
+  integrations: [mdx(), sitemap()],
 
   markdown: {
     // Beware of the order of these plugins
