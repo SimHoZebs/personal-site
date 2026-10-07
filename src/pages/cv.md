@@ -22,7 +22,7 @@ _University of Central Florida_
 ## EXPERIENCES
 
 ---
-**Amazon Web Services** **May 2025 - Now**
+**Amazon Web Services** **May 2026 - Now**
 
 _Software Development Engineer_
 
