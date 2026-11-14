@@ -1,6 +1,10 @@
 import type { ImageTransform, LocalImageService } from "astro";
 import sharpService from "astro/assets/services/sharp";
 
+// This file's path is part of Astro's static image URL hash. Rename it (and update
+// astro.config.mjs) whenever transform output changes, or browsers will keep the
+// old image from its immutable cache.
+
 const HIGH_QUALITY_LEVEL = 95; // Define your desired quality level (e.g., 90)
 const MAX_WIDTH = 600;
 
@@ -34,18 +38,27 @@ const customSharpService: LocalImageService = {
     }
 
     // Enforce max width if default/original width larger
-    const originalWidthValue = modifiedTransform.width;
-    if (typeof modifiedTransform.width === "number") {
-      if (modifiedTransform.width > MAX_WIDTH) {
-        modifiedTransform.width = MAX_WIDTH;
-        console.log(
-          `[HighQualityService] Capped explicit width from ${originalWidthValue} to ${MAX_WIDTH}`,
+    const requestedWidth =
+      typeof modifiedTransform.width === "number"
+        ? modifiedTransform.width
+        : origWidth;
+
+    if (typeof requestedWidth === "number" && requestedWidth > MAX_WIDTH) {
+      const scale = MAX_WIDTH / requestedWidth;
+      modifiedTransform.width = MAX_WIDTH;
+
+      // Astro 7 passes both width and height and lets Sharp's default "cover" fit
+      // handle them, which crops when only the width is reduced. Scale the height
+      // down too so the requested aspect ratio is preserved.
+      if (typeof modifiedTransform.height === "number") {
+        modifiedTransform.height = Math.max(
+          1,
+          Math.round(modifiedTransform.height * scale),
         );
       }
-    } else if (typeof origWidth === "number" && origWidth > MAX_WIDTH) {
-      modifiedTransform.width = MAX_WIDTH;
+
       console.log(
-        `[HighQualityService] Set width to ${MAX_WIDTH} based on origWidth ${origWidth}`,
+        `[HighQualityService] Capped width from ${requestedWidth} to ${MAX_WIDTH}`,
       );
     }
 

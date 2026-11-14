@@ -25,7 +25,7 @@ export default defineConfig({
 
   image:{
     service: {
-      entrypoint: './src/integrations/high-quality-image-service.ts'
+      entrypoint: './src/integrations/image-service.ts'
     }
   },
 
